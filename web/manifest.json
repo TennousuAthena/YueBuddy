@@ -1,0 +1,35 @@
+{
+    "name": "粤语伴 YueBuddy",
+    "short_name": "粤语伴",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F7F7F7",
+    "theme_color": "#58CC02",
+    "description": "粤语伴 YueBuddy — 普通话到粤语的口袋练习册",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

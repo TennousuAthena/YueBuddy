@@ -1,0 +1,342 @@
+import 'package:flutter/material.dart';
+
+import '../../app/app_scope.dart';
+import '../../core/layout/breakpoints.dart';
+import '../../theme/app_theme.dart';
+import '../lessons/domain/lesson_models.dart';
+import '../lessons/presentation/lesson_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final scope = AppScope.of(context);
+    return Scaffold(
+      appBar: AppBar(
+        titleSpacing: 20,
+        title: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('粤语伴 YueBuddy'),
+            SizedBox(height: 2),
+            Text(
+              '口袋练习册 · 普通话 → 粤语',
+              style: TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: AppColors.muted,
+              ),
+            ),
+          ],
+        ),
+      ),
+      body: FutureBuilder<CourseCatalog>(
+        future: scope.lessons.loadCatalog(),
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            return Center(child: Text('课程目录加载失败：${snapshot.error}'));
+          }
+          if (!snapshot.hasData) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          final lessons = snapshot.data!.lessons;
+          return ListenableBuilder(
+            listenable: scope.speech,
+            builder: (context, _) {
+              return LayoutBuilder(
+                builder: (context, constraints) {
+                  final layout = AppBreakpoints.classForWidth(
+                    constraints.maxWidth,
+                  );
+                  // Use layout class (not raw tile math) so the two-column
+                  // tablet layout survives the NavigationRail width taken
+                  // from the content area.
+                  final columns = switch (layout) {
+                    LayoutClass.compact => 1,
+                    LayoutClass.medium => 2,
+                    LayoutClass.expanded => 3,
+                  };
+                  final horizontal = layout == LayoutClass.compact
+                      ? 20.0
+                      : layout == LayoutClass.medium
+                          ? 24.0
+                          : 32.0;
+                  if (columns <= 1) {
+                    return ListView(
+                      padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+                      children: [
+                        if (!scope.speech.isCantoneseAvailable)
+                          const _TtsWarningCard(),
+                        const _HeroCard(),
+                        const SizedBox(height: 20),
+                        const Text(
+                          '课程大纲',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.ink,
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        for (var i = 0; i < lessons.length; i++)
+                          _LessonTile(summary: lessons[i], index: i),
+                      ],
+                    );
+                  }
+                  return CustomScrollView(
+                    slivers: [
+                      SliverPadding(
+                        padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 0),
+                        sliver: SliverList.list(
+                          children: [
+                            if (!scope.speech.isCantoneseAvailable)
+                              const _TtsWarningCard(),
+                            const _HeroCard(),
+                            const SizedBox(height: 20),
+                            const Text(
+                              '课程大纲',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+                                color: AppColors.ink,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                          ],
+                        ),
+                      ),
+                      SliverPadding(
+                        padding: EdgeInsets.fromLTRB(horizontal, 0, horizontal, 32),
+                        sliver: SliverGrid.builder(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: columns,
+                            mainAxisSpacing: 12,
+                            crossAxisSpacing: 12,
+                            mainAxisExtent: 104,
+                          ),
+                          itemCount: lessons.length,
+                          itemBuilder: (context, i) => _LessonTile(
+                            summary: lessons[i],
+                            index: i,
+                            compact: false,
+                          ),
+                        ),
+                      ),
+                    ],
+                  );
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _HeroCard extends StatelessWidget {
+  const _HeroCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [Color(0xFF58CC02), Color(0xFF89E219)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(24),
+      ),
+      child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            '前两课已开放',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w800,
+              fontSize: 22,
+            ),
+          ),
+          SizedBox(height: 6),
+          Text(
+            '看词句、听老师录音、跟读复习。先从「互相認識」或「民以食為天」开始。',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 15,
+              height: 1.4,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _TtsWarningCard extends StatelessWidget {
+  const _TtsWarningCard();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFF4D6),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppColors.orange, width: 2),
+      ),
+      child: const Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(Icons.volume_off_rounded, color: AppColors.orange),
+          SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              '这台设备没有粤语语音。请在系统设置中下载「中文（香港）」语音。不会用普通话代替朗读。',
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                color: AppColors.ink,
+                height: 1.35,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _LessonTile extends StatelessWidget {
+  const _LessonTile({
+    required this.summary,
+    required this.index,
+    this.compact = true,
+  });
+
+  final LessonSummary summary;
+  final int index;
+  final bool compact;
+
+  static const _accents = [
+    AppColors.green,
+    AppColors.orange,
+    AppColors.blue,
+    AppColors.purple,
+    Color(0xFFFF6B9D),
+    Color(0xFF00CD9C),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final scope = AppScope.of(context);
+    final accent = _accents[index % _accents.length];
+    final locked = !summary.isAvailable;
+
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0, end: 1),
+      duration: Motion.medium(context),
+      curve: Curves.easeOutCubic,
+      builder: (context, value, child) {
+        return Opacity(
+          opacity: value,
+          child: Transform.translate(
+            offset: Offset(0, (1 - value) * 16),
+            child: child,
+          ),
+        );
+      },
+      child: Padding(
+        padding: EdgeInsets.only(bottom: compact ? 12 : 0),
+        child: Material(
+          color: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+            side: const BorderSide(color: AppColors.line, width: 2),
+          ),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(20),
+            onTap: () async {
+              if (locked) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('第${summary.number}课即将开放 · ${summary.date}'),
+                  ),
+                );
+                return;
+              }
+              final loaded = await scope.lessons.loadLesson(summary.id);
+              if (!context.mounted) return;
+              await Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => LessonScreen(lesson: loaded),
+                ),
+              );
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  Container(
+                    width: 56,
+                    height: 56,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: locked ? AppColors.line : accent,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: locked
+                        ? const Icon(Icons.lock_rounded, color: AppColors.muted)
+                        : Text(
+                            '${summary.number}',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                  ),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          summary.title,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w800,
+                            color: AppColors.ink,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          locked ? '${summary.date} · 即将开放' : summary.date,
+                          style: const TextStyle(
+                            color: AppColors.muted,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(
+                    locked
+                        ? Icons.schedule_rounded
+                        : Icons.chevron_right_rounded,
+                    color: AppColors.muted,
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

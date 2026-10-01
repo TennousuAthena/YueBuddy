@@ -1,0 +1,4328 @@
+{
+ "id": "l1",
+ "number": 1,
+ "title": "互相認識",
+ "date": "14/9",
+ "modules": [
+  {
+   "id": "l1-basics",
+   "title": "廣東話基礎",
+   "subtitle": "聲調、聲母韻母、文法",
+   "kind": "practice",
+   "recordings": [
+    "audio/l1/tones.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-b-t01",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "芬",
+     "jyutping": "fan1",
+     "mandarin": "第一声 · 高平"
+    },
+    {
+     "id": "l1-b-t02",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "粉",
+     "jyutping": "fan2",
+     "mandarin": "第二声 · 高升",
+     "clip": {
+      "startMs": 1380,
+      "endMs": 2430,
+      "words": {
+       "t": "粉",
+       "w": [
+        1720,
+        2300
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-b-t03",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "瞓",
+     "jyutping": "fan3",
+     "mandarin": "第三声 · 中平",
+     "clip": {
+      "startMs": 2629,
+      "endMs": 4739,
+      "words": {
+       "t": "瞓",
+       "w": [
+        2629,
+        3880
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-b-t04",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "墳",
+     "jyutping": "fan4",
+     "mandarin": "第四声 · 低降"
+    },
+    {
+     "id": "l1-b-t05",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "憤",
+     "jyutping": "fan5",
+     "mandarin": "第五声 · 低升"
+    },
+    {
+     "id": "l1-b-t06",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "份",
+     "jyutping": "fan6",
+     "mandarin": "第六声 · 低平"
+    },
+    {
+     "id": "l1-b-t07",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "忽",
+     "jyutping": "fat1",
+     "mandarin": "第七声 · 同第一声短促"
+    },
+    {
+     "id": "l1-b-t08",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "法",
+     "jyutping": "faat3",
+     "mandarin": "第八声 · 同第三声短促"
+    },
+    {
+     "id": "l1-b-t09",
+     "type": "vocab",
+     "section": "聲調",
+     "cantonese": "佛",
+     "jyutping": "fat6",
+     "mandarin": "第九声 · 同第六声短促",
+     "note": "实用上用六声即可，7/8/9 是入声。"
+    },
+    {
+     "id": "l1-b-n01",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "三",
+     "jyutping": "saam1",
+     "mandarin": "三"
+    },
+    {
+     "id": "l1-b-n02",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "九",
+     "jyutping": "gau2",
+     "mandarin": "九"
+    },
+    {
+     "id": "l1-b-n03",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "四",
+     "jyutping": "sei3",
+     "mandarin": "四"
+    },
+    {
+     "id": "l1-b-n04",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "零",
+     "jyutping": "ling4",
+     "mandarin": "零"
+    },
+    {
+     "id": "l1-b-n05",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "五",
+     "jyutping": "ng5",
+     "mandarin": "五"
+    },
+    {
+     "id": "l1-b-n06",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "二",
+     "jyutping": "ji6",
+     "mandarin": "二"
+    },
+    {
+     "id": "l1-b-n07",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "七",
+     "jyutping": "cat1",
+     "mandarin": "七"
+    },
+    {
+     "id": "l1-b-n08",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "八",
+     "jyutping": "baat3",
+     "mandarin": "八"
+    },
+    {
+     "id": "l1-b-n09",
+     "type": "vocab",
+     "section": "數字訣",
+     "cantonese": "六",
+     "jyutping": "luk6",
+     "mandarin": "六"
+    },
+    {
+     "id": "l1-b-m01",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "三",
+     "jyutping": "saam1",
+     "mandarin": "三"
+    },
+    {
+     "id": "l1-b-m02",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "碗",
+     "jyutping": "wun2",
+     "mandarin": "碗"
+    },
+    {
+     "id": "l1-b-m03",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "半",
+     "jyutping": "bun3",
+     "mandarin": "半"
+    },
+    {
+     "id": "l1-b-m04",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "牛",
+     "jyutping": "ngau4",
+     "mandarin": "牛"
+    },
+    {
+     "id": "l1-b-m05",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "腩",
+     "jyutping": "naam5",
+     "mandarin": "腩"
+    },
+    {
+     "id": "l1-b-m06",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "麵",
+     "jyutping": "min6",
+     "mandarin": "面"
+    },
+    {
+     "id": "l1-b-m07",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "不",
+     "jyutping": "bat1",
+     "mandarin": "不"
+    },
+    {
+     "id": "l1-b-m08",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "吃",
+     "jyutping": "hek3",
+     "mandarin": "吃"
+    },
+    {
+     "id": "l1-b-m09",
+     "type": "vocab",
+     "section": "其他口訣",
+     "cantonese": "辣",
+     "jyutping": "laat6",
+     "mandarin": "辣"
+    },
+    {
+     "id": "l1-b-i01",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "巴",
+     "jyutping": "baa1",
+     "mandarin": "声母 b"
+    },
+    {
+     "id": "l1-b-i02",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "怕",
+     "jyutping": "paa3",
+     "mandarin": "声母 p"
+    },
+    {
+     "id": "l1-b-i03",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "媽",
+     "jyutping": "maa1",
+     "mandarin": "声母 m"
+    },
+    {
+     "id": "l1-b-i04",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "花",
+     "jyutping": "faa1",
+     "mandarin": "声母 f"
+    },
+    {
+     "id": "l1-b-i05",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "打",
+     "jyutping": "daa2",
+     "mandarin": "声母 d"
+    },
+    {
+     "id": "l1-b-i06",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "他",
+     "jyutping": "taa1",
+     "mandarin": "声母 t"
+    },
+    {
+     "id": "l1-b-i07",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "那",
+     "jyutping": "naa5",
+     "mandarin": "声母 n"
+    },
+    {
+     "id": "l1-b-i08",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "啦",
+     "jyutping": "laa1",
+     "mandarin": "声母 l"
+    },
+    {
+     "id": "l1-b-i09",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "家",
+     "jyutping": "gaa1",
+     "mandarin": "声母 g"
+    },
+    {
+     "id": "l1-b-i10",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "卡",
+     "jyutping": "kaa1",
+     "mandarin": "声母 k"
+    },
+    {
+     "id": "l1-b-i11",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "牙",
+     "jyutping": "ngaa4",
+     "mandarin": "声母 ng"
+    },
+    {
+     "id": "l1-b-i12",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "蝦",
+     "jyutping": "haa1",
+     "mandarin": "声母 h"
+    },
+    {
+     "id": "l1-b-i13",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "瓜",
+     "jyutping": "gwaa1",
+     "mandarin": "声母 gw"
+    },
+    {
+     "id": "l1-b-i14",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "誇",
+     "jyutping": "kwaa1",
+     "mandarin": "声母 kw"
+    },
+    {
+     "id": "l1-b-i15",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "蛙",
+     "jyutping": "waa1",
+     "mandarin": "声母 w"
+    },
+    {
+     "id": "l1-b-i16",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "渣",
+     "jyutping": "zaa1",
+     "mandarin": "声母 z"
+    },
+    {
+     "id": "l1-b-i17",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "叉",
+     "jyutping": "caa1",
+     "mandarin": "声母 c"
+    },
+    {
+     "id": "l1-b-i18",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "沙",
+     "jyutping": "saa1",
+     "mandarin": "声母 s"
+    },
+    {
+     "id": "l1-b-i19",
+     "type": "vocab",
+     "section": "聲母",
+     "cantonese": "也",
+     "jyutping": "jaa5",
+     "mandarin": "声母 j"
+    },
+    {
+     "id": "l1-b-f01",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "沙",
+     "jyutping": "saa1",
+     "mandarin": "韵母 aa"
+    },
+    {
+     "id": "l1-b-f02",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "徙",
+     "jyutping": "saai2",
+     "mandarin": "韵母 aai"
+    },
+    {
+     "id": "l1-b-f03",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "梢",
+     "jyutping": "saau1",
+     "mandarin": "韵母 aau"
+    },
+    {
+     "id": "l1-b-f04",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "三",
+     "jyutping": "saam1",
+     "mandarin": "韵母 aam"
+    },
+    {
+     "id": "l1-b-f05",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "山",
+     "jyutping": "saan1",
+     "mandarin": "韵母 aan"
+    },
+    {
+     "id": "l1-b-f06",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "坑",
+     "jyutping": "haang1",
+     "mandarin": "韵母 aang"
+    },
+    {
+     "id": "l1-b-f07",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "圾",
+     "jyutping": "saap3",
+     "mandarin": "韵母 aap"
+    },
+    {
+     "id": "l1-b-f08",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "剎",
+     "jyutping": "caat3",
+     "mandarin": "韵母 aat"
+    },
+    {
+     "id": "l1-b-f09",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "客",
+     "jyutping": "haak3",
+     "mandarin": "韵母 aak"
+    },
+    {
+     "id": "l1-b-f10",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "西",
+     "jyutping": "sai1",
+     "mandarin": "韵母 ai"
+    },
+    {
+     "id": "l1-b-f11",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "收",
+     "jyutping": "sau1",
+     "mandarin": "韵母 au"
+    },
+    {
+     "id": "l1-b-f12",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "心",
+     "jyutping": "sam1",
+     "mandarin": "韵母 am"
+    },
+    {
+     "id": "l1-b-f13",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "新",
+     "jyutping": "san1",
+     "mandarin": "韵母 an"
+    },
+    {
+     "id": "l1-b-f14",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "笙",
+     "jyutping": "sang1",
+     "mandarin": "韵母 ang"
+    },
+    {
+     "id": "l1-b-f15",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "濕",
+     "jyutping": "sap1",
+     "mandarin": "韵母 ap"
+    },
+    {
+     "id": "l1-b-f16",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "失",
+     "jyutping": "sat1",
+     "mandarin": "韵母 at"
+    },
+    {
+     "id": "l1-b-f17",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "塞",
+     "jyutping": "sak1",
+     "mandarin": "韵母 ak"
+    },
+    {
+     "id": "l1-b-f18",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "些",
+     "jyutping": "se1",
+     "mandarin": "韵母 e"
+    },
+    {
+     "id": "l1-b-f19",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "四",
+     "jyutping": "sei3",
+     "mandarin": "韵母 ei"
+    },
+    {
+     "id": "l1-b-f20",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "鄭",
+     "jyutping": "zeng6",
+     "mandarin": "韵母 eng"
+    },
+    {
+     "id": "l1-b-f21",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "石",
+     "jyutping": "sek6",
+     "mandarin": "韵母 ek"
+    },
+    {
+     "id": "l1-b-f22",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "詩",
+     "jyutping": "si1",
+     "mandarin": "韵母 i"
+    },
+    {
+     "id": "l1-b-f23",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "消",
+     "jyutping": "siu1",
+     "mandarin": "韵母 iu"
+    },
+    {
+     "id": "l1-b-f24",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "閃",
+     "jyutping": "sim2",
+     "mandarin": "韵母 im"
+    },
+    {
+     "id": "l1-b-f25",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "先",
+     "jyutping": "sin1",
+     "mandarin": "韵母 in"
+    },
+    {
+     "id": "l1-b-f26",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "星",
+     "jyutping": "sing1",
+     "mandarin": "韵母 ing"
+    },
+    {
+     "id": "l1-b-f27",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "攝",
+     "jyutping": "sip3",
+     "mandarin": "韵母 ip"
+    },
+    {
+     "id": "l1-b-f28",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "洩",
+     "jyutping": "sit3",
+     "mandarin": "韵母 it"
+    },
+    {
+     "id": "l1-b-f29",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "識",
+     "jyutping": "sik1",
+     "mandarin": "韵母 ik"
+    },
+    {
+     "id": "l1-b-f30",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "疏",
+     "jyutping": "so1",
+     "mandarin": "韵母 o"
+    },
+    {
+     "id": "l1-b-f31",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "開",
+     "jyutping": "hoi1",
+     "mandarin": "韵母 oi"
+    },
+    {
+     "id": "l1-b-f32",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "蘇",
+     "jyutping": "sou1",
+     "mandarin": "韵母 ou"
+    },
+    {
+     "id": "l1-b-f33",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "看",
+     "jyutping": "hon3",
+     "mandarin": "韵母 on"
+    },
+    {
+     "id": "l1-b-f34",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "康",
+     "jyutping": "hong1",
+     "mandarin": "韵母 ong"
+    },
+    {
+     "id": "l1-b-f35",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "喝",
+     "jyutping": "hot3",
+     "mandarin": "韵母 ot"
+    },
+    {
+     "id": "l1-b-f36",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "索",
+     "jyutping": "sok3",
+     "mandarin": "韵母 ok"
+    },
+    {
+     "id": "l1-b-f37",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "夫",
+     "jyutping": "fu1",
+     "mandarin": "韵母 u"
+    },
+    {
+     "id": "l1-b-f38",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "灰",
+     "jyutping": "fui1",
+     "mandarin": "韵母 ui"
+    },
+    {
+     "id": "l1-b-f39",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "寬",
+     "jyutping": "fun1",
+     "mandarin": "韵母 un"
+    },
+    {
+     "id": "l1-b-f40",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "鬆",
+     "jyutping": "sung1",
+     "mandarin": "韵母 ung"
+    },
+    {
+     "id": "l1-b-f41",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "闊",
+     "jyutping": "fut3",
+     "mandarin": "韵母 ut"
+    },
+    {
+     "id": "l1-b-f42",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "叔",
+     "jyutping": "suk1",
+     "mandarin": "韵母 uk"
+    },
+    {
+     "id": "l1-b-f43",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "靴",
+     "jyutping": "hoe1",
+     "mandarin": "韵母 oe"
+    },
+    {
+     "id": "l1-b-f44",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "需",
+     "jyutping": "seoi1",
+     "mandarin": "韵母 eoi"
+    },
+    {
+     "id": "l1-b-f45",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "詢",
+     "jyutping": "seon1",
+     "mandarin": "韵母 eon"
+    },
+    {
+     "id": "l1-b-f46",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "商",
+     "jyutping": "soeng1",
+     "mandarin": "韵母 oeng"
+    },
+    {
+     "id": "l1-b-f47",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "摔",
+     "jyutping": "seot1",
+     "mandarin": "韵母 eot"
+    },
+    {
+     "id": "l1-b-f48",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "削",
+     "jyutping": "soek3",
+     "mandarin": "韵母 oek"
+    },
+    {
+     "id": "l1-b-f49",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "書",
+     "jyutping": "syu1",
+     "mandarin": "韵母 yu"
+    },
+    {
+     "id": "l1-b-f50",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "孫",
+     "jyutping": "syun1",
+     "mandarin": "韵母 yun"
+    },
+    {
+     "id": "l1-b-f51",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "雪",
+     "jyutping": "syut3",
+     "mandarin": "韵母 yut"
+    },
+    {
+     "id": "l1-b-f52",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "唔",
+     "jyutping": "m4",
+     "mandarin": "韵母 m"
+    },
+    {
+     "id": "l1-b-f53",
+     "type": "vocab",
+     "section": "韻母",
+     "cantonese": "五",
+     "jyutping": "ng5",
+     "mandarin": "韵母 ng"
+    },
+    {
+     "id": "l1-b-c01",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "八",
+     "jyutping": "baat3",
+     "mandarin": "八 · 粤语短音"
+    },
+    {
+     "id": "l1-b-c02",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "十",
+     "jyutping": "sap6",
+     "mandarin": "十 · 粤语短音"
+    },
+    {
+     "id": "l1-b-c03",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "食",
+     "jyutping": "sik6",
+     "mandarin": "吃 · 粤语短音"
+    },
+    {
+     "id": "l1-b-c04",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "物",
+     "jyutping": "mat6",
+     "mandarin": "物"
+    },
+    {
+     "id": "l1-b-c05",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "色",
+     "jyutping": "sik1",
+     "mandarin": "色"
+    },
+    {
+     "id": "l1-b-c06",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "汁",
+     "jyutping": "zap1",
+     "mandarin": "汁"
+    },
+    {
+     "id": "l1-b-c07",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "男",
+     "jyutping": "naam4",
+     "mandarin": "男 · 闭口韵"
+    },
+    {
+     "id": "l1-b-c08",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "業",
+     "jyutping": "jip6",
+     "mandarin": "业 · 闭口韵"
+    },
+    {
+     "id": "l1-b-c09",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "枕",
+     "jyutping": "zam2",
+     "mandarin": "枕 · 闭口韵"
+    },
+    {
+     "id": "l1-b-c10",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "感",
+     "jyutping": "gam2",
+     "mandarin": "感"
+    },
+    {
+     "id": "l1-b-c11",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "喊",
+     "jyutping": "haam3",
+     "mandarin": "喊"
+    },
+    {
+     "id": "l1-b-c12",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "科",
+     "jyutping": "fo1",
+     "mandarin": "科 · 普通话 k 常对应 f/h"
+    },
+    {
+     "id": "l1-b-c13",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "苦",
+     "jyutping": "fu2",
+     "mandarin": "苦"
+    },
+    {
+     "id": "l1-b-c14",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "課",
+     "jyutping": "fo3",
+     "mandarin": "课"
+    },
+    {
+     "id": "l1-b-c15",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "客",
+     "jyutping": "haak3",
+     "mandarin": "客"
+    },
+    {
+     "id": "l1-b-c16",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "空",
+     "jyutping": "hung1",
+     "mandarin": "空"
+    },
+    {
+     "id": "l1-b-c17",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "孔",
+     "jyutping": "hung2",
+     "mandarin": "孔"
+    },
+    {
+     "id": "l1-b-c18",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "康",
+     "jyutping": "hong1",
+     "mandarin": "康"
+    },
+    {
+     "id": "l1-b-c19",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "其",
+     "jyutping": "kei4",
+     "mandarin": "其 · 普通话 q 常对应 k/c"
+    },
+    {
+     "id": "l1-b-c20",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "勤",
+     "jyutping": "kan4",
+     "mandarin": "勤"
+    },
+    {
+     "id": "l1-b-c21",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "強",
+     "jyutping": "koeng4",
+     "mandarin": "强"
+    },
+    {
+     "id": "l1-b-c22",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "裙",
+     "jyutping": "kwan4",
+     "mandarin": "裙子"
+    },
+    {
+     "id": "l1-b-c23",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "七",
+     "jyutping": "cat1",
+     "mandarin": "七"
+    },
+    {
+     "id": "l1-b-c24",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "前",
+     "jyutping": "cin4",
+     "mandarin": "前"
+    },
+    {
+     "id": "l1-b-c25",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "青",
+     "jyutping": "cing1",
+     "mandarin": "青"
+    },
+    {
+     "id": "l1-b-c26",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "秋",
+     "jyutping": "cau1",
+     "mandarin": "秋"
+    },
+    {
+     "id": "l1-b-c27",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "然",
+     "jyutping": "jin4",
+     "mandarin": "然 · 普通话 r 常对应 j"
+    },
+    {
+     "id": "l1-b-c28",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "讓",
+     "jyutping": "joeng6",
+     "mandarin": "让"
+    },
+    {
+     "id": "l1-b-c29",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "熱",
+     "jyutping": "jit6",
+     "mandarin": "热"
+    },
+    {
+     "id": "l1-b-c30",
+     "type": "vocab",
+     "section": "發音對比",
+     "cantonese": "入",
+     "jyutping": "jap6",
+     "mandarin": "入"
+    },
+    {
+     "id": "l1-b-nn01",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "衫",
+     "jyutping": "saam1",
+     "mandarin": "衣服"
+    },
+    {
+     "id": "l1-b-nn02",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "褲",
+     "jyutping": "fu3",
+     "mandarin": "裤子"
+    },
+    {
+     "id": "l1-b-nn03",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "裙",
+     "jyutping": "kwan4",
+     "mandarin": "裙子"
+    },
+    {
+     "id": "l1-b-nn04",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "褸",
+     "jyutping": "lau1",
+     "mandarin": "外套"
+    },
+    {
+     "id": "l1-b-nn05",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "骨",
+     "jyutping": "gwat1",
+     "mandarin": "骨头"
+    },
+    {
+     "id": "l1-b-nn06",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "耳",
+     "jyutping": "ji5",
+     "mandarin": "耳朵"
+    },
+    {
+     "id": "l1-b-nn07",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "眼",
+     "jyutping": "ngaan5",
+     "mandarin": "眼睛"
+    },
+    {
+     "id": "l1-b-nn08",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "嘴",
+     "jyutping": "zeoi2",
+     "mandarin": "嘴巴"
+    },
+    {
+     "id": "l1-b-nn09",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "肚",
+     "jyutping": "tou5",
+     "mandarin": "肚子"
+    },
+    {
+     "id": "l1-b-nn10",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "橙",
+     "jyutping": "caang2",
+     "mandarin": "橘子"
+    },
+    {
+     "id": "l1-b-nn11",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "飯",
+     "jyutping": "faan6",
+     "mandarin": "米饭"
+    },
+    {
+     "id": "l1-b-nn12",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "糖",
+     "jyutping": "tong2",
+     "mandarin": "糖果"
+    },
+    {
+     "id": "l1-b-nn13",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "蟻",
+     "jyutping": "ngai5",
+     "mandarin": "蚂蚁"
+    },
+    {
+     "id": "l1-b-nn14",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "遮",
+     "jyutping": "ze1",
+     "mandarin": "雨伞"
+    },
+    {
+     "id": "l1-b-nn15",
+     "type": "vocab",
+     "section": "文法 · 名詞",
+     "cantonese": "袋",
+     "jyutping": "doi2",
+     "mandarin": "口袋"
+    },
+    {
+     "id": "l1-b-v01",
+     "type": "vocab",
+     "section": "文法 · 動詞",
+     "cantonese": "識",
+     "jyutping": "sik1",
+     "mandarin": "认识"
+    },
+    {
+     "id": "l1-b-v02",
+     "type": "vocab",
+     "section": "文法 · 動詞",
+     "cantonese": "慣",
+     "jyutping": "gwaan3",
+     "mandarin": "习惯"
+    },
+    {
+     "id": "l1-b-v03",
+     "type": "vocab",
+     "section": "文法 · 動詞",
+     "cantonese": "明",
+     "jyutping": "ming4",
+     "mandarin": "明白"
+    },
+    {
+     "id": "l1-b-w01",
+     "type": "phrase",
+     "section": "文法 · 語序",
+     "cantonese": "你食先",
+     "jyutping": "nei5 sik6 sin1",
+     "mandarin": "你先吃"
+    },
+    {
+     "id": "l1-b-w02",
+     "type": "phrase",
+     "section": "文法 · 語序",
+     "cantonese": "你走先",
+     "jyutping": "nei5 zau2 sin1",
+     "mandarin": "你先走"
+    },
+    {
+     "id": "l1-b-w03",
+     "type": "phrase",
+     "section": "文法 · 語序",
+     "cantonese": "食多啲",
+     "jyutping": "sik6 do1 di1",
+     "mandarin": "多吃一点"
+    },
+    {
+     "id": "l1-b-w04",
+     "type": "phrase",
+     "section": "文法 · 語序",
+     "cantonese": "講少兩句啦",
+     "jyutping": "gong2 siu2 loeng5 geoi3 laa1",
+     "mandarin": "少说两句吧"
+    }
+   ]
+  },
+  {
+   "id": "l1-daily",
+   "title": "日常用語",
+   "subtitle": "打招呼、道謝、寒暄",
+   "kind": "practice",
+   "recordings": [
+    "audio/l1/daily.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-d-01",
+     "type": "phrase",
+     "cantonese": "大家好！我係___。",
+     "jyutping": "daai6 gaa1 hou2! ngo5 hai6 ___",
+     "mandarin": "大家好！我是___。",
+     "clip": {
+      "startMs": 837,
+      "endMs": 2751,
+      "words": {
+       "t": "大家好我係",
+       "w": [
+        1340,
+        1607,
+        1607,
+        1873,
+        1873,
+        2140,
+        2140,
+        2540,
+        2540,
+        2751
+       ]
+      }
+     },
+     "fill": [
+      {
+       "kind": "name"
+      }
+     ]
+    },
+    {
+     "id": "l1-d-02",
+     "type": "phrase",
+     "cantonese": "早晨！",
+     "jyutping": "zou2 san4",
+     "mandarin": "早上好！",
+     "clip": {
+      "startMs": 3517,
+      "endMs": 4231,
+      "words": {
+       "t": "早晨",
+       "w": [
+        3517,
+        3900,
+        3900,
+        4231
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-03",
+     "type": "phrase",
+     "cantonese": "早唞！",
+     "jyutping": "zou2 tau2",
+     "mandarin": "晚安！"
+    },
+    {
+     "id": "l1-d-04",
+     "type": "phrase",
+     "cantonese": "多謝！",
+     "jyutping": "do1 ze6",
+     "mandarin": "谢谢！（对方送你东西）",
+     "clip": {
+      "startMs": 6770,
+      "endMs": 7560,
+      "words": {
+       "t": "多謝",
+       "w": [
+        6770,
+        7200,
+        7200,
+        7560
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-05",
+     "type": "phrase",
+     "cantonese": "唔該！",
+     "jyutping": "m4 goi1",
+     "mandarin": "谢谢！（对方帮你忙）"
+    },
+    {
+     "id": "l1-d-06",
+     "type": "phrase",
+     "cantonese": "唔該借借！",
+     "jyutping": "m4 goi1 ze3 ze3",
+     "mandarin": "请你让开。",
+     "clip": {
+      "startMs": 9990,
+      "endMs": 11340,
+      "words": {
+       "t": "唔該借借",
+       "w": [
+        10153,
+        10183,
+        10317,
+        10347,
+        10480,
+        10740,
+        10740,
+        11340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-07",
+     "type": "phrase",
+     "cantonese": "唔使喇，唔該！",
+     "jyutping": "m4 sai2 laa3, m4 goi1",
+     "mandarin": "我不要，谢谢。",
+     "clip": {
+      "startMs": 11830,
+      "endMs": 14070,
+      "words": {
+       "t": "唔使喇唔該",
+       "w": [
+        11830,
+        12040,
+        12040,
+        12300,
+        13010,
+        13040,
+        13720,
+        13945,
+        14008,
+        14038
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-08",
+     "type": "phrase",
+     "cantonese": "唔好意思！",
+     "jyutping": "m4 hou2 ji3 si1",
+     "mandarin": "不好意思。",
+     "clip": {
+      "startMs": 14070,
+      "endMs": 14690,
+      "words": {
+       "t": "唔好意思",
+       "w": [
+        14070,
+        14070,
+        14070,
+        14170,
+        14170,
+        14395,
+        14395,
+        14620
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-09",
+     "type": "phrase",
+     "cantonese": "對唔住！",
+     "jyutping": "deoi3 m4 zyu6",
+     "mandarin": "对不起。",
+     "clip": {
+      "startMs": 15588,
+      "endMs": 16460,
+      "words": {
+       "t": "對唔住",
+       "w": [
+        15640,
+        15907,
+        15907,
+        16173,
+        16173,
+        16440
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-10",
+     "type": "phrase",
+     "cantonese": "唔緊要",
+     "jyutping": "m4 gan2 jiu3",
+     "mandarin": "没关系"
+    },
+    {
+     "id": "l1-d-11",
+     "type": "phrase",
+     "cantonese": "冇問題",
+     "jyutping": "mou5 man6 tai4",
+     "mandarin": "没问题"
+    },
+    {
+     "id": "l1-d-12",
+     "type": "phrase",
+     "cantonese": "食咗飯未呀？",
+     "jyutping": "sik6 zo2 faan6 mei6 aa3",
+     "mandarin": "吃饭了没有？",
+     "clip": {
+      "startMs": 17380,
+      "endMs": 18589,
+      "words": {
+       "t": "食咗飯未呀",
+       "w": [
+        17380,
+        17720,
+        17720,
+        17920,
+        17920,
+        18040,
+        18040,
+        18580,
+        18584,
+        18589
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-13",
+     "type": "phrase",
+     "cantonese": "食咗喇，你呢？",
+     "jyutping": "sik6 zo2 laa3, nei5 ne1",
+     "mandarin": "我已经吃了，你呢？",
+     "clip": {
+      "startMs": 19222,
+      "endMs": 20929,
+      "words": {
+       "t": "食咗喇你呢",
+       "w": [
+        19360,
+        19540,
+        19540,
+        19780,
+        19780,
+        20000,
+        20000,
+        20220,
+        20220,
+        20929
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-14",
+     "type": "phrase",
+     "cantonese": "你識唔識講廣東話？",
+     "jyutping": "nei5 sik1 m4 sik1 gong2 gwong2 dung1 waa2",
+     "mandarin": "你会说广东话吗？",
+     "clip": {
+      "startMs": 21292,
+      "endMs": 23050,
+      "words": {
+       "t": "你識唔識講廣東話",
+       "w": [
+        21440,
+        21620,
+        21620,
+        21940,
+        21940,
+        21950,
+        21950,
+        21960,
+        21960,
+        22240,
+        22240,
+        22580,
+        22580,
+        22800,
+        22800,
+        23050
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-15",
+     "type": "phrase",
+     "cantonese": "我識講少少廣東話。",
+     "jyutping": "ngo5 sik1 gong2 siu2 siu2 gwong2 dung1 waa2",
+     "mandarin": "我会说一点广东话。",
+     "clip": {
+      "startMs": 23451,
+      "endMs": 26011,
+      "words": {
+       "t": "我識講少少廣東話",
+       "w": [
+        23451,
+        23940,
+        23940,
+        24080,
+        24080,
+        24360,
+        24360,
+        24530,
+        24530,
+        24700,
+        24700,
+        25080,
+        25080,
+        25360,
+        25360,
+        25860
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-16",
+     "type": "phrase",
+     "cantonese": "你近排忙唔忙呀？",
+     "jyutping": "nei5 gan6 paai2 mong4 m4 mong4 aa3",
+     "mandarin": "近来忙吗？",
+     "clip": {
+      "startMs": 26470,
+      "endMs": 28111,
+      "words": {
+       "t": "你近排忙唔忙呀",
+       "w": [
+        26470,
+        26740,
+        26740,
+        26900,
+        27030,
+        27060,
+        27160,
+        27560,
+        27560,
+        27590,
+        27560,
+        28020,
+        28020,
+        28111
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-17",
+     "type": "phrase",
+     "cantonese": "搵日一齊食飯吖！",
+     "jyutping": "wan2 jat6 jat1 cai4 sik6 faan6 aa1",
+     "mandarin": "找天一起吃饭吧！",
+     "clip": {
+      "startMs": 29010,
+      "endMs": 31720,
+      "words": {
+       "t": "搵日一齊食飯吖",
+       "w": [
+        29010,
+        29300,
+        29390,
+        29420,
+        29480,
+        29610,
+        29610,
+        29740,
+        29740,
+        30000,
+        30000,
+        31140,
+        31140,
+        31380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-d-18",
+     "type": "phrase",
+     "cantonese": "得閒飲茶吖！",
+     "jyutping": "dak1 haan4 jam2 caa4 aa1",
+     "mandarin": "找天去喝茶吧！",
+     "clip": {
+      "startMs": 31720,
+      "endMs": 33031,
+      "words": {
+       "t": "得閒飲茶吖",
+       "w": [
+        31720,
+        31720,
+        31720,
+        31720,
+        31720,
+        31820,
+        31820,
+        32060,
+        32060,
+        32500
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l1-dialogue-1",
+   "title": "對話 1 · 初次認識",
+   "subtitle": "自我介紹、讀咩科、內地生",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l1/dialogue-1.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-dg1-01",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "Hello！我係陳小明，可以叫我 Peter。",
+     "jyutping": "hello! ngo5 hai6 can4 siu2 ming4, ho2 ji5 giu3 ngo5 Peter.",
+     "mandarin": "你好！我是陈小明，可以叫我 Peter。",
+     "clip": {
+      "startMs": 699,
+      "endMs": 4170,
+      "words": {
+       "t": "hello我係陳小明可以叫我peter",
+       "w": [
+        699,
+        699,
+        699,
+        699,
+        699,
+        699,
+        699,
+        928,
+        928,
+        1160,
+        1160,
+        1510,
+        1510,
+        1860,
+        1860,
+        2160,
+        2160,
+        2440,
+        2440,
+        2800,
+        2800,
+        3060,
+        3060,
+        3320,
+        3320,
+        3520,
+        3520,
+        3760,
+        3760,
+        3844,
+        3844,
+        3928,
+        3928,
+        4012,
+        4012,
+        4096,
+        4096,
+        4170
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg1-02",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你叫咩名呀？／點稱呼你呢？",
+     "jyutping": "nei5 giu3 me1 meng2 aa3? / dim2 cing1 fu1 nei5 ne1?",
+     "mandarin": "你叫什么名字？",
+     "clip": {
+      "startMs": 4180,
+      "endMs": 8565,
+      "words": {
+       "t": "你叫咩名呀點稱呼你呢",
+       "w": [
+        4180,
+        4800,
+        4800,
+        4920,
+        4920,
+        5120,
+        5120,
+        5540,
+        5820,
+        5850,
+        6100,
+        6300,
+        6300,
+        6640,
+        6640,
+        6720,
+        6720,
+        7820,
+        7820,
+        8300
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg1-03",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "Hello Peter！我叫 Mary 呀！你讀邊科㗎？",
+     "jyutping": "hello Peter, ngo5 giu3 Mary aa3! nei5 duk6 bin1 fo1 gaa3?",
+     "mandarin": "Peter 你好，我是 Mary，你是哪一科的学生？",
+     "clip": {
+      "startMs": 8565,
+      "endMs": 11700,
+      "words": {
+       "t": "hellopeter我叫mary呀你讀邊科㗎",
+       "w": [
+        8565,
+        8571,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8565,
+        8628,
+        8628,
+        8732,
+        8732,
+        8836,
+        8836,
+        8940,
+        8940,
+        9400,
+        9400,
+        9520,
+        9520,
+        9650,
+        9650,
+        9780,
+        9780,
+        9910,
+        9910,
+        10040,
+        10040,
+        10070,
+        10040,
+        10840,
+        10840,
+        10960,
+        10960,
+        11400,
+        11400,
+        11460,
+        11580,
+        11610
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg1-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我讀 BBA，今年 Year 1。你呢？",
+     "jyutping": "ngo5 duk6 BBA. gam1 nin4 Year 1. nei5 ne1?",
+     "mandarin": "我是 BBA 学生，今年 Year 1。你呢？",
+     "clip": {
+      "startMs": 12649,
+      "endMs": 15983,
+      "words": {
+       "t": "我讀bba今年year1你呢",
+       "w": [
+        12649,
+        12840,
+        12840,
+        13000,
+        13000,
+        13320,
+        13320,
+        13520,
+        13520,
+        13720,
+        14260,
+        14280,
+        14280,
+        14300,
+        14300,
+        14420,
+        14420,
+        14540,
+        14540,
+        14630,
+        14630,
+        14720,
+        14720,
+        15080,
+        15080,
+        15440,
+        15440,
+        15983
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg1-05",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我讀 Econ，今年 Year 3。係呢，你係唔係內地生嚟㗎？",
+     "jyutping": "ngo5 duk6 Econ, gam1 nin4 Year 3. hai6 ne1, nei5 hai6 m4 hai6 noi6 dei6 sang1 lai4 gaa3?",
+     "mandarin": "我是 Econ 学生，今年 Year 3。你是不是从内地来的？",
+     "clip": {
+      "startMs": 16490,
+      "endMs": 21490,
+      "words": {
+       "t": "我讀econ今年year3係呢你係唔係內地生嚟㗎",
+       "w": [
+        16490,
+        16720,
+        16720,
+        16860,
+        16860,
+        17220,
+        17220,
+        17320,
+        17320,
+        17420,
+        17420,
+        17520,
+        17900,
+        18010,
+        18010,
+        18120,
+        18120,
+        18220,
+        18220,
+        18320,
+        18320,
+        18390,
+        18390,
+        18460,
+        18460,
+        19100,
+        19340,
+        19370,
+        19580,
+        19610,
+        19820,
+        20060,
+        20060,
+        20180,
+        20240,
+        20270,
+        20300,
+        20420,
+        20420,
+        20700,
+        20700,
+        20820,
+        20820,
+        21080,
+        21217,
+        21247,
+        21353,
+        21383
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg1-06",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "係呀，我係北京人，嚟咗香港冇幾耐咋！",
+     "jyutping": "hai6 aa3, ngo5 hai6 bak1 ging1 jan4, lei4 zo2 hoeng1 gong2 mou5 gei2 noi6 zaa3!",
+     "mandarin": "是的，我是北京人。刚来香港。",
+     "clip": {
+      "startMs": 22150,
+      "endMs": 25600,
+      "words": {
+       "t": "係呀我係北京人嚟咗香港冇幾耐咋",
+       "w": [
+        22150,
+        22230,
+        22405,
+        22435,
+        22580,
+        22770,
+        22770,
+        22960,
+        22960,
+        23280,
+        23280,
+        23400,
+        23400,
+        23980,
+        23980,
+        24130,
+        24130,
+        24280,
+        24280,
+        24500,
+        24500,
+        24720,
+        24896,
+        24926,
+        25072,
+        25102,
+        25248,
+        25278,
+        25424,
+        25454
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg1-07",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我係福建人嚟㗎。你啲廣東話講得好好喎！",
+     "jyutping": "ngo5 hai6 fuk1 gin3 jan4 lai4 gaa3. nei5 di1 gwong2 dung1 waa2 gong2 dak1 hou2 hou2 wo3!",
+     "mandarin": "我是福建人。你的广东话说得很好呢！",
+     "clip": {
+      "startMs": 26290,
+      "endMs": 30011,
+      "words": {
+       "t": "我係福建人嚟㗎你啲廣東話講得好好喎",
+       "w": [
+        26290,
+        26300,
+        26300,
+        26720,
+        26720,
+        27020,
+        27020,
+        27120,
+        27120,
+        27480,
+        27480,
+        27510,
+        27480,
+        27510,
+        27480,
+        27900,
+        28110,
+        28140,
+        28320,
+        28640,
+        28640,
+        28800,
+        28800,
+        28960,
+        29070,
+        29100,
+        29180,
+        29260,
+        29410,
+        29560,
+        29710,
+        29740,
+        29861,
+        29891
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l1-contact",
+   "title": "交換聯絡方式與數字",
+   "subtitle": "電話、微信、IG、冧把",
+   "kind": "practice",
+   "recordings": [
+    "audio/l1/contact.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-ct-01",
+     "type": "phrase",
+     "section": "聯絡方式",
+     "cantonese": "你電話幾多號呀？",
+     "jyutping": "nei5 din6 waa2 gei2 do1 hou6 aa3?",
+     "mandarin": "你电话号码是什么？",
+     "clip": {
+      "startMs": 15878,
+      "endMs": 17320,
+      "words": {
+       "t": "你電話幾多號呀",
+       "w": [
+        15878,
+        16100,
+        16100,
+        16340,
+        16340,
+        16420,
+        16420,
+        16620,
+        16620,
+        16740,
+        16740,
+        16940,
+        16940,
+        17280
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-02",
+     "type": "phrase",
+     "section": "聯絡方式",
+     "cantonese": "我電話（號碼）係___。",
+     "jyutping": "ngo5 din6 waa2 (hou6 maa5) hai6 ___",
+     "mandarin": "我电话号码是___。",
+     "clip": {
+      "startMs": 17810,
+      "endMs": 20720,
+      "words": {
+       "t": "我電話號碼係",
+       "w": [
+        18100,
+        18180,
+        18180,
+        18440,
+        18440,
+        18560,
+        18560,
+        18780,
+        18780,
+        18900,
+        18900,
+        19420
+       ]
+      }
+     },
+     "fill": [
+      {
+       "kind": "phone"
+      }
+     ]
+    },
+    {
+     "id": "l1-ct-03",
+     "type": "phrase",
+     "section": "聯絡方式",
+     "cantonese": "我可唔可以加你微信呀？",
+     "jyutping": "ngo5 ho2 m4 ho2 ji5 gaa1 nei5 mei4 seon3 aa3?",
+     "mandarin": "我可以加你微信吗？",
+     "clip": {
+      "startMs": 22620,
+      "endMs": 24762,
+      "words": {
+       "t": "我可唔可以加你微信呀",
+       "w": [
+        22620,
+        22960,
+        22960,
+        23120,
+        23120,
+        23180,
+        23180,
+        23350,
+        23350,
+        23520,
+        23520,
+        23760,
+        23760,
+        23980,
+        23980,
+        24200,
+        24200,
+        24300,
+        24300,
+        24762
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-04",
+     "type": "phrase",
+     "section": "聯絡方式",
+     "cantonese": "你 IG 係咩呀？",
+     "jyutping": "nei5 IG hai6 me1 aa3?",
+     "mandarin": "你 Instagram 账号是什么？",
+     "clip": {
+      "startMs": 25620,
+      "endMs": 26950,
+      "words": {
+       "t": "你ig係咩呀",
+       "w": [
+        25740,
+        25920,
+        25920,
+        26090,
+        26090,
+        26260,
+        26260,
+        26520,
+        26520,
+        26680,
+        26680,
+        26950
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-05",
+     "type": "vocab",
+     "section": "聯絡方式",
+     "cantonese": "冧把",
+     "jyutping": "lam1 baa2",
+     "mandarin": "号码 Number"
+    },
+    {
+     "id": "l1-ct-n0",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "零",
+     "jyutping": "ling4",
+     "mandarin": "0",
+     "clip": {
+      "startMs": 14370,
+      "endMs": 14879,
+      "words": {
+       "t": "零",
+       "w": [
+        14370,
+        14879
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n1",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "一",
+     "jyutping": "jat1",
+     "mandarin": "1",
+     "clip": {
+      "startMs": 700,
+      "endMs": 3010,
+      "words": {
+       "t": "一",
+       "w": [
+        1820,
+        3010
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n2",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "二",
+     "jyutping": "ji6",
+     "mandarin": "2",
+     "clip": {
+      "startMs": 3999,
+      "endMs": 4610,
+      "words": {
+       "t": "二",
+       "w": [
+        3999,
+        4600
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n3",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "三",
+     "jyutping": "saam1",
+     "mandarin": "3",
+     "clip": {
+      "startMs": 5280,
+      "endMs": 6010,
+      "words": {
+       "t": "三",
+       "w": [
+        5280,
+        5980
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n4",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "四",
+     "jyutping": "sei3",
+     "mandarin": "4",
+     "clip": {
+      "startMs": 6560,
+      "endMs": 7401,
+      "words": {
+       "t": "四",
+       "w": [
+        6560,
+        7300
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n5",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "五",
+     "jyutping": "ng5",
+     "mandarin": "5",
+     "clip": {
+      "startMs": 8220,
+      "endMs": 8810,
+      "words": {
+       "t": "五",
+       "w": [
+        8220,
+        8780
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n6",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "六",
+     "jyutping": "luk6",
+     "mandarin": "6",
+     "clip": {
+      "startMs": 9560,
+      "endMs": 9940,
+      "words": {
+       "t": "六",
+       "w": [
+        9560,
+        9940
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n7",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "七",
+     "jyutping": "cat1",
+     "mandarin": "7",
+     "clip": {
+      "startMs": 10750,
+      "endMs": 11139,
+      "words": {
+       "t": "七",
+       "w": [
+        10750,
+        11139
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n8",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "八",
+     "jyutping": "baat3",
+     "mandarin": "8",
+     "clip": {
+      "startMs": 12120,
+      "endMs": 12490,
+      "words": {
+       "t": "八",
+       "w": [
+        12120,
+        12490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-ct-n9",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "九",
+     "jyutping": "gau2",
+     "mandarin": "9",
+     "clip": {
+      "startMs": 13350,
+      "endMs": 13947,
+      "words": {
+       "t": "九",
+       "w": [
+        13350,
+        13920
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l1-campus",
+   "title": "書院／居住／交通",
+   "subtitle": "中大書院、住邊、點返學",
+   "kind": "practice",
+   "recordings": [
+    "audio/l1/campus.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-cp-u01",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "香港中文大學（中大）",
+     "jyutping": "hoeng1 gong2 zung1 man4 daai6 hok6 (zung1 daai6)",
+     "mandarin": "香港中文大学",
+     "clip": {
+      "startMs": 33552,
+      "endMs": 36860,
+      "words": {
+       "t": "香港中文大學中大",
+       "w": [
+        33720,
+        33930,
+        33930,
+        34140,
+        34140,
+        34400,
+        34400,
+        34640,
+        34640,
+        35040,
+        35040,
+        35820,
+        35820,
+        36360,
+        36360,
+        36860
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u02",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "崇基學院",
+     "jyutping": "sung4 gei1 hok6 jyun2",
+     "mandarin": "崇基学院",
+     "clip": {
+      "startMs": 37440,
+      "endMs": 39040,
+      "words": {
+       "t": "崇基學院",
+       "w": [
+        37440,
+        38000,
+        38000,
+        38180,
+        38180,
+        38580,
+        38580,
+        39040
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u03",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "新亞書院",
+     "jyutping": "san1 aa3 syu1 jyun2",
+     "mandarin": "新亚书院",
+     "clip": {
+      "startMs": 39420,
+      "endMs": 41031,
+      "words": {
+       "t": "新亞書院",
+       "w": [
+        39420,
+        40000,
+        40000,
+        40180,
+        40180,
+        40540,
+        40540,
+        41031
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u04",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "聯合書院",
+     "jyutping": "lyun4 hap6 syu1 jyun2",
+     "mandarin": "联合书院",
+     "clip": {
+      "startMs": 41518,
+      "endMs": 44840,
+      "words": {
+       "t": "聯合書院",
+       "w": [
+        41518,
+        42020,
+        42020,
+        42220,
+        42220,
+        42600,
+        42600,
+        43540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u05",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "逸夫書院",
+     "jyutping": "jat6 fu1 syu1 jyun2",
+     "mandarin": "逸夫书院"
+    },
+    {
+     "id": "l1-cp-u06",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "晨興書院",
+     "jyutping": "san4 hing1 syu1 jyun2",
+     "mandarin": "晨兴书院",
+     "clip": {
+      "startMs": 45580,
+      "endMs": 47250,
+      "words": {
+       "t": "晨興書院",
+       "w": [
+        45830,
+        45860,
+        46080,
+        46320,
+        46320,
+        46720,
+        46720,
+        47250
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u07",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "善衡書院",
+     "jyutping": "sin6 hang4 syu1 jyun2",
+     "mandarin": "善衡书院",
+     "clip": {
+      "startMs": 47640,
+      "endMs": 49180,
+      "words": {
+       "t": "善衡書院",
+       "w": [
+        47640,
+        48260,
+        48340,
+        48370,
+        48420,
+        48820,
+        48820,
+        49180
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u08",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "敬文書院",
+     "jyutping": "ging3 man4 syu1 jyun2",
+     "mandarin": "敬文书院",
+     "clip": {
+      "startMs": 49740,
+      "endMs": 53040,
+      "words": {
+       "t": "敬文書院",
+       "w": [
+        49740,
+        50220,
+        50220,
+        50380,
+        50380,
+        50820,
+        50820,
+        51740
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-u09",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "伍宜孫書院",
+     "jyutping": "ng5 ji4 syun1 syu1 jyun2",
+     "mandarin": "伍宜孙书院"
+    },
+    {
+     "id": "l1-cp-u10",
+     "type": "vocab",
+     "section": "大學書院",
+     "cantonese": "和聲書院",
+     "jyutping": "wo4 sing1 syu1 jyun2",
+     "mandarin": "和声书院",
+     "clip": {
+      "startMs": 53768,
+      "endMs": 55199,
+      "words": {
+       "t": "和聲書院",
+       "w": [
+        53768,
+        54220,
+        54220,
+        54520,
+        54520,
+        54840,
+        54840,
+        55199
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r00",
+     "type": "phrase",
+     "section": "居住",
+     "cantonese": "我住喺……",
+     "jyutping": "ngo5 zyu6 hai2",
+     "mandarin": "我住在……",
+     "clip": {
+      "startMs": 2200,
+      "endMs": 3810,
+      "words": {
+       "t": "我住喺",
+       "w": [
+        2880,
+        2980,
+        2980,
+        3260,
+        3260,
+        3810
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r01",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "大圍",
+     "jyutping": "daai6 wai4",
+     "mandarin": "大围",
+     "clip": {
+      "startMs": 4589,
+      "endMs": 5448,
+      "words": {
+       "t": "大圍",
+       "w": [
+        4660,
+        5080,
+        5080,
+        5448
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r02",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "沙田",
+     "jyutping": "saa1 tin4",
+     "mandarin": "沙田",
+     "clip": {
+      "startMs": 6089,
+      "endMs": 8155,
+      "words": {
+       "t": "沙田",
+       "w": [
+        6089,
+        6680,
+        6680,
+        7640
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r03",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "火炭",
+     "jyutping": "fo2 taan3",
+     "mandarin": "火炭",
+     "clip": {
+      "startMs": 8155,
+      "endMs": 8871,
+      "words": {
+       "t": "火炭",
+       "w": [
+        8155,
+        8320,
+        8320,
+        8871
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r04",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "大埔",
+     "jyutping": "daai6 bou3",
+     "mandarin": "大埔",
+     "clip": {
+      "startMs": 9461,
+      "endMs": 10449,
+      "words": {
+       "t": "大埔",
+       "w": [
+        9461,
+        10080,
+        10080,
+        10449
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r05",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "太和",
+     "jyutping": "taai3 wo4",
+     "mandarin": "太和",
+     "clip": {
+      "startMs": 11281,
+      "endMs": 12728,
+      "words": {
+       "t": "太和",
+       "w": [
+        11590,
+        11620,
+        11900,
+        12700
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r06",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "粉嶺",
+     "jyutping": "fan2 leng5",
+     "mandarin": "粉岭",
+     "clip": {
+      "startMs": 12879,
+      "endMs": 13860,
+      "words": {
+       "t": "粉嶺",
+       "w": [
+        12879,
+        13440,
+        13440,
+        13860
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r07",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "上水",
+     "jyutping": "soeng6 seoi2",
+     "mandarin": "上水",
+     "clip": {
+      "startMs": 14351,
+      "endMs": 15501,
+      "words": {
+       "t": "上水",
+       "w": [
+        14351,
+        15080,
+        15080,
+        15501
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-r08",
+     "type": "vocab",
+     "section": "居住",
+     "cantonese": "馬鞍山",
+     "jyutping": "maa5 on1 saan1",
+     "mandarin": "马鞍山",
+     "clip": {
+      "startMs": 16003,
+      "endMs": 17137,
+      "words": {
+       "t": "馬鞍山",
+       "w": [
+        16003,
+        16420,
+        16420,
+        16700,
+        16700,
+        17137
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-t00",
+     "type": "phrase",
+     "section": "交通",
+     "cantonese": "我搭……",
+     "jyutping": "ngo5 daap3",
+     "mandarin": "我坐……",
+     "clip": {
+      "startMs": 20570,
+      "endMs": 21780,
+      "words": {
+       "t": "我搭",
+       "w": [
+        20640,
+        20900,
+        20900,
+        21020
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-t01",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "巴士",
+     "jyutping": "baa1 si2",
+     "mandarin": "公交车",
+     "clip": {
+      "startMs": 20570,
+      "endMs": 21780,
+      "words": {
+       "t": "巴士",
+       "w": [
+        21020,
+        21460,
+        21460,
+        21780
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-t02",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "校巴",
+     "jyutping": "haau6 baa1",
+     "mandarin": "校车",
+     "clip": {
+      "startMs": 22540,
+      "endMs": 23490,
+      "words": {
+       "t": "校巴",
+       "w": [
+        22540,
+        23120,
+        23120,
+        23490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-t03",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "港鐵（地鐵）（火車）",
+     "jyutping": "gong2 tit3 (dei6 tit3) (fo2 ce1)",
+     "mandarin": "港铁（地铁）（火车）",
+     "clip": {
+      "startMs": 24279,
+      "endMs": 28470,
+      "words": {
+       "t": "港鐵地鐵火車",
+       "w": [
+        24279,
+        24820,
+        24820,
+        25720,
+        25720,
+        26260,
+        26260,
+        27380,
+        27380,
+        28100,
+        28100,
+        28470
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-t04",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "小巴",
+     "jyutping": "siu2 baa1",
+     "mandarin": "小巴",
+     "clip": {
+      "startMs": 29110,
+      "endMs": 30130,
+      "words": {
+       "t": "小巴",
+       "w": [
+        29260,
+        29740,
+        29740,
+        30130
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-q01",
+     "type": "phrase",
+     "section": "提問",
+     "cantonese": "你住邊㗎？",
+     "jyutping": "nei5 zyu6 bin1 gaa3?",
+     "mandarin": "你住哪里？",
+     "clip": {
+      "startMs": 910,
+      "endMs": 2021,
+      "words": {
+       "t": "你住邊㗎",
+       "w": [
+        910,
+        1140,
+        1140,
+        1320,
+        1320,
+        1700,
+        1860,
+        1890
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-q02",
+     "type": "phrase",
+     "section": "提問",
+     "cantonese": "你平時點返學㗎？",
+     "jyutping": "nei5 ping4 si4 dim2 faan1 hok6 gaa3?",
+     "mandarin": "你平时怎么上学？",
+     "clip": {
+      "startMs": 18181,
+      "endMs": 19779,
+      "words": {
+       "t": "你平時點返學㗎",
+       "w": [
+        18181,
+        18420,
+        18420,
+        18600,
+        18600,
+        18760,
+        18913,
+        18943,
+        19067,
+        19097,
+        19220,
+        19420,
+        19600,
+        19630
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-cp-q03",
+     "type": "phrase",
+     "section": "提問",
+     "cantonese": "去邊度上堂呀？",
+     "jyutping": "heoi3 bin1 dou6 soeng5 tong4 aa3?",
+     "mandarin": "去哪里上课呀？",
+     "clip": {
+      "startMs": 31168,
+      "endMs": 32638,
+      "words": {
+       "t": "去邊度上堂呀",
+       "w": [
+        31168,
+        31480,
+        31480,
+        31700,
+        31740,
+        31770,
+        31780,
+        32020,
+        32226,
+        32256,
+        32432,
+        32462
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l1-datetime",
+   "title": "日期時間",
+   "subtitle": "幾多號、幾點、幾時",
+   "kind": "practice",
+   "recordings": [
+    "audio/l1/datetime.m4a",
+    "audio/l1/when.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-dt-01",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "今日幾多號呀？",
+     "jyutping": "gam1 jat6 gei2 do1 hou6 aa3?",
+     "mandarin": "今天是几号？",
+     "clip": {
+      "rec": 0,
+      "startMs": 21000,
+      "endMs": 22579,
+      "words": {
+       "t": "今日幾多號呀",
+       "w": [
+        21000,
+        21095,
+        21095,
+        21320,
+        21320,
+        21540,
+        21540,
+        21720,
+        21720,
+        22000,
+        22000,
+        22579
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-02",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "今日係__月__號，星期__。",
+     "jyutping": "gam1 jat6 hai6 __ jyut6 __ hou6, sing1 kei4 __.",
+     "mandarin": "今天是__月__日，星期__。",
+     "clip": {
+      "rec": 0,
+      "startMs": 23319,
+      "endMs": 25210,
+      "words": {
+       "t": "今日係月號星期",
+       "w": [
+        23319,
+        23319,
+        23319,
+        23319,
+        23319,
+        23319,
+        23540,
+        23680,
+        24040,
+        24420,
+        24420,
+        24640,
+        24640,
+        24880
+       ]
+      }
+     },
+     "fill": [
+      {
+       "kind": "month"
+      },
+      {
+       "kind": "day"
+      },
+      {
+       "kind": "weekday"
+      }
+     ]
+    },
+    {
+     "id": "l1-dt-03",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "而家幾點呀？",
+     "jyutping": "ji4 gaa1 gei2 dim2 aa3?",
+     "mandarin": "现在是什么时间？",
+     "clip": {
+      "rec": 0,
+      "startMs": 25700,
+      "endMs": 27009,
+      "words": {
+       "t": "而家幾點呀",
+       "w": [
+        25700,
+        26040,
+        26040,
+        26140,
+        26140,
+        26320,
+        26320,
+        26520,
+        26520,
+        27009
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-04",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "要幾耐呀？",
+     "jyutping": "jiu3 gei2 noi6 aa3?",
+     "mandarin": "要多少时间？",
+     "clip": {
+      "rec": 0,
+      "startMs": 27340,
+      "endMs": 28319,
+      "words": {
+       "t": "要幾耐呀",
+       "w": [
+        27520,
+        27620,
+        27620,
+        27880,
+        27880,
+        28020,
+        28020,
+        28319
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-05",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "一個鐘",
+     "jyutping": "jat1 go3 zung1",
+     "mandarin": "1 小时",
+     "clip": {
+      "rec": 0,
+      "startMs": 28890,
+      "endMs": 30704,
+      "words": {
+       "t": "一個鐘",
+       "w": [
+        28890,
+        29300,
+        30700,
+        30704,
+        30704,
+        30704
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-06",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "三個字",
+     "jyutping": "saam1 go3 zi6",
+     "mandarin": "15 分钟",
+     "clip": {
+      "rec": 0,
+      "startMs": 30704,
+      "endMs": 31229,
+      "words": {
+       "t": "三個字",
+       "w": [
+        30704,
+        30704,
+        30704,
+        30980,
+        30980,
+        31229
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-07",
+     "type": "phrase",
+     "section": "問日期時間",
+     "cantonese": "一個鐘（零）三個字",
+     "jyutping": "jat1 go3 zung1 (ling4) saam1 go3 zi6",
+     "mandarin": "1 小时 15 分钟",
+     "clip": {
+      "rec": 0,
+      "startMs": 31840,
+      "endMs": 33490,
+      "words": {
+       "t": "一個鐘零三個字",
+       "w": [
+        31840,
+        32220,
+        32307,
+        32337,
+        32393,
+        32423,
+        32480,
+        32760,
+        32760,
+        33060,
+        33060,
+        33260,
+        33260,
+        33490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n01",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "一",
+     "jyutping": "jat1",
+     "mandarin": "1",
+     "clip": {
+      "rec": 0,
+      "startMs": 3030,
+      "endMs": 3770,
+      "words": {
+       "t": "一",
+       "w": [
+        3030,
+        3480
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n02",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "二",
+     "jyutping": "ji6",
+     "mandarin": "2",
+     "clip": {
+      "rec": 0,
+      "startMs": 4429,
+      "endMs": 5010,
+      "words": {
+       "t": "二",
+       "w": [
+        4429,
+        4980
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n03",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "三",
+     "jyutping": "saam1",
+     "mandarin": "3",
+     "clip": {
+      "rec": 0,
+      "startMs": 5610,
+      "endMs": 6431,
+      "words": {
+       "t": "三",
+       "w": [
+        5610,
+        6420
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n04",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "四",
+     "jyutping": "sei3",
+     "mandarin": "4",
+     "clip": {
+      "rec": 0,
+      "startMs": 6989,
+      "endMs": 7800,
+      "words": {
+       "t": "四",
+       "w": [
+        7000,
+        7680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n05",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "五",
+     "jyutping": "ng5",
+     "mandarin": "5",
+     "clip": {
+      "rec": 0,
+      "startMs": 8490,
+      "endMs": 9101,
+      "words": {
+       "t": "五",
+       "w": [
+        8490,
+        9100
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n06",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "六",
+     "jyutping": "luk6",
+     "mandarin": "6",
+     "clip": {
+      "rec": 0,
+      "startMs": 9748,
+      "endMs": 10260,
+      "words": {
+       "t": "六",
+       "w": [
+        9748,
+        10240
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n07",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "七",
+     "jyutping": "cat1",
+     "mandarin": "7",
+     "clip": {
+      "rec": 0,
+      "startMs": 11011,
+      "endMs": 11720,
+      "words": {
+       "t": "七",
+       "w": [
+        11011,
+        11680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n08",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "八",
+     "jyutping": "baat3",
+     "mandarin": "8",
+     "clip": {
+      "rec": 0,
+      "startMs": 12300,
+      "endMs": 12689,
+      "words": {
+       "t": "八",
+       "w": [
+        12300,
+        12689
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n09",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "九",
+     "jyutping": "gau2",
+     "mandarin": "9",
+     "clip": {
+      "rec": 0,
+      "startMs": 13500,
+      "endMs": 14070,
+      "words": {
+       "t": "九",
+       "w": [
+        13500,
+        14020
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-n10",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "十",
+     "jyutping": "sap6",
+     "mandarin": "10"
+    },
+    {
+     "id": "l1-dt-n20",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "二十／廿",
+     "jyutping": "ji6 sap6 / jaa6",
+     "mandarin": "20"
+    },
+    {
+     "id": "l1-dt-n30",
+     "type": "vocab",
+     "section": "數字",
+     "cantonese": "三十／卅",
+     "jyutping": "saam1 sap6 / saa1 aa6",
+     "mandarin": "30",
+     "note": "廿、卅是口语合音。"
+    },
+    {
+     "id": "l1-dt-r01",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "而家",
+     "jyutping": "ji4 gaa1",
+     "mandarin": "现在"
+    },
+    {
+     "id": "l1-dt-r02",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "頭先／啱啱",
+     "jyutping": "tau4 sin1 / ngaam1 ngaam1",
+     "mandarin": "刚才"
+    },
+    {
+     "id": "l1-dt-r03",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "陣間",
+     "jyutping": "zan6 gaan1",
+     "mandarin": "待会儿",
+     "clip": {
+      "rec": 0,
+      "startMs": 1785,
+      "endMs": 2390,
+      "words": {
+       "t": "陣間",
+       "w": [
+        2058,
+        2088,
+        2330,
+        2390
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r04",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "朝早",
+     "jyutping": "ziu1 zou2",
+     "mandarin": "早上",
+     "clip": {
+      "rec": 1,
+      "startMs": 8129,
+      "endMs": 8950,
+      "words": {
+       "t": "朝早",
+       "w": [
+        8294,
+        8324,
+        8460,
+        8680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r05",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "晏晝",
+     "jyutping": "aan3 zau3",
+     "mandarin": "下午"
+    },
+    {
+     "id": "l1-dt-r06",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "夜晚",
+     "jyutping": "je6 maan5",
+     "mandarin": "晚上",
+     "clip": {
+      "rec": 1,
+      "startMs": 11129,
+      "endMs": 11949,
+      "words": {
+       "t": "夜晚",
+       "w": [
+        11314,
+        11344,
+        11500,
+        11700
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r07",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "以前",
+     "jyutping": "ji5 cin4",
+     "mandarin": "以前",
+     "clip": {
+      "rec": 1,
+      "startMs": 12858,
+      "endMs": 13660,
+      "words": {
+       "t": "以前",
+       "w": [
+        13160,
+        13350,
+        13350,
+        13540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r08",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "以後／將來／第日",
+     "jyutping": "ji5 hau6 / zoeng1 loi4 / dai6 jat6",
+     "mandarin": "以后",
+     "clip": {
+      "rec": 1,
+      "startMs": 14260,
+      "endMs": 17600,
+      "words": {
+       "t": "以後將來第日",
+       "w": [
+        14540,
+        14700,
+        14700,
+        15560,
+        15800,
+        16060,
+        16060,
+        16900,
+        17320,
+        17410,
+        17505,
+        17535
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r09",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "前日",
+     "jyutping": "cin4 jat6",
+     "mandarin": "前天"
+    },
+    {
+     "id": "l1-dt-r10",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "尋日",
+     "jyutping": "cam4 jat6",
+     "mandarin": "昨天",
+     "note": "讲义作「琴日」。"
+    },
+    {
+     "id": "l1-dt-r11",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "今日",
+     "jyutping": "gam1 jat6",
+     "mandarin": "今天",
+     "clip": {
+      "rec": 0,
+      "startMs": 22579,
+      "endMs": 23319,
+      "words": {
+       "t": "今日",
+       "w": [
+        22880,
+        22980,
+        22980,
+        23080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r12",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "聽日",
+     "jyutping": "ting1 jat6",
+     "mandarin": "明天"
+    },
+    {
+     "id": "l1-dt-r13",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "後日",
+     "jyutping": "hau6 jat6",
+     "mandarin": "后天",
+     "clip": {
+      "rec": 0,
+      "startMs": 830,
+      "endMs": 1785,
+      "words": {
+       "t": "後日",
+       "w": [
+        830,
+        830,
+        830,
+        1180
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r14",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "上個禮拜",
+     "jyutping": "soeng6 go3 lai5 baai3",
+     "mandarin": "上个星期",
+     "clip": {
+      "rec": 1,
+      "startMs": 25500,
+      "endMs": 27790,
+      "words": {
+       "t": "上個禮拜",
+       "w": [
+        25500,
+        26000,
+        26000,
+        26160,
+        26160,
+        26440,
+        26440,
+        27120
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r15",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "今個／呢個禮拜",
+     "jyutping": "gam1 go3 / ni1 go3 lai5 baai3",
+     "mandarin": "这个星期",
+     "clip": {
+      "rec": 1,
+      "startMs": 27790,
+      "endMs": 31069,
+      "words": {
+       "t": "今個呢個禮拜",
+       "w": [
+        27790,
+        27790,
+        27790,
+        27800,
+        29180,
+        29320,
+        29320,
+        29400,
+        29400,
+        29700,
+        29700,
+        30420
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r16",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "下個禮拜",
+     "jyutping": "haa6 go3 lai5 baai3",
+     "mandarin": "下个星期",
+     "clip": {
+      "rec": 1,
+      "startMs": 31069,
+      "endMs": 31659,
+      "words": {
+       "t": "下個禮拜",
+       "w": [
+        31069,
+        31069,
+        31069,
+        31069,
+        31069,
+        31360,
+        31360,
+        31659
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r17",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "上個月",
+     "jyutping": "soeng6 go3 jyut6",
+     "mandarin": "上个月",
+     "clip": {
+      "rec": 1,
+      "startMs": 32600,
+      "endMs": 33499,
+      "words": {
+       "t": "上個月",
+       "w": [
+        32600,
+        33040,
+        33040,
+        33340,
+        33340,
+        33499
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r18",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "今個／呢個月",
+     "jyutping": "gam1 go3 / ni1 go3 jyut6",
+     "mandarin": "这个月",
+     "clip": {
+      "rec": 1,
+      "startMs": 34209,
+      "endMs": 37569,
+      "words": {
+       "t": "今個呢個月",
+       "w": [
+        34440,
+        34580,
+        34580,
+        34800,
+        35980,
+        36120,
+        36120,
+        36340,
+        36340,
+        37040
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r19",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "下個月",
+     "jyutping": "haa6 go3 jyut6",
+     "mandarin": "下个月",
+     "clip": {
+      "rec": 1,
+      "startMs": 37569,
+      "endMs": 38380,
+      "words": {
+       "t": "下個月",
+       "w": [
+        37569,
+        37580,
+        37580,
+        37860,
+        37860,
+        38380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r20",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "年",
+     "jyutping": "nin4",
+     "mandarin": "年",
+     "clip": {
+      "rec": 1,
+      "startMs": 38791,
+      "endMs": 39590,
+      "words": {
+       "t": "年",
+       "w": [
+        38791,
+        39380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r21",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "前年",
+     "jyutping": "cin4 nin2",
+     "mandarin": "前年",
+     "clip": {
+      "rec": 1,
+      "startMs": 39830,
+      "endMs": 40871,
+      "words": {
+       "t": "前年",
+       "w": [
+        40300,
+        40440,
+        40440,
+        40871
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r22",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "舊年／上年",
+     "jyutping": "gau6 nin2 / soeng6 nin2",
+     "mandarin": "去年",
+     "clip": {
+      "rec": 1,
+      "startMs": 41527,
+      "endMs": 43810,
+      "words": {
+       "t": "舊年上年",
+       "w": [
+        41800,
+        41900,
+        41900,
+        42580,
+        43240,
+        43380,
+        43380,
+        43810
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r23",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "今年",
+     "jyutping": "gam1 nin4",
+     "mandarin": "今年",
+     "clip": {
+      "rec": 1,
+      "startMs": 44480,
+      "endMs": 45211,
+      "words": {
+       "t": "今年",
+       "w": [
+        44720,
+        44920,
+        44920,
+        45120
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r24",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "出年／下年",
+     "jyutping": "ceot1 nin2 / haa6 nin2",
+     "mandarin": "明年",
+     "clip": {
+      "rec": 1,
+      "startMs": 47189,
+      "endMs": 49330,
+      "words": {
+       "t": "出年下年",
+       "w": [
+        47500,
+        47680,
+        47680,
+        48380,
+        48860,
+        49000,
+        49000,
+        49330
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dt-r25",
+     "type": "vocab",
+     "section": "幾時",
+     "cantonese": "後年",
+     "jyutping": "hau6 nin2",
+     "mandarin": "后年",
+     "clip": {
+      "rec": 1,
+      "startMs": 49920,
+      "endMs": 50780,
+      "words": {
+       "t": "後年",
+       "w": [
+        50240,
+        50380,
+        50380,
+        50780
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l1-dialogue-2",
+   "title": "對話 2 · 時間地點與邀請",
+   "subtitle": "傾偈、上課、一齊食飯",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l1/dialogue-2.m4a"
+   ],
+   "items": [
+    {
+     "id": "l1-dg2-01",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "section": "對話",
+     "cantonese": "喂 Peter！咁啱嘅！你去邊呀？",
+     "jyutping": "wai3 Peter! gam3 ngaam1 ge2! nei5 heoi3 bin1 aa3?",
+     "mandarin": "喂 Peter！这么巧！你去哪儿？",
+     "clip": {
+      "startMs": 351,
+      "endMs": 3071,
+      "words": {
+       "t": "喂peter咁啱嘅你去邊呀",
+       "w": [
+        351,
+        660,
+        860,
+        904,
+        904,
+        948,
+        948,
+        992,
+        992,
+        1036,
+        1036,
+        1080,
+        1440,
+        1560,
+        1560,
+        1740,
+        1740,
+        2000,
+        2360,
+        2440,
+        2440,
+        2560,
+        2560,
+        2760,
+        2760,
+        3071
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg2-02",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "section": "對話",
+     "cantonese": "Hello Mary！咁啱嘅！我啱啱落堂，陣間要去 Library 同同學傾 project 呀！你呢？",
+     "jyutping": "hello Mary! gam3 ngaam1 ge2! ngo5 ngaam1 ngaam1 lok6 tong4, zan6 gaan1 jiu3 heoi3 library tung4 tung4 hok6 king1 project aa3! nei5 ne1?",
+     "mandarin": "Mary 你好，这么巧！我刚下课，待会要去图书馆和同学讨论作业，你呢？",
+     "clip": {
+      "startMs": 3639,
+      "endMs": 10018,
+      "words": {
+       "t": "hellomary咁啱嘅我啱啱落堂陣間要去library同同學傾project呀你呢",
+       "w": [
+        3760,
+        3800,
+        3800,
+        3840,
+        3840,
+        3880,
+        3880,
+        3920,
+        3920,
+        3960,
+        4040,
+        4105,
+        4105,
+        4170,
+        4170,
+        4235,
+        4235,
+        4300,
+        4430,
+        4460,
+        4560,
+        4760,
+        4760,
+        5060,
+        5620,
+        5740,
+        5740,
+        5920,
+        5920,
+        6020,
+        6020,
+        6280,
+        6280,
+        6660,
+        6900,
+        7000,
+        7000,
+        7120,
+        7120,
+        7280,
+        7280,
+        7420,
+        7420,
+        7640,
+        7640,
+        7700,
+        7700,
+        7760,
+        7760,
+        7820,
+        7820,
+        7873,
+        7873,
+        7927,
+        7927,
+        7980,
+        8120,
+        8160,
+        8160,
+        8360,
+        8360,
+        8540,
+        8540,
+        8700,
+        8700,
+        8787,
+        8787,
+        8873,
+        8873,
+        8960,
+        8960,
+        9005,
+        9005,
+        9050,
+        9050,
+        9095,
+        9095,
+        9140,
+        9140,
+        9170,
+        9140,
+        9840,
+        9840,
+        10018
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg2-03",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "section": "對話",
+     "cantonese": "我報咗個廣東話班，而家去上堂呀！",
+     "jyutping": "ngo5 bou3 zo2 go3 gwong2 dung1 waa2 baan1, ji4 gaa1 heoi3 soeng5 tong4 aa3!",
+     "mandarin": "我参加了广东话班，现在去上课。",
+     "clip": {
+      "startMs": 10782,
+      "endMs": 13681,
+      "words": {
+       "t": "我報咗個廣東話班而家去上堂呀",
+       "w": [
+        10840,
+        11020,
+        11020,
+        11200,
+        11200,
+        11320,
+        11320,
+        11520,
+        11520,
+        11800,
+        11800,
+        11940,
+        11940,
+        12100,
+        12100,
+        12400,
+        12660,
+        12760,
+        12760,
+        12820,
+        12820,
+        13040,
+        13040,
+        13260,
+        13260,
+        13440,
+        13560,
+        13590
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg2-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "section": "對話",
+     "cantonese": "我都想學下廣東話呀，喺邊度上堂㗎？",
+     "jyutping": "ngo5 dou1 soeng2 hok6 haa5 gwong2 dung1 waa2 aa3, hai2 bin1 dou6 soeng5 tong4 gaa3?",
+     "mandarin": "我也想学广东话，在哪里上课的？",
+     "clip": {
+      "startMs": 14491,
+      "endMs": 17451,
+      "words": {
+       "t": "我都想學下廣東話呀喺邊度上堂㗎",
+       "w": [
+        14491,
+        14660,
+        14660,
+        14820,
+        14820,
+        14960,
+        14960,
+        15200,
+        15200,
+        15300,
+        15300,
+        15540,
+        15540,
+        15740,
+        15740,
+        16040,
+        16040,
+        16440,
+        16440,
+        16520,
+        16520,
+        16700,
+        16700,
+        16820,
+        16820,
+        17060,
+        17060,
+        17260,
+        17356,
+        17386
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg2-05",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "section": "對話",
+     "cantonese": "喺 CC 上㗎，逢星期一兩點半到四點三，不如你下星期都一齊嚟吖！",
+     "jyutping": "hai2 CC soeng5 gaa3, fung4 sing1 kei4 jat1 loeng5 dim2 bun3 dou3 sei3 dim2 saam1, bat1 jyu4 nei5 haa6 sing1 kei4 dou1 jat1 cai4 lai4 aa1!",
+     "mandarin": "在崇基上课，每星期一 2:30 到 4:15，你下星期也一起来吧。",
+     "clip": {
+      "startMs": 18268,
+      "endMs": 24011,
+      "words": {
+       "t": "喺cc上㗎逢星期一兩點半到四點三不如你下星期都一齊嚟吖",
+       "w": [
+        18360,
+        18520,
+        18520,
+        18660,
+        18660,
+        18800,
+        18800,
+        19120,
+        19430,
+        19460,
+        19740,
+        19860,
+        19860,
+        20100,
+        20100,
+        20240,
+        20240,
+        20400,
+        20400,
+        20700,
+        20700,
+        20840,
+        20840,
+        21080,
+        21080,
+        21300,
+        21300,
+        21540,
+        21540,
+        21680,
+        21680,
+        22100,
+        22100,
+        22460,
+        22460,
+        22600,
+        22600,
+        22760,
+        22760,
+        22920,
+        22920,
+        23160,
+        23160,
+        23280,
+        23280,
+        23440,
+        23440,
+        23620,
+        23640,
+        23670,
+        23660,
+        23900,
+        23956,
+        23986
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg2-06",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "section": "對話",
+     "cantonese": "好呀，到時我哋上完廣東話班一齊去食飯吖！",
+     "jyutping": "hou2 aa3, dou3 si4 ngo5 dei6 soeng5 jyun4 gwong2 dung1 waa2 baan1 jat1 cai4 heoi3 sik6 faan6 aa1!",
+     "mandarin": "好的，到时候我们下课后一起去吃饭吧。",
+     "clip": {
+      "startMs": 24680,
+      "endMs": 28058,
+      "words": {
+       "t": "好呀到時我哋上完廣東話班一齊去食飯吖",
+       "w": [
+        24920,
+        25060,
+        25060,
+        25360,
+        25440,
+        25580,
+        25580,
+        25740,
+        25740,
+        25880,
+        25880,
+        25980,
+        25980,
+        26180,
+        26180,
+        26320,
+        26320,
+        26560,
+        26560,
+        26700,
+        26700,
+        26880,
+        26880,
+        27040,
+        27180,
+        27340,
+        27360,
+        27390,
+        27380,
+        27520,
+        27520,
+        27700,
+        27700,
+        27840,
+        27949,
+        27979
+       ]
+      }
+     }
+    },
+    {
+     "id": "l1-dg2-p01",
+     "type": "prompt",
+     "section": "傾下偈",
+     "cantonese": "嚟咗香港幾耐？",
+     "jyutping": "lei4 zo2 hoeng1 gong2 gei2 noi6?",
+     "mandarin": "来了香港多久？"
+    },
+    {
+     "id": "l1-dg2-p02",
+     "type": "prompt",
+     "section": "傾下偈",
+     "cantonese": "喺香港生活，最鍾意／唔鍾意嘅事係乜？",
+     "jyutping": "hai2 hoeng1 gong2 sang1 wut6, zeoi3 zung1 ji3 / m4 zung1 ji3 ge3 si6 hai6 mat1?",
+     "mandarin": "在香港生活，最喜欢／不喜欢的事是什么？"
+    },
+    {
+     "id": "l1-dg2-p03",
+     "type": "prompt",
+     "section": "傾下偈",
+     "cantonese": "最大挑戰係乜？",
+     "jyutping": "zeoi3 daai6 tiu1 zin3 hai6 mat1?",
+     "mandarin": "最大的挑战是什么？"
+    }
+   ]
+  }
+ ]
+}

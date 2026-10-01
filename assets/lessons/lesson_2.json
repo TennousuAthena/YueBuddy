@@ -1,0 +1,3173 @@
+{
+ "id": "l2",
+ "number": 2,
+ "title": "民以食為天",
+ "date": "21/9",
+ "modules": [
+  {
+   "id": "l2-eat",
+   "title": "食啲咩？",
+   "subtitle": "堂食、外賣、餐廳、時段",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/what-to-eat.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-e-01",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "堂食",
+     "jyutping": "tong4 sik6",
+     "mandarin": "在店里吃",
+     "clip": {
+      "startMs": 39319,
+      "endMs": 40200,
+      "words": {
+       "t": "堂食",
+       "w": [
+        39319,
+        39960,
+        39960,
+        40200
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-02",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "喺度食",
+     "jyutping": "hai2 dou6 sik6",
+     "mandarin": "在这儿吃",
+     "clip": {
+      "startMs": 40869,
+      "endMs": 42514,
+      "words": {
+       "t": "喺度食",
+       "w": [
+        40869,
+        41260,
+        41260,
+        41400,
+        41400,
+        42320
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-03",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "嗌外賣",
+     "jyutping": "aai3 ngoi6 maai6",
+     "mandarin": "叫外卖",
+     "clip": {
+      "startMs": 42627,
+      "endMs": 43647,
+      "words": {
+       "t": "嗌外賣",
+       "w": [
+        42804,
+        42834,
+        42980,
+        43240,
+        43240,
+        43647
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-04",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "拎走",
+     "jyutping": "ling1 zau2",
+     "mandarin": "拿走",
+     "clip": {
+      "startMs": 44469,
+      "endMs": 45279,
+      "words": {
+       "t": "拎走",
+       "w": [
+        44469,
+        44800,
+        45040,
+        45070
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-05",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "行街",
+     "jyutping": "haang4 gaai1",
+     "mandarin": "带走",
+     "clip": {
+      "startMs": 45869,
+      "endMs": 47190,
+      "words": {
+       "t": "行街",
+       "w": [
+        45869,
+        46300,
+        46300,
+        47190
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-06",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "打包",
+     "jyutping": "daa2 baau1",
+     "mandarin": "打包",
+     "clip": {
+      "startMs": 47621,
+      "endMs": 49549,
+      "words": {
+       "t": "打包",
+       "w": [
+        47621,
+        48060,
+        48060,
+        48880
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-07",
+     "type": "phrase",
+     "section": "點餐",
+     "cantonese": "走餐具",
+     "jyutping": "zau2 caan1 geoi6",
+     "mandarin": "不要餐具",
+     "clip": {
+      "startMs": 49549,
+      "endMs": 50060,
+      "words": {
+       "t": "走餐具",
+       "w": [
+        49549,
+        49549,
+        49549,
+        49700,
+        49700,
+        50060
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-08",
+     "type": "vocab",
+     "section": "餐廳",
+     "cantonese": "茶餐廳",
+     "jyutping": "caa4 caan1 teng1",
+     "mandarin": "茶餐厅",
+     "clip": {
+      "startMs": 17429,
+      "endMs": 18459,
+      "words": {
+       "t": "茶餐廳",
+       "w": [
+        17429,
+        17820,
+        17820,
+        18120,
+        18120,
+        18459
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-09",
+     "type": "vocab",
+     "section": "餐廳",
+     "cantonese": "茶樓",
+     "jyutping": "caa4 lau4",
+     "mandarin": "茶楼",
+     "clip": {
+      "startMs": 19259,
+      "endMs": 20091,
+      "words": {
+       "t": "茶樓",
+       "w": [
+        19259,
+        19800,
+        19800,
+        20091
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-10",
+     "type": "vocab",
+     "section": "餐廳",
+     "cantonese": "酒樓",
+     "jyutping": "zau2 lau4",
+     "mandarin": "酒楼",
+     "clip": {
+      "startMs": 20847,
+      "endMs": 21620,
+      "words": {
+       "t": "酒樓",
+       "w": [
+        20847,
+        21280,
+        21280,
+        21620
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-11",
+     "type": "vocab",
+     "section": "餐廳",
+     "cantonese": "快餐店",
+     "jyutping": "faai3 caan1 dim3",
+     "mandarin": "快餐店",
+     "clip": {
+      "startMs": 22490,
+      "endMs": 23540,
+      "words": {
+       "t": "快餐店",
+       "w": [
+        22490,
+        22840,
+        22840,
+        23080,
+        23080,
+        23540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-12",
+     "type": "vocab",
+     "section": "餐廳",
+     "cantonese": "糖水舖",
+     "jyutping": "tong4 seoi2 pou3",
+     "mandarin": "甜品店",
+     "clip": {
+      "startMs": 37624,
+      "endMs": 38688,
+      "words": {
+       "t": "糖水舖",
+       "w": [
+        37624,
+        38040,
+        38040,
+        38300,
+        38494,
+        38524
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-13",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "雲吞麵",
+     "jyutping": "wan4 tan1 min6",
+     "mandarin": "云吞面",
+     "clip": {
+      "startMs": 24150,
+      "endMs": 25191,
+      "words": {
+       "t": "雲吞麵",
+       "w": [
+        24150,
+        24600,
+        24600,
+        24700,
+        24700,
+        25191
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-14",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "車仔麵",
+     "jyutping": "ce1 zai2 min6",
+     "mandarin": "车仔面",
+     "clip": {
+      "startMs": 25930,
+      "endMs": 27029,
+      "words": {
+       "t": "車仔麵",
+       "w": [
+        25930,
+        26360,
+        26360,
+        26580,
+        26580,
+        27029
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-15",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "中菜",
+     "jyutping": "zung1 coi3",
+     "mandarin": "中餐",
+     "clip": {
+      "startMs": 27637,
+      "endMs": 28563,
+      "words": {
+       "t": "中菜",
+       "w": [
+        27637,
+        28160,
+        28160,
+        28563
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-16",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "西餐",
+     "jyutping": "sai1 caan1",
+     "mandarin": "西餐",
+     "clip": {
+      "startMs": 29071,
+      "endMs": 30118,
+      "words": {
+       "t": "西餐",
+       "w": [
+        29071,
+        29620,
+        29620,
+        30118
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-17",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "日本野",
+     "jyutping": "jat6 bun2 je5",
+     "mandarin": "日本菜（口语）",
+     "clip": {
+      "startMs": 30805,
+      "endMs": 31742,
+      "words": {
+       "t": "日本野",
+       "w": [
+        30805,
+        30960,
+        30960,
+        31340,
+        31340,
+        31742
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-18",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "日本菜",
+     "jyutping": "jat6 bun2 coi3",
+     "mandarin": "日本菜",
+     "clip": {
+      "startMs": 32340,
+      "endMs": 33413,
+      "words": {
+       "t": "日本菜",
+       "w": [
+        32340,
+        32580,
+        32580,
+        32900,
+        32900,
+        33413
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-19",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "韓國野",
+     "jyutping": "hon4 gwok3 je5",
+     "mandarin": "韩国菜（口语）",
+     "clip": {
+      "startMs": 34051,
+      "endMs": 35070,
+      "words": {
+       "t": "韓國野",
+       "w": [
+        34051,
+        34500,
+        34500,
+        34720,
+        34720,
+        35070
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-20",
+     "type": "vocab",
+     "section": "菜式",
+     "cantonese": "韓國菜",
+     "jyutping": "hon4 gwok3 coi3",
+     "mandarin": "韩国菜",
+     "clip": {
+      "startMs": 35730,
+      "endMs": 36868,
+      "words": {
+       "t": "韓國菜",
+       "w": [
+        35730,
+        36240,
+        36240,
+        36480,
+        36480,
+        36868
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-21",
+     "type": "vocab",
+     "section": "時段",
+     "cantonese": "早餐",
+     "jyutping": "zou2 caan1",
+     "mandarin": "早餐",
+     "clip": {
+      "startMs": 2010,
+      "endMs": 2850,
+      "words": {
+       "t": "早餐",
+       "w": [
+        2010,
+        2420,
+        2420,
+        2850
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-22",
+     "type": "vocab",
+     "section": "時段",
+     "cantonese": "午餐",
+     "jyutping": "ng5 caan1",
+     "mandarin": "午饭",
+     "clip": {
+      "startMs": 3640,
+      "endMs": 5805,
+      "words": {
+       "t": "午餐",
+       "w": [
+        3640,
+        4040,
+        4040,
+        5180
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-23",
+     "type": "vocab",
+     "section": "時段",
+     "cantonese": "晏",
+     "jyutping": "aan3",
+     "mandarin": "午饭（口语）",
+     "clip": {
+      "startMs": 5805,
+      "endMs": 6221,
+      "words": {
+       "t": "晏",
+       "w": [
+        5805,
+        6221
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-24",
+     "type": "vocab",
+     "section": "時段",
+     "cantonese": "下午茶",
+     "jyutping": "haa6 ng5 caa4",
+     "mandarin": "下午茶",
+     "clip": {
+      "startMs": 6891,
+      "endMs": 9770,
+      "words": {
+       "t": "下午茶",
+       "w": [
+        7640,
+        9160,
+        9160,
+        9500,
+        9500,
+        9770
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-25",
+     "type": "vocab",
+     "section": "時段",
+     "cantonese": "晚餐",
+     "jyutping": "maan5 caan1",
+     "mandarin": "晚饭",
+     "clip": {
+      "startMs": 12428,
+      "endMs": 14509,
+      "words": {
+       "t": "晚餐",
+       "w": [
+        12500,
+        12880,
+        12880,
+        13960
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-e-26",
+     "type": "vocab",
+     "section": "時段",
+     "cantonese": "宵夜",
+     "jyutping": "siu1 je6",
+     "mandarin": "宵夜",
+     "clip": {
+      "startMs": 15597,
+      "endMs": 16480,
+      "words": {
+       "t": "宵夜",
+       "w": [
+        15597,
+        16160,
+        16160,
+        16480
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-daily",
+   "title": "日常用語",
+   "subtitle": "饿、请客、味道、结账",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/daily.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-d-01",
+     "type": "phrase",
+     "cantonese": "好肚餓",
+     "jyutping": "hou2 tou5 ngo6",
+     "mandarin": "很饿",
+     "clip": {
+      "startMs": 650,
+      "endMs": 1569,
+      "words": {
+       "t": "好肚餓",
+       "w": [
+        650,
+        960,
+        960,
+        1200,
+        1200,
+        1569
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-02",
+     "type": "phrase",
+     "cantonese": "請食飯",
+     "jyutping": "cing2 sik6 faan6",
+     "mandarin": "请客吃饭",
+     "clip": {
+      "startMs": 6443,
+      "endMs": 7437,
+      "words": {
+       "t": "請食飯",
+       "w": [
+        6443,
+        6780,
+        6780,
+        7000,
+        7000,
+        7437
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-03",
+     "type": "phrase",
+     "cantonese": "我唔客氣喇",
+     "jyutping": "ngo5 m4 haak3 hei3 laa3",
+     "mandarin": "那我就不客气了",
+     "clip": {
+      "startMs": 12619,
+      "endMs": 13719,
+      "words": {
+       "t": "我唔客氣喇",
+       "w": [
+        12619,
+        12860,
+        12860,
+        12960,
+        12960,
+        13180,
+        13180,
+        13300,
+        13300,
+        13719
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-04",
+     "type": "phrase",
+     "cantonese": "好正",
+     "jyutping": "hou2 zeng3",
+     "mandarin": "很好、很棒",
+     "clip": {
+      "startMs": 20140,
+      "endMs": 21040,
+      "words": {
+       "t": "好正",
+       "w": [
+        20140,
+        20580,
+        20580,
+        21040
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-05",
+     "type": "phrase",
+     "cantonese": "寫嘢吖唔該！",
+     "jyutping": "se2 je5 aa1 m4 goi1",
+     "mandarin": "帮我点餐，谢谢！",
+     "clip": {
+      "startMs": 2401,
+      "endMs": 3610,
+      "words": {
+       "t": "寫嘢吖唔該",
+       "w": [
+        2401,
+        2780,
+        2907,
+        2937,
+        3033,
+        3063,
+        3160,
+        3360,
+        3360,
+        3610
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-06",
+     "type": "phrase",
+     "cantonese": "AA制",
+     "jyutping": "ei1 ei1 zai3",
+     "mandarin": "AA制",
+     "clip": {
+      "startMs": 7817,
+      "endMs": 9870,
+      "words": {
+       "t": "aa制",
+       "w": [
+        7817,
+        8340,
+        8340,
+        8900,
+        8900,
+        9870
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-07",
+     "type": "phrase",
+     "cantonese": "好飽",
+     "jyutping": "hou2 baau2",
+     "mandarin": "很饱",
+     "clip": {
+      "startMs": 14832,
+      "endMs": 16283,
+      "words": {
+       "t": "好飽",
+       "w": [
+        14832,
+        15220,
+        15220,
+        16200
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-08",
+     "type": "phrase",
+     "cantonese": "OK啦",
+     "jyutping": "ou1 kei1 laa1",
+     "mandarin": "行了",
+     "clip": {
+      "startMs": 21817,
+      "endMs": 22649,
+      "words": {
+       "t": "ok啦",
+       "w": [
+        21817,
+        21910,
+        21910,
+        22260,
+        22260,
+        22649
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-09",
+     "type": "vocab",
+     "cantonese": "餐牌",
+     "jyutping": "caan1 paai4",
+     "mandarin": "菜单",
+     "clip": {
+      "startMs": 4535,
+      "endMs": 5421,
+      "words": {
+       "t": "餐牌",
+       "w": [
+        4535,
+        4960,
+        4960,
+        5421
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-10",
+     "type": "phrase",
+     "cantonese": "開飯喇",
+     "jyutping": "hoi1 faan6 laa3",
+     "mandarin": "开饭了",
+     "clip": {
+      "startMs": 10419,
+      "endMs": 11420,
+      "words": {
+       "t": "開飯喇",
+       "w": [
+        10419,
+        10860,
+        10860,
+        11080,
+        11080,
+        11420
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-11",
+     "type": "phrase",
+     "cantonese": "好食",
+     "jyutping": "hou2 sik6",
+     "mandarin": "好吃",
+     "clip": {
+      "startMs": 16589,
+      "endMs": 17128,
+      "words": {
+       "t": "好食",
+       "w": [
+        16589,
+        17000,
+        17000,
+        17128
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-12",
+     "type": "phrase",
+     "cantonese": "好味",
+     "jyutping": "hou2 mei6",
+     "mandarin": "味道好",
+     "clip": {
+      "startMs": 18351,
+      "endMs": 19161,
+      "words": {
+       "t": "好味",
+       "w": [
+        18351,
+        18820,
+        18820,
+        19161
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-13",
+     "type": "phrase",
+     "cantonese": "麻麻地",
+     "jyutping": "maa4 maa4 dei2",
+     "mandarin": "马马虎虎",
+     "clip": {
+      "startMs": 23316,
+      "endMs": 24190,
+      "words": {
+       "t": "麻麻地",
+       "w": [
+        23320,
+        23740,
+        23740,
+        23920,
+        23920,
+        24190
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-14",
+     "type": "vocab",
+     "cantonese": "世一",
+     "jyutping": "sai3 jat1",
+     "mandarin": "世界第一",
+     "note": "形容人或东西顶尖。",
+     "clip": {
+      "startMs": 25360,
+      "endMs": 26048,
+      "words": {
+       "t": "世一",
+       "w": [
+        25620,
+        25650,
+        25880,
+        26048
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-15",
+     "type": "vocab",
+     "cantonese": "天花板",
+     "jyutping": "tin1 faa1 baan2",
+     "mandarin": "天花板",
+     "note": "已经到顶，没法再超过。",
+     "clip": {
+      "startMs": 27093,
+      "endMs": 28062,
+      "words": {
+       "t": "天花板",
+       "w": [
+        27093,
+        27480,
+        27480,
+        27720,
+        27720,
+        28062
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-d-16",
+     "type": "vocab",
+     "cantonese": "大癲",
+     "jyutping": "daai6 din1",
+     "mandarin": "夸张到很疯",
+     "note": "少癲是有点夸张，大癲是非常夸张。",
+     "clip": {
+      "startMs": 28809,
+      "endMs": 29560,
+      "words": {
+       "t": "大癲",
+       "w": [
+        28809,
+        29280,
+        29420,
+        29450
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-breakfast",
+   "title": "早餐 · 常餐 · 特餐",
+   "subtitle": "面包、蛋、公仔面配料",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/breakfast.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-b-01",
+     "type": "vocab",
+     "cantonese": "方包",
+     "jyutping": "fong1 baau1",
+     "mandarin": "方面包",
+     "clip": {
+      "startMs": 6140,
+      "endMs": 7140,
+      "words": {
+       "t": "方包",
+       "w": [
+        6430,
+        6460,
+        6720,
+        7140
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-02",
+     "type": "vocab",
+     "cantonese": "多士",
+     "jyutping": "do1 si6",
+     "mandarin": "吐司",
+     "clip": {
+      "startMs": 8060,
+      "endMs": 8927,
+      "words": {
+       "t": "多士",
+       "w": [
+        8060,
+        8580,
+        8580,
+        8927
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-03",
+     "type": "vocab",
+     "cantonese": "烘底",
+     "jyutping": "hong3 dai2",
+     "mandarin": "烘过的面包底",
+     "clip": {
+      "startMs": 9880,
+      "endMs": 11509,
+      "words": {
+       "t": "烘底",
+       "w": [
+        9880,
+        10460,
+        10460,
+        11509
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-04",
+     "type": "vocab",
+     "cantonese": "炒蛋",
+     "jyutping": "caau2 daan6",
+     "mandarin": "炒蛋",
+     "clip": {
+      "startMs": 11809,
+      "endMs": 12860,
+      "words": {
+       "t": "炒蛋",
+       "w": [
+        11809,
+        12400,
+        12400,
+        12860
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-05",
+     "type": "vocab",
+     "cantonese": "煎蛋",
+     "jyutping": "zin1 daan6",
+     "mandarin": "煎蛋",
+     "clip": {
+      "startMs": 13630,
+      "endMs": 15246,
+      "words": {
+       "t": "煎蛋",
+       "w": [
+        13630,
+        14160,
+        14160,
+        15120
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-06",
+     "type": "vocab",
+     "cantonese": "太陽蛋",
+     "jyutping": "taai3 joeng4 daan6",
+     "mandarin": "太阳蛋",
+     "clip": {
+      "startMs": 15264,
+      "endMs": 16310,
+      "words": {
+       "t": "太陽蛋",
+       "w": [
+        15264,
+        15700,
+        15700,
+        15880,
+        15880,
+        16310
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-07",
+     "type": "vocab",
+     "cantonese": "反蛋",
+     "jyutping": "faan2 daan6",
+     "mandarin": "两面煎的蛋",
+     "clip": {
+      "startMs": 17101,
+      "endMs": 18108,
+      "words": {
+       "t": "反蛋",
+       "w": [
+        17101,
+        17720,
+        17720,
+        18108
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-08",
+     "type": "vocab",
+     "cantonese": "熟蛋",
+     "jyutping": "suk6 daan6",
+     "mandarin": "煎熟的蛋",
+     "clip": {
+      "startMs": 18719,
+      "endMs": 21540,
+      "words": {
+       "t": "熟蛋",
+       "w": [
+        18719,
+        19300,
+        19300,
+        20420
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-09",
+     "type": "vocab",
+     "cantonese": "烚蛋",
+     "jyutping": "saap6 daan6",
+     "mandarin": "煮蛋"
+    },
+    {
+     "id": "l2-b-10",
+     "type": "vocab",
+     "cantonese": "公仔麵",
+     "jyutping": "gung1 zai2 min6",
+     "mandarin": "公仔面",
+     "clip": {
+      "startMs": 35511,
+      "endMs": 36550,
+      "words": {
+       "t": "公仔麵",
+       "w": [
+        35511,
+        35920,
+        35920,
+        36080,
+        36080,
+        36550
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-11",
+     "type": "vocab",
+     "cantonese": "米粉",
+     "jyutping": "mai5 fan2",
+     "mandarin": "米粉",
+     "clip": {
+      "startMs": 37180,
+      "endMs": 38031,
+      "words": {
+       "t": "米粉",
+       "w": [
+        37180,
+        37600,
+        37600,
+        38031
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-12",
+     "type": "vocab",
+     "cantonese": "通粉",
+     "jyutping": "tung1 fan2",
+     "mandarin": "通心粉",
+     "clip": {
+      "startMs": 38740,
+      "endMs": 39589,
+      "words": {
+       "t": "通粉",
+       "w": [
+        38740,
+        39140,
+        39140,
+        39589
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-13",
+     "type": "vocab",
+     "cantonese": "火腿",
+     "jyutping": "fo2 teoi2",
+     "mandarin": "火腿",
+     "clip": {
+      "startMs": 21832,
+      "endMs": 23399,
+      "words": {
+       "t": "火腿",
+       "w": [
+        22020,
+        22980,
+        22980,
+        23399
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-14",
+     "type": "vocab",
+     "cantonese": "餐肉",
+     "jyutping": "caan1 juk6",
+     "mandarin": "午餐肉",
+     "clip": {
+      "startMs": 24139,
+      "endMs": 24868,
+      "words": {
+       "t": "餐肉",
+       "w": [
+        24139,
+        24700,
+        24700,
+        24868
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-15",
+     "type": "vocab",
+     "cantonese": "腸仔",
+     "jyutping": "coeng2 zai2",
+     "mandarin": "香肠",
+     "clip": {
+      "startMs": 25887,
+      "endMs": 28191,
+      "words": {
+       "t": "腸仔",
+       "w": [
+        25887,
+        26380,
+        26380,
+        27740
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-16",
+     "type": "vocab",
+     "cantonese": "沙嗲牛肉",
+     "jyutping": "saa1 de1 ngau4 juk6",
+     "mandarin": "沙嗲牛肉",
+     "clip": {
+      "startMs": 28191,
+      "endMs": 28783,
+      "words": {
+       "t": "沙嗲牛肉",
+       "w": [
+        28191,
+        28191,
+        28191,
+        28200,
+        28200,
+        28460,
+        28460,
+        28783
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-17",
+     "type": "vocab",
+     "cantonese": "五香肉丁",
+     "jyutping": "ng5 hoeng1 juk6 ding1",
+     "mandarin": "五香肉丁",
+     "clip": {
+      "startMs": 29370,
+      "endMs": 31780,
+      "words": {
+       "t": "五香肉丁",
+       "w": [
+        29370,
+        29720,
+        29720,
+        29960,
+        29960,
+        30200,
+        30200,
+        31260
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-18",
+     "type": "vocab",
+     "cantonese": "雪菜肉絲",
+     "jyutping": "syut3 coi3 juk6 si1",
+     "mandarin": "雪菜肉丝",
+     "clip": {
+      "startMs": 31780,
+      "endMs": 33201,
+      "words": {
+       "t": "雪菜肉絲",
+       "w": [
+        31780,
+        31780,
+        31780,
+        31960,
+        31960,
+        32280,
+        32280,
+        33201
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-b-19",
+     "type": "vocab",
+     "cantonese": "榨菜肉絲",
+     "jyutping": "zaa3 coi3 juk6 si1",
+     "mandarin": "榨菜肉丝",
+     "clip": {
+      "startMs": 33350,
+      "endMs": 34600,
+      "words": {
+       "t": "榨菜肉絲",
+       "w": [
+        33350,
+        33740,
+        33740,
+        33960,
+        33960,
+        34300,
+        34300,
+        34600
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-drinks",
+   "title": "飲啲咩？",
+   "subtitle": "茶餐厅饮品和加减",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/drinks.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-k-00",
+     "type": "phrase",
+     "section": "飲品",
+     "cantonese": "嗌嘢飲！",
+     "jyutping": "aai3 je5 jam2",
+     "mandarin": "点饮料！",
+     "clip": {
+      "startMs": 43290,
+      "endMs": 44160,
+      "words": {
+       "t": "嗌嘢飲",
+       "w": [
+        43290,
+        43620,
+        43620,
+        43800,
+        43800,
+        44140
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-01",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "咖啡",
+     "jyutping": "gaa3 fe1",
+     "mandarin": "咖啡",
+     "clip": {
+      "startMs": 2401,
+      "endMs": 4130,
+      "words": {
+       "t": "咖啡",
+       "w": [
+        2440,
+        3120,
+        3120,
+        4130
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-02",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "奶茶",
+     "jyutping": "naai5 caa4",
+     "mandarin": "奶茶",
+     "clip": {
+      "startMs": 4450,
+      "endMs": 6139,
+      "words": {
+       "t": "奶茶",
+       "w": [
+        4450,
+        4840,
+        4840,
+        5860
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-03",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "茶走",
+     "jyutping": "caa4 zau2",
+     "mandarin": "奶茶加炼奶"
+    },
+    {
+     "id": "l2-k-04",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "鴛鴦",
+     "jyutping": "jin1 joeng1",
+     "mandarin": "咖啡加红茶",
+     "clip": {
+      "startMs": 8130,
+      "endMs": 10110,
+      "words": {
+       "t": "鴛鴦",
+       "w": [
+        8130,
+        8980,
+        8980,
+        10110
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-05",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "阿華田",
+     "jyutping": "aa3 waa4 tin4",
+     "mandarin": "阿华田"
+    },
+    {
+     "id": "l2-k-06",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "華田",
+     "jyutping": "waa4 tin4",
+     "mandarin": "华田",
+     "clip": {
+      "startMs": 10510,
+      "endMs": 13180,
+      "words": {
+       "t": "華田",
+       "w": [
+        10940,
+        11120,
+        11120,
+        12200
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-07",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "好立克",
+     "jyutping": "hou2 laap6 hak1",
+     "mandarin": "好立克",
+     "clip": {
+      "startMs": 14190,
+      "endMs": 14940,
+      "words": {
+       "t": "好立克",
+       "w": [
+        14190,
+        14560,
+        14560,
+        14760,
+        14760,
+        14940
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-08",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "檸檬",
+     "jyutping": "ning4 mung1",
+     "mandarin": "柠檬",
+     "clip": {
+      "startMs": 17621,
+      "endMs": 18439,
+      "words": {
+       "t": "檸檬",
+       "w": [
+        17621,
+        18140,
+        18140,
+        18439
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-09",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "檸水",
+     "jyutping": "ning2 seoi2",
+     "mandarin": "柠檬水",
+     "clip": {
+      "startMs": 19251,
+      "endMs": 20160,
+      "words": {
+       "t": "檸水",
+       "w": [
+        19251,
+        19620,
+        19620,
+        20160
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-10",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "檸茶",
+     "jyutping": "ning2 caa4",
+     "mandarin": "柠檬茶",
+     "clip": {
+      "startMs": 21102,
+      "endMs": 22352,
+      "words": {
+       "t": "檸茶",
+       "w": [
+        21102,
+        21460,
+        21460,
+        22080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-11",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "檸蜜",
+     "jyutping": "ning2 mat6",
+     "mandarin": "柠檬蜜",
+     "clip": {
+      "startMs": 22352,
+      "endMs": 23799,
+      "words": {
+       "t": "檸蜜",
+       "w": [
+        22352,
+        23120,
+        23120,
+        23799
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-12",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "檸樂",
+     "jyutping": "ning2 lok6",
+     "mandarin": "柠檬可乐",
+     "clip": {
+      "startMs": 24330,
+      "endMs": 25731,
+      "words": {
+       "t": "檸樂",
+       "w": [
+        24330,
+        24840,
+        24840,
+        25400
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-13",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "檸賓",
+     "jyutping": "ning2 ban1",
+     "mandarin": "柠檬利宾纳"
+    },
+    {
+     "id": "l2-k-14",
+     "type": "vocab",
+     "section": "飲品",
+     "cantonese": "鹹檸七",
+     "jyutping": "haam4 ning4 cat1",
+     "mandarin": "咸柠檬七喜"
+    },
+    {
+     "id": "l2-k-15",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "凍",
+     "jyutping": "dung3",
+     "mandarin": "冰的",
+     "clip": {
+      "startMs": 31249,
+      "endMs": 33130,
+      "words": {
+       "t": "凍",
+       "w": [
+        31400,
+        32540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-16",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "熱",
+     "jyutping": "jit6",
+     "mandarin": "热的",
+     "clip": {
+      "startMs": 29330,
+      "endMs": 30358,
+      "words": {
+       "t": "熱",
+       "w": [
+        29640,
+        30358
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-17",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "少甜",
+     "jyutping": "siu2 tim4",
+     "mandarin": "少糖",
+     "clip": {
+      "startMs": 33130,
+      "endMs": 34170,
+      "words": {
+       "t": "少甜",
+       "w": [
+        33205,
+        33235,
+        33280,
+        34160
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-18",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "多甜",
+     "jyutping": "do1 tim4",
+     "mandarin": "多糖",
+     "clip": {
+      "startMs": 34430,
+      "endMs": 35601,
+      "words": {
+       "t": "多甜",
+       "w": [
+        34430,
+        34820,
+        34820,
+        35601
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-19",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "少冰",
+     "jyutping": "siu2 bing1",
+     "mandarin": "少冰"
+    },
+    {
+     "id": "l2-k-20",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "多冰",
+     "jyutping": "do1 bing1",
+     "mandarin": "多冰",
+     "clip": {
+      "startMs": 36160,
+      "endMs": 38840,
+      "words": {
+       "t": "多冰",
+       "w": [
+        37880,
+        38460,
+        38460,
+        38840
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-21",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "少奶",
+     "jyutping": "siu2 naai5",
+     "mandarin": "少奶",
+     "clip": {
+      "startMs": 39728,
+      "endMs": 40680,
+      "words": {
+       "t": "少奶",
+       "w": [
+        39728,
+        40300,
+        40300,
+        40680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-k-22",
+     "type": "vocab",
+     "section": "加減",
+     "cantonese": "多奶",
+     "jyutping": "do1 naai5",
+     "mandarin": "多奶",
+     "clip": {
+      "startMs": 41641,
+      "endMs": 42850,
+      "words": {
+       "t": "多奶",
+       "w": [
+        41641,
+        42040,
+        42040,
+        42850
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-tea",
+   "title": "下午茶",
+   "subtitle": "小食和甜品",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/afternoon-tea.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-t-01",
+     "type": "vocab",
+     "cantonese": "菠蘿油",
+     "jyutping": "bo1 lo4 jau4",
+     "mandarin": "菠萝油",
+     "clip": {
+      "startMs": 2477,
+      "endMs": 5340,
+      "words": {
+       "t": "菠蘿油",
+       "w": [
+        2477,
+        2840,
+        2920,
+        2950,
+        3000,
+        4040
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-t-02",
+     "type": "vocab",
+     "cantonese": "雞脾薯條",
+     "jyutping": "gai1 bei2 syu4 tiu4",
+     "mandarin": "鸡腿薯条",
+     "clip": {
+      "startMs": 10920,
+      "endMs": 12632,
+      "words": {
+       "t": "雞脾薯條",
+       "w": [
+        10920,
+        11300,
+        11400,
+        11430,
+        11500,
+        11820,
+        11820,
+        12280
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-t-03",
+     "type": "vocab",
+     "cantonese": "西多士",
+     "jyutping": "sai1 do1 si6",
+     "mandarin": "西多士",
+     "clip": {
+      "startMs": 8920,
+      "endMs": 10058,
+      "words": {
+       "t": "西多士",
+       "w": [
+        8920,
+        9360,
+        9360,
+        9680,
+        9680,
+        10058
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-t-04",
+     "type": "vocab",
+     "cantonese": "蛋牛治烘底",
+     "jyutping": "daan6 ngau4 zi6 hong3 dai2",
+     "mandarin": "蛋牛三明治烘底"
+    },
+    {
+     "id": "l2-t-05",
+     "type": "vocab",
+     "cantonese": "公司三文治",
+     "jyutping": "gung1 si1 saam1 man4 zi6",
+     "mandarin": "公司三明治",
+     "clip": {
+      "startMs": 6681,
+      "endMs": 8179,
+      "words": {
+       "t": "公司三文治",
+       "w": [
+        6681,
+        7120,
+        7120,
+        7280,
+        7280,
+        7480,
+        7480,
+        7760,
+        7760,
+        8179
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-t-06",
+     "type": "vocab",
+     "cantonese": "奶油豬",
+     "jyutping": "naai5 jau4 zyu1",
+     "mandarin": "奶油猪",
+     "clip": {
+      "startMs": 13028,
+      "endMs": 14511,
+      "words": {
+       "t": "奶油豬",
+       "w": [
+        13028,
+        13420,
+        13420,
+        13620,
+        13620,
+        14500
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-t-07",
+     "type": "vocab",
+     "cantonese": "紅豆冰",
+     "jyutping": "hung4 dau6 bing1",
+     "mandarin": "红豆冰",
+     "clip": {
+      "startMs": 14861,
+      "endMs": 15840,
+      "words": {
+       "t": "紅豆冰",
+       "w": [
+        14861,
+        15260,
+        15260,
+        15500,
+        15500,
+        15840
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-meals",
+   "title": "午餐 · 晚餐",
+   "subtitle": "粉面饭",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/lunch-dinner.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-m-01",
+     "type": "vocab",
+     "cantonese": "乾炒牛河",
+     "jyutping": "gon1 caau2 ngau4 ho2",
+     "mandarin": "干炒牛河"
+    },
+    {
+     "id": "l2-m-02",
+     "type": "vocab",
+     "cantonese": "肉醬意粉",
+     "jyutping": "juk6 zoeng3 ji3 fan2",
+     "mandarin": "肉酱意粉"
+    },
+    {
+     "id": "l2-m-03",
+     "type": "vocab",
+     "cantonese": "乾炒豬扒公仔麵",
+     "jyutping": "gon1 caau2 zyu1 paa2 gung1 zai2 min6",
+     "mandarin": "干炒猪扒公仔面"
+    },
+    {
+     "id": "l2-m-04",
+     "type": "vocab",
+     "cantonese": "豆腐火腩飯",
+     "jyutping": "dau6 fu6 fo2 naam5 faan6",
+     "mandarin": "豆腐火腩饭"
+    },
+    {
+     "id": "l2-m-05",
+     "type": "vocab",
+     "cantonese": "揚州炒飯",
+     "jyutping": "joeng4 zau1 caau2 faan6",
+     "mandarin": "扬州炒饭"
+    },
+    {
+     "id": "l2-m-06",
+     "type": "vocab",
+     "cantonese": "焗豬扒飯",
+     "jyutping": "guk6 zyu1 paa2 faan6",
+     "mandarin": "焗猪扒饭"
+    }
+   ]
+  },
+  {
+   "id": "l2-dialogue-1",
+   "title": "對話 1 · 茶餐廳落單",
+   "subtitle": "幾多位、常餐、凍檸茶",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l2/dialogue-1.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-dg1-01",
+     "type": "dialogue",
+     "speaker": "侍應",
+     "cantonese": "幾多位呀？",
+     "jyutping": "gei2 do1 wai2 aa3",
+     "mandarin": "你们几位？",
+     "clip": {
+      "startMs": 864,
+      "endMs": 1698,
+      "words": {
+       "t": "幾多位呀",
+       "w": [
+        864,
+        1120,
+        1120,
+        1280,
+        1280,
+        1500,
+        1500,
+        1698
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-02",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "兩個吖，唔該。",
+     "jyutping": "loeng5 go3 aa1, m4 goi1",
+     "mandarin": "两位，麻烦你。",
+     "clip": {
+      "startMs": 2581,
+      "endMs": 3719,
+      "words": {
+       "t": "兩個吖唔該",
+       "w": [
+        2740,
+        2880,
+        2880,
+        3020,
+        3130,
+        3160,
+        3240,
+        3460,
+        3460,
+        3719
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-03",
+     "type": "dialogue",
+     "speaker": "侍應",
+     "cantonese": "埋便卡位吖。食啲咩呀？",
+     "jyutping": "maai4 bin6 kaa1 wai2 aa1. sik6 di1 me1 aa3",
+     "mandarin": "里面卡座吧。吃什么？",
+     "clip": {
+      "startMs": 4708,
+      "endMs": 8509,
+      "words": {
+       "t": "埋便卡位吖食啲咩呀",
+       "w": [
+        4854,
+        4884,
+        5000,
+        5160,
+        5160,
+        5380,
+        5380,
+        5580,
+        5900,
+        5930,
+        6220,
+        6400,
+        6400,
+        6600,
+        6600,
+        6700,
+        6700,
+        7920
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我要個常餐，沙嗲牛肉麵，腸仔炒蛋，多士。",
+     "jyutping": "ngo5 jiu3 go3 soeng4 caan1, saa1 de1 ngau4 juk6 min6, coeng2 zai2 caau2 daan6, do1 si6",
+     "mandarin": "我要一个常餐：沙嗲牛肉公仔面、香肠炒蛋、烘面包。",
+     "clip": {
+      "startMs": 8509,
+      "endMs": 13090,
+      "words": {
+       "t": "我要個常餐沙嗲牛肉麵腸仔炒蛋多士",
+       "w": [
+        8509,
+        8509,
+        8509,
+        8509,
+        8509,
+        8520,
+        8520,
+        8760,
+        8760,
+        9340,
+        9340,
+        9740,
+        9740,
+        9840,
+        9840,
+        10040,
+        10040,
+        10320,
+        10320,
+        10920,
+        11200,
+        11340,
+        11340,
+        11520,
+        11520,
+        11820,
+        11820,
+        12320,
+        12320,
+        12780,
+        12780,
+        13090
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-05",
+     "type": "dialogue",
+     "speaker": "侍應",
+     "cantonese": "飲咩？",
+     "jyutping": "jam2 me1",
+     "mandarin": "喝什么？",
+     "clip": {
+      "startMs": 13703,
+      "endMs": 14268,
+      "words": {
+       "t": "飲咩",
+       "w": [
+        13703,
+        14040,
+        14040,
+        14268
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-06",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "凍檸茶少甜少冰，唔該！",
+     "jyutping": "dung3 ning4 caa4 siu2 tim4 siu2 bing1, m4 goi1",
+     "mandarin": "冰柠檬茶，少糖少冰，麻烦你。",
+     "clip": {
+      "startMs": 15041,
+      "endMs": 17373,
+      "words": {
+       "t": "凍檸茶少甜少冰唔該",
+       "w": [
+        15180,
+        15340,
+        15340,
+        15480,
+        15480,
+        15820,
+        15930,
+        15960,
+        16040,
+        16220,
+        16360,
+        16390,
+        16500,
+        16720,
+        16720,
+        17120,
+        17120,
+        17373
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-07",
+     "type": "dialogue",
+     "speaker": "侍應",
+     "cantonese": "你呢？",
+     "jyutping": "nei5 ne1",
+     "mandarin": "你呢？",
+     "clip": {
+      "startMs": 18029,
+      "endMs": 18451,
+      "words": {
+       "t": "你呢",
+       "w": [
+        18029,
+        18340,
+        18340,
+        18451
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-08",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我睇下先。",
+     "jyutping": "ngo5 tai2 haa5 sin1",
+     "mandarin": "我先看一下。",
+     "clip": {
+      "startMs": 19249,
+      "endMs": 20070,
+      "words": {
+       "t": "我睇下先",
+       "w": [
+        19440,
+        19520,
+        19520,
+        19680,
+        19680,
+        19840,
+        19840,
+        20070
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-09",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "唔該，寫嘢吖。",
+     "jyutping": "m4 goi1, se2 je5 aa1",
+     "mandarin": "麻烦你，帮我点餐。",
+     "clip": {
+      "startMs": 21090,
+      "endMs": 22063,
+      "words": {
+       "t": "唔該寫嘢吖",
+       "w": [
+        21090,
+        21380,
+        21380,
+        21500,
+        21500,
+        21700,
+        21700,
+        21900,
+        21981,
+        22011
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-10",
+     "type": "dialogue",
+     "speaker": "侍應",
+     "cantonese": "要咩呀？",
+     "jyutping": "jiu3 me1 aa3",
+     "mandarin": "要什么？",
+     "clip": {
+      "startMs": 22761,
+      "endMs": 24760,
+      "words": {
+       "t": "要咩呀",
+       "w": [
+        22761,
+        23020,
+        23020,
+        23200,
+        23200,
+        24140
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg1-11",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我要個雲吞麵走青，加碟菜心。",
+     "jyutping": "ngo5 jiu3 go3 wan4 tan1 min6 zau2 cing1, gaa1 dip6 coi3 sam1",
+     "mandarin": "我要一碗云吞面，不要葱，加一碟菜心。",
+     "clip": {
+      "startMs": 24760,
+      "endMs": 26980,
+      "words": {
+       "t": "我要個雲吞麵走青加碟菜心",
+       "w": [
+        24760,
+        24760,
+        24760,
+        24760,
+        24760,
+        24780,
+        24780,
+        25060,
+        25060,
+        25140,
+        25140,
+        25360,
+        25500,
+        25530,
+        25640,
+        26020,
+        26020,
+        26320,
+        26320,
+        26480,
+        26480,
+        26700,
+        26700,
+        26920
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-dialogue-2",
+   "title": "對話 2 · 請飲茶",
+   "subtitle": "生日、訂位、點心",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l2/dialogue-2.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-dg2-01",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "Mary你下星期五生日喇喎，你嗰日有冇約人呀？不如我請你食晏吖！",
+     "jyutping": "Mary nei5 haa6 sing1 kei4 ng5 saang1 jat6 laa3 wo3, nei5 go2 jat6 jau5 mou5 joek3 jan4 aa3? bat1 jyu4 ngo5 cing2 nei5 sik6 aan3 aa1",
+     "mandarin": "Mary，下星期五是你生日。你那天有没有约人？我请你吃午饭好吗？",
+     "clip": {
+      "startMs": 330,
+      "endMs": 5590,
+      "words": {
+       "t": "mary你下星期五生日喇喎你嗰日有冇約人呀不如我請你食晏吖",
+       "w": [
+        353,
+        383,
+        377,
+        407,
+        400,
+        600,
+        600,
+        800,
+        800,
+        960,
+        960,
+        1120,
+        1120,
+        1340,
+        1340,
+        1440,
+        1440,
+        1620,
+        1620,
+        1780,
+        1780,
+        1960,
+        2147,
+        2177,
+        2333,
+        2363,
+        2520,
+        2840,
+        2920,
+        2950,
+        3000,
+        3030,
+        3080,
+        3173,
+        3267,
+        3297,
+        3360,
+        3540,
+        3540,
+        4200,
+        4200,
+        4230,
+        4200,
+        4520,
+        4520,
+        4660,
+        4660,
+        4840,
+        4840,
+        4860,
+        4860,
+        5040,
+        5040,
+        5200,
+        5330,
+        5360,
+        5460,
+        5490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-02",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "好呀，我未約人呀！我哋食咩好呀？",
+     "jyutping": "hou2 aa3, ngo5 mei6 joek3 jan4 aa3! ngo5 dei6 sik6 me1 hou2 aa3",
+     "mandarin": "好呀，我没约人。我们吃什么好呢？",
+     "clip": {
+      "startMs": 6580,
+      "endMs": 10634,
+      "words": {
+       "t": "好呀我未約人呀我哋食咩好呀",
+       "w": [
+        6580,
+        6900,
+        6900,
+        7080,
+        7080,
+        7240,
+        7260,
+        7310,
+        7300,
+        7460,
+        7460,
+        7980,
+        7980,
+        8010,
+        7980,
+        8200,
+        8200,
+        8420,
+        8420,
+        8580,
+        8580,
+        8780,
+        8780,
+        9880,
+        9880,
+        10160
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-03",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "飲茶你O唔OK呀？沙田有間新開嘅茶樓，聽講啲點心好正㗎！我負責Book位吖。",
+     "jyutping": "jam2 caa4 nei5 ou1 m4 ou1 kei1 aa3? saa1 tin4 jau5 gaan1 san1 hoi1 ge3 caa4 lau4, teng1 gong2 di1 dim2 sam1 hou2 zeng3 gaa3! ngo5 fu6 zaak3 Book wai2 aa1",
+     "mandarin": "喝茶你觉得可以吗？沙田有家新开的茶楼，听说点心很好。我来订位。",
+     "clip": {
+      "startMs": 10634,
+      "endMs": 16880,
+      "words": {
+       "t": "飲茶你o唔ok呀沙田有間新開嘅茶樓聽講啲點心好正㗎我負責book位吖",
+       "w": [
+        10634,
+        10634,
+        10634,
+        10634,
+        10634,
+        10740,
+        10740,
+        10920,
+        10920,
+        10950,
+        10920,
+        10950,
+        10920,
+        11100,
+        11440,
+        11470,
+        11780,
+        12120,
+        12120,
+        12240,
+        12240,
+        12440,
+        12440,
+        12580,
+        12580,
+        12900,
+        12900,
+        13000,
+        13000,
+        13140,
+        13140,
+        13400,
+        13400,
+        13760,
+        13760,
+        14020,
+        14080,
+        14110,
+        14140,
+        14170,
+        14200,
+        14480,
+        14480,
+        14720,
+        15030,
+        15060,
+        15340,
+        15370,
+        15650,
+        15680,
+        15960,
+        16040,
+        16040,
+        16240,
+        16240,
+        16320,
+        16356,
+        16386,
+        16392,
+        16422,
+        16428,
+        16458,
+        16464,
+        16494,
+        16500,
+        16880,
+        16880,
+        16880
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "唔該，Book咗姓劉，電話係91234567。",
+     "jyutping": "m4 goi1, Book zo2 sing3 lau4, din6 waa2 hai6 gau2 jat1 ji6 saam1 sei3 ng5 luk6 cat1",
+     "mandarin": "麻烦你，我订了座，姓刘，电话是91234567。",
+     "clip": {
+      "startMs": 18179,
+      "endMs": 22230,
+      "words": {
+       "t": "唔該book咗姓劉電話係91234567",
+       "w": [
+        18259,
+        18289,
+        18339,
+        18369,
+        18419,
+        18449,
+        18500,
+        18530,
+        18580,
+        18610,
+        18660,
+        18690,
+        18740,
+        18900,
+        18900,
+        19140,
+        19140,
+        19520,
+        19520,
+        19920,
+        19920,
+        20140,
+        20140,
+        20400,
+        20400,
+        20640,
+        20640,
+        20810,
+        20810,
+        20980,
+        20980,
+        21340,
+        21340,
+        21550,
+        21550,
+        21760,
+        21760,
+        22230,
+        22230,
+        22230
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-05",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "劉生兩位呢邊吖。",
+     "jyutping": "lau4 saang1 loeng5 wai2 ni1 bin1 aa1",
+     "mandarin": "刘生请到这边来。",
+     "clip": {
+      "startMs": 23228,
+      "endMs": 24510,
+      "words": {
+       "t": "劉生兩位呢邊吖",
+       "w": [
+        23228,
+        23500,
+        23600,
+        23700,
+        23700,
+        23880,
+        23880,
+        24000,
+        24240,
+        24270,
+        24480,
+        24510,
+        24510,
+        24510
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-06",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你睇下想食咩？",
+     "jyutping": "nei5 tai2 haa5 soeng2 sik6 me1",
+     "mandarin": "你看看想吃什么。",
+     "clip": {
+      "startMs": 25447,
+      "endMs": 26550,
+      "words": {
+       "t": "你睇下想食咩",
+       "w": [
+        25447,
+        25447,
+        25507,
+        25537,
+        25643,
+        25673,
+        25780,
+        26040,
+        26040,
+        26240,
+        26240,
+        26550
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-07",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "睇下先…樣樣都好似好吸引喎！我想試下佢個雪山叉燒包，同埋炸魷魚鬚！",
+     "jyutping": "tai2 haa5 sin1, joeng6 joeng6 dou1 hou2 ci5 hou2 kap1 jan5 wo3! ngo5 soeng2 si3 haa5 keoi5 go3 syut3 saan1 caa1 siu1 baau1, tung4 maai4 zaa3 jau4 jyu4 sou1",
+     "mandarin": "我先看看……每一款都很吸引。我想试试雪山叉烧包，还有炸鱿鱼须。",
+     "clip": {
+      "startMs": 27439,
+      "endMs": 34799,
+      "words": {
+       "t": "睇下先樣樣都好似好吸引喎我想試下佢個雪山叉燒包同埋炸魷魚鬚",
+       "w": [
+        27499,
+        27529,
+        27560,
+        27590,
+        27620,
+        28060,
+        28200,
+        28230,
+        28340,
+        29200,
+        29200,
+        29340,
+        29340,
+        29490,
+        29613,
+        29643,
+        29737,
+        29767,
+        29860,
+        30000,
+        30000,
+        30280,
+        30590,
+        30620,
+        30900,
+        31120,
+        31120,
+        31340,
+        31340,
+        31640,
+        31690,
+        31720,
+        31740,
+        31960,
+        32070,
+        32100,
+        32180,
+        32340,
+        32340,
+        32620,
+        32620,
+        32840,
+        32840,
+        33020,
+        33020,
+        33380,
+        33527,
+        33557,
+        33673,
+        33703,
+        33820,
+        34040,
+        34040,
+        34320,
+        34320,
+        34480,
+        34640,
+        34670
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-dg2-08",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "好呀，不如要埋蝦餃、燒賣、鳳爪排骨飯吖！唔夠陣間再嗌甜品！",
+     "jyutping": "hou2 aa3, bat1 jyu4 jiu3 maai4 haa1 gaau2, siu1 maai6, fung6 zaau2 paai4 gwat1 faan6 aa1! m4 gau3 zan6 gaan1 zoi3 aai3 tim4 ban2",
+     "mandarin": "好，再要虾饺、烧卖和凤爪排骨饭吧。不够待会再点甜品。",
+     "clip": {
+      "startMs": 35630,
+      "endMs": 41930,
+      "words": {
+       "t": "好呀不如要埋蝦餃燒賣鳳爪排骨飯吖唔夠陣間再嗌甜品",
+       "w": [
+        35640,
+        36080,
+        36080,
+        36520,
+        36520,
+        36640,
+        36640,
+        36780,
+        36780,
+        37000,
+        37000,
+        37030,
+        37000,
+        37360,
+        37360,
+        37800,
+        37800,
+        38140,
+        38140,
+        38620,
+        38780,
+        38940,
+        38940,
+        39040,
+        39040,
+        39240,
+        39240,
+        39340,
+        39340,
+        39680,
+        39907,
+        39937,
+        40133,
+        40163,
+        40360,
+        40700,
+        40827,
+        40857,
+        40953,
+        40983,
+        41080,
+        41300,
+        41360,
+        41390,
+        41420,
+        41600,
+        41600,
+        41930
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l2-other",
+   "title": "其他",
+   "subtitle": "点餐App、问朋友、食字词",
+   "kind": "practice",
+   "recordings": [
+    "audio/l2/other.m4a"
+   ],
+   "items": [
+    {
+     "id": "l2-o-01",
+     "type": "vocab",
+     "section": "點餐App",
+     "cantonese": "foodpanda",
+     "jyutping": "foodpanda",
+     "mandarin": "外卖平台"
+    },
+    {
+     "id": "l2-o-02",
+     "type": "vocab",
+     "section": "點餐App",
+     "cantonese": "Keeta",
+     "jyutping": "Keeta",
+     "mandarin": "美团外卖"
+    },
+    {
+     "id": "l2-o-03",
+     "type": "vocab",
+     "section": "點餐App",
+     "cantonese": "美團",
+     "jyutping": "mei5 tyun4",
+     "mandarin": "美团"
+    },
+    {
+     "id": "l2-o-04",
+     "type": "vocab",
+     "section": "點餐App",
+     "cantonese": "OpenRice",
+     "jyutping": "OpenRice",
+     "mandarin": "开饭喇"
+    },
+    {
+     "id": "l2-o-05",
+     "type": "vocab",
+     "section": "點餐App",
+     "cantonese": "開飯喇",
+     "jyutping": "hoi1 faan6 laa3",
+     "mandarin": "OpenRice 的中文名"
+    },
+    {
+     "id": "l2-o-06",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "宜家去識三個新朋友。",
+     "jyutping": "ji1 gaa1 heoi3 sik1 saam1 go3 san1 pang4 jau5",
+     "mandarin": "现在去认识三个新朋友。"
+    },
+    {
+     "id": "l2-o-07",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "你鍾意食啲咩？",
+     "jyutping": "nei5 zung1 ji3 sik6 di1 me1",
+     "mandarin": "你喜欢吃什么？",
+     "clip": {
+      "startMs": 788,
+      "endMs": 1957,
+      "words": {
+       "t": "你鍾意食啲咩",
+       "w": [
+        788,
+        1020,
+        1127,
+        1157,
+        1233,
+        1263,
+        1340,
+        1600,
+        1600,
+        1630,
+        1600,
+        1957
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-08",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "你喺香港食過啲咩最好食？",
+     "jyutping": "nei5 hai2 hoeng1 gong2 sik6 gwo3 di1 me1 zeoi3 hou2 sik6",
+     "mandarin": "你在香港吃过什么最好吃？",
+     "clip": {
+      "startMs": 2840,
+      "endMs": 4882,
+      "words": {
+       "t": "你喺香港食過啲咩最好食",
+       "w": [
+        3000,
+        3110,
+        3110,
+        3220,
+        3220,
+        3430,
+        3430,
+        3640,
+        3640,
+        3840,
+        3840,
+        4060,
+        4060,
+        4090,
+        4060,
+        4300,
+        4300,
+        4540,
+        4540,
+        4800,
+        4800,
+        4882
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-09",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "喺邊度食㗎？",
+     "jyutping": "hai2 bin1 dou6 sik6 gaa3",
+     "mandarin": "在哪里吃的？",
+     "clip": {
+      "startMs": 5559,
+      "endMs": 6571,
+      "words": {
+       "t": "喺邊度食㗎",
+       "w": [
+        5760,
+        5820,
+        5820,
+        5940,
+        6000,
+        6030,
+        6060,
+        6320,
+        6446,
+        6476
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-10",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食白果",
+     "jyutping": "sik6 baak6 gwo2",
+     "mandarin": "落空、没捞着",
+     "clip": {
+      "startMs": 8512,
+      "endMs": 9490,
+      "words": {
+       "t": "食白果",
+       "w": [
+        8620,
+        8820,
+        8820,
+        9140,
+        9140,
+        9490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-11",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食檸檬",
+     "jyutping": "sik6 ning4 mung1",
+     "mandarin": "吃醋",
+     "clip": {
+      "startMs": 10282,
+      "endMs": 11193,
+      "words": {
+       "t": "食檸檬",
+       "w": [
+        10282,
+        10660,
+        10660,
+        10940,
+        10940,
+        11193
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-12",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食穀種",
+     "jyutping": "sik6 guk1 zung2",
+     "mandarin": "占便宜"
+    },
+    {
+     "id": "l2-o-13",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食夜粥",
+     "jyutping": "sik6 je6 zuk1",
+     "mandarin": "晚上才有着落",
+     "clip": {
+      "startMs": 14193,
+      "endMs": 15038,
+      "words": {
+       "t": "食夜粥",
+       "w": [
+        14193,
+        14560,
+        14710,
+        14740,
+        14860,
+        15038
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-14",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食大茶飯",
+     "jyutping": "sik6 daai6 caa4 faan6",
+     "mandarin": "吃大锅饭",
+     "clip": {
+      "startMs": 16160,
+      "endMs": 17408,
+      "words": {
+       "t": "食大茶飯",
+       "w": [
+        16160,
+        16480,
+        16480,
+        16800,
+        16800,
+        17020,
+        17020,
+        17408
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-15",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食軟飯",
+     "jyutping": "sik6 jyun5 faan6",
+     "mandarin": "靠伴侣养活",
+     "clip": {
+      "startMs": 18271,
+      "endMs": 19350,
+      "words": {
+       "t": "食軟飯",
+       "w": [
+        18271,
+        18640,
+        18640,
+        18920,
+        18920,
+        19350
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-16",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "民以食為天",
+     "jyutping": "man4 ji5 sik6 wai4 tin1",
+     "mandarin": "吃饭是头等大事",
+     "clip": {
+      "startMs": 20401,
+      "endMs": 21700,
+      "words": {
+       "t": "民以食為天",
+       "w": [
+        20401,
+        20820,
+        20820,
+        20940,
+        20940,
+        21120,
+        21120,
+        21400,
+        21400,
+        21700
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-17",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食腦",
+     "jyutping": "sik6 nou5",
+     "mandarin": "动脑筋",
+     "clip": {
+      "startMs": 22512,
+      "endMs": 23262,
+      "words": {
+       "t": "食腦",
+       "w": [
+        22512,
+        22900,
+        22900,
+        23262
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-18",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "搵食艱難",
+     "jyutping": "wan2 sik6 gaan1 naan4",
+     "mandarin": "谋生不容易",
+     "clip": {
+      "startMs": 24220,
+      "endMs": 25302,
+      "words": {
+       "t": "搵食艱難",
+       "w": [
+        24370,
+        24400,
+        24520,
+        24720,
+        24720,
+        25060,
+        25060,
+        25302
+       ]
+      }
+     }
+    },
+    {
+     "id": "l2-o-19",
+     "type": "vocab",
+     "section": "食字詞",
+     "cantonese": "食得是福",
+     "jyutping": "sik6 dak1 si6 fuk1",
+     "mandarin": "能吃是福",
+     "clip": {
+      "startMs": 25820,
+      "endMs": 26822,
+      "words": {
+       "t": "食得是福",
+       "w": [
+        25820,
+        26220,
+        26220,
+        26500,
+        26500,
+        26680,
+        26680,
+        26822
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

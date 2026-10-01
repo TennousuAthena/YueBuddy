@@ -1,0 +1,42 @@
+{
+  "lessons": [
+    {
+      "id": "l1",
+      "number": 1,
+      "title": "互相認識",
+      "date": "14/9",
+      "asset": "assets/lessons/lesson_1.json"
+    },
+    {
+      "id": "l2",
+      "number": 2,
+      "title": "民以食為天",
+      "date": "21/9",
+      "asset": "assets/lessons/lesson_2.json"
+    },
+    {
+      "id": "l3",
+      "number": 3,
+      "title": "溝通交流",
+      "date": "28/9"
+    },
+    {
+      "id": "l4",
+      "number": 4,
+      "title": "運動休閒",
+      "date": "5/10"
+    },
+    {
+      "id": "l5",
+      "number": 5,
+      "title": "身心健康",
+      "date": "12/10"
+    },
+    {
+      "id": "l6",
+      "number": 6,
+      "title": "人生規劃",
+      "date": "26/10"
+    }
+  ]
+}
