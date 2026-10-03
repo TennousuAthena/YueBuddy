@@ -6,7 +6,7 @@ import 'package:yue_buddy/features/lessons/data/lesson_repository.dart';
 import 'package:yue_buddy/features/lessons/domain/lesson_models.dart';
 
 void main() {
-  test('catalog lists six lessons and the first two are available', () {
+  test('catalog lists six lessons and the first three are available', () {
     final json =
         jsonDecode(File('assets/lessons/catalog.json').readAsStringSync())
             as Map<String, dynamic>;
@@ -16,10 +16,31 @@ void main() {
     expect(catalog.lessons[0].title, '互相認識');
     expect(catalog.lessons[1].isAvailable, isTrue);
     expect(catalog.lessons[1].title, '民以食為天');
+    expect(catalog.lessons[2].isAvailable, isTrue);
+    expect(catalog.lessons[2].title, '溝通交流');
     expect(
-      catalog.lessons.skip(2).every((lesson) => !lesson.isAvailable),
+      catalog.lessons.skip(3).every((lesson) => !lesson.isAvailable),
       isTrue,
     );
+  });
+
+  test('concrete nouns that have an illustration point at a real file', () {
+    final lesson = Lesson.fromJson(
+      jsonDecode(File('assets/lessons/lesson_1.json').readAsStringSync())
+          as Map<String, dynamic>,
+    );
+    final shirt = lesson.modules
+        .expand((module) => module.items)
+        .firstWhere((item) => item.id == 'l1-b-nn01');
+    expect(shirt.showsImage, isTrue);
+    expect(shirt.image, 'assets/illustrations/irasutoya/l1-b-nn01.png');
+    expect(File(shirt.image!).existsSync(), isTrue);
+
+    final belly = lesson.modules
+        .expand((module) => module.items)
+        .firstWhere((item) => item.id == 'l1-b-nn09');
+    expect(belly.cantonese, '肚');
+    expect(belly.showsImage, isFalse);
   });
 
   test('lesson 1 parses modules, jyutping and corrected forms', () {
@@ -119,6 +140,70 @@ void main() {
     });
   });
 
+  test('lesson 3 opens the communication lesson', () {
+    final json =
+        jsonDecode(File('assets/lessons/lesson_3.json').readAsStringSync())
+            as Map<String, dynamic>;
+    final lesson = Lesson.fromJson(json);
+    expect(lesson.title, '溝通交流');
+    expect(lesson.modules.map((module) => module.id).toList(), [
+      'l3-ask',
+      'l3-dialogue-1',
+      'l3-greet',
+      'l3-dialogue-2',
+      'l3-dialogue-3',
+      'l3-collab',
+      'l3-team',
+      'l3-chat',
+    ]);
+    expect(
+      lesson.modules.every(
+        (module) => module.id == 'l3-chat'
+            ? module.recordings.isEmpty
+            : module.recordings.isNotEmpty &&
+                module.recordings.every(
+                  (path) => File('assets/$path').existsSync(),
+                ),
+      ),
+      isTrue,
+    );
+    final outing = lesson.modules.firstWhere(
+      (module) => module.id == 'l3-dialogue-1',
+    );
+    expect(
+      outing.items.where((item) => item.hasTeacherClip).length,
+      greaterThan(outing.items.length ~/ 2),
+    );
+
+    final ask = lesson.modules.firstWhere((module) => module.id == 'l3-ask');
+    final lift = ask.items.firstWhere((item) => item.id == 'l3-a-10');
+    expect(lift.cantonese, '搭升降機');
+    expect(lift.note, contains('𨋢'));
+    expect(lift.hasTeacherClip, isTrue);
+
+    expect(outing.items.any((item) => item.cantonese.contains('唔使上堂')), isTrue);
+    expect(outing.items.any((item) => item.cantonese.contains('我哋')), isTrue);
+    expect(outing.items.any((item) => item.cantonese.contains('星期二')), isTrue);
+    expect(outing.items.map((item) => item.speaker).toSet(), {
+      'Peter',
+      'Mary',
+      '路人',
+    });
+
+    final gathering = lesson.modules.firstWhere(
+      (module) => module.id == 'l3-dialogue-3',
+    );
+    expect(
+      gathering.items.any((item) => item.cantonese.contains('趁涼涼哋')),
+      isTrue,
+    );
+    expect(gathering.items.any((item) => item.cantonese.contains('你哋')), isTrue);
+    expect(gathering.items.map((item) => item.speaker).toSet(), {
+      'Jimmy',
+      'Peter',
+    });
+  });
+
   test('memory repository loads catalog and rejects locked lessons', () async {
     final catalog = CourseCatalog.fromJson(
       jsonDecode(File('assets/lessons/catalog.json').readAsStringSync())
@@ -134,6 +219,6 @@ void main() {
     );
     expect((await repo.loadCatalog()).lessons, hasLength(6));
     expect((await repo.loadLesson('l1')).title, '互相認識');
-    expect(() => repo.loadLesson('l3'), throwsStateError);
+    expect(() => repo.loadLesson('l4'), throwsStateError);
   });
 }

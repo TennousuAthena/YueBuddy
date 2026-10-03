@@ -22,6 +22,7 @@ class DialogueBubble extends StatelessWidget {
     this.followPosition,
     required this.fill,
     required this.onBlankTap,
+    this.rubyJyutping = false,
   });
 
   final LessonItem item;
@@ -41,6 +42,7 @@ class DialogueBubble extends StatelessWidget {
   /// Fill-in-the-blank passthrough, see [PhraseCard].
   final LessonFill fill;
   final ValueChanged<FilledBlank> onBlankTap;
+  final bool rubyJyutping;
 
   @override
   Widget build(BuildContext context) {
@@ -84,6 +86,7 @@ class DialogueBubble extends StatelessWidget {
           followPosition: followPosition,
           fill: fill,
           onBlankTap: onBlankTap,
+          rubyJyutping: rubyJyutping,
         ),
       ],
     );

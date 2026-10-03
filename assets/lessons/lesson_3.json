@@ -1,0 +1,2702 @@
+{
+ "id": "l3",
+ "number": 3,
+ "title": "溝通交流",
+ "date": "28/9",
+ "modules": [
+  {
+   "id": "l3-ask",
+   "title": "問路",
+   "subtitle": "地鐵、轉彎、搭𨋢",
+   "image": "assets/illustrations/irasutoya/lost.png",
+   "kind": "practice",
+   "recordings": [
+    "audio/l3/directions.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-a-01",
+     "type": "phrase",
+     "section": "問路",
+     "cantonese": "唔該，我想問地鐵站點行呀？",
+     "jyutping": "m4 goi1, ngo5 soeng2 man6 dei6 tit3 zaam6 dim2 haang4 aa3",
+     "mandarin": "请问，去地铁站怎么走？",
+     "clip": {
+      "startMs": 24180,
+      "endMs": 27480,
+      "words": {
+       "t": "唔該我想問地鐵站點行呀",
+       "w": [
+        24180,
+        24360,
+        24360,
+        24760,
+        24780,
+        24940,
+        24940,
+        25100,
+        25100,
+        25280,
+        25280,
+        25460,
+        25460,
+        25640,
+        25640,
+        25800,
+        25800,
+        26040,
+        26040,
+        26320,
+        26320,
+        27460
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-02",
+     "type": "phrase",
+     "section": "問路",
+     "cantonese": "唔該，我想問附近有冇7-11呀？",
+     "jyutping": "m4 goi1, ngo5 soeng2 man6 fu6 gan6 jau5 mou5 chat1 sap6 jat1 aa3",
+     "mandarin": "请问，附近有7-Eleven吗？",
+     "note": "课堂把 7-11 读成「七十一」。",
+     "clip": {
+      "startMs": 27570,
+      "endMs": 30420,
+      "words": {
+       "t": "唔該我想問附近有冇711呀",
+       "w": [
+        27640,
+        27880,
+        27880,
+        28180,
+        28340,
+        28460,
+        28460,
+        28580,
+        28580,
+        28800,
+        28800,
+        29020,
+        29020,
+        29180,
+        29180,
+        29340,
+        29340,
+        29440,
+        29440,
+        29660,
+        29660,
+        29750,
+        29750,
+        29840,
+        29840,
+        29980
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-03",
+     "type": "phrase",
+     "section": "問路",
+     "cantonese": "呢間餐廳喺幾多樓呀？",
+     "jyutping": "ni1 gaan1 caan1 teng1 hai2 gei2 do1 lau2 aa3",
+     "mandarin": "这家餐厅在几楼？",
+     "clip": {
+      "startMs": 31050,
+      "endMs": 33877,
+      "words": {
+       "t": "呢間餐廳喺幾多樓呀",
+       "w": [
+        31080,
+        31280,
+        31280,
+        31420,
+        31420,
+        31740,
+        31740,
+        31880,
+        31980,
+        32010,
+        32080,
+        32260,
+        32260,
+        32360,
+        32360,
+        32600,
+        32600,
+        32840
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-04",
+     "type": "vocab",
+     "section": "方向",
+     "cantonese": "直行",
+     "jyutping": "zik6 haang4",
+     "mandarin": "往前走",
+     "image": "assets/illustrations/irasutoya/arrow-up.png",
+     "clip": {
+      "startMs": 630,
+      "endMs": 2160,
+      "words": {
+       "t": "直行",
+       "w": [
+        820,
+        870,
+        1080,
+        1420
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-05",
+     "type": "vocab",
+     "section": "方向",
+     "cantonese": "轉左／轉右",
+     "jyutping": "zyun3 zo2 / zyun3 jau6",
+     "mandarin": "转左 / 转右",
+     "image": "assets/illustrations/irasutoya/arrow-left.png",
+     "clip": {
+      "startMs": 2190,
+      "endMs": 5460,
+      "words": {
+       "t": "轉左轉右",
+       "w": [
+        2350,
+        3420,
+        4000,
+        4590,
+        4800,
+        4860,
+        5060,
+        5170
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-06",
+     "type": "vocab",
+     "section": "方向",
+     "cantonese": "第一個街口",
+     "jyutping": "dai6 jat1 go3 gaai1 hau2",
+     "mandarin": "第一个路口",
+     "image": "assets/illustrations/irasutoya/intersection.png",
+     "clip": {
+      "startMs": 5660,
+      "endMs": 7870,
+      "words": {
+       "t": "第一個街口",
+       "w": [
+        5740,
+        5960,
+        6070,
+        6790,
+        6940,
+        6990,
+        7280,
+        7370,
+        7490,
+        7550
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-07",
+     "type": "phrase",
+     "section": "方向",
+     "cantonese": "街／道",
+     "jyutping": "gaai1 / dou6",
+     "mandarin": "街 / 道",
+     "clip": {
+      "startMs": 7900,
+      "endMs": 10250,
+      "words": {
+       "t": "街道",
+       "w": [
+        7990,
+        8730,
+        9070,
+        10250
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-08",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "搭車",
+     "jyutping": "daap3 ce1",
+     "mandarin": "坐车",
+     "image": "assets/illustrations/irasutoya/car.png",
+     "clip": {
+      "startMs": 10800,
+      "endMs": 12180,
+      "words": {
+       "t": "搭車",
+       "w": [
+        10890,
+        11640,
+        11890,
+        11940
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-09",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "地鐵站A出口",
+     "jyutping": "dei6 tit3 zaam6 A ceot1 hau2",
+     "mandarin": "地铁站A出口",
+     "image": "assets/illustrations/irasutoya/subway.png",
+     "clip": {
+      "startMs": 12550,
+      "endMs": 14910,
+      "words": {
+       "t": "地鐵站a出口",
+       "w": [
+        12550,
+        12820,
+        12820,
+        13040,
+        13040,
+        13280,
+        13280,
+        13540,
+        13540,
+        13760,
+        13760,
+        14820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-10",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "搭升降機",
+     "jyutping": "daap3 sing1 gong1 gei1",
+     "mandarin": "乘电梯",
+     "image": "assets/illustrations/irasutoya/elevator.png",
+     "clip": {
+      "startMs": 14970,
+      "endMs": 16520,
+      "words": {
+       "t": "搭升降機",
+       "w": [
+        14980,
+        15170,
+        15260,
+        15590,
+        15720,
+        15810,
+        15900,
+        16080
+       ]
+      }
+     },
+     "note": "讲义写作「搭𨋢」，读 lip1。老师这句读成升降机。"
+    },
+    {
+     "id": "l3-a-11",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "搭電梯",
+     "jyutping": "daap3 din6 tai1",
+     "mandarin": "乘电梯",
+     "image": "assets/illustrations/irasutoya/elevator.png"
+    },
+    {
+     "id": "l3-a-12",
+     "type": "vocab",
+     "section": "交通",
+     "cantonese": "搭扶手電梯",
+     "jyutping": "daap3 fu4 sau2 din6 tai1",
+     "mandarin": "乘扶手电梯",
+     "image": "assets/illustrations/irasutoya/l3-a-12.png",
+     "clip": {
+      "startMs": 16620,
+      "endMs": 18780,
+      "words": {
+       "t": "搭扶手電梯",
+       "w": [
+        16710,
+        16810,
+        16990,
+        17100,
+        17170,
+        17780,
+        18060,
+        18110,
+        18400,
+        18540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-13",
+     "type": "vocab",
+     "section": "地方",
+     "cantonese": "廁所／洗手間",
+     "jyutping": "ci3 so2 / sai2 sau2 gaan1",
+     "mandarin": "洗手间",
+     "image": "assets/illustrations/irasutoya/l3-a-13.png",
+     "clip": {
+      "startMs": 18850,
+      "endMs": 22070,
+      "words": {
+       "t": "廁所洗手間",
+       "w": [
+        19090,
+        19620,
+        19940,
+        20030,
+        20270,
+        20340,
+        20560,
+        21310,
+        21500,
+        21930
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-a-14",
+     "type": "vocab",
+     "section": "地方",
+     "cantonese": "商場",
+     "jyutping": "soeng1 coeng4",
+     "mandarin": "商场",
+     "image": "assets/illustrations/irasutoya/l3-a-14.png",
+     "clip": {
+      "startMs": 22070,
+      "endMs": 23810,
+      "words": {
+       "t": "商場",
+       "w": [
+        22280,
+        23440,
+        23750,
+        23810
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l3-dialogue-1",
+   "title": "對話 1 · 中秋唱K",
+   "subtitle": "約朋友、問路去新之城",
+   "image": "assets/illustrations/irasutoya/karaoke.png",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l3/dialogue-1.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-dg1-01",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "下個禮拜中秋節假期唔使上堂，你有咩做呀？",
+     "jyutping": "haa6 go3 lai5 baai3 jung1 cau1 zit3 gaa3 kei4 m4 sai2 soeng5 tong4, nei5 jau5 me1 zou6 aa3",
+     "mandarin": "下星期中秋节放假不用上课，你有什么安排？",
+     "clip": {
+      "startMs": 840,
+      "endMs": 5060,
+      "words": {
+       "t": "下個禮拜中秋節假期唔使上堂你有咩做呀",
+       "w": [
+        840,
+        1220,
+        1220,
+        1280,
+        1280,
+        1540,
+        1540,
+        1680,
+        1680,
+        1860,
+        1860,
+        2060,
+        2060,
+        2300,
+        2300,
+        2540,
+        2540,
+        2760,
+        2760,
+        2900,
+        2900,
+        3040,
+        3040,
+        3320,
+        3680,
+        3710,
+        4040,
+        4070,
+        4070,
+        4100,
+        4100,
+        4300,
+        4380,
+        4580,
+        4820,
+        4850
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-02",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我未知呀，你呢？",
+     "jyutping": "ngo5 mei6 zi1 aa3, nei5 ne1",
+     "mandarin": "我还没想好，你呢？",
+     "clip": {
+      "startMs": 5060,
+      "endMs": 7350,
+      "words": {
+       "t": "我未知呀你呢",
+       "w": [
+        5540,
+        5680,
+        5680,
+        5880,
+        5880,
+        6080,
+        6080,
+        6300,
+        6300,
+        6520,
+        6520,
+        7260
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-03",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我嗰日下晝約咗崇基廣東話班啲朋友去唱K呀！",
+     "jyutping": "ngo5 go2 jat6 haa6 zau3 joek3 zo2 sung4 gei1 gwong2 dung1 waa2 baan1 di1 pang4 jau5 heoi3 coeng3 K aa3",
+     "mandarin": "我那天下午约了崇基广东话班的朋友去唱K！",
+     "clip": {
+      "startMs": 7550,
+      "endMs": 10990,
+      "words": {
+       "t": "我嗰日下晝約咗崇基廣東話班啲朋友去唱k呀",
+       "w": [
+        7550,
+        7580,
+        7673,
+        7703,
+        7767,
+        7797,
+        7860,
+        8080,
+        8170,
+        8200,
+        8260,
+        8440,
+        8440,
+        8660,
+        8660,
+        8880,
+        8880,
+        8980,
+        8980,
+        9220,
+        9220,
+        9360,
+        9360,
+        9580,
+        9580,
+        9720,
+        9820,
+        9850,
+        9920,
+        10060,
+        10060,
+        10200,
+        10200,
+        10480,
+        10480,
+        10680,
+        10680,
+        10920,
+        10955,
+        10985
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你有冇興趣一齊去呀？",
+     "jyutping": "nei5 jau5 mou5 hing3 ceoi3 jat1 cai4 heoi3 aa3",
+     "mandarin": "你有没有兴趣一起去？",
+     "clip": {
+      "startMs": 11490,
+      "endMs": 14210,
+      "words": {
+       "t": "你有冇興趣一齊去呀",
+       "w": [
+        11490,
+        11660,
+        11660,
+        11740,
+        11820,
+        11850,
+        11900,
+        12160,
+        12160,
+        12260,
+        12260,
+        12400,
+        12400,
+        12540,
+        12540,
+        12860,
+        14040,
+        14210
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-05",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "好呀，我都未試過喺香港唱K！",
+     "jyutping": "hou2 aa3, ngo5 dou1 mei6 si3 gwo3 hai2 hoeng1 gong2 coeng3 K",
+     "mandarin": "好呀，我还没在香港唱过K！",
+     "clip": {
+      "startMs": 14210,
+      "endMs": 16440,
+      "words": {
+       "t": "好呀我都未試過喺香港唱k",
+       "w": [
+        14210,
+        14210,
+        14210,
+        14380,
+        14420,
+        14580,
+        14580,
+        14680,
+        14680,
+        14800,
+        14800,
+        15000,
+        15000,
+        15160,
+        15160,
+        15300,
+        15300,
+        15460,
+        15460,
+        15620,
+        15620,
+        15920,
+        15920,
+        16320
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-06",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "你預埋我吖！",
+     "jyutping": "nei5 jyu6 maai4 ngo5 aa1",
+     "mandarin": "算我一个！",
+     "clip": {
+      "startMs": 16440,
+      "endMs": 17460,
+      "words": {
+       "t": "你預埋我吖",
+       "w": [
+        16560,
+        16700,
+        16700,
+        16860,
+        16860,
+        17020,
+        17020,
+        17180,
+        17320,
+        17350
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-07",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我可唔可以叫埋我同房一齊嚟呀？",
+     "jyutping": "ngo5 ho2 m4 ho2 ji5 giu3 maai4 ngo5 tung4 fong2 jat1 cai4 lai4 aa3",
+     "mandarin": "我可以叫我的室友一起来吗？",
+     "clip": {
+      "startMs": 17910,
+      "endMs": 20950,
+      "words": {
+       "t": "我可唔可以叫埋我同房一齊嚟呀",
+       "w": [
+        17910,
+        18180,
+        18180,
+        18320,
+        18350,
+        18380,
+        18380,
+        18480,
+        18480,
+        18580,
+        18580,
+        18780,
+        18780,
+        18810,
+        18780,
+        19020,
+        19020,
+        19280,
+        19280,
+        19440,
+        19440,
+        19590,
+        19590,
+        19740,
+        19740,
+        20080,
+        20080,
+        20940
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-08",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "梗係可以啦！",
+     "jyutping": "gang2 hai6 ho2 ji5 laa1",
+     "mandarin": "当然可以！",
+     "clip": {
+      "startMs": 20990,
+      "endMs": 22280,
+      "words": {
+       "t": "梗係可以啦",
+       "w": [
+        21067,
+        21097,
+        21143,
+        21173,
+        21220,
+        21420,
+        21420,
+        21620,
+        21620,
+        22140
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-09",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "咁我哋星期二下晝兩點喺旺角新之城等吖！",
+     "jyutping": "gam2 ngo5 dei6 sing1 kei4 ji6 haa6 zau3 loeng5 dim2 hai2 wong6 gok3 san1 zi1 sing4 dang2 aa1",
+     "mandarin": "那我们星期二下午两点在旺角新之城等。",
+     "clip": {
+      "startMs": 22280,
+      "endMs": 25620,
+      "words": {
+       "t": "咁我哋星期二下晝兩點喺旺角新之城等吖",
+       "w": [
+        22350,
+        22380,
+        22420,
+        22480,
+        22480,
+        22540,
+        22540,
+        22720,
+        22720,
+        22960,
+        22960,
+        23140,
+        23140,
+        23360,
+        23533,
+        23563,
+        23707,
+        23737,
+        23880,
+        24120,
+        24120,
+        24340,
+        24340,
+        24600,
+        24600,
+        24720,
+        24720,
+        24980,
+        24980,
+        25080,
+        25080,
+        25220,
+        25220,
+        25420,
+        25520,
+        25550
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-10",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "唔該，我想問新之城點去呀？",
+     "jyutping": "m4 goi1, ngo5 soeng2 man6 san1 zi1 sing4 dim2 heoi3 aa3",
+     "mandarin": "请问，去新之城怎么走？",
+     "clip": {
+      "startMs": 26520,
+      "endMs": 29050,
+      "words": {
+       "t": "唔該我想問新之城點去呀",
+       "w": [
+        26580,
+        26760,
+        26760,
+        26940,
+        26940,
+        27110,
+        27110,
+        27280,
+        27280,
+        27460,
+        27460,
+        27720,
+        27720,
+        27880,
+        27880,
+        28000,
+        28000,
+        28200,
+        28200,
+        28380,
+        28380,
+        29000
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg1-11",
+     "type": "dialogue",
+     "speaker": "路人",
+     "cantonese": "你喺前面過馬路，轉左行多一個街口，有間7-11嗰度就係㗎喇。",
+     "jyutping": "nei5 hai2 cin4 min6 gwo3 maa5 lou6, zyun3 zo2 haang4 do1 jat1 go3 gaai1 hau2, jau5 gaan1 chat1 sap6 jat1 go2 dou6 zau6 hai6 gaa3 laa3",
+     "mandarin": "你在前面过马路，左转再走一个路口，有间7-Eleven的那里就是。",
+     "clip": {
+      "startMs": 29180,
+      "endMs": 35620,
+      "words": {
+       "t": "你喺前面過馬路轉左行多一個街口有間711嗰度就係㗎喇",
+       "w": [
+        29180,
+        29260,
+        29260,
+        29520,
+        29520,
+        29760,
+        29760,
+        29940,
+        29940,
+        30140,
+        30140,
+        30360,
+        30360,
+        30760,
+        30760,
+        31080,
+        31080,
+        31440,
+        31570,
+        31600,
+        31700,
+        31880,
+        31880,
+        32010,
+        32010,
+        32140,
+        32140,
+        32480,
+        32480,
+        32860,
+        32860,
+        33120,
+        33120,
+        33260,
+        33260,
+        33480,
+        33480,
+        33700,
+        33800,
+        33830,
+        33900,
+        33930,
+        34000,
+        34030,
+        34100,
+        34220,
+        34220,
+        34340,
+        34767,
+        34797,
+        35193,
+        35223
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l3-greet",
+   "title": "問候",
+   "subtitle": "寒暄、近況、天氣",
+   "image": "assets/illustrations/irasutoya/chat.png",
+   "kind": "practice",
+   "recordings": [
+    "audio/l3/greetings.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-g-01",
+     "type": "vocab",
+     "section": "詞語",
+     "cantonese": "問候",
+     "jyutping": "man6 hau6",
+     "mandarin": "问候",
+     "image": "assets/illustrations/irasutoya/handshake.png",
+     "clip": {
+      "startMs": 820,
+      "endMs": 2310,
+      "words": {
+       "t": "問候",
+       "w": [
+        1060,
+        1640,
+        1640,
+        2220
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-02",
+     "type": "vocab",
+     "section": "詞語",
+     "cantonese": "寒暄",
+     "jyutping": "hon4 hyun1",
+     "mandarin": "寒暄",
+     "image": "assets/illustrations/irasutoya/chat.png",
+     "clip": {
+      "startMs": 2490,
+      "endMs": 3700,
+      "words": {
+       "t": "寒暄",
+       "w": [
+        2680,
+        2920,
+        2920,
+        3340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-03",
+     "type": "vocab",
+     "section": "詞語",
+     "cantonese": "約食飯",
+     "jyutping": "joek3 sik6 faan6",
+     "mandarin": "约吃饭",
+     "image": "assets/illustrations/irasutoya/restaurant.png",
+     "clip": {
+      "startMs": 3700,
+      "endMs": 6100,
+      "words": {
+       "t": "約食飯",
+       "w": [
+        4290,
+        4620,
+        4750,
+        5060,
+        5330,
+        5380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-04",
+     "type": "vocab",
+     "section": "詞語",
+     "cantonese": "聚會",
+     "jyutping": "zeoi6 wui6",
+     "mandarin": "聚会",
+     "image": "assets/illustrations/irasutoya/party.png",
+     "clip": {
+      "startMs": 6130,
+      "endMs": 7710,
+      "words": {
+       "t": "聚會",
+       "w": [
+        6130,
+        6640,
+        6640,
+        7640
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-05",
+     "type": "vocab",
+     "section": "詞語",
+     "cantonese": "吹水",
+     "jyutping": "ceoi1 seoi2",
+     "mandarin": "闲聊",
+     "image": "assets/illustrations/irasutoya/chat.png",
+     "clip": {
+      "startMs": 9350,
+      "endMs": 10840,
+      "words": {
+       "t": "吹水",
+       "w": [
+        9580,
+        9800,
+        9910,
+        10300
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-06",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "好耐冇見！",
+     "jyutping": "hou2 noi6 mou5 gin3",
+     "mandarin": "好久不见！",
+     "clip": {
+      "startMs": 11210,
+      "endMs": 13010,
+      "words": {
+       "t": "好耐冇見",
+       "w": [
+        11210,
+        11540,
+        11540,
+        11660,
+        11660,
+        11880,
+        11880,
+        12900
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-07",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "近排點呀？",
+     "jyutping": "gan6 paai2 dim2 aa3",
+     "mandarin": "最近怎么样？",
+     "clip": {
+      "startMs": 13140,
+      "endMs": 14880,
+      "words": {
+       "t": "近排點呀",
+       "w": [
+        13140,
+        13400,
+        13400,
+        13580,
+        13580,
+        13860,
+        13860,
+        14840
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-08",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "忙唔忙呀？",
+     "jyutping": "mong4 m4 mong4 aa3",
+     "mandarin": "忙不忙？",
+     "clip": {
+      "startMs": 14940,
+      "endMs": 17080,
+      "words": {
+       "t": "忙唔忙呀",
+       "w": [
+        14940,
+        15120,
+        15120,
+        15400,
+        15400,
+        15680,
+        15680,
+        17080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-09",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "冇見一排瘦咗喎！",
+     "jyutping": "mou5 gin3 jat1 paai4 sau3 zo2 wo3",
+     "mandarin": "一段时间没见，瘦了哦！",
+     "clip": {
+      "startMs": 17080,
+      "endMs": 19680,
+      "words": {
+       "t": "冇見一排瘦咗喎",
+       "w": [
+        17080,
+        17280,
+        17280,
+        17480,
+        17480,
+        17700,
+        17700,
+        17840,
+        17840,
+        18140,
+        18140,
+        18380,
+        18380,
+        19680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-10",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "肥咗又靚咗！",
+     "jyutping": "fei4 zo2 jau6 leng3 zo2",
+     "mandarin": "胖了又漂亮了！",
+     "clip": {
+      "startMs": 19680,
+      "endMs": 21940,
+      "words": {
+       "t": "肥咗又靚咗",
+       "w": [
+        19680,
+        20000,
+        20000,
+        20200,
+        20200,
+        20380,
+        20380,
+        20600,
+        20600,
+        21900
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-11",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "今日天氣幾好喎！",
+     "jyutping": "gam1 jat6 tin1 hei3 gei2 hou2 wo3",
+     "mandarin": "今天天气挺好！",
+     "clip": {
+      "startMs": 22120,
+      "endMs": 24100,
+      "words": {
+       "t": "今日天氣幾好喎",
+       "w": [
+        22120,
+        22180,
+        22180,
+        22460,
+        22460,
+        22680,
+        22680,
+        22860,
+        22860,
+        23040,
+        23040,
+        23320,
+        23320,
+        24000
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-12",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "呢兩日凍咗好多！",
+     "jyutping": "ni1 loeng5 jat6 dung3 zo2 hou2 do1",
+     "mandarin": "这两天冷了很多！",
+     "clip": {
+      "startMs": 24620,
+      "endMs": 26565,
+      "words": {
+       "t": "呢兩日凍咗好多",
+       "w": [
+        24620,
+        24860,
+        24860,
+        25020,
+        25020,
+        25120,
+        25120,
+        25360,
+        25360,
+        25520,
+        25520,
+        25800,
+        25800,
+        26090
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-13",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "你宜家去邊呀？",
+     "jyutping": "nei5 ji4 gaa1 heoi3 bin1 aa3",
+     "mandarin": "你现在去哪儿？",
+     "clip": {
+      "startMs": 26565,
+      "endMs": 28550,
+      "words": {
+       "t": "你宜家去邊呀",
+       "w": [
+        27040,
+        27280,
+        27280,
+        27500,
+        27500,
+        27540,
+        27540,
+        27720,
+        27720,
+        27900,
+        27900,
+        28360
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-14",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "今個Weekend有咩做呀？",
+     "jyutping": "gam1 go3 Weekend jau5 me1 zou6 aa3",
+     "mandarin": "这个周末有什么安排？",
+     "clip": {
+      "startMs": 29230,
+      "endMs": 31350,
+      "words": {
+       "t": "今個weekend有咩做呀",
+       "w": [
+        29230,
+        29450,
+        29450,
+        29650,
+        29650,
+        29715,
+        29715,
+        29780,
+        29780,
+        29845,
+        29845,
+        29910,
+        29910,
+        29950,
+        29950,
+        29990,
+        29990,
+        30030,
+        30030,
+        30190,
+        30190,
+        30350,
+        30350,
+        30670,
+        30670,
+        31190
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-15",
+     "type": "phrase",
+     "section": "寒暄",
+     "cantonese": "近排有冇去旅行呀？",
+     "jyutping": "gan6 paai2 jau5 mou5 heoi3 leoi5 hang4 aa3",
+     "mandarin": "最近有去旅行吗？",
+     "clip": {
+      "startMs": 31830,
+      "endMs": 33610,
+      "words": {
+       "t": "近排有冇去旅行呀",
+       "w": [
+        32030,
+        32110,
+        32110,
+        32270,
+        32270,
+        32450,
+        32450,
+        32570,
+        32570,
+        32750,
+        32750,
+        32970,
+        32970,
+        33110,
+        33110,
+        33430
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-g-16",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "宜家去問候三個新朋友。",
+     "jyutping": "ji4 gaa1 heoi3 man6 hau6 saam1 go3 san1 pang4 jau5",
+     "mandarin": "现在去问候三个新朋友。"
+    },
+    {
+     "id": "l3-g-17",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "好耐冇見喇！你近排點呀？",
+     "jyutping": "hou2 noi6 mou5 gin3 laa3! nei5 gan6 paai2 dim2 aa3",
+     "mandarin": "好久不见了！你最近怎么样？"
+    },
+    {
+     "id": "l3-g-18",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "你嚟緊放假有咩做呀？",
+     "jyutping": "nei5 lai4 gan2 fong3 gaa3 jau5 me1 zou6 aa3",
+     "mandarin": "你接下来放假有什么安排？"
+    }
+   ]
+  },
+  {
+   "id": "l3-dialogue-2",
+   "title": "對話 2 · 假期近況",
+   "subtitle": "中秋、流感、保重",
+   "image": "assets/illustrations/irasutoya/flu.png",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l3/dialogue-2.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-dg2-01",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "Mary！好耐冇見喇！你近排點呀？",
+     "jyutping": "Mary! hou2 noi6 mou5 gin3 laa3! nei5 gan6 paai2 dim2 aa3",
+     "mandarin": "Mary！好久不见了！你最近怎么样？",
+     "clip": {
+      "startMs": 850,
+      "endMs": 4100,
+      "words": {
+       "t": "mary好耐冇見喇你近排點呀",
+       "w": [
+        900,
+        1000,
+        1000,
+        1100,
+        1100,
+        1200,
+        1200,
+        1300,
+        1660,
+        1760,
+        1760,
+        1840,
+        1840,
+        2000,
+        2000,
+        2240,
+        2240,
+        2580,
+        2800,
+        2860,
+        2860,
+        3020,
+        3020,
+        3140,
+        3140,
+        3400,
+        3400,
+        4100
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-02",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我幾好呀，中秋假期前趕完幾份Paper，所以放假可以好好抖下！",
+     "jyutping": "ngo5 gei2 hou2 aa3, jung1 cau1 gaa3 kei4 cin4 gon2 jyun4 gei2 fan6 Paper, so2 ji5 fong3 gaa3 ho2 ji5 hou2 hou2 dau2 haa5",
+     "mandarin": "我挺好的。中秋假期前赶完了几份作业，所以放假可以好好休息。",
+     "clip": {
+      "startMs": 4200,
+      "endMs": 10030,
+      "words": {
+       "t": "我幾好呀中秋假期前趕完幾份paper所以放假可以好好抖下",
+       "w": [
+        4300,
+        4380,
+        4380,
+        4540,
+        4540,
+        4760,
+        4760,
+        5120,
+        5380,
+        5480,
+        5480,
+        5660,
+        5860,
+        6080,
+        6080,
+        6260,
+        6260,
+        6480,
+        6480,
+        6780,
+        6780,
+        6940,
+        6940,
+        7080,
+        7080,
+        7240,
+        7240,
+        7520,
+        7520,
+        7595,
+        7595,
+        7670,
+        7670,
+        7745,
+        7745,
+        7820,
+        8080,
+        8170,
+        8170,
+        8260,
+        8260,
+        8540,
+        8540,
+        8700,
+        8700,
+        8860,
+        8860,
+        9020,
+        9020,
+        9170,
+        9170,
+        9320,
+        9320,
+        9540,
+        9540,
+        9960
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-03",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "你呢？",
+     "jyutping": "nei5 ne1",
+     "mandarin": "你呢？",
+     "clip": {
+      "startMs": 10130,
+      "endMs": 10850,
+      "words": {
+       "t": "你呢",
+       "w": [
+        10320,
+        10480,
+        10480,
+        10840
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我就麻麻地喇，呢排啲流感好犀利，我都中咗招！",
+     "jyutping": "ngo5 zau6 maa4 maa2 dei2 laa3, ni1 paai4 di1 lau4 gam2 hou2 sai1 lei6, ngo5 dou1 zung1 zo2 ziu1",
+     "mandarin": "我不太好。最近流感很厉害，我也中招了！",
+     "clip": {
+      "startMs": 11210,
+      "endMs": 15700,
+      "words": {
+       "t": "我就麻麻地喇呢排啲流感好犀利我都中咗招",
+       "w": [
+        11300,
+        11440,
+        11440,
+        11580,
+        11580,
+        11780,
+        11780,
+        11900,
+        11900,
+        12060,
+        12060,
+        12560,
+        12760,
+        12840,
+        12840,
+        12980,
+        12980,
+        13140,
+        13140,
+        13360,
+        13360,
+        13500,
+        13500,
+        13800,
+        13800,
+        14000,
+        14000,
+        14340,
+        14580,
+        14660,
+        14660,
+        14780,
+        14780,
+        15020,
+        15020,
+        15240,
+        15240,
+        15700
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-05",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "成個假期病到瘟瘟沌沌，好辛苦呀！",
+     "jyutping": "sing4 go3 gaa3 kei4 beng6 dou3 wan1 wan1 dan6 dan6, hou2 san1 fu2 aa3",
+     "mandarin": "整个假期病得迷迷糊糊，好辛苦！",
+     "clip": {
+      "startMs": 15830,
+      "endMs": 19420,
+      "words": {
+       "t": "成個假期病到瘟瘟沌沌好辛苦呀",
+       "w": [
+        15940,
+        16200,
+        16200,
+        16300,
+        16300,
+        16600,
+        16600,
+        16780,
+        16780,
+        16920,
+        16920,
+        17100,
+        17100,
+        17340,
+        17340,
+        17500,
+        17500,
+        17800,
+        17800,
+        18020,
+        18280,
+        18380,
+        18380,
+        18560,
+        18560,
+        18740,
+        18740,
+        19420
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-06",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "咁慘！宜家好番啲未呀？",
+     "jyutping": "gam2 caam2! ji4 gaa1 hou2 faan1 di1 mei6 aa3",
+     "mandarin": "好惨！现在好一点了吗？",
+     "clip": {
+      "startMs": 19680,
+      "endMs": 22100,
+      "words": {
+       "t": "咁慘宜家好番啲未呀",
+       "w": [
+        19720,
+        19960,
+        19960,
+        20340,
+        20540,
+        20740,
+        20740,
+        20780,
+        20780,
+        20960,
+        20960,
+        21120,
+        21120,
+        21220,
+        21220,
+        21480,
+        21480,
+        21980
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-07",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "好番好多喇，有心！",
+     "jyutping": "hou2 faan1 hou2 do1 laa3, jau5 sam1",
+     "mandarin": "已经好很多了，谢谢关心！",
+     "clip": {
+      "startMs": 22100,
+      "endMs": 23820,
+      "words": {
+       "t": "好番好多喇有心",
+       "w": [
+        22220,
+        22440,
+        22440,
+        22620,
+        22620,
+        22820,
+        22820,
+        22880,
+        22880,
+        23120,
+        23240,
+        23400,
+        23400,
+        23680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg2-08",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你都要保重身體呀！",
+     "jyutping": "nei5 dou1 jiu3 bou2 zung6 san1 tai2 aa3",
+     "mandarin": "你也要保重身体！",
+     "clip": {
+      "startMs": 23820,
+      "endMs": 25490,
+      "words": {
+       "t": "你都要保重身體呀",
+       "w": [
+        23960,
+        24060,
+        24060,
+        24120,
+        24120,
+        24260,
+        24260,
+        24460,
+        24460,
+        24660,
+        24660,
+        24880,
+        24880,
+        25020,
+        25020,
+        25480
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l3-dialogue-3",
+   "title": "對話 3 · 朋友聚會",
+   "subtitle": "舊同學、行山、BBQ",
+   "image": "assets/illustrations/irasutoya/bbq.png",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l3/dialogue-3.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-dg3-01",
+     "type": "dialogue",
+     "speaker": "Jimmy",
+     "cantonese": "喂Peter，好耐冇見喇！最近忙咩呀？",
+     "jyutping": "wai3 Peter, hou2 noi6 mou5 gin3 laa3! zeoi3 gan6 mong4 me1 aa3",
+     "mandarin": "喂，Peter，好久不见了！最近在忙什么？",
+     "clip": {
+      "startMs": 690,
+      "endMs": 4060,
+      "words": {
+       "t": "喂peter好耐冇見喇最近忙咩呀",
+       "w": [
+        690,
+        1000,
+        1000,
+        1072,
+        1072,
+        1144,
+        1144,
+        1216,
+        1216,
+        1288,
+        1288,
+        1360,
+        1660,
+        1860,
+        1860,
+        1940,
+        1940,
+        2080,
+        2080,
+        2340,
+        2340,
+        2760,
+        3000,
+        3080,
+        3080,
+        3160,
+        3160,
+        3360,
+        3360,
+        3580,
+        3580,
+        4000
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-02",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "係呀，好耐冇見喇，近排趕Project搞到冇哂時間。",
+     "jyutping": "hai6 aa3, hou2 noi6 mou5 gin3 laa3, gan6 paai2 gon2 Project gaau2 dou3 mou5 saai3 si4 gaan3",
+     "mandarin": "是呀，好久不见。最近赶项目，忙得没时间。",
+     "clip": {
+      "startMs": 4450,
+      "endMs": 8380,
+      "words": {
+       "t": "係呀好耐冇見喇近排趕project搞到冇哂時間",
+       "w": [
+        4640,
+        4800,
+        4800,
+        4920,
+        4960,
+        5100,
+        5100,
+        5220,
+        5220,
+        5380,
+        5380,
+        5620,
+        5620,
+        6060,
+        6200,
+        6280,
+        6280,
+        6420,
+        6420,
+        6640,
+        6640,
+        6740,
+        6740,
+        6840,
+        6840,
+        6940,
+        6940,
+        6975,
+        6975,
+        7010,
+        7010,
+        7045,
+        7045,
+        7080,
+        7080,
+        7240,
+        7240,
+        7400,
+        7400,
+        7580,
+        7710,
+        7740,
+        7840,
+        8110,
+        8110,
+        8380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-03",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你呢？呢排有冇同班舊同學聯絡呀？",
+     "jyutping": "nei5 ne1? ni1 paai4 jau5 mou5 tung4 baan1 gau6 tung4 hok6 lyun4 lok3 aa3",
+     "mandarin": "你呢？最近有没有跟旧同学联络？",
+     "clip": {
+      "startMs": 8380,
+      "endMs": 11850,
+      "words": {
+       "t": "你呢呢排有冇同班舊同學聯絡呀",
+       "w": [
+        8380,
+        9000,
+        9000,
+        9320,
+        9380,
+        9540,
+        9540,
+        9620,
+        9620,
+        9800,
+        9800,
+        9880,
+        9880,
+        10060,
+        10060,
+        10240,
+        10240,
+        10420,
+        10420,
+        10720,
+        10720,
+        10740,
+        10740,
+        10980,
+        10980,
+        11120,
+        11120,
+        11720
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-04",
+     "type": "dialogue",
+     "speaker": "Jimmy",
+     "cantonese": "有呀，上個月約咗去行山！",
+     "jyutping": "jau5 aa3, soeng6 go3 jyut6 joek3 zo2 heoi3 haang4 saan1",
+     "mandarin": "有呀，上个月约了去爬山！",
+     "clip": {
+      "startMs": 12020,
+      "endMs": 14440,
+      "words": {
+       "t": "有呀上個月約咗去行山",
+       "w": [
+        12080,
+        12400,
+        12400,
+        12540,
+        12640,
+        12860,
+        12860,
+        12960,
+        12960,
+        13080,
+        13080,
+        13280,
+        13280,
+        13420,
+        13420,
+        13580,
+        13580,
+        13860,
+        13860,
+        14220
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-05",
+     "type": "dialogue",
+     "speaker": "Jimmy",
+     "cantonese": "原來Candy轉咗行做咖啡師，佢仲請咗我去佢間Café飲咗杯手沖咖啡添！",
+     "jyutping": "jyun4 loi4 Candy zyun3 zo2 hong4 zou6 gaa3 fe1 si1, keoi5 zung6 ceng2 zo2 ngo5 heoi3 keoi5 gaan1 Café jam2 zo2 bui1 sau2 cung1 gaa3 fe1 tim1",
+     "mandarin": "原来Candy转行当了咖啡师，她还请我去她的店喝了一杯手冲咖啡。",
+     "clip": {
+      "startMs": 14440,
+      "endMs": 20570,
+      "words": {
+       "t": "原來candy轉咗行做咖啡師佢仲請咗我去佢間café飲咗杯手沖咖啡添",
+       "w": [
+        14660,
+        14740,
+        14740,
+        14840,
+        14840,
+        15040,
+        15040,
+        15075,
+        15075,
+        15110,
+        15110,
+        15145,
+        15145,
+        15180,
+        15180,
+        15480,
+        15480,
+        15600,
+        15600,
+        15740,
+        15740,
+        15920,
+        15920,
+        16260,
+        16260,
+        16400,
+        16400,
+        16660,
+        16660,
+        17140,
+        17140,
+        17260,
+        17260,
+        17540,
+        17540,
+        17720,
+        17720,
+        17860,
+        17860,
+        18080,
+        18080,
+        18240,
+        18240,
+        18480,
+        18480,
+        18580,
+        18580,
+        18680,
+        18680,
+        18780,
+        18830,
+        18860,
+        18880,
+        19100,
+        19100,
+        19220,
+        19220,
+        19440,
+        19440,
+        19680,
+        19680,
+        19800,
+        19800,
+        20080,
+        20080,
+        20220,
+        20395,
+        20425
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-06",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "嘩，正喎！下次預埋我吖，好耐冇同過你哋吹水喇。",
+     "jyutping": "waa3, zeng3 wo3! haa6 ci3 jyu6 maai4 ngo5 aa1, hou2 noi6 mou5 tung4 gwo3 nei5 dei6 ceoi1 seoi2 laa3",
+     "mandarin": "哇，太好了！下次算我一个，很久没跟你们聊天了。",
+     "clip": {
+      "startMs": 21250,
+      "endMs": 25270,
+      "words": {
+       "t": "嘩正喎下次預埋我吖好耐冇同過你哋吹水喇",
+       "w": [
+        21250,
+        21460,
+        21460,
+        21800,
+        21800,
+        22160,
+        22340,
+        22430,
+        22430,
+        22520,
+        22630,
+        22660,
+        22740,
+        22920,
+        22920,
+        23160,
+        23370,
+        23400,
+        23580,
+        23700,
+        23700,
+        23780,
+        23780,
+        23940,
+        23940,
+        24120,
+        24120,
+        24300,
+        24300,
+        24460,
+        24510,
+        24540,
+        24560,
+        24760,
+        24760,
+        24940,
+        24940,
+        25120
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-07",
+     "type": "dialogue",
+     "speaker": "Jimmy",
+     "cantonese": "好呀，佢哋話趁涼涼哋去BBQ呀！",
+     "jyutping": "hou2 aa3, keoi5 dei6 waa6 can3 loeng4 loeng2 dei2 heoi3 BBQ aa3",
+     "mandarin": "好呀，他们说趁凉快去烧烤！",
+     "clip": {
+      "startMs": 25770,
+      "endMs": 28660,
+      "words": {
+       "t": "好呀佢哋話趁涼涼哋去bbq呀",
+       "w": [
+        25780,
+        26140,
+        26140,
+        26360,
+        26420,
+        26520,
+        26520,
+        26640,
+        26640,
+        26780,
+        26780,
+        26810,
+        26780,
+        27040,
+        27040,
+        27200,
+        27290,
+        27320,
+        27380,
+        27580,
+        27580,
+        27730,
+        27730,
+        27880,
+        27880,
+        28400,
+        28400,
+        28660
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-08",
+     "type": "dialogue",
+     "speaker": "Jimmy",
+     "cantonese": "遲啲WhatsApp你約時間吖！",
+     "jyutping": "ci4 di1 WhatsApp nei5 joek3 si4 gaan3 aa1",
+     "mandarin": "之后WhatsApp约你时间！",
+     "clip": {
+      "startMs": 28660,
+      "endMs": 30280,
+      "words": {
+       "t": "遲啲whatsapp你約時間吖",
+       "w": [
+        28660,
+        28720,
+        28720,
+        28880,
+        28880,
+        28960,
+        28960,
+        29040,
+        29040,
+        29080,
+        29080,
+        29120,
+        29120,
+        29160,
+        29160,
+        29193,
+        29193,
+        29227,
+        29227,
+        29260,
+        29260,
+        29440,
+        29440,
+        29620,
+        29620,
+        29790,
+        29790,
+        29960,
+        30120,
+        30150
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-dg3-09",
+     "type": "dialogue",
+     "speaker": "Jimmy",
+     "cantonese": "到時記住叫埋你女朋友嚟喎！",
+     "jyutping": "dou3 si4 gei3 zyu6 giu3 maai4 nei5 neoi5 pang4 jau5 lai4 wo3",
+     "mandarin": "到时候记得把你女朋友也叫上！",
+     "clip": {
+      "startMs": 30280,
+      "endMs": 33365,
+      "words": {
+       "t": "到時記住叫埋你女朋友嚟喎",
+       "w": [
+        30600,
+        30720,
+        30720,
+        30900,
+        30900,
+        31040,
+        31040,
+        31200,
+        31200,
+        31340,
+        31340,
+        31520,
+        31520,
+        31660,
+        31660,
+        31780,
+        31780,
+        31910,
+        31910,
+        32040,
+        32040,
+        32240,
+        32240,
+        32780
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l3-collab",
+   "title": "對話 · 小組分工",
+   "subtitle": "搵資料、整理、presentation",
+   "image": "assets/illustrations/irasutoya/present.png",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l3/teamwork.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-c-01",
+     "type": "dialogue",
+     "speaker": "A",
+     "cantonese": "今次個project我哋點分工好呢？",
+     "jyutping": "gam1 ci3 go3 project ngo5 dei6 dim2 fan1 gung1 hou2 ne1",
+     "mandarin": "这次的project我们怎么分工好？",
+     "clip": {
+      "startMs": 21090,
+      "endMs": 24220,
+      "words": {
+       "t": "今次個project我哋點分工好呢",
+       "w": [
+        21800,
+        21860,
+        21860,
+        22040,
+        22040,
+        22200,
+        22200,
+        22280,
+        22280,
+        22360,
+        22360,
+        22440,
+        22440,
+        22460,
+        22460,
+        22480,
+        22480,
+        22500,
+        22500,
+        22520,
+        22520,
+        22760,
+        22760,
+        22780,
+        22780,
+        22940,
+        22940,
+        23160,
+        23160,
+        23340,
+        23340,
+        23540,
+        23540,
+        24220
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-c-02",
+     "type": "dialogue",
+     "speaker": "B",
+     "cantonese": "我負責搵資料吖！",
+     "jyutping": "ngo5 fu6 zaak3 wan2 zi1 liu2 aa1",
+     "mandarin": "我负责找资料！",
+     "clip": {
+      "startMs": 24290,
+      "endMs": 26050,
+      "words": {
+       "t": "我負責搵資料吖",
+       "w": [
+        24360,
+        24660,
+        24660,
+        24900,
+        24900,
+        24940,
+        24940,
+        25140,
+        25140,
+        25440,
+        25440,
+        26020,
+        26035,
+        26050
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-c-03",
+     "type": "dialogue",
+     "speaker": "C",
+     "cantonese": "咁不如我負責整理。",
+     "jyutping": "gam2 bat1 jyu4 ngo5 fu6 zaak3 zing2 lei5",
+     "mandarin": "那不如我负责整理。",
+     "clip": {
+      "startMs": 26550,
+      "endMs": 28620,
+      "words": {
+       "t": "咁不如我負責整理",
+       "w": [
+        26560,
+        26760,
+        26760,
+        26920,
+        26920,
+        27040,
+        27040,
+        27180,
+        27180,
+        27400,
+        27400,
+        27540,
+        27540,
+        27740,
+        27740,
+        28540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-c-04",
+     "type": "dialogue",
+     "speaker": "A",
+     "cantonese": "好呀，咁我預備presentation啦！",
+     "jyutping": "hou2 aa3, gam2 ngo5 jyu6 bei6 presentation laa1",
+     "mandarin": "好呀，那我准备presentation！",
+     "clip": {
+      "startMs": 28770,
+      "endMs": 30850,
+      "words": {
+       "t": "好呀咁我預備presentation啦",
+       "w": [
+        28880,
+        29180,
+        29180,
+        29300,
+        29320,
+        29480,
+        29480,
+        29560,
+        29560,
+        29680,
+        29680,
+        29800,
+        29800,
+        30040,
+        30040,
+        30073,
+        30073,
+        30107,
+        30107,
+        30140,
+        30140,
+        30173,
+        30173,
+        30207,
+        30207,
+        30240,
+        30240,
+        30288,
+        30288,
+        30336,
+        30336,
+        30384,
+        30384,
+        30432,
+        30432,
+        30480,
+        30480,
+        30720
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-c-05",
+     "type": "dialogue",
+     "speaker": "A",
+     "cantonese": "大家有咩要幫手隨時出聲！",
+     "jyutping": "daai6 gaa1 jau5 me1 jiu3 bong1 sau2 ceoi4 si4 ceot1 seng1",
+     "mandarin": "大家有什么要帮忙的，随时说！",
+     "clip": {
+      "startMs": 30850,
+      "endMs": 33060,
+      "words": {
+       "t": "大家有咩要幫手隨時出聲",
+       "w": [
+        30980,
+        31100,
+        31100,
+        31220,
+        31220,
+        31400,
+        31400,
+        31520,
+        31520,
+        31700,
+        31700,
+        31860,
+        31860,
+        32080,
+        32080,
+        32240,
+        32240,
+        32440,
+        32440,
+        32620,
+        32620,
+        32820
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l3-team",
+   "title": "合作用語",
+   "subtitle": "分工、盡責、求其",
+   "image": "assets/illustrations/irasutoya/cheer.png",
+   "kind": "practice",
+   "recordings": [
+    "audio/l3/teamwork.m4a"
+   ],
+   "items": [
+    {
+     "id": "l3-t-01",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "合作",
+     "jyutping": "hap6 zok3",
+     "mandarin": "合作",
+     "image": "assets/illustrations/irasutoya/handshake.png",
+     "clip": {
+      "startMs": 610,
+      "endMs": 2020,
+      "words": {
+       "t": "合作",
+       "w": [
+        750,
+        830,
+        1040,
+        1170
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-02",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "公平",
+     "jyutping": "gung1 ping4",
+     "mandarin": "公平",
+     "clip": {
+      "startMs": 5390,
+      "endMs": 6880,
+      "words": {
+       "t": "公平",
+       "w": [
+        5480,
+        5970,
+        6420,
+        6490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-03",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "撈攪",
+     "jyutping": "laau2 gaau6",
+     "mandarin": "乱七八糟、难搞",
+     "clip": {
+      "startMs": 11020,
+      "endMs": 12210,
+      "words": {
+       "t": "撈攪",
+       "w": [
+        11070,
+        11770,
+        12150,
+        12210
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-04",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "認真",
+     "jyutping": "zing6 zan1",
+     "mandarin": "认真",
+     "clip": {
+      "startMs": 16090,
+      "endMs": 17530,
+      "words": {
+       "t": "認真",
+       "w": [
+        16090,
+        16960,
+        17190,
+        17470
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-05",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "討論",
+     "jyutping": "tou2 leon6",
+     "mandarin": "讨论",
+     "image": "assets/illustrations/irasutoya/present.png",
+     "clip": {
+      "startMs": 2020,
+      "endMs": 3760,
+      "words": {
+       "t": "討論",
+       "w": [
+        2390,
+        3000,
+        3150,
+        3380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-06",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "開心見誠",
+     "jyutping": "hoi1 sam1 gin3 sing4",
+     "mandarin": "开诚布公",
+     "clip": {
+      "startMs": 6880,
+      "endMs": 9110,
+      "words": {
+       "t": "開心見誠",
+       "w": [
+        7210,
+        8090,
+        8270,
+        8320,
+        8490,
+        8540,
+        8760,
+        8980
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-07",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "求其",
+     "jyutping": "kau4 kei4",
+     "mandarin": "随便、马虎",
+     "clip": {
+      "startMs": 12440,
+      "endMs": 14150,
+      "words": {
+       "t": "求其",
+       "w": [
+        12600,
+        13080,
+        13810,
+        13870
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-08",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "盡責",
+     "jyutping": "zeon6 zaak3",
+     "mandarin": "尽责",
+     "clip": {
+      "startMs": 17580,
+      "endMs": 19080,
+      "words": {
+       "t": "盡責",
+       "w": [
+        17710,
+        18190,
+        18650,
+        19080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-09",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "分工",
+     "jyutping": "fan1 gung1",
+     "mandarin": "分工",
+     "image": "assets/illustrations/irasutoya/present.png",
+     "clip": {
+      "startMs": 3830,
+      "endMs": 5160,
+      "words": {
+       "t": "分工",
+       "w": [
+        3990,
+        4680,
+        4740,
+        4800
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-10",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "對事唔對人",
+     "jyutping": "deoi3 si6 m4 deui3 jan4",
+     "mandarin": "对事不对人",
+     "clip": {
+      "startMs": 9130,
+      "endMs": 11020,
+      "words": {
+       "t": "對事唔對人",
+       "w": [
+        9130,
+        9400,
+        9400,
+        9640,
+        9705,
+        9735,
+        9770,
+        9900,
+        9900,
+        11020
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-11",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "雞同鴨講",
+     "jyutping": "gai1 tung4 aap3 gong2",
+     "mandarin": "鸡同鸭讲，说不到一块",
+     "clip": {
+      "startMs": 14220,
+      "endMs": 15790,
+      "words": {
+       "t": "雞同鴨講",
+       "w": [
+        14310,
+        14460,
+        14590,
+        15370,
+        15510,
+        15580,
+        15710,
+        15790
+       ]
+      }
+     }
+    },
+    {
+     "id": "l3-t-12",
+     "type": "vocab",
+     "section": "合作",
+     "cantonese": "加油",
+     "jyutping": "gaa1 jau2",
+     "mandarin": "加油",
+     "image": "assets/illustrations/irasutoya/cheer.png",
+     "clip": {
+      "startMs": 19080,
+      "endMs": 21010,
+      "words": {
+       "t": "加油",
+       "w": [
+        19110,
+        20080,
+        20650,
+        20830
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l3-chat",
+   "title": "傾下偈",
+   "subtitle": "校園、人際、一節經文",
+   "image": "assets/illustrations/irasutoya/chat.png",
+   "kind": "practice",
+   "items": [
+    {
+     "id": "l3-k-01",
+     "type": "phrase",
+     "section": "傾偈",
+     "cantonese": "你覺得香港嘅校園文化同內地有咩唔同？",
+     "jyutping": "nei5 gok3 dak1 hoeng1 gong2 ge3 haau6 jyun4 man4 faa3 tung4 noi6 dei6 jau5 me1 m4 tung4",
+     "mandarin": "你觉得香港的校园文化和内地有什么不同？"
+    },
+    {
+     "id": "l3-k-02",
+     "type": "phrase",
+     "section": "傾偈",
+     "cantonese": "你點樣處理人際關係？",
+     "jyutping": "nei5 dim2 joeng2 cyu2 lei5 jan4 zai3 gwaan1 hai6",
+     "mandarin": "你怎样处理人际关系？"
+    },
+    {
+     "id": "l3-k-03",
+     "type": "phrase",
+     "section": "傾偈",
+     "cantonese": "凡事謙虛、溫柔、忍耐，用愛心互相寬容，用和平彼此聯絡。",
+     "jyutping": "faan4 si6 him1 heoi1, wan1 jau4, jan2 noi6, jung6 oi3 sam1 wu6 soeng1 fun1 jung4, jung6 wo4 ping4 bei2 ci2 lyun4 lok3",
+     "mandarin": "凡事谦虚、温柔、忍耐，用爱心互相宽容，用和平彼此联络。",
+     "note": "以弗所书 4:2。倾偈时可以引用。"
+    }
+   ]
+  }
+ ]
+}

@@ -45,6 +45,17 @@ tools/align/out/
 
 # Local MiniMax debug key. Do not commit.
 config/minimax.local.json
+# Local TTS backend URL. Do not commit.
+config/tts.local.json
+
+# Worker tooling
+workers/tts/node_modules/
+workers/tts/dist/
+workers/tts/.wrangler/
+workers/tts/.wrangler-state/
+
+# Scratch copies of lesson audio. Canonical files live under assets/.
+tmp/
 
 # Symbolication / obfuscation
 app.*.symbols

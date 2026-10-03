@@ -1,0 +1,81 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: flutter analyze lib test
+      - run: flutter test
+
+  worker-check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workers/tts
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: workers/tts/package-lock.json
+      - run: npm ci
+      - run: ./node_modules/.bin/tsc --noEmit
+
+  build-android:
+    needs: [test, worker-check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: >
+          flutter build apk --debug
+          --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yuebuddy-android-apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
+          retention-days: 14
+
+  build-web:
+    needs: [test, worker-check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: >
+          flutter build web --release
+          --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yuebuddy-web
+          path: build/web
+          retention-days: 14

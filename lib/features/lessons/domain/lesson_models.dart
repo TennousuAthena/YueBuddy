@@ -78,6 +78,7 @@ class LessonModule {
     required this.kind,
     required this.items,
     this.recordings = const [],
+    this.image,
   });
 
   final String id;
@@ -86,6 +87,11 @@ class LessonModule {
   final String kind;
   final List<LessonItem> items;
   final List<String> recordings;
+
+  /// Scene picture for the module card and the top of the module.
+  final String? image;
+
+  bool get showsImage => image != null && image!.trim().isNotEmpty;
 
   bool get isDialogue => kind == 'dialogue';
 
@@ -115,6 +121,7 @@ class LessonModule {
       title: json['title'] as String,
       subtitle: json['subtitle'] as String? ?? '',
       kind: json['kind'] as String? ?? 'practice',
+      image: json['image'] as String?,
       recordings:
           (json['recordings'] as List<dynamic>?)
               ?.map((item) => item as String)
@@ -186,10 +193,9 @@ class LessonItem {
       clip: json['clip'] == null
           ? null
           : AudioClip.fromJson(json['clip'] as Map<String, dynamic>),
-      fill: (json['fill'] as List<dynamic>?)
-              ?.map(
-                (spec) => BlankSpec.fromJson(spec as Map<String, dynamic>),
-              )
+      fill:
+          (json['fill'] as List<dynamic>?)
+              ?.map((spec) => BlankSpec.fromJson(spec as Map<String, dynamic>))
               .toList(growable: false) ??
           const [],
     );
@@ -260,11 +266,11 @@ class AudioClip {
   }
 
   Map<String, dynamic> toJson() => {
-        if (recording != 0) 'rec': recording,
-        'startMs': startMs,
-        'endMs': endMs,
-        if (words != null) 'words': words!.toJson(),
-      };
+    if (recording != 0) 'rec': recording,
+    'startMs': startMs,
+    'endMs': endMs,
+    if (words != null) 'words': words!.toJson(),
+  };
 }
 
 /// Per-character timings inside an [AudioClip], in recording-absolute
@@ -316,12 +322,9 @@ class WordTiming {
   }
 
   Map<String, dynamic> toJson() => {
-        't': text,
-        'w': [
-          for (var i = 0; i < startsMs.length; i++) ...[
-            startsMs[i],
-            endsMs[i],
-          ],
-        ],
-      };
+    't': text,
+    'w': [
+      for (var i = 0; i < startsMs.length; i++) ...[startsMs[i], endsMs[i]],
+    ],
+  };
 }

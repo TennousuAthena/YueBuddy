@@ -1,0 +1,19 @@
+name = "yuebuddy-tts"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+MINIMAX_BASE_URL = "https://api.minimaxi.com"
+MINIMAX_MODEL = "speech-2.8-hd"
+MODEL_VERSION = "mm-speech28hd-v1"
+DEFAULT_VOICE_ID = "Cantonese_GentleLady"
+LANGUAGE_BOOST = "Chinese,Yue"
+# Comma-separated allowlist. Requests with other voice ids fall back to DEFAULT_VOICE_ID.
+ALLOWED_VOICES = "Cantonese_GentleLady,Cantonese_ProfessionalHost（F),Cantonese_Articulate_commentator_vv2,Chinese (Mandarin)_HK_Flight_Attendant"
+MAX_TEXT_LENGTH = "200"
+MAX_BATCH_ITEMS = "20"
+RATE_LIMIT_PER_MIN = "60"
+
+[[r2_buckets]]
+binding = "TTS_AUDIO"
+bucket_name = "yuebuddy-tts-audio"

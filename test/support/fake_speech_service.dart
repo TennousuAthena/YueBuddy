@@ -29,6 +29,9 @@ class FakeSpeechService extends SpeechService {
   String? get statusMessage => cantoneseAvailable ? null : '这台设备没有粤语语音。';
 
   @override
+  bool get statusIsWarning => !cantoneseAvailable;
+
+  @override
   String? get activeItemId => _activeItemId;
 
   @override
@@ -80,7 +83,9 @@ class FakeSpeechService extends SpeechService {
     required Duration end,
     String? itemId,
   }) async {
-    segmentsPlayed.add('$assetPath@${start.inMilliseconds}-${end.inMilliseconds}');
+    segmentsPlayed.add(
+      '$assetPath@${start.inMilliseconds}-${end.inMilliseconds}',
+    );
     _activeItemId = itemId;
     _speaking = true;
     notifyListeners();

@@ -4,6 +4,7 @@ import 'app/yue_buddy_app.dart';
 import 'core/audio/cantonese_speech_service.dart';
 import 'core/audio/device_tts_service.dart';
 import 'core/audio/minimax_config.dart';
+import 'core/audio/tts_backend_config.dart';
 import 'features/glossary/glossary.dart';
 import 'features/lessons/data/lesson_repository.dart';
 import 'features/lessons/domain/lesson_models.dart';
@@ -19,6 +20,7 @@ Future<void> main() async {
   final speech = CantoneseSpeechService(
     device: DeviceTtsService(),
     config: MinimaxConfig.fromEnvironment(),
+    backend: TtsBackendConfig.fromEnvironment(),
   );
   final lessons = AssetLessonRepository();
   final dictionary = await JyutpingDictionary.loadAsset();
@@ -32,8 +34,10 @@ Future<void> main() async {
 
   await Future.wait([settings.load(), progress.load(), speech.initialize()]);
   speech.updateSpeechRate(settings.speechRate);
+  speech.setOnlineTtsEnabled(settings.useOnlineTts);
   settings.addListener(() {
     speech.updateSpeechRate(settings.speechRate);
+    speech.setOnlineTtsEnabled(settings.useOnlineTts);
   });
 
   runApp(

@@ -1,0 +1,1 @@
+{"name": "yuebuddy-tts", "version": "0.1.0", "private": true, "description": "YueBuddy TTS backend: Cloudflare Worker + R2 cache, MiniMax origin.", "type": "module", "scripts": {"dev": "wrangler dev", "deploy": "wrangler deploy", "check": "tsc --noEmit"}, "devDependencies": {"@cloudflare/workers-types": "^5.0.0", "typescript": "^5.7.3", "wrangler": "^4.49.0"}}

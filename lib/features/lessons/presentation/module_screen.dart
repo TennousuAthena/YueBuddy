@@ -5,10 +5,12 @@ import '../../../core/audio/minimax_config.dart';
 import '../../../core/audio/speech_service.dart';
 import '../../../core/layout/breakpoints.dart';
 import '../../../theme/app_theme.dart';
+import '../../settings/settings_controller.dart';
 import '../domain/fill_blanks.dart';
 import '../domain/lesson_models.dart';
 import 'widgets/dialogue_bubble.dart';
 import 'widgets/fill_sheet.dart';
+import 'widgets/lesson_illustration.dart';
 import 'widgets/phrase_card.dart';
 
 class ModuleScreen extends StatefulWidget {
@@ -73,15 +75,22 @@ class _ModuleBody extends StatelessWidget {
         return LayoutBuilder(
           builder: (context, constraints) {
             final wide = constraints.maxWidth >= 700;
-            final horizontal = AppBreakpoints.classForWidth(
-                      constraints.maxWidth,
-                    ) ==
+            final horizontal =
+                AppBreakpoints.classForWidth(constraints.maxWidth) ==
                     LayoutClass.compact
                 ? 16.0
                 : 24.0;
             final header = module.recordings.isNotEmpty || module.isDialogue
                 ? 1
                 : 0;
+            final picture = module.showsImage ? 1 : 0;
+            Widget pictureBanner() {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: LessonIllustration(asset: module.image!, height: 140),
+              );
+            }
+
             final useGrid = wide && !module.isDialogue && items.length > 1;
 
             Widget headerButton(BuildContext context) {
@@ -89,7 +98,7 @@ class _ModuleBody extends StatelessWidget {
               Widget recordingButton() {
                 final playing =
                     scope.speech.activeItemId == recordingId &&
-                        scope.speech.isSpeaking;
+                    scope.speech.isSpeaking;
                 return _RecordingButton(
                   label: module.recordings.length > 1
                       ? '听老师读（${module.recordings.length}段）'
@@ -119,17 +128,16 @@ class _ModuleBody extends StatelessWidget {
                   );
                 }
                 final entries = _sequenceEntries(scope, module, items);
-                final teacherCount =
-                    entries.where((e) => e.hasTeacherAudio).length;
-                final enabled = teacherCount > 0 ||
-                    scope.speech.isCantoneseAvailable;
+                final teacherCount = entries
+                    .where((e) => e.hasTeacherAudio)
+                    .length;
+                final enabled =
+                    teacherCount > 0 || scope.speech.isCantoneseAvailable;
                 return _PlayAllButton(
                   enabled: enabled,
                   label: teacherCount > 0 ? '跟播整段对话' : '朗读整段对话',
-                  onPressed: () => scope.speech.playSequence(
-                    entries,
-                    itemId: sequenceId,
-                  ),
+                  onPressed: () =>
+                      scope.speech.playSequence(entries, itemId: sequenceId),
                 );
               }
 
@@ -153,29 +161,34 @@ class _ModuleBody extends StatelessWidget {
               void openFill(FilledBlank blank) {
                 showFillSheet(context: context, item: item, blank: blank);
               }
+
               final teacherAsset = module.teacherAudioFor(item);
               VoidCallback? onPlayTeacher;
               if (teacherAsset != null) {
                 final clip = item.clip!;
                 onPlayTeacher = () => scope.speech.playSegment(
-                      assetPath: teacherAsset,
-                      start: clip.start,
-                      end: clip.end,
-                      itemId: item.id,
-                    );
+                  assetPath: teacherAsset,
+                  start: clip.start,
+                  end: clip.end,
+                  itemId: item.id,
+                );
               }
               // Only the entry currently playing subscribes to position
               // ticks for karaoke; every other card stays static.
               final following = speaking && inSequence;
               final karaokeTiming = following ? item.clip?.words : null;
-              final followPosition =
-                  following ? scope.speech.sequencePositionMs : null;
+              final followPosition = following
+                  ? scope.speech.sequencePositionMs
+                  : null;
+              final rubyJyutping =
+                  scope.settings.jyutpingLayout == JyutpingLayout.ruby;
               final card = module.isDialogue && item.speaker != null
                   ? DialogueBubble(
                       item: item,
                       index: itemIndex,
                       showJyutping: scope.settings.showJyutping,
                       showMandarin: scope.settings.showMandarin,
+                      rubyJyutping: rubyJyutping,
                       speaking: speaking,
                       canSpeak: scope.speech.isCantoneseAvailable,
                       onPlay: () => scope.speech.speak(
@@ -194,11 +207,13 @@ class _ModuleBody extends StatelessWidget {
                       index: itemIndex,
                       showJyutping: scope.settings.showJyutping,
                       showMandarin: scope.settings.showMandarin,
+                      rubyJyutping: rubyJyutping,
                       speaking: speaking,
                       canSpeak: scope.speech.isCantoneseAvailable,
                       onPlay: () => scope.speech.speak(
-                          _utterance(item, fill.speakText),
-                          itemId: item.id),
+                        _utterance(item, fill.speakText),
+                        itemId: item.id,
+                      ),
                       teacherAsset: teacherAsset,
                       onPlayTeacher: onPlayTeacher,
                       karaokeTiming: karaokeTiming,
@@ -214,12 +229,7 @@ class _ModuleBody extends StatelessWidget {
               children: [
                 if (embedded)
                   Padding(
-                    padding: EdgeInsets.fromLTRB(
-                      horizontal,
-                      12,
-                      horizontal,
-                      0,
-                    ),
+                    padding: EdgeInsets.fromLTRB(horizontal, 12, horizontal, 0),
                     child: Text(
                       module.title,
                       style: const TextStyle(
@@ -234,7 +244,12 @@ class _ModuleBody extends StatelessWidget {
                     height: 52,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 8),
+                      padding: EdgeInsets.fromLTRB(
+                        horizontal,
+                        8,
+                        horizontal,
+                        8,
+                      ),
                       children: [
                         _SectionChip(
                           label: '全部',
@@ -254,6 +269,18 @@ class _ModuleBody extends StatelessWidget {
                   child: useGrid
                       ? CustomScrollView(
                           slivers: [
+                            if (picture == 1)
+                              SliverPadding(
+                                padding: EdgeInsets.fromLTRB(
+                                  horizontal,
+                                  8,
+                                  horizontal,
+                                  0,
+                                ),
+                                sliver: SliverToBoxAdapter(
+                                  child: pictureBanner(),
+                                ),
+                              ),
                             if (header == 1)
                               SliverToBoxAdapter(
                                 child: Padding(
@@ -276,11 +303,11 @@ class _ModuleBody extends StatelessWidget {
                               sliver: SliverGrid.builder(
                                 gridDelegate:
                                     const SliverGridDelegateWithMaxCrossAxisExtent(
-                                  maxCrossAxisExtent: 420,
-                                  mainAxisSpacing: 0,
-                                  crossAxisSpacing: 12,
-                                  mainAxisExtent: 260,
-                                ),
+                                      maxCrossAxisExtent: 420,
+                                      mainAxisSpacing: 0,
+                                      crossAxisSpacing: 12,
+                                      mainAxisExtent: 260,
+                                    ),
                                 itemCount: items.length,
                                 itemBuilder: (context, i) =>
                                     itemCard(context, i),
@@ -299,12 +326,18 @@ class _ModuleBody extends StatelessWidget {
                                 horizontal,
                                 32,
                               ),
-                              itemCount: items.length + header,
+                              itemCount: items.length + header + picture,
                               itemBuilder: (context, index) {
-                                if (header == 1 && index == 0) {
+                                if (picture == 1 && index == 0) {
+                                  return pictureBanner();
+                                }
+                                if (header == 1 && index == picture) {
                                   return headerButton(context);
                                 }
-                                return itemCard(context, index - header);
+                                return itemCard(
+                                  context,
+                                  index - header - picture,
+                                );
                               },
                             ),
                           ),
@@ -427,14 +460,11 @@ class _SequenceProgress extends StatelessWidget {
         final index = speech.activeSequenceIndex.clamp(0, total - 1);
         var fraction = total == 0 ? 0.0 : index / total;
         final entry = total == 0 ? null : entries[index];
-        if (positionMs != null &&
-            entry != null &&
-            entry.hasTeacherAudio) {
+        if (positionMs != null && entry != null && entry.hasTeacherAudio) {
           final start = entry.start!.inMilliseconds;
           final length = entry.end!.inMilliseconds - start;
           if (length > 0) {
-            final intra =
-                ((positionMs - start) / length).clamp(0.0, 1.0);
+            final intra = ((positionMs - start) / length).clamp(0.0, 1.0);
             fraction = (index + intra) / total;
           }
         }
@@ -454,9 +484,7 @@ class _SequenceProgress extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      total == 0
-                          ? '播放中'
-                          : '正在播放第 ${index + 1} / $total 句',
+                      total == 0 ? '播放中' : '正在播放第 ${index + 1} / $total 句',
                       style: const TextStyle(
                         fontWeight: FontWeight.w800,
                         color: AppColors.ink,

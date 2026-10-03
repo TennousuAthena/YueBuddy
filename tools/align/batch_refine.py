@@ -8,8 +8,9 @@ REPO = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 lessons = {}
-for name in ("lesson_1.json", "lesson_2.json"):
-    key = "l1" if "1" in name else "l2"
+for name in ("lesson_1.json", "lesson_2.json", "lesson_3.json"):
+    key = name.removeprefix("lesson_").removesuffix(".json")
+    key = f"l{key}"
     d = json.load(open(os.path.join(REPO, "assets/lessons", name)))
     lessons[key] = [m["id"] for m in d["modules"] if m.get("recordings")]
 

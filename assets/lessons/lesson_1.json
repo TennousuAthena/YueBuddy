@@ -8,6 +8,7 @@
    "id": "l1-basics",
    "title": "廣東話基礎",
    "subtitle": "聲調、聲母韻母、文法",
+   "image": "assets/illustrations/irasutoya/study.png",
    "kind": "practice",
    "recordings": [
     "audio/l1/tones.m4a"
@@ -194,7 +195,8 @@
      "section": "其他口訣",
      "cantonese": "碗",
      "jyutping": "wun2",
-     "mandarin": "碗"
+     "mandarin": "碗",
+     "image": "assets/illustrations/irasutoya/bowl.png"
     },
     {
      "id": "l1-b-m03",
@@ -210,7 +212,8 @@
      "section": "其他口訣",
      "cantonese": "牛",
      "jyutping": "ngau4",
-     "mandarin": "牛"
+     "mandarin": "牛",
+     "image": "assets/illustrations/irasutoya/cow.png"
     },
     {
      "id": "l1-b-m05",
@@ -226,7 +229,8 @@
      "section": "其他口訣",
      "cantonese": "麵",
      "jyutping": "min6",
-     "mandarin": "面"
+     "mandarin": "面",
+     "image": "assets/illustrations/irasutoya/l2-b-10.png"
     },
     {
      "id": "l1-b-m07",
@@ -874,7 +878,8 @@
      "section": "發音對比",
      "cantonese": "汁",
      "jyutping": "zap1",
-     "mandarin": "汁"
+     "mandarin": "汁",
+     "image": "assets/illustrations/irasutoya/juice.png"
     },
     {
      "id": "l1-b-c07",
@@ -1002,7 +1007,8 @@
      "section": "發音對比",
      "cantonese": "裙",
      "jyutping": "kwan4",
-     "mandarin": "裙子"
+     "mandarin": "裙子",
+     "image": "assets/illustrations/irasutoya/l1-b-nn03.png"
     },
     {
      "id": "l1-b-c23",
@@ -1074,7 +1080,8 @@
      "section": "文法 · 名詞",
      "cantonese": "衫",
      "jyutping": "saam1",
-     "mandarin": "衣服"
+     "mandarin": "衣服",
+     "image": "assets/illustrations/irasutoya/l1-b-nn01.png"
     },
     {
      "id": "l1-b-nn02",
@@ -1082,7 +1089,8 @@
      "section": "文法 · 名詞",
      "cantonese": "褲",
      "jyutping": "fu3",
-     "mandarin": "裤子"
+     "mandarin": "裤子",
+     "image": "assets/illustrations/irasutoya/l1-b-nn02.png"
     },
     {
      "id": "l1-b-nn03",
@@ -1090,7 +1098,8 @@
      "section": "文法 · 名詞",
      "cantonese": "裙",
      "jyutping": "kwan4",
-     "mandarin": "裙子"
+     "mandarin": "裙子",
+     "image": "assets/illustrations/irasutoya/l1-b-nn03.png"
     },
     {
      "id": "l1-b-nn04",
@@ -1098,7 +1107,8 @@
      "section": "文法 · 名詞",
      "cantonese": "褸",
      "jyutping": "lau1",
-     "mandarin": "外套"
+     "mandarin": "外套",
+     "image": "assets/illustrations/irasutoya/l1-b-nn04.png"
     },
     {
      "id": "l1-b-nn05",
@@ -1106,7 +1116,8 @@
      "section": "文法 · 名詞",
      "cantonese": "骨",
      "jyutping": "gwat1",
-     "mandarin": "骨头"
+     "mandarin": "骨头",
+     "image": "assets/illustrations/irasutoya/l1-b-nn05.png"
     },
     {
      "id": "l1-b-nn06",
@@ -1114,7 +1125,8 @@
      "section": "文法 · 名詞",
      "cantonese": "耳",
      "jyutping": "ji5",
-     "mandarin": "耳朵"
+     "mandarin": "耳朵",
+     "image": "assets/illustrations/irasutoya/l1-b-nn06.png"
     },
     {
      "id": "l1-b-nn07",
@@ -1122,7 +1134,8 @@
      "section": "文法 · 名詞",
      "cantonese": "眼",
      "jyutping": "ngaan5",
-     "mandarin": "眼睛"
+     "mandarin": "眼睛",
+     "image": "assets/illustrations/irasutoya/l1-b-nn07.png"
     },
     {
      "id": "l1-b-nn08",
@@ -1130,7 +1143,8 @@
      "section": "文法 · 名詞",
      "cantonese": "嘴",
      "jyutping": "zeoi2",
-     "mandarin": "嘴巴"
+     "mandarin": "嘴巴",
+     "image": "assets/illustrations/irasutoya/l1-b-nn08.png"
     },
     {
      "id": "l1-b-nn09",
@@ -1146,7 +1160,8 @@
      "section": "文法 · 名詞",
      "cantonese": "橙",
      "jyutping": "caang2",
-     "mandarin": "橘子"
+     "mandarin": "橘子",
+     "image": "assets/illustrations/irasutoya/l1-b-nn10.png"
     },
     {
      "id": "l1-b-nn11",
@@ -1154,7 +1169,8 @@
      "section": "文法 · 名詞",
      "cantonese": "飯",
      "jyutping": "faan6",
-     "mandarin": "米饭"
+     "mandarin": "米饭",
+     "image": "assets/illustrations/irasutoya/l1-b-nn11.png"
     },
     {
      "id": "l1-b-nn12",
@@ -1162,7 +1178,8 @@
      "section": "文法 · 名詞",
      "cantonese": "糖",
      "jyutping": "tong2",
-     "mandarin": "糖果"
+     "mandarin": "糖果",
+     "image": "assets/illustrations/irasutoya/l1-b-nn12.png"
     },
     {
      "id": "l1-b-nn13",
@@ -1170,7 +1187,8 @@
      "section": "文法 · 名詞",
      "cantonese": "蟻",
      "jyutping": "ngai5",
-     "mandarin": "蚂蚁"
+     "mandarin": "蚂蚁",
+     "image": "assets/illustrations/irasutoya/l1-b-nn13.png"
     },
     {
      "id": "l1-b-nn14",
@@ -1178,7 +1196,8 @@
      "section": "文法 · 名詞",
      "cantonese": "遮",
      "jyutping": "ze1",
-     "mandarin": "雨伞"
+     "mandarin": "雨伞",
+     "image": "assets/illustrations/irasutoya/l1-b-nn14.png"
     },
     {
      "id": "l1-b-nn15",
@@ -1186,7 +1205,8 @@
      "section": "文法 · 名詞",
      "cantonese": "袋",
      "jyutping": "doi2",
-     "mandarin": "口袋"
+     "mandarin": "口袋",
+     "image": "assets/illustrations/irasutoya/l1-b-nn15.png"
     },
     {
      "id": "l1-b-v01",
@@ -1250,6 +1270,7 @@
    "id": "l1-daily",
    "title": "日常用語",
    "subtitle": "打招呼、道謝、寒暄",
+   "image": "assets/illustrations/irasutoya/handshake.png",
    "kind": "practice",
    "recordings": [
     "audio/l1/daily.m4a"
@@ -1658,6 +1679,7 @@
    "id": "l1-dialogue-1",
    "title": "對話 1 · 初次認識",
    "subtitle": "自我介紹、讀咩科、內地生",
+   "image": "assets/illustrations/irasutoya/introduce.png",
    "kind": "dialogue",
    "recordings": [
     "audio/l1/dialogue-1.m4a"
@@ -2030,6 +2052,7 @@
    "id": "l1-contact",
    "title": "交換聯絡方式與數字",
    "subtitle": "電話、微信、IG、冧把",
+   "image": "assets/illustrations/irasutoya/phone.png",
    "kind": "practice",
    "recordings": [
     "audio/l1/contact.m4a"
@@ -2370,6 +2393,7 @@
    "id": "l1-campus",
    "title": "書院／居住／交通",
    "subtitle": "中大書院、住邊、點返學",
+   "image": "assets/illustrations/irasutoya/university.png",
    "kind": "practice",
    "recordings": [
     "audio/l1/campus.m4a"
@@ -2820,6 +2844,7 @@
      "cantonese": "巴士",
      "jyutping": "baa1 si2",
      "mandarin": "公交车",
+     "image": "assets/illustrations/irasutoya/l1-cp-t01.png",
      "clip": {
       "startMs": 20570,
       "endMs": 21780,
@@ -2841,6 +2866,7 @@
      "cantonese": "校巴",
      "jyutping": "haau6 baa1",
      "mandarin": "校车",
+     "image": "assets/illustrations/irasutoya/l1-cp-t02.png",
      "clip": {
       "startMs": 22540,
       "endMs": 23490,
@@ -2862,6 +2888,7 @@
      "cantonese": "港鐵（地鐵）（火車）",
      "jyutping": "gong2 tit3 (dei6 tit3) (fo2 ce1)",
      "mandarin": "港铁（地铁）（火车）",
+     "image": "assets/illustrations/irasutoya/subway.png",
      "clip": {
       "startMs": 24279,
       "endMs": 28470,
@@ -2996,6 +3023,7 @@
    "id": "l1-datetime",
    "title": "日期時間",
    "subtitle": "幾多號、幾點、幾時",
+   "image": "assets/illustrations/irasutoya/calendar.png",
    "kind": "practice",
    "recordings": [
     "audio/l1/datetime.m4a",
@@ -3420,7 +3448,8 @@
      "section": "幾時",
      "cantonese": "而家",
      "jyutping": "ji4 gaa1",
-     "mandarin": "现在"
+     "mandarin": "现在",
+     "image": "assets/illustrations/irasutoya/clock.png"
     },
     {
      "id": "l1-dt-r02",
@@ -3459,6 +3488,7 @@
      "cantonese": "朝早",
      "jyutping": "ziu1 zou2",
      "mandarin": "早上",
+     "image": "assets/illustrations/irasutoya/morning.png",
      "clip": {
       "rec": 1,
       "startMs": 8129,
@@ -3489,6 +3519,7 @@
      "cantonese": "夜晚",
      "jyutping": "je6 maan5",
      "mandarin": "晚上",
+     "image": "assets/illustrations/irasutoya/night.png",
      "clip": {
       "rec": 1,
       "startMs": 11129,
@@ -3580,6 +3611,7 @@
      "cantonese": "今日",
      "jyutping": "gam1 jat6",
      "mandarin": "今天",
+     "image": "assets/illustrations/irasutoya/day-kyou.png",
      "clip": {
       "rec": 0,
       "startMs": 22579,
@@ -3927,6 +3959,7 @@
    "id": "l1-dialogue-2",
    "title": "對話 2 · 時間地點與邀請",
    "subtitle": "傾偈、上課、一齊食飯",
+   "image": "assets/illustrations/irasutoya/library.png",
    "kind": "dialogue",
    "recordings": [
     "audio/l1/dialogue-2.m4a"

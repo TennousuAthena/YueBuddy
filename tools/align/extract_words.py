@@ -23,7 +23,7 @@ import sys
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(REPO, "tools", "align"))
 
-from align_module import ALIASES, canonical, norm, transcribe  # noqa: E402
+from align_module import alias_pairs, canonical, norm, simp_text, transcribe  # noqa: E402
 
 MIN_COVERAGE = 0.5
 WINDOW_SLACK_MS = 120
@@ -64,7 +64,7 @@ def fold_with_map(text):
     caller shares its timing across the whole range.
     """
     toks = [[ch, i] for i, ch in enumerate(text)]  # [char, src_idx]
-    for canto, std in ALIASES:
+    for canto, std in alias_pairs():
         if not std:
             continue
         cur = "".join(t[0] for t in toks)
@@ -102,7 +102,12 @@ def map_words(display, chars, start_ms, end_ms):
     target = norm(display)
     if not target or not chars:
         return None
-    folded, src_of = fold_with_map(target)
+    # Match in simplified space; timings unfold onto the original norm,
+    # which is what the app compares against.
+    match_base = simp_text(target)
+    if len(match_base) != len(target):
+        match_base = target
+    folded, src_of = fold_with_map(match_base)
     wtext = "".join(c[0] for c in chars)
     ftext = "".join(folded)
     matcher = difflib.SequenceMatcher(None, ftext, wtext, autojunk=False)
@@ -232,8 +237,11 @@ def main() -> int:
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
-    lessons = ["assets/lessons/lesson_1.json", "assets/lessons/lesson_2.json"] \
-        if args.all else [args.lesson]
+    lessons = [
+        "assets/lessons/lesson_1.json",
+        "assets/lessons/lesson_2.json",
+        "assets/lessons/lesson_3.json",
+    ] if args.all else [args.lesson]
     total = 0
     for lesson_rel in lessons:
         lesson_path = os.path.join(REPO, lesson_rel)

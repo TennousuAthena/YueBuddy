@@ -6,6 +6,7 @@ import 'package:yue_buddy/features/lessons/data/lesson_repository.dart';
 import 'package:yue_buddy/features/lessons/domain/lesson_models.dart';
 import 'package:yue_buddy/features/lessons/progress/progress_controller.dart';
 import 'package:yue_buddy/features/onboarding/jyutping_dictionary.dart';
+import 'package:yue_buddy/features/settings/about_section.dart';
 import 'package:yue_buddy/features/settings/settings_controller.dart';
 
 import 'support/fake_speech_service.dart';
@@ -114,9 +115,9 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('设置'));
     await tester.pumpAndSettle();
-    await tester.tap(find.byType(Switch).first);
+    await tester.tap(find.text('不显示'));
     await tester.pumpAndSettle();
-    await tester.tap(find.byType(Switch).at(1));
+    await tester.tap(find.byType(Switch));
     await tester.pumpAndSettle();
     await tester.tap(find.text('学习'));
     await tester.pumpAndSettle();
@@ -127,6 +128,33 @@ void main() {
     expect(find.text('早晨！'), findsOneWidget);
     expect(find.text('zou2 san4'), findsNothing);
     expect(find.text('早上好！'), findsNothing);
+  });
+
+  testWidgets('ruby layout puts jyutping above each word', (tester) async {
+    tester.view.physicalSize = const Size(400, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+
+    await tester.pumpWidget(await buildApp());
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('设置'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('标在词上'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('学习'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('互相認識'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('日常用語'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('早晨！'), findsNothing);
+    expect(find.text('zou2 san4'), findsNothing);
+    expect(find.text('早'), findsOneWidget);
+    expect(find.text('晨！'), findsOneWidget);
+    expect(find.text('zou2'), findsOneWidget);
+    expect(find.text('san4'), findsOneWidget);
+    expect(find.text('早上好！'), findsOneWidget);
   });
 
   testWidgets('speak button records cantonese playback', (tester) async {
@@ -211,5 +239,61 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('互相認識'), findsOneWidget);
     expect(find.text('智能练习'), findsOneWidget);
+  });
+
+  testWidgets('settings greeting lets the learner rename themselves', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(400, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+
+    await tester.pumpWidget(await buildApp());
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('设置'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('你好'), findsOneWidget);
+    expect(find.text('小明'), findsOneWidget);
+    expect(find.text('siu2 ming4'), findsOneWidget);
+
+    await tester.tap(find.text('修改名字'));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), '明明');
+    await tester.tap(find.text('保存'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('你好'), findsOneWidget);
+    expect(find.text('明明'), findsOneWidget);
+    expect(find.text('ming4 ming4'), findsOneWidget);
+    expect(find.text('小明'), findsNothing);
+  });
+
+  testWidgets('about lists the repository and illustration credit', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(400, 3200);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+
+    await tester.pumpWidget(await buildApp());
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('设置'));
+    await tester.pumpAndSettle();
+    expect(find.byType(AboutSection), findsNothing);
+    expect(
+      find.text('https://github.com/TennousuAthena/YueBuddy'),
+      findsNothing,
+    );
+    await tester.tap(find.text('关于'));
+    await tester.pumpAndSettle();
+    expect(find.byType(AboutSection), findsOneWidget);
+    expect(
+      find.text('https://github.com/TennousuAthena/YueBuddy'),
+      findsWidgets,
+    );
+    expect(find.textContaining('いらすとや'), findsWidgets);
+    expect(find.textContaining('BSD 3-Clause License'), findsWidgets);
+    expect(find.textContaining('MIT License'), findsWidgets);
   });
 }

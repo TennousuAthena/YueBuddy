@@ -28,6 +28,14 @@ class LessonScreen extends StatefulWidget {
     'l2-dialogue-1': Icons.forum_rounded,
     'l2-dialogue-2': Icons.celebration_rounded,
     'l2-other': Icons.menu_book_rounded,
+    'l3-ask': Icons.explore_rounded,
+    'l3-dialogue-1': Icons.queue_music_rounded,
+    'l3-greet': Icons.waving_hand_rounded,
+    'l3-dialogue-2': Icons.chat_bubble_rounded,
+    'l3-dialogue-3': Icons.groups_rounded,
+    'l3-collab': Icons.assignment_rounded,
+    'l3-team': Icons.handshake_rounded,
+    'l3-chat': Icons.forum_rounded,
   };
 
   static const _colors = <String, Color>{
@@ -47,10 +55,17 @@ class LessonScreen extends StatefulWidget {
     'l2-dialogue-1': AppColors.purple,
     'l2-dialogue-2': AppColors.blue,
     'l2-other': AppColors.green,
+    'l3-ask': AppColors.blue,
+    'l3-dialogue-1': AppColors.purple,
+    'l3-greet': AppColors.orange,
+    'l3-dialogue-2': AppColors.green,
+    'l3-dialogue-3': Color(0xFF00CD9C),
+    'l3-collab': Color(0xFFFF9600),
+    'l3-team': Color(0xFFFF6B9D),
+    'l3-chat': AppColors.blue,
   };
 
-  static IconData iconFor(String id) =>
-      _icons[id] ?? Icons.menu_book_rounded;
+  static IconData iconFor(String id) => _icons[id] ?? Icons.menu_book_rounded;
   static Color colorFor(String id) => _colors[id] ?? AppColors.green;
 
   @override
@@ -77,16 +92,16 @@ class _LessonScreenState extends State<LessonScreen> {
 
   void _openModule(BuildContext context, LessonModule module) {
     Navigator.of(context).push(
-      MaterialPageRoute<void>(
-        builder: (_) => ModuleScreen(module: module),
-      ),
+      MaterialPageRoute<void>(builder: (_) => ModuleScreen(module: module)),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('第${widget.lesson.number}課 ${widget.lesson.title}')),
+      appBar: AppBar(
+        title: Text('第${widget.lesson.number}課 ${widget.lesson.title}'),
+      ),
       body: LayoutBuilder(
         builder: (context, constraints) {
           if (AppBreakpoints.isMasterDetailWidth(constraints.maxWidth)) {
@@ -101,9 +116,7 @@ class _LessonScreenState extends State<LessonScreen> {
   Widget _buildSinglePane(BuildContext context, double maxWidth) {
     final layout = AppBreakpoints.classForWidth(maxWidth);
     final columns = layout == LayoutClass.compact ? 1 : 2;
-    final horizontal = layout == LayoutClass.compact
-        ? 20.0
-        : 24.0;
+    final horizontal = layout == LayoutClass.compact ? 20.0 : 24.0;
     if (columns <= 1) {
       return ListView(
         padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
@@ -117,8 +130,7 @@ class _LessonScreenState extends State<LessonScreen> {
               icon: LessonScreen.iconFor(widget.lesson.modules[i].id),
               color: LessonScreen.colorFor(widget.lesson.modules[i].id),
               selected: false,
-              onTap: () =>
-                  _openModule(context, widget.lesson.modules[i]),
+              onTap: () => _openModule(context, widget.lesson.modules[i]),
             ),
         ],
       );
@@ -151,8 +163,7 @@ class _LessonScreenState extends State<LessonScreen> {
               color: LessonScreen.colorFor(widget.lesson.modules[i].id),
               selected: false,
               gridMode: true,
-              onTap: () =>
-                  _openModule(context, widget.lesson.modules[i]),
+              onTap: () => _openModule(context, widget.lesson.modules[i]),
             ),
           ),
         ),
@@ -275,7 +286,9 @@ class _ModuleCard extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(bottom: gridMode ? 0 : 12),
         child: Material(
-          color: selected ? AppColors.green.withValues(alpha: 0.08) : Colors.white,
+          color: selected
+              ? AppColors.green.withValues(alpha: 0.08)
+              : Colors.white,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
             side: BorderSide(
@@ -297,7 +310,17 @@ class _ModuleCard extends StatelessWidget {
                       color: color.withValues(alpha: 0.15),
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: Icon(icon, color: color),
+                    child: module.showsImage
+                        ? Padding(
+                            padding: const EdgeInsets.all(4),
+                            child: Image.asset(
+                              module.image!,
+                              fit: BoxFit.contain,
+                              errorBuilder: (context, error, stackTrace) =>
+                                  Icon(icon, color: color),
+                            ),
+                          )
+                        : Icon(icon, color: color),
                   ),
                   const SizedBox(width: 14),
                   Expanded(

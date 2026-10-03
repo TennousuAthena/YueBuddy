@@ -43,6 +43,11 @@ def norm(s: str) -> str:
 # text and the ASR text so they meet in the middle. Order matters:
 # longer phrases first.
 ALIASES = [
+    # Mis-hears seen in the teacher recordings. Longer phrases first.
+    ("預埋我", "約我"),
+    ("升降機", "升機"),
+    ("見誠", "建成"),
+    ("撈攪", "吵架"),
     ("唔使喇唔該", "不用了麻煩"),
     ("唔該借借", "麻煩借借"),
     ("唔該", "麻煩"),
@@ -104,11 +109,52 @@ ALIASES = [
 ]
 
 
+_CC = None
+_ALIAS_PAIRS = None
+
+
+def _opencc():
+    global _CC
+    if _CC is None:
+        from opencc import OpenCC
+        _CC = OpenCC("t2s")
+    return _CC
+
+
+def simp_text(s: str) -> str:
+    """Fold traditional characters to simplified, one-for-one when possible.
+
+    Whisper's zh pass writes simplified characters. The lesson is
+    traditional, so a sentence the teacher read in full used to match
+    only the characters that happen to look the same (身 but not 體),
+    and the clip stopped halfway through the utterance.
+    """
+    if not s:
+        return s
+    # Per character, not the whole phrase: phrase rules rewrite Cantonese
+    # particles (呀 → 啊) only when the neighbours happen to match, so the
+    # lesson and the ASR hypothesis would fold differently.
+    cc = _opencc()
+    chars = []
+    for ch in s:
+        folded = cc.convert(ch)
+        chars.append(folded if len(folded) == 1 else (folded[:1] or ch))
+    return "".join(chars)
+
+
+def alias_pairs():
+    """Alias table with both sides simplified, so it matches simp_text()."""
+    global _ALIAS_PAIRS
+    if _ALIAS_PAIRS is None:
+        _ALIAS_PAIRS = [(simp_text(a), simp_text(b)) for a, b in ALIASES]
+    return _ALIAS_PAIRS
+
+
 def canonical(s: str) -> str:
-    """norm() + alias folding for fuzzy matching."""
-    s = norm(s)
-    for cantonese, standard in ALIASES:
-        if standard in s:
+    """norm() + simplified folding + alias folding for fuzzy matching."""
+    s = simp_text(norm(s))
+    for cantonese, standard in alias_pairs():
+        if standard and standard in s:
             s = s.replace(standard, cantonese)
     return s
 
@@ -125,7 +171,56 @@ def asr_chars(segments):
             per = dur / len(text)
             for i, ch in enumerate(text):
                 out.append((ch, w.start + per * i, w.start + per * (i + 1)))
-    return out
+    return _refold_aliases(out)
+
+
+def _refold_aliases(chars):
+    """Apply multi-character aliases across whisper word boundaries.
+
+    Per-word canonical() never sees 约我 when whisper split it into 约 + 我,
+    so 你预埋我吖 would not match 你约我呀.
+    """
+    if not chars:
+        return chars
+    toks = [[ch, s, e] for ch, s, e in chars]
+    for canto, std in alias_pairs():
+        if not std or len(std) < 2 or std == canto:
+            continue
+        cur = "".join(t[0] for t in toks)
+        if std not in cur:
+            continue
+        out = []
+        i = 0
+        while i < len(cur):
+            if cur.startswith(std, i):
+                rng = toks[i:i + len(std)]
+                s, e = rng[0][1], rng[-1][2]
+                step = max(e - s, 0.01) / len(canto)
+                for k, ch in enumerate(canto):
+                    out.append([ch, s + step * k, s + step * (k + 1)])
+                i += len(std)
+            else:
+                out.append(toks[i])
+                i += 1
+        toks = out
+    return [(t[0], t[1], t[2]) for t in toks]
+
+
+def _same_phrase(block, lo_a, hi_a, lo_b, hi_b):
+    """Join two match blocks only when both texts skip a similar gap.
+
+    A mis-hear (下昼 / 下午) leaves a short gap on both sides. A neighbour
+    word leaves a gap on the recording only, and must not be absorbed.
+    """
+    if block.b >= hi_b:
+        asr_gap = block.b - hi_b
+        item_gap = block.a - hi_a
+    else:
+        asr_gap = lo_b - (block.b + block.size)
+        item_gap = lo_a - (block.a + block.size)
+    if asr_gap < 0 or item_gap < 0:
+        return False
+    return asr_gap <= 4 and asr_gap <= item_gap + 1
 
 
 def best_span(item_text, chars, start_pos):
@@ -155,6 +250,7 @@ def best_span(item_text, chars, start_pos):
         blocks.sort(key=lambda b: (-b.size, b.b))
         seed = blocks[0]
         lo, hi = seed.b, seed.b + seed.size
+        ilo, ihi = seed.a, seed.a + seed.size
         used = {id(seed)}
         changed = True
         while changed:
@@ -162,9 +258,11 @@ def best_span(item_text, chars, start_pos):
             for b in blocks:
                 if id(b) in used:
                     continue
-                if b.b + b.size >= lo - 3 and b.b <= hi + 3:
+                if _same_phrase(b, ilo, ihi, lo, hi):
                     lo = min(lo, b.b)
                     hi = max(hi, b.b + b.size)
+                    ilo = min(ilo, b.a)
+                    ihi = max(ihi, b.a + b.size)
                     used.add(id(b))
                     changed = True
         matched = sum(b.size for b in blocks if id(b) in used)

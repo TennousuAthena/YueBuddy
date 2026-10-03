@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:yue_buddy/app/yue_buddy_app.dart';
 import 'package:yue_buddy/core/audio/speech_service.dart';
+import 'package:yue_buddy/core/audio/teacher_run.dart';
 import 'package:yue_buddy/features/glossary/glossary.dart';
 import 'package:yue_buddy/features/glossary/glossary_text.dart';
 import 'package:yue_buddy/features/lessons/data/lesson_repository.dart';
@@ -65,8 +66,7 @@ Lesson _dialogueLesson() {
 /// Text.rich spans, so tests can't assume a flat layout).
 TextSpan? _firstColoredSpan(InlineSpan span, Color color) {
   if (span is TextSpan) {
-    if (span.style?.color == color &&
-        (span.text?.isNotEmpty ?? false)) {
+    if (span.style?.color == color && (span.text?.isNotEmpty ?? false)) {
       return span;
     }
     for (final child in span.children ?? const <InlineSpan>[]) {
@@ -93,18 +93,9 @@ void main() {
         startsMs: [100, 500],
         endsMs: [400, 800],
       );
-      expect(
-        sungCharCount(display: '早晨！', timing: timing, positionMs: 0),
-        0,
-      );
-      expect(
-        sungCharCount(display: '早晨！', timing: timing, positionMs: 100),
-        1,
-      );
-      expect(
-        sungCharCount(display: '早晨！', timing: timing, positionMs: 900),
-        2,
-      );
+      expect(sungCharCount(display: '早晨！', timing: timing, positionMs: 0), 0);
+      expect(sungCharCount(display: '早晨！', timing: timing, positionMs: 100), 1);
+      expect(sungCharCount(display: '早晨！', timing: timing, positionMs: 900), 2);
     });
 
     test('sungCharCount returns -1 on text mismatch', () {
@@ -140,7 +131,13 @@ void main() {
 
     test('tryParse rejects malformed payloads without throwing', () {
       expect(WordTiming.tryParse(null), isNull);
-      expect(WordTiming.tryParse({'t': '早晨', 'w': [100]}), isNull);
+      expect(
+        WordTiming.tryParse({
+          't': '早晨',
+          'w': [100],
+        }),
+        isNull,
+      );
       expect(WordTiming.tryParse({'t': '', 'w': []}), isNull);
       expect(WordTiming.tryParse('nope'), isNull);
     });
@@ -149,11 +146,7 @@ void main() {
       const clip = AudioClip(
         startMs: 100,
         endMs: 900,
-        words: WordTiming(
-          text: '早晨',
-          startsMs: [100, 500],
-          endsMs: [400, 800],
-        ),
+        words: WordTiming(text: '早晨', startsMs: [100, 500], endsMs: [400, 800]),
       );
       final restored = AudioClip.fromJson(clip.toJson());
       expect(restored.words!.text, '早晨');
@@ -195,23 +188,107 @@ void main() {
     });
   });
 
-  group('fake sequence', () {
-    test('playSequence keeps teacher-first order and progress state',
-        () async {
-      final speech = FakeSpeechService();
-      await speech.playSequence(
-        const [
-          SequenceEntry(
-            itemId: 's1',
-            fallbackText: '早晨',
-            assetPath: 'audio/dg.m4a',
-            start: Duration(milliseconds: 100),
-            end: Duration(milliseconds: 900),
-          ),
-          SequenceEntry(itemId: 's2', fallbackText: '你好嗎'),
-        ],
-        itemId: 'dg-all',
+  group('teacher run', () {
+    const entries = [
+      SequenceEntry(
+        itemId: 'a',
+        fallbackText: 'a',
+        assetPath: 'audio/dg.m4a',
+        start: Duration(milliseconds: 699),
+        end: Duration(milliseconds: 4170),
+      ),
+      SequenceEntry(
+        itemId: 'b',
+        fallbackText: 'b',
+        assetPath: 'audio/dg.m4a',
+        start: Duration(milliseconds: 4180),
+        end: Duration(milliseconds: 8565),
+      ),
+      SequenceEntry(
+        itemId: 'c',
+        fallbackText: 'c',
+        assetPath: 'audio/dg.m4a',
+        start: Duration(milliseconds: 8565),
+        end: Duration(milliseconds: 11700),
+      ),
+      SequenceEntry(itemId: 'tts', fallbackText: '合成'),
+    ];
+
+    test('one recording stays one run and hands off at the next start', () {
+      expect(teacherRunEnd(entries, 0), 3);
+
+      expect(
+        teacherRunCursor(
+          entries: entries,
+          start: 0,
+          end: 3,
+          cursor: 0,
+          positionMs: 4000,
+        ),
+        0,
       );
+      // The pause between slices keeps the previous line. Seeking back
+      // here is what repeated the next sentence.
+      expect(
+        teacherRunCursor(
+          entries: entries,
+          start: 0,
+          end: 3,
+          cursor: 0,
+          positionMs: 4175,
+        ),
+        0,
+      );
+      expect(
+        teacherRunCursor(
+          entries: entries,
+          start: 0,
+          end: 3,
+          cursor: 0,
+          positionMs: 4180,
+        ),
+        1,
+      );
+      expect(
+        teacherRunCursor(
+          entries: entries,
+          start: 0,
+          end: 3,
+          cursor: 1,
+          positionMs: 9000,
+        ),
+        2,
+      );
+    });
+
+    test('stop tail applies only after the last slice', () {
+      expect(
+        teacherRunShouldStop(last: entries[2], positionMs: 11700),
+        isFalse,
+      );
+      expect(
+        teacherRunShouldStop(
+          last: entries[2],
+          positionMs: 11700 + teacherRunTail.inMilliseconds,
+        ),
+        isTrue,
+      );
+    });
+  });
+
+  group('fake sequence', () {
+    test('playSequence keeps teacher-first order and progress state', () async {
+      final speech = FakeSpeechService();
+      await speech.playSequence(const [
+        SequenceEntry(
+          itemId: 's1',
+          fallbackText: '早晨',
+          assetPath: 'audio/dg.m4a',
+          start: Duration(milliseconds: 100),
+          end: Duration(milliseconds: 900),
+        ),
+        SequenceEntry(itemId: 's2', fallbackText: '你好嗎'),
+      ], itemId: 'dg-all');
       expect(speech.sequenceEntries, ['s1', 's2']);
       expect(speech.sequenceAssets, ['audio/dg.m4a']);
       expect(speech.activeSequenceId, 'dg-all');
@@ -227,8 +304,9 @@ void main() {
   });
 
   group('karaoke text widget', () {
-    testWidgets('recolors the sung prefix, keeps the rest plain',
-        (tester) async {
+    testWidgets('recolors the sung prefix, keeps the rest plain', (
+      tester,
+    ) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: Scaffold(
@@ -246,10 +324,7 @@ void main() {
       expect(sung, isNotNull);
       expect(sung!.text, '早');
       // The remainder keeps the base style (no orange).
-      expect(
-        _firstColoredSpan(rich.text, AppColors.ink),
-        isNull,
-      );
+      expect(_firstColoredSpan(rich.text, AppColors.ink), isNull);
       expect(rich.text.toPlainText(), '早晨！');
     });
 
@@ -270,8 +345,9 @@ void main() {
   });
 
   group('dialogue follow-along', () {
-    testWidgets('play-all queues teacher audio first with TTS fallback',
-        (tester) async {
+    testWidgets('play-all queues teacher audio first with TTS fallback', (
+      tester,
+    ) async {
       tester.view.physicalSize = const Size(390, 844);
       tester.view.devicePixelRatio = 1;
       addTearDown(tester.view.reset);
@@ -325,8 +401,9 @@ void main() {
       expect(find.text('跟播整段对话'), findsOneWidget);
     });
 
-    testWidgets('follow-along works without device TTS when clips exist',
-        (tester) async {
+    testWidgets('follow-along works without device TTS when clips exist', (
+      tester,
+    ) async {
       tester.view.physicalSize = const Size(390, 844);
       tester.view.devicePixelRatio = 1;
       addTearDown(tester.view.reset);

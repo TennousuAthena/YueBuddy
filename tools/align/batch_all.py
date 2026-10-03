@@ -8,7 +8,11 @@ REPO = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 jobs = []
-for lesson in ["assets/lessons/lesson_1.json", "assets/lessons/lesson_2.json"]:
+for lesson in [
+    "assets/lessons/lesson_1.json",
+    "assets/lessons/lesson_2.json",
+    "assets/lessons/lesson_3.json",
+]:
     d = json.load(open(os.path.join(REPO, lesson)))
     for m in d["modules"]:
         if m.get("recordings"):

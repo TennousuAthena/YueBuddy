@@ -50,6 +50,7 @@ void main() {
     final course = Glossary.entriesFromCourse([
       _loadLesson('lesson_1.json'),
       _loadLesson('lesson_2.json'),
+      _loadLesson('lesson_3.json'),
     ]);
     expect(course.every((entry) => entry.term.length <= 12), isTrue);
     expect(course.any((entry) => entry.term == '芬'), isFalse);
@@ -59,6 +60,15 @@ void main() {
     expect(course.any((entry) => entry.term.contains('___')), isFalse);
     expect(course.any((entry) => entry.term == '衫'), isTrue);
     expect(course.any((entry) => entry.term == '菠蘿油'), isTrue);
+    expect(
+      course.firstWhere((entry) => entry.term == '吹水').jyutping,
+      'ceoi1 seoi2',
+    );
+    expect(
+      course.firstWhere((entry) => entry.term == '轉左').jyutping,
+      'zyun3 zo2',
+    );
+    expect(course.any((entry) => entry.term == '街'), isFalse);
     expect(
       course.firstWhere((entry) => entry.term == '今個禮拜').jyutping,
       'gam1 go3 lai5 baai3',
@@ -170,6 +180,7 @@ Glossary _mergedGlossary() {
     ...Glossary.entriesFromCourse([
       _loadLesson('lesson_1.json'),
       _loadLesson('lesson_2.json'),
+      _loadLesson('lesson_3.json'),
     ]),
   ]);
 }

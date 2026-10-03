@@ -32,6 +32,9 @@ class DeviceTtsService extends SpeechService {
   String? get statusMessage => _status;
 
   @override
+  bool get statusIsWarning => !_available;
+
+  @override
   String? get activeItemId => _activeItemId;
 
   @override

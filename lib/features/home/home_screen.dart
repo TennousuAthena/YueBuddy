@@ -155,7 +155,7 @@ class _HeroCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '前两课已开放',
+            '前三课已开放',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w800,
@@ -164,7 +164,7 @@ class _HeroCard extends StatelessWidget {
           ),
           SizedBox(height: 6),
           Text(
-            '看词句、听老师录音、跟读复习。先从「互相認識」或「民以食為天」开始。',
+            '看词句、听老师录音、跟读复习。先从「互相認識」「民以食為天」或「溝通交流」开始。',
             style: TextStyle(
               color: Colors.white,
               fontSize: 15,
@@ -232,6 +232,17 @@ class _LessonTile extends StatelessWidget {
     Color(0xFF00CD9C),
   ];
 
+  static const _icons = <String, IconData>{
+    'l1': Icons.waving_hand_rounded,
+    'l2': Icons.restaurant_rounded,
+    'l3': Icons.forum_rounded,
+    'l4': Icons.directions_run_rounded,
+    'l5': Icons.favorite_rounded,
+    'l6': Icons.flag_rounded,
+  };
+
+  static IconData iconFor(String id) => _icons[id] ?? Icons.menu_book_rounded;
+
   @override
   Widget build(BuildContext context) {
     final scope = AppScope.of(context);
@@ -290,16 +301,11 @@ class _LessonTile extends StatelessWidget {
                       color: locked ? AppColors.line : accent,
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: locked
-                        ? const Icon(Icons.lock_rounded, color: AppColors.muted)
-                        : Text(
-                            '${summary.number}',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 22,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          ),
+                    child: Icon(
+                      locked ? Icons.lock_rounded : iconFor(summary.id),
+                      color: locked ? AppColors.muted : Colors.white,
+                      size: 28,
+                    ),
                   ),
                   const SizedBox(width: 14),
                   Expanded(

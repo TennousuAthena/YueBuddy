@@ -5,6 +5,8 @@ import '../../core/audio/speech_service.dart';
 import '../../core/audio/tts_locale.dart';
 import '../../core/layout/breakpoints.dart';
 import '../../theme/app_theme.dart';
+import 'about_section.dart';
+import 'settings_controller.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -24,28 +26,49 @@ class SettingsScreen extends StatelessWidget {
               children: [
                 const Text(
                   '发音',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
-                  ),
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
                 ),
                 const SizedBox(height: 8),
-                Text(
-                  scope.speech.statusMessage ??
+                _SpeechStatus(
+                  message:
+                      scope.speech.statusMessage ??
                       (scope.speech.isCantoneseAvailable
                           ? '已使用设备粤语语音（zh-HK）。'
                           : cantoneseUnavailableMessage),
-                  style: const TextStyle(
-                    color: AppColors.muted,
-                    fontWeight: FontWeight.w600,
-                    height: 1.4,
-                  ),
+                  warning:
+                      scope.speech.statusIsWarning ||
+                      !scope.speech.isCantoneseAvailable,
                 ),
                 const SizedBox(height: 16),
                 const Text(
-                  '语速',
+                  '语音来源',
                   style: TextStyle(fontWeight: FontWeight.w800),
                 ),
+                const SizedBox(height: 8),
+                SegmentedButton<SpeechSource>(
+                  segments: const [
+                    ButtonSegment(
+                      value: SpeechSource.online,
+                      label: Text('在线语音'),
+                      icon: Icon(Icons.cloud_outlined),
+                    ),
+                    ButtonSegment(
+                      value: SpeechSource.device,
+                      label: Text('系统离线'),
+                      icon: Icon(Icons.smartphone_outlined),
+                    ),
+                  ],
+                  selected: {settings.speechSource},
+                  onSelectionChanged: (selected) =>
+                      settings.setSpeechSource(selected.first),
+                ),
+                const SizedBox(height: 4),
+                const Text(
+                  '在线语音需联网，音质更好；系统离线只用本机粤语语音。',
+                  style: TextStyle(color: AppColors.muted, height: 1.4),
+                ),
+                const SizedBox(height: 16),
+                const Text('语速', style: TextStyle(fontWeight: FontWeight.w800)),
                 Slider(
                   value: settings.speechRate,
                   min: 0.2,
@@ -67,12 +90,34 @@ class SettingsScreen extends StatelessWidget {
           );
           final displayCard = _Card(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                _ToggleRow(
-                  title: '显示粤拼',
-                  subtitle: 'Jyutping',
-                  value: settings.showJyutping,
-                  onChanged: settings.setShowJyutping,
+                const Text('拼音', style: TextStyle(fontWeight: FontWeight.w800)),
+                const SizedBox(height: 8),
+                SegmentedButton<PinyinDisplay>(
+                  showSelectedIcon: false,
+                  segments: const [
+                    ButtonSegment(
+                      value: PinyinDisplay.hidden,
+                      label: Text('不显示'),
+                    ),
+                    ButtonSegment(
+                      value: PinyinDisplay.line,
+                      label: Text('分开一行'),
+                    ),
+                    ButtonSegment(
+                      value: PinyinDisplay.ruby,
+                      label: Text('标在词上'),
+                    ),
+                  ],
+                  selected: {settings.pinyinDisplay},
+                  onSelectionChanged: (selected) =>
+                      settings.setPinyinDisplay(selected.first),
+                ),
+                const SizedBox(height: 4),
+                const Text(
+                  '分开一行把整句粤拼放在下面。标在词上把读音放在每个词的上方。',
+                  style: TextStyle(color: AppColors.muted, height: 1.4),
                 ),
                 _ToggleRow(
                   title: '显示普通话',
@@ -83,43 +128,19 @@ class SettingsScreen extends StatelessWidget {
               ],
             ),
           );
-          const aboutCard = _Card(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '关于',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-                SizedBox(height: 8),
-                Text(
-                  '粤语伴 YueBuddy 0.1.0\n前两课已开放。模块里优先听老师录音，单句仍可用合成语音。',
-                  style: TextStyle(
-                    color: AppColors.muted,
-                    fontWeight: FontWeight.w600,
-                    height: 1.45,
-                  ),
-                ),
-              ],
-            ),
-          );
+          const aboutButton = AboutButton();
 
           return LayoutBuilder(
             builder: (context, constraints) {
-              final layout =
-                  AppBreakpoints.classForWidth(constraints.maxWidth);
+              final layout = AppBreakpoints.classForWidth(constraints.maxWidth);
               final horizontal = layout == LayoutClass.compact
                   ? 20.0
                   : layout == LayoutClass.medium
-                      ? 24.0
-                      : 32.0;
+                  ? 24.0
+                  : 32.0;
               if (layout == LayoutClass.compact) {
                 return ListView(
-                  padding:
-                      EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+                  padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
                   children: [
                     _NameCard(name: settings.displayName),
                     const SizedBox(height: 12),
@@ -127,7 +148,7 @@ class SettingsScreen extends StatelessWidget {
                     const SizedBox(height: 12),
                     displayCard,
                     const SizedBox(height: 12),
-                    aboutCard,
+                    aboutButton,
                   ],
                 );
               }
@@ -135,12 +156,9 @@ class SettingsScreen extends StatelessWidget {
               return Align(
                 alignment: Alignment.topCenter,
                 child: ConstrainedBox(
-                  constraints: BoxConstraints(
-                    maxWidth: wide ? 960 : 720,
-                  ),
+                  constraints: BoxConstraints(maxWidth: wide ? 960 : 720),
                   child: ListView(
-                    padding:
-                        EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+                    padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
                     children: [
                       _NameCard(name: settings.displayName),
                       const SizedBox(height: 12),
@@ -154,7 +172,7 @@ class SettingsScreen extends StatelessWidget {
                               children: [
                                 displayCard,
                                 const SizedBox(height: 12),
-                                aboutCard,
+                                aboutButton,
                               ],
                             ),
                           ),
@@ -182,46 +200,145 @@ class _NameCard extends StatelessWidget {
     final scope = AppScope.of(context);
     final reading = scope.dictionary.read(name);
     return _Card(
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  name,
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  reading.jyutping,
-                  style: const TextStyle(
-                    color: AppColors.greenDark,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-              ],
+          const Text(
+            '你好',
+            style: TextStyle(
+              color: AppColors.greenDark,
+              fontSize: 16,
+              fontWeight: FontWeight.w800,
             ),
           ),
-          IconButton.filled(
-            onPressed: scope.speech.isCantoneseAvailable
-                ? () => scope.speech.speak(
-                    SpeechUtterance(text: reading.speakText),
-                    itemId: 'profile-name',
-                  )
-                : null,
-            style: IconButton.styleFrom(
-              backgroundColor: AppColors.green,
-              foregroundColor: Colors.white,
-              disabledBackgroundColor: AppColors.line,
+          const SizedBox(height: 6),
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      name,
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      reading.jyutping,
+                      style: const TextStyle(
+                        color: AppColors.greenDark,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              IconButton.filled(
+                tooltip: '听名字',
+                onPressed: scope.speech.isCantoneseAvailable
+                    ? () => scope.speech.speak(
+                        SpeechUtterance(text: reading.speakText),
+                        itemId: 'profile-name',
+                      )
+                    : null,
+                style: IconButton.styleFrom(
+                  backgroundColor: AppColors.green,
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor: AppColors.line,
+                ),
+                icon: const Icon(Icons.volume_up_rounded),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          const Text(
+            '这个名字会写进课文。想换的话，随时改。',
+            style: TextStyle(
+              color: AppColors.muted,
+              fontWeight: FontWeight.w600,
+              height: 1.4,
             ),
-            icon: const Icon(Icons.volume_up_rounded),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TextButton.icon(
+              onPressed: () => _editDisplayName(context, name),
+              icon: const Icon(Icons.edit_rounded),
+              label: const Text('修改名字'),
+            ),
           ),
         ],
       ),
+    );
+  }
+}
+
+Future<void> _editDisplayName(BuildContext context, String current) async {
+  final saved = await showDialog<String>(
+    context: context,
+    builder: (context) => _NameEditorDialog(initial: current),
+  );
+  if (saved == null || !context.mounted) return;
+  await AppScope.of(context).settings.setDisplayName(saved);
+}
+
+class _NameEditorDialog extends StatefulWidget {
+  const _NameEditorDialog({required this.initial});
+
+  final String initial;
+
+  @override
+  State<_NameEditorDialog> createState() => _NameEditorDialogState();
+}
+
+class _NameEditorDialogState extends State<_NameEditorDialog> {
+  late final TextEditingController _controller = TextEditingController(
+    text: widget.initial,
+  );
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _save() {
+    final value = _controller.text.trim();
+    if (value.isEmpty) return;
+    Navigator.pop(context, value);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('修改名字'),
+      content: TextField(
+        controller: _controller,
+        autofocus: true,
+        textInputAction: TextInputAction.done,
+        onSubmitted: (_) => _save(),
+        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
+        decoration: const InputDecoration(hintText: '例如：陈小明'),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('取消'),
+        ),
+        ListenableBuilder(
+          listenable: _controller,
+          builder: (context, _) {
+            final ready = _controller.text.trim().isNotEmpty;
+            return FilledButton(
+              onPressed: ready ? _save : null,
+              child: const Text('保存'),
+            );
+          },
+        ),
+      ],
     );
   }
 }
@@ -258,6 +375,53 @@ class _ToggleRow extends StatelessWidget {
             ),
           ),
           Switch(value: value, onChanged: onChanged),
+        ],
+      ),
+    );
+  }
+}
+
+class _SpeechStatus extends StatelessWidget {
+  const _SpeechStatus({required this.message, required this.warning});
+
+  final String message;
+  final bool warning;
+
+  @override
+  Widget build(BuildContext context) {
+    if (!warning) {
+      return Text(
+        message,
+        style: const TextStyle(
+          color: AppColors.muted,
+          fontWeight: FontWeight.w600,
+          height: 1.4,
+        ),
+      );
+    }
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFF1D6),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: AppColors.orange, width: 2),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Icon(Icons.warning_amber_rounded, color: AppColors.orange),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              message,
+              style: const TextStyle(
+                color: Color(0xFF8A4E00),
+                fontWeight: FontWeight.w800,
+                height: 1.4,
+              ),
+            ),
+          ),
         ],
       ),
     );

@@ -53,6 +53,7 @@ class FilledBlank {
     required this.hasOverride,
     required this.start,
     required this.end,
+    required this.reading,
   });
 
   final int index;
@@ -61,6 +62,10 @@ class FilledBlank {
   final bool hasOverride;
   final int start;
   final int end;
+
+  /// Jyutping for this span. Unfilled blanks keep the underscore run so
+  /// ruby layout can skip it as one unit. A filled "10" is `sap6`.
+  final String reading;
 }
 
 /// A lesson sentence with blanks resolved to display/TTS strings.
@@ -93,8 +98,9 @@ LessonFill resolveLessonFill({
   required String? Function(int index) stored,
 }) {
   final specs = item.fill;
-  final matches =
-      blankPattern.allMatches(item.cantonese).toList(growable: false);
+  final matches = blankPattern
+      .allMatches(item.cantonese)
+      .toList(growable: false);
   final count = matches.length < specs.length ? matches.length : specs.length;
 
   String defaultFor(BlankKind kind) {
@@ -140,8 +146,7 @@ LessonFill resolveLessonFill({
   }
 
   String fillLine(String line) {
-    final lineMatches =
-        blankPattern.allMatches(line).toList(growable: false);
+    final lineMatches = blankPattern.allMatches(line).toList(growable: false);
     final buffer = StringBuffer();
     var cursor = 0;
     for (var i = 0; i < lineMatches.length && i < values.length; i++) {
@@ -155,8 +160,7 @@ LessonFill resolveLessonFill({
   }
 
   String fillJyutpingLine(String line) {
-    final lineMatches =
-        blankPattern.allMatches(line).toList(growable: false);
+    final lineMatches = blankPattern.allMatches(line).toList(growable: false);
     final buffer = StringBuffer();
     var cursor = 0;
     for (var i = 0; i < lineMatches.length && i < readings.length; i++) {
@@ -192,6 +196,7 @@ LessonFill resolveLessonFill({
           hasOverride: overrides[i],
           start: start,
           end: start + shown.length,
+          reading: values[i].isEmpty ? shown : readings[i],
         ),
       );
       cursor = match.end;

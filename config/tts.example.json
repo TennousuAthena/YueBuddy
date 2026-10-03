@@ -1,0 +1,4 @@
+{
+  "TTS_BASE_URL": "https://yuebuddy-tts.<your-account>.workers.dev",
+  "TTS_DEFAULT_VOICE_ID": "Cantonese_GentleLady"
+}

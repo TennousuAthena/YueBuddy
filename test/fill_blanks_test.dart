@@ -88,10 +88,14 @@ void main() {
       );
       expect(fill.displayCantonese, '大家好！我係陈小明。');
       expect(fill.displayMandarin, '大家好！我是陈小明。');
-      expect(fill.displayJyutping, 'daai6 gaa1 hou2! ngo5 hai6 can4 siu2 ming4');
+      expect(
+        fill.displayJyutping,
+        'daai6 gaa1 hou2! ngo5 hai6 can4 siu2 ming4',
+      );
       expect(fill.speakText, '大家好！我係陈小明。');
       expect(fill.blanks.length, 1);
       expect(fill.blanks.single.hasOverride, isFalse);
+      expect(fill.blanks.single.reading, 'can4 siu2 ming4');
     });
 
     test('stored value wins, empty keeps underscores', () {
@@ -102,6 +106,7 @@ void main() {
       final empty = _resolve(_nameItem);
       expect(empty.displayCantonese, '大家好！我係___。');
       expect(empty.blanks.single.value, isEmpty);
+      expect(empty.blanks.single.reading, '___');
     });
   });
 
@@ -119,6 +124,11 @@ void main() {
         'gam1 jat6 hai6 sap6 jyut6 jat1 hou6, sing1 kei4 sei3.',
       );
       expect(fill.blanks.length, 3);
+      expect(fill.blanks.map((blank) => blank.reading), [
+        'sap6',
+        'jat1',
+        'sei3',
+      ]);
     });
 
     test('weekday override does not touch the date', () {
@@ -154,12 +164,12 @@ void main() {
       await settings.load();
       await progress.load();
       LessonFill currentFill() => resolveLessonFill(
-            item: _nameItem,
-            displayName: settings.displayName,
-            now: DateTime(2026, 10, 1),
-            nameReadings: const {},
-            stored: (index) => settings.blankValue(_nameItem.id, index),
-          );
+        item: _nameItem,
+        displayName: settings.displayName,
+        now: DateTime(2026, 10, 1),
+        nameReadings: const {},
+        stored: (index) => settings.blankValue(_nameItem.id, index),
+      );
 
       Future<void> pumpCard() {
         return tester.pumpWidget(

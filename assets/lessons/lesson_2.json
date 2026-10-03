@@ -8,6 +8,7 @@
    "id": "l2-eat",
    "title": "食啲咩？",
    "subtitle": "堂食、外賣、餐廳、時段",
+   "image": "assets/illustrations/irasutoya/restaurant.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/what-to-eat.m4a"
@@ -238,6 +239,7 @@
      "cantonese": "快餐店",
      "jyutping": "faai3 caan1 dim3",
      "mandarin": "快餐店",
+     "image": "assets/illustrations/irasutoya/l2-e-11.png",
      "clip": {
       "startMs": 22490,
       "endMs": 23540,
@@ -330,6 +332,7 @@
      "cantonese": "中菜",
      "jyutping": "zung1 coi3",
      "mandarin": "中餐",
+     "image": "assets/illustrations/irasutoya/l2-e-15.png",
      "clip": {
       "startMs": 27637,
       "endMs": 28563,
@@ -351,6 +354,7 @@
      "cantonese": "西餐",
      "jyutping": "sai1 caan1",
      "mandarin": "西餐",
+     "image": "assets/illustrations/irasutoya/hamburg.png",
      "clip": {
       "startMs": 29071,
       "endMs": 30118,
@@ -372,6 +376,7 @@
      "cantonese": "日本野",
      "jyutping": "jat6 bun2 je5",
      "mandarin": "日本菜（口语）",
+     "image": "assets/illustrations/irasutoya/sushi.png",
      "clip": {
       "startMs": 30805,
       "endMs": 31742,
@@ -395,6 +400,7 @@
      "cantonese": "日本菜",
      "jyutping": "jat6 bun2 coi3",
      "mandarin": "日本菜",
+     "image": "assets/illustrations/irasutoya/sushi.png",
      "clip": {
       "startMs": 32340,
       "endMs": 33413,
@@ -418,6 +424,7 @@
      "cantonese": "韓國野",
      "jyutping": "hon4 gwok3 je5",
      "mandarin": "韩国菜（口语）",
+     "image": "assets/illustrations/irasutoya/toppoki.png",
      "clip": {
       "startMs": 34051,
       "endMs": 35070,
@@ -441,6 +448,7 @@
      "cantonese": "韓國菜",
      "jyutping": "hon4 gwok3 coi3",
      "mandarin": "韩国菜",
+     "image": "assets/illustrations/irasutoya/toppoki.png",
      "clip": {
       "startMs": 35730,
       "endMs": 36868,
@@ -464,6 +472,7 @@
      "cantonese": "早餐",
      "jyutping": "zou2 caan1",
      "mandarin": "早餐",
+     "image": "assets/illustrations/irasutoya/bread.png",
      "clip": {
       "startMs": 2010,
       "endMs": 2850,
@@ -485,6 +494,7 @@
      "cantonese": "午餐",
      "jyutping": "ng5 caan1",
      "mandarin": "午饭",
+     "image": "assets/illustrations/irasutoya/hamburg.png",
      "clip": {
       "startMs": 3640,
       "endMs": 5805,
@@ -506,6 +516,7 @@
      "cantonese": "晏",
      "jyutping": "aan3",
      "mandarin": "午饭（口语）",
+     "image": "assets/illustrations/irasutoya/hamburg.png",
      "clip": {
       "startMs": 5805,
       "endMs": 6221,
@@ -525,6 +536,7 @@
      "cantonese": "下午茶",
      "jyutping": "haa6 ng5 caa4",
      "mandarin": "下午茶",
+     "image": "assets/illustrations/irasutoya/l2-t-03.png",
      "clip": {
       "startMs": 6891,
       "endMs": 9770,
@@ -548,6 +560,7 @@
      "cantonese": "晚餐",
      "jyutping": "maan5 caan1",
      "mandarin": "晚饭",
+     "image": "assets/illustrations/irasutoya/l2-m-05.png",
      "clip": {
       "startMs": 12428,
       "endMs": 14509,
@@ -569,6 +582,7 @@
      "cantonese": "宵夜",
      "jyutping": "siu1 je6",
      "mandarin": "宵夜",
+     "image": "assets/illustrations/irasutoya/night.png",
      "clip": {
       "startMs": 15597,
       "endMs": 16480,
@@ -589,6 +603,7 @@
    "id": "l2-daily",
    "title": "日常用語",
    "subtitle": "饿、请客、味道、结账",
+   "image": "assets/illustrations/irasutoya/hungry.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/daily.m4a"
@@ -780,6 +795,7 @@
      "cantonese": "餐牌",
      "jyutping": "caan1 paai4",
      "mandarin": "菜单",
+     "image": "assets/illustrations/irasutoya/menu.png",
      "clip": {
       "startMs": 4535,
       "endMs": 5421,
@@ -949,6 +965,7 @@
    "id": "l2-breakfast",
    "title": "早餐 · 常餐 · 特餐",
    "subtitle": "面包、蛋、公仔面配料",
+   "image": "assets/illustrations/irasutoya/bread.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/breakfast.m4a"
@@ -960,6 +977,7 @@
      "cantonese": "方包",
      "jyutping": "fong1 baau1",
      "mandarin": "方面包",
+     "image": "assets/illustrations/irasutoya/bread.png",
      "clip": {
       "startMs": 6140,
       "endMs": 7140,
@@ -980,6 +998,7 @@
      "cantonese": "多士",
      "jyutping": "do1 si6",
      "mandarin": "吐司",
+     "image": "assets/illustrations/irasutoya/l2-b-02.png",
      "clip": {
       "startMs": 8060,
       "endMs": 8927,
@@ -1020,6 +1039,7 @@
      "cantonese": "炒蛋",
      "jyutping": "caau2 daan6",
      "mandarin": "炒蛋",
+     "image": "assets/illustrations/irasutoya/l2-b-04.png",
      "clip": {
       "startMs": 11809,
       "endMs": 12860,
@@ -1040,6 +1060,7 @@
      "cantonese": "煎蛋",
      "jyutping": "zin1 daan6",
      "mandarin": "煎蛋",
+     "image": "assets/illustrations/irasutoya/fried-egg.png",
      "clip": {
       "startMs": 13630,
       "endMs": 15246,
@@ -1060,6 +1081,7 @@
      "cantonese": "太陽蛋",
      "jyutping": "taai3 joeng4 daan6",
      "mandarin": "太阳蛋",
+     "image": "assets/illustrations/irasutoya/fried-egg.png",
      "clip": {
       "startMs": 15264,
       "endMs": 16310,
@@ -1082,6 +1104,7 @@
      "cantonese": "反蛋",
      "jyutping": "faan2 daan6",
      "mandarin": "两面煎的蛋",
+     "image": "assets/illustrations/irasutoya/l2-b-07.png",
      "clip": {
       "startMs": 17101,
       "endMs": 18108,
@@ -1129,6 +1152,7 @@
      "cantonese": "公仔麵",
      "jyutping": "gung1 zai2 min6",
      "mandarin": "公仔面",
+     "image": "assets/illustrations/irasutoya/l2-b-10.png",
      "clip": {
       "startMs": 35511,
       "endMs": 36550,
@@ -1151,6 +1175,7 @@
      "cantonese": "米粉",
      "jyutping": "mai5 fan2",
      "mandarin": "米粉",
+     "image": "assets/illustrations/irasutoya/l2-b-11.png",
      "clip": {
       "startMs": 37180,
       "endMs": 38031,
@@ -1171,6 +1196,7 @@
      "cantonese": "通粉",
      "jyutping": "tung1 fan2",
      "mandarin": "通心粉",
+     "image": "assets/illustrations/irasutoya/l2-b-12.png",
      "clip": {
       "startMs": 38740,
       "endMs": 39589,
@@ -1191,6 +1217,7 @@
      "cantonese": "火腿",
      "jyutping": "fo2 teoi2",
      "mandarin": "火腿",
+     "image": "assets/illustrations/irasutoya/l2-b-13.png",
      "clip": {
       "startMs": 21832,
       "endMs": 23399,
@@ -1231,6 +1258,7 @@
      "cantonese": "腸仔",
      "jyutping": "coeng2 zai2",
      "mandarin": "香肠",
+     "image": "assets/illustrations/irasutoya/l2-b-15.png",
      "clip": {
       "startMs": 25887,
       "endMs": 28191,
@@ -1347,6 +1375,7 @@
    "id": "l2-drinks",
    "title": "飲啲咩？",
    "subtitle": "茶餐厅饮品和加减",
+   "image": "assets/illustrations/irasutoya/l2-k-02.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/drinks.m4a"
@@ -1382,6 +1411,7 @@
      "cantonese": "咖啡",
      "jyutping": "gaa3 fe1",
      "mandarin": "咖啡",
+     "image": "assets/illustrations/irasutoya/l2-k-01.png",
      "clip": {
       "startMs": 2401,
       "endMs": 4130,
@@ -1403,6 +1433,7 @@
      "cantonese": "奶茶",
      "jyutping": "naai5 caa4",
      "mandarin": "奶茶",
+     "image": "assets/illustrations/irasutoya/l2-k-02.png",
      "clip": {
       "startMs": 4450,
       "endMs": 6139,
@@ -1505,6 +1536,7 @@
      "cantonese": "檸檬",
      "jyutping": "ning4 mung1",
      "mandarin": "柠檬",
+     "image": "assets/illustrations/irasutoya/l2-k-08.png",
      "clip": {
       "startMs": 17621,
       "endMs": 18439,
@@ -1526,6 +1558,7 @@
      "cantonese": "檸水",
      "jyutping": "ning2 seoi2",
      "mandarin": "柠檬水",
+     "image": "assets/illustrations/irasutoya/l2-k-09.png",
      "clip": {
       "startMs": 19251,
       "endMs": 20160,
@@ -1547,6 +1580,7 @@
      "cantonese": "檸茶",
      "jyutping": "ning2 caa4",
      "mandarin": "柠檬茶",
+     "image": "assets/illustrations/irasutoya/l2-k-10.png",
      "clip": {
       "startMs": 21102,
       "endMs": 22352,
@@ -1626,6 +1660,7 @@
      "cantonese": "凍",
      "jyutping": "dung3",
      "mandarin": "冰的",
+     "image": "assets/illustrations/irasutoya/ice.png",
      "clip": {
       "startMs": 31249,
       "endMs": 33130,
@@ -1776,6 +1811,7 @@
    "id": "l2-tea",
    "title": "下午茶",
    "subtitle": "小食和甜品",
+   "image": "assets/illustrations/irasutoya/l2-t-03.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/afternoon-tea.m4a"
@@ -1809,6 +1845,7 @@
      "cantonese": "雞脾薯條",
      "jyutping": "gai1 bei2 syu4 tiu4",
      "mandarin": "鸡腿薯条",
+     "image": "assets/illustrations/irasutoya/karaage.png",
      "clip": {
       "startMs": 10920,
       "endMs": 12632,
@@ -1833,6 +1870,7 @@
      "cantonese": "西多士",
      "jyutping": "sai1 do1 si6",
      "mandarin": "西多士",
+     "image": "assets/illustrations/irasutoya/l2-t-03.png",
      "clip": {
       "startMs": 8920,
       "endMs": 10058,
@@ -1932,6 +1970,7 @@
    "id": "l2-meals",
    "title": "午餐 · 晚餐",
    "subtitle": "粉面饭",
+   "image": "assets/illustrations/irasutoya/l2-m-05.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/lunch-dinner.m4a"
@@ -1949,7 +1988,8 @@
      "type": "vocab",
      "cantonese": "肉醬意粉",
      "jyutping": "juk6 zoeng3 ji3 fan2",
-     "mandarin": "肉酱意粉"
+     "mandarin": "肉酱意粉",
+     "image": "assets/illustrations/irasutoya/l2-m-02.png"
     },
     {
      "id": "l2-m-03",
@@ -1970,7 +2010,8 @@
      "type": "vocab",
      "cantonese": "揚州炒飯",
      "jyutping": "joeng4 zau1 caau2 faan6",
-     "mandarin": "扬州炒饭"
+     "mandarin": "扬州炒饭",
+     "image": "assets/illustrations/irasutoya/l2-m-05.png"
     },
     {
      "id": "l2-m-06",
@@ -1985,6 +2026,7 @@
    "id": "l2-dialogue-1",
    "title": "對話 1 · 茶餐廳落單",
    "subtitle": "幾多位、常餐、凍檸茶",
+   "image": "assets/illustrations/irasutoya/waiter.png",
    "kind": "dialogue",
    "recordings": [
     "audio/l2/dialogue-1.m4a"
@@ -2325,6 +2367,7 @@
    "id": "l2-dialogue-2",
    "title": "對話 2 · 請飲茶",
    "subtitle": "生日、訂位、點心",
+   "image": "assets/illustrations/irasutoya/shumai.png",
    "kind": "dialogue",
    "recordings": [
     "audio/l2/dialogue-2.m4a"
@@ -2796,6 +2839,7 @@
    "id": "l2-other",
    "title": "其他",
    "subtitle": "点餐App、问朋友、食字词",
+   "image": "assets/illustrations/irasutoya/delivery.png",
    "kind": "practice",
    "recordings": [
     "audio/l2/other.m4a"
@@ -2974,6 +3018,7 @@
      "cantonese": "食檸檬",
      "jyutping": "sik6 ning4 mung1",
      "mandarin": "吃醋",
+     "image": "assets/illustrations/irasutoya/l2-k-08.png",
      "clip": {
       "startMs": 10282,
       "endMs": 11193,

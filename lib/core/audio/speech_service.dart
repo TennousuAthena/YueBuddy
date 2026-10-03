@@ -39,6 +39,10 @@ abstract class SpeechService extends ChangeNotifier {
   bool get isCantoneseAvailable;
   bool get isSpeaking;
   String? get statusMessage;
+
+  /// True when [statusMessage] is a problem the learner should notice,
+  /// such as missing online speech config or a failed playback.
+  bool get statusIsWarning;
   String? get activeItemId;
 
   Future<void> initialize();
