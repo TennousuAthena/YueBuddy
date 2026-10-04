@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../app/app_scope.dart';
 import '../../core/layout/breakpoints.dart';
+import '../../core/platform/harmony.dart';
 import '../../theme/app_theme.dart';
 import '../lessons/domain/lesson_models.dart';
 import '../lessons/presentation/lesson_screen.dart';
@@ -15,21 +16,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         titleSpacing: 20,
-        title: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('粤语伴 YueBuddy'),
-            SizedBox(height: 2),
-            Text(
-              '口袋练习册 · 普通话 → 粤语',
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-                color: AppColors.muted,
-              ),
-            ),
-          ],
-        ),
+        title: const Text('粤语伴 YueBuddy'),
       ),
       body: FutureBuilder<CourseCatalog>(
         future: scope.lessons.loadCatalog(),
@@ -46,30 +33,26 @@ class HomeScreen extends StatelessWidget {
             builder: (context, _) {
               return LayoutBuilder(
                 builder: (context, constraints) {
-                  final layout = AppBreakpoints.classForWidth(
-                    constraints.maxWidth,
+                  final frame = AppFrame(
+                    width: constraints.maxWidth,
+                    height: constraints.maxHeight,
                   );
-                  // Use layout class (not raw tile math) so the two-column
-                  // tablet layout survives the NavigationRail width taken
-                  // from the content area.
-                  final columns = switch (layout) {
-                    LayoutClass.compact => 1,
-                    LayoutClass.medium => 2,
-                    LayoutClass.expanded => 3,
-                  };
-                  final horizontal = layout == LayoutClass.compact
-                      ? 20.0
-                      : layout == LayoutClass.medium
-                          ? 24.0
-                          : 32.0;
+                  final columns = frame.homeColumns;
+                  final horizontal = frame.pagePadding;
+                  final sectionGap = frame.isShort ? 12.0 : 20.0;
                   if (columns <= 1) {
                     return ListView(
-                      padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+                      padding: EdgeInsets.fromLTRB(
+                        horizontal,
+                        frame.topInset,
+                        horizontal,
+                        frame.bottomInset,
+                      ),
                       children: [
-                        if (!scope.speech.isCantoneseAvailable)
+                        if (!isHarmonyOs && !scope.speech.isCantoneseAvailable)
                           const _TtsWarningCard(),
-                        const _HeroCard(),
-                        const SizedBox(height: 20),
+                        _HeroCard(dense: frame.isShort),
+                        SizedBox(height: sectionGap),
                         const Text(
                           '课程大纲',
                           style: TextStyle(
@@ -84,16 +67,22 @@ class HomeScreen extends StatelessWidget {
                       ],
                     );
                   }
-                  return CustomScrollView(
+                  final grid = CustomScrollView(
                     slivers: [
                       SliverPadding(
-                        padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 0),
+                        padding: EdgeInsets.fromLTRB(
+                          horizontal,
+                          frame.topInset,
+                          horizontal,
+                          0,
+                        ),
                         sliver: SliverList.list(
                           children: [
-                            if (!scope.speech.isCantoneseAvailable)
+                            if (!isHarmonyOs &&
+                                !scope.speech.isCantoneseAvailable)
                               const _TtsWarningCard(),
-                            const _HeroCard(),
-                            const SizedBox(height: 20),
+                            _HeroCard(dense: frame.isShort),
+                            SizedBox(height: sectionGap),
                             const Text(
                               '课程大纲',
                               style: TextStyle(
@@ -107,15 +96,20 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       SliverPadding(
-                        padding: EdgeInsets.fromLTRB(horizontal, 0, horizontal, 32),
+                        padding: EdgeInsets.fromLTRB(
+                          horizontal,
+                          0,
+                          horizontal,
+                          frame.bottomInset,
+                        ),
                         sliver: SliverGrid.builder(
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: columns,
-                            mainAxisSpacing: 12,
-                            crossAxisSpacing: 12,
-                            mainAxisExtent: 104,
-                          ),
+                                crossAxisCount: columns,
+                                mainAxisSpacing: 12,
+                                crossAxisSpacing: 12,
+                                mainAxisExtent: 104,
+                              ),
                           itemCount: lessons.length,
                           itemBuilder: (context, i) => _LessonTile(
                             summary: lessons[i],
@@ -125,6 +119,17 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ],
+                  );
+                  // On 1920 the three tiles would stretch into strips.
+                  // Cap the grid and center it inside the full-bleed page.
+                  return Align(
+                    alignment: Alignment.topCenter,
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: frame.homeGridMaxWidth + horizontal * 2,
+                      ),
+                      child: grid,
+                    ),
                   );
                 },
               );
@@ -137,12 +142,14 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _HeroCard extends StatelessWidget {
-  const _HeroCard();
+  const _HeroCard({this.dense = false});
+
+  final bool dense;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: EdgeInsets.all(dense ? 14 : 20),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [Color(0xFF58CC02), Color(0xFF89E219)],
@@ -151,7 +158,7 @@ class _HeroCard extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(24),
       ),
-      child: const Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
@@ -159,15 +166,15 @@ class _HeroCard extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w800,
-              fontSize: 22,
+              fontSize: dense ? 20 : 22,
             ),
           ),
-          SizedBox(height: 6),
+          SizedBox(height: dense ? 4 : 6),
           Text(
             '看词句、听老师录音、跟读复习。先从「互相認識」「民以食為天」或「溝通交流」开始。',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 15,
+              fontSize: dense ? 14 : 15,
               height: 1.4,
               fontWeight: FontWeight.w600,
             ),
@@ -197,7 +204,7 @@ class _TtsWarningCard extends StatelessWidget {
           Icon(Icons.volume_off_rounded, color: AppColors.orange),
           SizedBox(width: 10),
           Expanded(
-            child: Text(
+            child: const Text(
               '这台设备没有粤语语音。请在系统设置中下载「中文（香港）」语音。不会用普通话代替朗读。',
               style: TextStyle(
                 fontWeight: FontWeight.w600,

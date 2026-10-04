@@ -74,12 +74,14 @@ class _ModuleBody extends StatelessWidget {
       builder: (context, _) {
         return LayoutBuilder(
           builder: (context, constraints) {
+            final frame = AppFrame(
+              width: constraints.maxWidth,
+              height: constraints.maxHeight,
+            );
             final wide = constraints.maxWidth >= 700;
-            final horizontal =
-                AppBreakpoints.classForWidth(constraints.maxWidth) ==
-                    LayoutClass.compact
+            final horizontal = frame.layoutClass == LayoutClass.compact
                 ? 16.0
-                : 24.0;
+                : frame.pagePadding;
             final header = module.recordings.isNotEmpty || module.isDialogue
                 ? 1
                 : 0;
@@ -87,7 +89,10 @@ class _ModuleBody extends StatelessWidget {
             Widget pictureBanner() {
               return Padding(
                 padding: const EdgeInsets.only(bottom: 12),
-                child: LessonIllustration(asset: module.image!, height: 140),
+                child: LessonIllustration(
+                  asset: module.image!,
+                  height: frame.illustrationHeight,
+                ),
               );
             }
 
@@ -300,15 +305,11 @@ class _ModuleBody extends StatelessWidget {
                                 horizontal,
                                 32,
                               ),
-                              sliver: SliverGrid.builder(
-                                gridDelegate:
-                                    const SliverGridDelegateWithMaxCrossAxisExtent(
-                                      maxCrossAxisExtent: 420,
-                                      mainAxisSpacing: 0,
-                                      crossAxisSpacing: 12,
-                                      mainAxisExtent: 260,
-                                    ),
+                              sliver: _CardColumns(
                                 itemCount: items.length,
+                                contentWidth:
+                                    constraints.maxWidth - horizontal * 2,
+                                maxColumns: frame.vocabMaxColumns,
                                 itemBuilder: (context, i) =>
                                     itemCard(context, i),
                               ),
@@ -318,7 +319,9 @@ class _ModuleBody extends StatelessWidget {
                       : Align(
                           alignment: Alignment.topCenter,
                           child: ConstrainedBox(
-                            constraints: const BoxConstraints(maxWidth: 720),
+                            constraints: BoxConstraints(
+                              maxWidth: frame.dialogueMaxWidth,
+                            ),
                             child: ListView.builder(
                               padding: EdgeInsets.fromLTRB(
                                 horizontal,
@@ -364,6 +367,7 @@ LessonFill _resolveFill(AppScope scope, LessonItem item) {
   return resolveLessonFill(
     item: item,
     displayName: scope.settings.displayName,
+    origin: scope.settings.origin,
     now: DateTime.now(),
     nameReadings: scope.dictionary.readings,
     stored: (index) => scope.settings.blankValue(item.id, index),
@@ -403,6 +407,62 @@ List<SequenceEntry> _sequenceEntries(
   List<LessonItem> items,
 ) {
   return [for (final item in items) _sequenceEntry(scope, module, item)];
+}
+
+/// Wide vocab lists used to sit in a fixed-height grid. A picture plus the
+/// word underneath is taller than that cell, so the word was painted past
+/// the card. Rows size to their content instead.
+class _CardColumns extends StatelessWidget {
+  const _CardColumns({
+    required this.itemCount,
+    required this.contentWidth,
+    required this.itemBuilder,
+    this.maxColumns = 3,
+  });
+
+  final int itemCount;
+  final double contentWidth;
+  final IndexedWidgetBuilder itemBuilder;
+  final int maxColumns;
+
+  /// Keeps a tile wide enough for the 132px teacher-audio button.
+  static const double _minTileWidth = 300;
+  static const double _spacing = 12;
+
+  int get _columns {
+    final count = (contentWidth / _minTileWidth).floor();
+    if (count < 1) return 1;
+    if (count > maxColumns) return maxColumns;
+    return count;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final columns = _columns;
+    final rows = itemCount == 0 ? 0 : (itemCount + columns - 1) ~/ columns;
+    final tileWidth = columns == 1
+        ? contentWidth
+        : (contentWidth - _spacing * (columns - 1)) / columns;
+    return SliverList.builder(
+      itemCount: rows,
+      itemBuilder: (context, row) {
+        return Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (var column = 0; column < columns; column++) ...[
+              if (column > 0) const SizedBox(width: _spacing),
+              SizedBox(
+                width: tileWidth,
+                child: row * columns + column < itemCount
+                    ? itemBuilder(context, row * columns + column)
+                    : const SizedBox.shrink(),
+              ),
+            ],
+          ],
+        );
+      },
+    );
+  }
 }
 
 /// Scrolls the card into view when it becomes the playing line.

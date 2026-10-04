@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<oatconfig>
+    <filefilterlist>
+        <filefilter name="copyrightPolicyFilter" desc="Filters for compatibility，license header policies">
+            <filteritem type="filename" name="*.dart" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.yaml" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="ios/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.json5" desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"/>
+            <filteritem type="filename" name="LICENSE" desc="版权文件，不添加版权头"/>
+            <filteritem type="filepath" name="example/ios/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="example/macos/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="macos/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="example/windows/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="windows/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name=".metadata" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="project_version" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.h" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.cpp" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.xml" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.kt" desc="源库文件，不需要添加版权头"/>
+        </filefilter>
+        <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+            <filteritem type="filename" name="*.dart" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.yaml" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="ios/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.json5" desc="hvigor配置文件，DevEco Studio自动生成，不手动修改"/>
+            <filteritem type="filename" name="LICENSE" desc="版权文件，不添加版权头"/>
+            <filteritem type="filepath" name="example/ios/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="example/macos/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="macos/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="example/windows/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filepath" name="windows/.*" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name=".metadata" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="project_version" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.h" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.cpp" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.xml" desc="源库文件，不需要添加版权头"/>
+            <filteritem type="filename" name="*.kt" desc="源库文件，不需要添加版权头"/>
+        </filefilter>
+        <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+            <filteritem type="filename" name="*.png" desc="png图片格式文件,用于展示示例"/>
+            <filteritem type="filename" name="*.ico" desc="ico图片格式文件,用于展示示例"/>
+            <filteritem type="filename" name="*.pfx" desc="pfx二进制格式文件,源库文件"/>
+            <filteritem type="filename" name="*.pri" desc="pri资源索引文件,源库文件"/>
+        </filefilter>
+    </filefilterlist>
+    <policylist>
+        <policy
+                desc="协议相关策略"
+                name="projectPolicy">
+            <policyitem
+                    desc="继承原组件MIT许可证"
+                    name="MIT"
+                    path=".*"
+                    type="license"/>
+        </policy>
+    </policylist>
+</oatconfig>
+</configuration>

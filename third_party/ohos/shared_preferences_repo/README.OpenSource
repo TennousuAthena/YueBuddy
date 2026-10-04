@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "shared_preferences",
+        "License": "BSD 3-Clause License",
+        "License File": "LICENSE",
+        "Version Number": "2.5.4",
+        "Owner": "aibin@openvalley.net",
+        "Upstream URL": "https://github.com/flutter/packages",
+        "Description": "A Flutter plugin for persisting key-value data to disk. Wraps NSUserDefaults on iOS, SharedPreferences on Android, and now OpenHarmony preferences. This is the OHOS adaptation branch of the shared_preferences plugin for the OpenHarmony platform"
+    }
+]

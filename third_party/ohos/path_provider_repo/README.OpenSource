@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "path_provider",
+        "License": "BSD 3-Clause License",
+        "License File": "LICENSE",
+        "Version Number": "2.1.5",
+        "Owner": "aibin@openvalley.net",
+        "Upstream URL": "https://github.com/flutter/packages",
+        "Description": "A Flutter plugin for finding commonly used locations on the filesystem. Supports Android, iOS, Linux, macOS, Windows, and now OpenHarmony. This is the OHOS adaptation branch of the path_provider plugin for the OpenHarmony platform"
+    }
+]

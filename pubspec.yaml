@@ -22,6 +22,40 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+# OpenHarmony implementations live in-tree so Hvigor sees relative paths.
+# Other platforms keep the implementations shipped inside these forks.
+dependency_overrides:
+  shared_preferences:
+    path: third_party/ohos/shared_preferences_repo/packages/shared_preferences/shared_preferences
+  shared_preferences_ohos:
+    path: third_party/ohos/shared_preferences_repo/packages/shared_preferences/shared_preferences_ohos
+  url_launcher:
+    path: third_party/ohos/url_launcher_repo/packages/url_launcher/url_launcher
+  url_launcher_ohos:
+    path: third_party/ohos/url_launcher_repo/packages/url_launcher/url_launcher_ohos
+  flutter_tts:
+    path: third_party/ohos/flutter_tts
+  audioplayers:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers
+  audioplayers_ohos:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_ohos
+  audioplayers_android:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_android
+  audioplayers_darwin:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_darwin
+  audioplayers_linux:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_linux
+  audioplayers_windows:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_windows
+  audioplayers_web:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_web
+  audioplayers_platform_interface:
+    path: third_party/ohos/audioplayers_repo/packages/audioplayers_platform_interface
+  path_provider:
+    path: third_party/ohos/path_provider_repo/packages/path_provider/path_provider
+  path_provider_ohos:
+    path: third_party/ohos/path_provider_repo/packages/path_provider/path_provider_ohos
+
 flutter:
   uses-material-design: true
   assets:

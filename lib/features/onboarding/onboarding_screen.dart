@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../app/app_scope.dart';
 import '../../core/audio/speech_service.dart';
+import '../../core/platform/harmony.dart';
 import '../../core/layout/breakpoints.dart';
 import '../../theme/app_theme.dart';
+import '../lessons/domain/lesson_models.dart';
 import 'name_reading.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -15,11 +17,13 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
   final _name = TextEditingController();
+  final _origin = TextEditingController();
   NameReading? _reading;
 
   @override
   void dispose() {
     _name.dispose();
+    _origin.dispose();
     super.dispose();
   }
 
@@ -30,24 +34,24 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       body: SafeArea(
         child: LayoutBuilder(
           builder: (context, constraints) {
-            final wide = AppBreakpoints.isMasterDetailWidth(
-              constraints.maxWidth,
+            final frame = AppFrame(
+              width: constraints.maxWidth,
+              height: constraints.maxHeight,
             );
-            final horizontal =
-                AppBreakpoints.classForWidth(constraints.maxWidth) ==
-                        LayoutClass.compact
-                    ? 0.0
-                    : 32.0;
+            final wide = frame.onboardingWide;
+            final horizontal = frame.layoutClass == LayoutClass.compact
+                ? 0.0
+                : frame.pagePadding;
             Widget content = reading == null
                 ? _NameStep(
                     controller: _name,
+                    origin: _origin,
                     wide: wide,
                     onContinue: () {
                       final value = _name.text.trim();
                       if (value.isEmpty) return;
                       setState(() {
-                        _reading =
-                            AppScope.of(context).dictionary.read(value);
+                        _reading = AppScope.of(context).dictionary.read(value);
                       });
                     },
                   )
@@ -56,9 +60,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     wide: wide,
                     onBack: () => setState(() => _reading = null),
                     onStart: () {
-                      AppScope.of(context)
-                          .settings
-                          .setDisplayName(reading.name);
+                      final settings = AppScope.of(context).settings;
+                      settings.setDisplayName(reading.name);
+                      settings.setOrigin(_origin.text);
                     },
                   );
             if (!wide) return content;
@@ -68,8 +72,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 960),
                 child: Padding(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: horizontal),
+                  padding: EdgeInsets.symmetric(horizontal: horizontal),
                   child: content,
                 ),
               ),
@@ -84,11 +87,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 class _NameStep extends StatelessWidget {
   const _NameStep({
     required this.controller,
+    required this.origin,
     required this.onContinue,
     required this.wide,
   });
 
   final TextEditingController controller;
+  final TextEditingController origin;
   final VoidCallback onContinue;
   final bool wide;
 
@@ -96,7 +101,9 @@ class _NameStep extends StatelessWidget {
   Widget build(BuildContext context) {
     final form = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: wide ? MainAxisAlignment.center : MainAxisAlignment.start,
+      mainAxisAlignment: wide
+          ? MainAxisAlignment.center
+          : MainAxisAlignment.start,
       children: [
         const Text(
           '先认识一下',
@@ -109,7 +116,7 @@ class _NameStep extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         const Text(
-          '输入你的名字。我们会给出一个粤语读法，方便课后跟读。',
+          '填入你的名字和家乡可以获取在课程中获取粤语读法',
           style: TextStyle(
             fontSize: 16,
             height: 1.45,
@@ -121,32 +128,54 @@ class _NameStep extends StatelessWidget {
         TextField(
           controller: controller,
           autofocus: !wide,
+          textInputAction: TextInputAction.next,
+          style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
+          decoration: _fieldDecoration('例如：陈小明'),
+        ),
+        const SizedBox(height: 20),
+        const Text('来自哪里', style: TextStyle(fontWeight: FontWeight.w800)),
+        const SizedBox(height: 8),
+        ListenableBuilder(
+          listenable: origin,
+          builder: (context, _) {
+            return Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final option in kOriginSuggestions)
+                  ChoiceChip(
+                    label: Text(option),
+                    selected: origin.text.trim() == option,
+                    onSelected: (_) => origin.text = option,
+                    selectedColor: AppColors.green,
+                    labelStyle: TextStyle(
+                      fontWeight: FontWeight.w800,
+                      color: origin.text.trim() == option
+                          ? Colors.white
+                          : AppColors.ink,
+                    ),
+                    side: const BorderSide(color: AppColors.line, width: 2),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18),
+                    ),
+                  ),
+              ],
+            );
+          },
+        ),
+        const SizedBox(height: 12),
+        TextField(
+          controller: origin,
           textInputAction: TextInputAction.done,
           onSubmitted: (_) => onContinue(),
           style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
-          decoration: InputDecoration(
-            hintText: '例如：陈小明',
-            filled: true,
-            fillColor: Colors.white,
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 18,
-              vertical: 18,
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: AppColors.line, width: 2),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: AppColors.green, width: 2),
-            ),
-          ),
+          decoration: _fieldDecoration('例如：成都人'),
         ),
       ],
     );
 
     final cta = ListenableBuilder(
-      listenable: controller,
+      listenable: Listenable.merge([controller, origin]),
       builder: (context, _) {
         final ready = controller.text.trim().isNotEmpty;
         return SizedBox(
@@ -164,7 +193,8 @@ class _NameStep extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(24, 28, 24, 20),
         child: ConstrainedBox(
           constraints: BoxConstraints(
-            minHeight: MediaQuery.sizeOf(context).height -
+            minHeight:
+                MediaQuery.sizeOf(context).height -
                 MediaQuery.paddingOf(context).top -
                 MediaQuery.paddingOf(context).bottom -
                 48,
@@ -190,50 +220,28 @@ class _NameStep extends StatelessWidget {
         children: [
           Expanded(child: form),
           const SizedBox(width: 48),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(24),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(24),
-                    border:
-                        Border.all(color: AppColors.line, width: 2),
-                  ),
-                  child: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        '粤语伴会记住你的名字',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.ink,
-                        ),
-                      ),
-                      SizedBox(height: 8),
-                      Text(
-                        '下一步会生成粤语读法和粤拼，点一下就能听。横竖屏、平板和 PC 都能用。',
-                        style: TextStyle(
-                          color: AppColors.muted,
-                          fontWeight: FontWeight.w600,
-                          height: 1.45,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 24),
-                cta,
-              ],
-            ),
-          ),
+          Expanded(child: cta),
         ],
       ),
     );
   }
+}
+
+InputDecoration _fieldDecoration(String hint) {
+  return InputDecoration(
+    hintText: hint,
+    filled: true,
+    fillColor: Colors.white,
+    contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(16),
+      borderSide: const BorderSide(color: AppColors.line, width: 2),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(16),
+      borderSide: const BorderSide(color: AppColors.green, width: 2),
+    ),
+  );
 }
 
 class _ReadingStep extends StatelessWidget {
@@ -289,9 +297,9 @@ class _ReadingStep extends StatelessWidget {
               IconButton.filled(
                 onPressed: speech.isCantoneseAvailable
                     ? () => speech.speak(
-                          SpeechUtterance(text: reading.speakText),
-                          itemId: 'onboarding-name',
-                        )
+                        SpeechUtterance(text: reading.speakText),
+                        itemId: 'onboarding-name',
+                      )
                     : null,
                 style: IconButton.styleFrom(
                   backgroundColor: AppColors.green,
@@ -335,11 +343,11 @@ class _ReadingStep extends StatelessWidget {
           ],
         );
 
-        final footerNote = speech.isCantoneseAvailable
+        final footerNote = isHarmonyOs || speech.isCantoneseAvailable
             ? const SizedBox.shrink()
             : const Padding(
-                padding: EdgeInsets.only(top: 14),
-                child: Text(
+                padding: const EdgeInsets.only(top: 14),
+                child: const Text(
                   '这台设备没有粤语语音，先记下粤拼。装好「中文（香港）」语音后可以再听。',
                   style: TextStyle(
                     color: AppColors.muted,
@@ -351,10 +359,7 @@ class _ReadingStep extends StatelessWidget {
 
         final cta = SizedBox(
           width: double.infinity,
-          child: FilledButton(
-            onPressed: onStart,
-            child: const Text('开始复习'),
-          ),
+          child: FilledButton(onPressed: onStart, child: const Text('开始复习')),
         );
 
         if (!wide) {

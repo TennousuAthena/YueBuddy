@@ -21,6 +21,7 @@ class SettingsController extends ChangeNotifier {
   static const showJyutpingKey = 'show_jyutping';
   static const showMandarinKey = 'show_mandarin';
   static const displayNameKey = 'display_name';
+  static const originKey = 'origin';
   static const speechSourceKey = 'speech_source';
   static const jyutpingLayoutKey = 'jyutping_layout';
 
@@ -29,6 +30,7 @@ class SettingsController extends ChangeNotifier {
   bool _showJyutping = true;
   bool _showMandarin = true;
   String _displayName = '';
+  String _origin = '';
   SpeechSource _speechSource = SpeechSource.online;
   JyutpingLayout _jyutpingLayout = JyutpingLayout.line;
   bool _loaded = false;
@@ -37,6 +39,7 @@ class SettingsController extends ChangeNotifier {
   bool get showJyutping => _showJyutping;
   bool get showMandarin => _showMandarin;
   String get displayName => _displayName;
+  String get origin => _origin;
   SpeechSource get speechSource => _speechSource;
   JyutpingLayout get jyutpingLayout => _jyutpingLayout;
 
@@ -58,6 +61,7 @@ class SettingsController extends ChangeNotifier {
     _showJyutping = _preferences!.getBool(showJyutpingKey) ?? true;
     _showMandarin = _preferences!.getBool(showMandarinKey) ?? true;
     _displayName = _preferences!.getString(displayNameKey) ?? '';
+    _origin = _preferences!.getString(originKey) ?? '';
     _speechSource = speechSourceFromString(
       _preferences!.getString(speechSourceKey),
     );
@@ -90,6 +94,16 @@ class SettingsController extends ChangeNotifier {
     _displayName = value.trim();
     notifyListeners();
     await _preferences?.setString(displayNameKey, _displayName);
+  }
+
+  Future<void> setOrigin(String value) async {
+    _origin = value.trim();
+    notifyListeners();
+    if (_origin.isEmpty) {
+      await _preferences?.remove(originKey);
+    } else {
+      await _preferences?.setString(originKey, _origin);
+    }
   }
 
   Future<void> setSpeechSource(SpeechSource value) async {

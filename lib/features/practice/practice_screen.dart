@@ -14,11 +14,14 @@ class PracticeScreen extends StatelessWidget {
         top: false,
         child: LayoutBuilder(
           builder: (context, constraints) {
-            final layout =
-                AppBreakpoints.classForWidth(constraints.maxWidth);
-            // Landscape phones have very short height: shrink illustration
-            // and allow scrolling instead of overflowing.
-            final shortHeight = constraints.maxHeight < 520;
+            final frame = AppFrame(
+              width: constraints.maxWidth,
+              height: constraints.maxHeight,
+            );
+            final layout = frame.layoutClass;
+            // Short 16:9 and landscape phones: shrink the mark and scroll
+            // instead of overflowing.
+            final shortHeight = frame.isShort || constraints.maxHeight < 520;
             final iconSize = shortHeight
                 ? 72.0
                 : layout == LayoutClass.compact

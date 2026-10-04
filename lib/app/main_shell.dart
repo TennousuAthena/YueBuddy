@@ -52,7 +52,7 @@ class _MainShellState extends State<MainShell> {
             ),
           );
         }
-        final extended = layout == LayoutClass.expanded;
+        final extended = layout.isDesktop;
         return Scaffold(
           body: SafeArea(
             bottom: false,

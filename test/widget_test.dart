@@ -229,7 +229,9 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('先认识一下'), findsOneWidget);
-    await tester.enterText(find.byType(TextField), '陈小明');
+    expect(find.text('名字和籍贯会写进课程，之后也能改。'), findsOneWidget);
+    await tester.enterText(find.byType(TextField).first, '陈小明');
+    await tester.tap(find.text('上海人'));
     await tester.pump();
     await tester.tap(find.text('继续'));
     await tester.pumpAndSettle();
@@ -237,6 +239,7 @@ void main() {
 
     await tester.tap(find.text('开始复习'));
     await tester.pumpAndSettle();
+    expect(settings.origin, '上海人');
     expect(find.text('互相認識'), findsOneWidget);
     expect(find.text('智能练习'), findsOneWidget);
   });

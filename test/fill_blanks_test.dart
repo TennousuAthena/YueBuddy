@@ -39,6 +39,7 @@ const _dateItem = LessonItem(
 LessonFill _resolve(
   LessonItem item, {
   String displayName = '',
+  String origin = '',
   DateTime? now,
   Map<String, String> readings = const {},
   Map<int, String> overrides = const {},
@@ -46,6 +47,7 @@ LessonFill _resolve(
   return resolveLessonFill(
     item: item,
     displayName: displayName,
+    origin: origin,
     now: now ?? DateTime(2026, 10, 1),
     nameReadings: readings,
     stored: overrides.get,
@@ -63,6 +65,7 @@ void main() {
     test('parse falls back to other', () {
       expect(BlankKind.parse('name'), BlankKind.name);
       expect(BlankKind.parse('weekday'), BlankKind.weekday);
+      expect(BlankKind.parse('origin'), BlankKind.origin);
       expect(BlankKind.parse('nope'), BlankKind.other);
       expect(BlankKind.parse(null), BlankKind.other);
     });
@@ -136,6 +139,55 @@ void main() {
       expect(fill.displayCantonese, '今日係10月1號，星期日。');
       expect(fill.blanks[2].hasOverride, isTrue);
       expect(fill.blanks[0].hasOverride, isFalse);
+    });
+  });
+
+  group('origin blank', () {
+    const item = LessonItem(
+      id: 'origin',
+      type: 'dialogue',
+      cantonese: '我係___。',
+      jyutping: 'ngo5 hai6 ___',
+      mandarin: '我是___。',
+      fill: [
+        BlankSpec(
+          kind: BlankKind.origin,
+          fallback: '北京人',
+          options: ['北京人', '上海人'],
+        ),
+      ],
+    );
+
+    const readings = {
+      '北': 'bak1',
+      '京': 'ging1',
+      '人': 'jan4',
+      '上': 'soeng6',
+      '海': 'hoi2',
+    };
+
+    test('lesson place stays until the learner picks another', () {
+      final fill = _resolve(item, readings: readings);
+      expect(fill.displayCantonese, '我係北京人。');
+      expect(fill.displayMandarin, '我是北京人。');
+      expect(fill.displayJyutping, 'ngo5 hai6 bak1 ging1 jan4');
+      expect(fill.blanks.single.hasOverride, isFalse);
+
+      final changed = _resolve(item, readings: readings, origin: '上海人');
+      expect(changed.displayCantonese, '我係上海人。');
+      expect(changed.displayJyutping, 'ngo5 hai6 soeng6 hoi2 jan4');
+      expect(changed.blanks.single.hasOverride, isTrue);
+    });
+
+    test('json keeps fallback and options', () {
+      final spec = BlankSpec.fromJson({
+        'kind': 'origin',
+        'fallback': '北京人',
+        'options': ['北京人', '上海人'],
+      });
+      expect(spec.kind, BlankKind.origin);
+      expect(spec.fallback, '北京人');
+      expect(spec.options, ['北京人', '上海人']);
     });
   });
 
@@ -228,6 +280,92 @@ void main() {
       await pumpCard();
       await tester.pumpAndSettle();
       expect(find.text('大家好！我係阿強。', findRichText: true), findsOneWidget);
+    });
+
+    testWidgets('origin blank offers choices and free text', (tester) async {
+      const item = LessonItem(
+        id: 'l1-dg1-06',
+        type: 'dialogue',
+        cantonese: '我係___。',
+        jyutping: 'ngo5 hai6 ___',
+        mandarin: '我是___。',
+        fill: [
+          BlankSpec(
+            kind: BlankKind.origin,
+            fallback: '北京人',
+            options: ['北京人', '上海人', '廣州人'],
+          ),
+        ],
+      );
+      SharedPreferences.setMockInitialValues({});
+      final settings = SettingsController();
+      final progress = ProgressController();
+      await settings.load();
+      await progress.load();
+
+      Future<void> pumpCard() {
+        final fill = resolveLessonFill(
+          item: item,
+          displayName: '',
+          now: DateTime(2026, 10, 1),
+          nameReadings: const {},
+          stored: (index) => settings.blankValue(item.id, index),
+        );
+        return tester.pumpWidget(
+          AppScope(
+            settings: settings,
+            progress: progress,
+            speech: FakeSpeechService(),
+            lessons: MemoryLessonRepository(
+              catalog: const CourseCatalog(lessons: []),
+              lessons: const {},
+            ),
+            dictionary: const JyutpingDictionary({}),
+            glossary: const Glossary.empty(),
+            child: MaterialApp(
+              home: Scaffold(
+                body: PhraseCard(
+                  item: item,
+                  index: 0,
+                  showJyutping: false,
+                  showMandarin: false,
+                  speaking: false,
+                  canSpeak: false,
+                  onPlay: () {},
+                  fill: fill,
+                  onBlankTap: (blank) => showFillSheet(
+                    context: tester.element(find.byType(PhraseCard)),
+                    item: item,
+                    blank: blank,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      }
+
+      await pumpCard();
+      await tester.pumpAndSettle();
+      final fill = resolveLessonFill(
+        item: item,
+        displayName: '',
+        now: DateTime(2026, 10, 1),
+        nameReadings: const {},
+        stored: (index) => settings.blankValue(item.id, index),
+      );
+      showFillSheet(
+        context: tester.element(find.byType(PhraseCard)),
+        item: item,
+        blank: fill.blanks.single,
+      );
+      await tester.pumpAndSettle();
+
+      expect(find.text('你来自哪里'), findsOneWidget);
+      expect(find.byType(TextField), findsOneWidget);
+      await tester.tap(find.text('上海人'));
+      await tester.pumpAndSettle();
+      expect(settings.origin, '上海人');
     });
   });
 }

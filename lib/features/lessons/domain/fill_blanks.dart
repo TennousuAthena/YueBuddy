@@ -93,6 +93,7 @@ class LessonFill {
 LessonFill resolveLessonFill({
   required LessonItem item,
   required String displayName,
+  String origin = '',
   required DateTime now,
   required Map<String, String> nameReadings,
   required String? Function(int index) stored,
@@ -103,14 +104,18 @@ LessonFill resolveLessonFill({
       .toList(growable: false);
   final count = matches.length < specs.length ? matches.length : specs.length;
 
-  String defaultFor(BlankKind kind) {
-    return switch (kind) {
+  String defaultFor(BlankSpec spec) {
+    return switch (spec.kind) {
       BlankKind.name => displayName.trim(),
       BlankKind.phone => '',
       BlankKind.month => '${now.month}',
       BlankKind.day => '${now.day}',
       BlankKind.weekday => weekdayChar(now),
-      BlankKind.other => '',
+      BlankKind.origin =>
+        origin.trim().isNotEmpty
+            ? origin.trim()
+            : (spec.fallback?.trim() ?? ''),
+      BlankKind.other => spec.fallback?.trim() ?? '',
     };
   }
 
@@ -130,6 +135,9 @@ LessonFill resolveLessonFill({
         final number = int.tryParse(value);
         return number == null ? value : cantoneseNumber(number);
       case BlankKind.weekday:
+        return nameReadings[value] ?? value;
+      case BlankKind.origin:
+        return readName(value, nameReadings).jyutping;
       case BlankKind.other:
         return nameReadings[value] ?? value;
     }
@@ -139,10 +147,11 @@ LessonFill resolveLessonFill({
   final readings = <String>[];
   final overrides = <bool>[];
   for (var i = 0; i < count; i++) {
-    final override = stored(i);
-    values.add(override ?? defaultFor(specs[i].kind));
+    final profileOrigin = specs[i].kind == BlankKind.origin;
+    final override = profileOrigin ? null : stored(i);
+    values.add(override ?? defaultFor(specs[i]));
     readings.add(jyutpingFor(specs[i].kind, values[i]));
-    overrides.add(override != null);
+    overrides.add(profileOrigin ? origin.trim().isNotEmpty : override != null);
   }
 
   String fillLine(String line) {

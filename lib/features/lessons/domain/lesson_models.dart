@@ -204,23 +204,51 @@ class LessonItem {
 
 /// One fillable blank in a lesson sentence.
 class BlankSpec {
-  const BlankSpec({required this.kind});
+  const BlankSpec({required this.kind, this.fallback, this.options = const []});
 
   final BlankKind kind;
 
+  /// Shown before the learner saves their own value. Origin blanks use
+  /// this so the sentence still reads 「北京人」 until they change it.
+  final String? fallback;
+
+  /// Suggested values. The sheet also keeps a free-text field.
+  final List<String> options;
+
   factory BlankSpec.fromJson(Map<String, dynamic> json) {
-    return BlankSpec(kind: BlankKind.parse(json['kind'] as String?));
+    final rawOptions = json['options'] as List<dynamic>?;
+    return BlankSpec(
+      kind: BlankKind.parse(json['kind'] as String?),
+      fallback: json['fallback'] as String?,
+      options:
+          rawOptions
+              ?.map((option) => option as String)
+              .toList(growable: false) ??
+          const [],
+    );
   }
 }
 
 /// Blank editors: free text (name), digits (phone/month/day),
-/// or weekday picker.
+/// Suggested hometowns for the origin blank and the opening question.
+const kOriginSuggestions = <String>[
+  '北京人',
+  '上海人',
+  '廣州人',
+  '深圳人',
+  '香港人',
+  '台灣人',
+  '福建人',
+];
+
+/// weekday picker, or an origin with suggestions plus free text.
 enum BlankKind {
   name,
   phone,
   month,
   day,
   weekday,
+  origin,
   other;
 
   static BlankKind parse(String? raw) {

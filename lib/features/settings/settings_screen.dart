@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../app/app_scope.dart';
 import '../../core/audio/speech_service.dart';
 import '../../core/audio/tts_locale.dart';
+import '../../core/platform/harmony.dart';
 import '../../core/layout/breakpoints.dart';
 import '../../theme/app_theme.dart';
 import 'about_section.dart';
@@ -29,44 +30,56 @@ class SettingsScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
                 ),
                 const SizedBox(height: 8),
-                _SpeechStatus(
-                  message:
-                      scope.speech.statusMessage ??
-                      (scope.speech.isCantoneseAvailable
-                          ? '已使用设备粤语语音（zh-HK）。'
-                          : cantoneseUnavailableMessage),
-                  warning:
-                      scope.speech.statusIsWarning ||
-                      !scope.speech.isCantoneseAvailable,
-                ),
-                const SizedBox(height: 16),
-                const Text(
-                  '语音来源',
-                  style: TextStyle(fontWeight: FontWeight.w800),
-                ),
-                const SizedBox(height: 8),
-                SegmentedButton<SpeechSource>(
-                  segments: const [
-                    ButtonSegment(
-                      value: SpeechSource.online,
-                      label: Text('在线语音'),
-                      icon: Icon(Icons.cloud_outlined),
+                if (!isHarmonyOs || scope.speech.statusMessage != null)
+                  _SpeechStatus(
+                    message:
+                        scope.speech.statusMessage ??
+                        (scope.speech.isCantoneseAvailable
+                            ? '已使用设备粤语语音（zh-HK）。'
+                            : cantoneseUnavailableMessage),
+                    warning:
+                        scope.speech.statusIsWarning ||
+                        !scope.speech.isCantoneseAvailable,
+                  ),
+                if (isHarmonyOs)
+                  _ToggleRow(
+                    title: '在线朗读',
+                    subtitle: '开启或关闭',
+                    value: settings.useOnlineTts,
+                    onChanged: (enabled) => settings.setSpeechSource(
+                      enabled ? SpeechSource.online : SpeechSource.device,
                     ),
-                    ButtonSegment(
-                      value: SpeechSource.device,
-                      label: Text('系统离线'),
-                      icon: Icon(Icons.smartphone_outlined),
-                    ),
-                  ],
-                  selected: {settings.speechSource},
-                  onSelectionChanged: (selected) =>
-                      settings.setSpeechSource(selected.first),
-                ),
-                const SizedBox(height: 4),
-                const Text(
-                  '在线语音需联网，音质更好；系统离线只用本机粤语语音。',
-                  style: TextStyle(color: AppColors.muted, height: 1.4),
-                ),
+                  )
+                else ...[
+                  const SizedBox(height: 16),
+                  const Text(
+                    '语音来源',
+                    style: TextStyle(fontWeight: FontWeight.w800),
+                  ),
+                  const SizedBox(height: 8),
+                  SegmentedButton<SpeechSource>(
+                    segments: const [
+                      ButtonSegment(
+                        value: SpeechSource.online,
+                        label: Text('在线语音'),
+                        icon: Icon(Icons.cloud_outlined),
+                      ),
+                      ButtonSegment(
+                        value: SpeechSource.device,
+                        label: Text('系统离线'),
+                        icon: Icon(Icons.smartphone_outlined),
+                      ),
+                    ],
+                    selected: {settings.speechSource},
+                    onSelectionChanged: (selected) =>
+                        settings.setSpeechSource(selected.first),
+                  ),
+                  const SizedBox(height: 4),
+                  const Text(
+                    '在线语音需联网，音质更好；系统离线只用本机粤语语音。',
+                    style: TextStyle(color: AppColors.muted, height: 1.4),
+                  ),
+                ],
                 const SizedBox(height: 16),
                 const Text('语速', style: TextStyle(fontWeight: FontWeight.w800)),
                 Slider(
@@ -132,15 +145,19 @@ class SettingsScreen extends StatelessWidget {
 
           return LayoutBuilder(
             builder: (context, constraints) {
-              final layout = AppBreakpoints.classForWidth(constraints.maxWidth);
-              final horizontal = layout == LayoutClass.compact
-                  ? 20.0
-                  : layout == LayoutClass.medium
-                  ? 24.0
-                  : 32.0;
-              if (layout == LayoutClass.compact) {
+              final frame = AppFrame(
+                width: constraints.maxWidth,
+                height: constraints.maxHeight,
+              );
+              final horizontal = frame.pagePadding;
+              if (frame.layoutClass == LayoutClass.compact) {
                 return ListView(
-                  padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+                  padding: EdgeInsets.fromLTRB(
+                    horizontal,
+                    frame.topInset,
+                    horizontal,
+                    frame.bottomInset,
+                  ),
                   children: [
                     _NameCard(name: settings.displayName),
                     const SizedBox(height: 12),
@@ -152,13 +169,17 @@ class SettingsScreen extends StatelessWidget {
                   ],
                 );
               }
-              final wide = layout == LayoutClass.expanded;
               return Align(
                 alignment: Alignment.topCenter,
                 child: ConstrainedBox(
-                  constraints: BoxConstraints(maxWidth: wide ? 960 : 720),
+                  constraints: BoxConstraints(maxWidth: frame.settingsMaxWidth),
                   child: ListView(
-                    padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+                    padding: EdgeInsets.fromLTRB(
+                      horizontal,
+                      frame.topInset,
+                      horizontal,
+                      frame.bottomInset,
+                    ),
                     children: [
                       _NameCard(name: settings.displayName),
                       const SizedBox(height: 12),
@@ -252,15 +273,6 @@ class _NameCard extends StatelessWidget {
                 icon: const Icon(Icons.volume_up_rounded),
               ),
             ],
-          ),
-          const SizedBox(height: 8),
-          const Text(
-            '这个名字会写进课文。想换的话，随时改。',
-            style: TextStyle(
-              color: AppColors.muted,
-              fontWeight: FontWeight.w600,
-              height: 1.4,
-            ),
           ),
           Align(
             alignment: Alignment.centerLeft,

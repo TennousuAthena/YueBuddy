@@ -1952,9 +1952,16 @@
      "id": "l1-dg1-06",
      "type": "dialogue",
      "speaker": "Peter",
-     "cantonese": "係呀，我係北京人，嚟咗香港冇幾耐咋！",
-     "jyutping": "hai6 aa3, ngo5 hai6 bak1 ging1 jan4, lei4 zo2 hoeng1 gong2 mou5 gei2 noi6 zaa3!",
-     "mandarin": "是的，我是北京人。刚来香港。",
+     "cantonese": "係呀，我係___，嚟咗香港冇幾耐咋！",
+     "jyutping": "hai6 aa3, ngo5 hai6 ___, lei4 zo2 hoeng1 gong2 mou5 gei2 noi6 zaa3!",
+     "mandarin": "是的，我是___。刚来香港。",
+     "fill": [
+      {
+       "kind": "origin",
+       "fallback": "北京人",
+       "options": ["北京人", "上海人", "廣州人", "深圳人", "香港人", "台灣人", "福建人"]
+      }
+     ],
      "clip": {
       "startMs": 22150,
       "endMs": 25600,

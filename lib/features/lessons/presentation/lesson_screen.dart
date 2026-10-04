@@ -104,22 +104,30 @@ class _LessonScreenState extends State<LessonScreen> {
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
-          if (AppBreakpoints.isMasterDetailWidth(constraints.maxWidth)) {
-            return _buildMasterDetail(context);
+          final frame = AppFrame(
+            width: constraints.maxWidth,
+            height: constraints.maxHeight,
+          );
+          if (frame.useMasterDetail) {
+            return _buildMasterDetail(context, frame);
           }
-          return _buildSinglePane(context, constraints.maxWidth);
+          return _buildSinglePane(context, frame);
         },
       ),
     );
   }
 
-  Widget _buildSinglePane(BuildContext context, double maxWidth) {
-    final layout = AppBreakpoints.classForWidth(maxWidth);
-    final columns = layout == LayoutClass.compact ? 1 : 2;
-    final horizontal = layout == LayoutClass.compact ? 20.0 : 24.0;
+  Widget _buildSinglePane(BuildContext context, AppFrame frame) {
+    final columns = frame.layoutClass == LayoutClass.compact ? 1 : 2;
+    final horizontal = frame.pagePadding;
     if (columns <= 1) {
       return ListView(
-        padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 32),
+        padding: EdgeInsets.fromLTRB(
+          horizontal,
+          frame.topInset,
+          horizontal,
+          frame.bottomInset,
+        ),
         children: [
           _LessonHeader(lesson: widget.lesson),
           const SizedBox(height: 18),
@@ -138,7 +146,7 @@ class _LessonScreenState extends State<LessonScreen> {
     return CustomScrollView(
       slivers: [
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(horizontal, 8, horizontal, 0),
+          padding: EdgeInsets.fromLTRB(horizontal, frame.topInset, horizontal, 0),
           sliver: SliverList.list(
             children: [
               _LessonHeader(lesson: widget.lesson),
@@ -147,7 +155,12 @@ class _LessonScreenState extends State<LessonScreen> {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(horizontal, 0, horizontal, 32),
+          padding: EdgeInsets.fromLTRB(
+            horizontal,
+            0,
+            horizontal,
+            frame.bottomInset,
+          ),
           sliver: SliverGrid.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
@@ -171,15 +184,20 @@ class _LessonScreenState extends State<LessonScreen> {
     );
   }
 
-  Widget _buildMasterDetail(BuildContext context) {
+  Widget _buildMasterDetail(BuildContext context, AppFrame frame) {
     final modules = widget.lesson.modules;
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          width: 360,
+          width: frame.sidebarWidth,
           child: ListView(
-            padding: const EdgeInsets.fromLTRB(32, 8, 12, 32),
+            padding: EdgeInsets.fromLTRB(
+              frame.pagePadding,
+              frame.topInset,
+              12,
+              frame.bottomInset,
+            ),
             children: [
               _LessonHeader(lesson: widget.lesson),
               const SizedBox(height: 16),

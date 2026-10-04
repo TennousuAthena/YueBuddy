@@ -177,9 +177,10 @@ void main() {
 
     final ask = lesson.modules.firstWhere((module) => module.id == 'l3-ask');
     final lift = ask.items.firstWhere((item) => item.id == 'l3-a-10');
-    expect(lift.cantonese, '搭升降機');
-    expect(lift.note, contains('𨋢'));
-    expect(lift.hasTeacherClip, isTrue);
+    expect(lift.cantonese, '搭𨋢');
+    expect(lift.jyutping, 'daap3 lip1');
+    expect(lift.mandarin, 'lift');
+    expect(ask.items.any((item) => item.cantonese == '搭電梯'), isFalse);
 
     expect(outing.items.any((item) => item.cantonese.contains('唔使上堂')), isTrue);
     expect(outing.items.any((item) => item.cantonese.contains('我哋')), isTrue);

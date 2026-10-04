@@ -1,13 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
+import '../platform/harmony.dart';
 import 'speech_service.dart';
 import 'tts_locale.dart';
 
 class DeviceTtsService extends SpeechService {
-  DeviceTtsService({FlutterTts? tts}) : _tts = tts ?? FlutterTts();
+  DeviceTtsService({FlutterTts? tts}) : _tts = tts;
 
-  final FlutterTts _tts;
+  FlutterTts? _tts;
   bool _ready = false;
   bool _available = false;
   bool _speaking = false;
@@ -52,12 +53,20 @@ class DeviceTtsService extends SpeechService {
 
   @override
   Future<void> initialize() async {
-    await _tts.awaitSpeakCompletion(true);
-    await _tts.setVolume(1);
-    await _tts.setPitch(1);
-    await _tts.setSpeechRate(_rate);
+    if (isHarmonyOs) {
+      _available = false;
+      _status = null;
+      _ready = true;
+      notifyListeners();
+      return;
+    }
+    final tts = _tts ??= FlutterTts();
+    await tts.awaitSpeakCompletion(true);
+    await tts.setVolume(1);
+    await tts.setPitch(1);
+    await tts.setSpeechRate(_rate);
 
-    final languages = await _tts.getLanguages;
+    final languages = await tts.getLanguages;
     final locale = pickCantoneseLocale(
       languages is Iterable ? languages : const <String>[],
     );
@@ -66,26 +75,26 @@ class DeviceTtsService extends SpeechService {
       _available = false;
       _status = cantoneseUnavailableMessage;
     } else {
-      final result = await _tts.setLanguage(locale);
+      final result = await tts.setLanguage(locale);
       _available = result == 1 || result == true || result == '1';
       _status = _available ? null : cantoneseUnavailableMessage;
     }
 
-    _tts.setStartHandler(() {
+    tts.setStartHandler(() {
       _speaking = true;
       notifyListeners();
     });
-    _tts.setCompletionHandler(() {
+    tts.setCompletionHandler(() {
       _speaking = false;
       _activeItemId = null;
       notifyListeners();
     });
-    _tts.setCancelHandler(() {
+    tts.setCancelHandler(() {
       _speaking = false;
       _activeItemId = null;
       notifyListeners();
     });
-    _tts.setErrorHandler((message) {
+    tts.setErrorHandler((message) {
       _speaking = false;
       _activeItemId = null;
       _status = '朗读失败：$message';
@@ -115,8 +124,8 @@ class DeviceTtsService extends SpeechService {
       if (cleaned.isEmpty) continue;
       _speaking = true;
       notifyListeners();
-      await _tts.setSpeechRate(_rate);
-      await _tts.speak(cleaned);
+      await _tts!.setSpeechRate(_rate);
+      await _tts!.speak(cleaned);
     }
     _speaking = false;
     _activeItemId = null;
@@ -160,7 +169,7 @@ class DeviceTtsService extends SpeechService {
       _activeItemId = entries[i].itemId;
       _activeSequenceIndex = i;
       notifyListeners();
-      await _tts.speak(cleaned);
+      await _tts!.speak(cleaned);
     }
     _speaking = false;
     _activeItemId = null;
@@ -172,7 +181,7 @@ class DeviceTtsService extends SpeechService {
 
   @override
   Future<void> stop() async {
-    await _tts.stop();
+    await _tts?.stop();
     _speaking = false;
     _activeItemId = null;
     _activeSequenceId = null;
@@ -184,7 +193,7 @@ class DeviceTtsService extends SpeechService {
   @override
   void updateSpeechRate(double rate) {
     _rate = rate.clamp(0.2, 0.8);
-    _tts.setSpeechRate(_rate);
+    _tts?.setSpeechRate(_rate);
   }
 
   @override

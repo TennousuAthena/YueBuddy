@@ -6,7 +6,7 @@ import 'breakpoints.dart';
 ///
 /// - compact (<600): full width, horizontal padding 20.
 /// - medium (600-839): max 720, horizontal padding 24.
-/// - expanded (>=840): max 1080, horizontal padding 32.
+/// - expanded and large (>=840): full width, matching [AppShell].
 class AdaptiveCenter extends StatelessWidget {
   const AdaptiveCenter({
     super.key,
@@ -24,7 +24,7 @@ class AdaptiveCenter extends StatelessWidget {
     return switch (layout) {
       LayoutClass.compact => double.infinity,
       LayoutClass.medium => AppBreakpoints.mediumContentWidth,
-      LayoutClass.expanded => AppBreakpoints.expandedContentWidth,
+      LayoutClass.expanded || LayoutClass.large => double.infinity,
     };
   }
 
@@ -33,7 +33,8 @@ class AdaptiveCenter extends StatelessWidget {
     return switch (layout) {
       LayoutClass.compact => const EdgeInsets.symmetric(horizontal: 20),
       LayoutClass.medium => const EdgeInsets.symmetric(horizontal: 24),
-      LayoutClass.expanded => const EdgeInsets.symmetric(horizontal: 32),
+      LayoutClass.expanded || LayoutClass.large =>
+        const EdgeInsets.symmetric(horizontal: 32),
     };
   }
 
@@ -47,14 +48,15 @@ class AdaptiveCenter extends StatelessWidget {
             switch (layout) {
               LayoutClass.compact => double.infinity,
               LayoutClass.medium => AppBreakpoints.mediumContentWidth,
-              LayoutClass.expanded => AppBreakpoints.expandedContentWidth,
+              LayoutClass.expanded || LayoutClass.large => double.infinity,
             };
         final padding =
             paddingOverride ??
             switch (layout) {
               LayoutClass.compact => const EdgeInsets.symmetric(horizontal: 20),
               LayoutClass.medium => const EdgeInsets.symmetric(horizontal: 24),
-              LayoutClass.expanded => const EdgeInsets.symmetric(horizontal: 32),
+              LayoutClass.expanded || LayoutClass.large =>
+                const EdgeInsets.symmetric(horizontal: 32),
             };
         if (layout == LayoutClass.compact) {
           return Padding(padding: padding, child: child);

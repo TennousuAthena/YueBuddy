@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../core/layout/breakpoints.dart';
+import '../../core/platform/harmony.dart';
 import '../../theme/app_theme.dart';
 
 const kYueBuddyRepositoryUrl = 'https://github.com/TennousuAthena/YueBuddy';
@@ -16,17 +17,12 @@ class AboutScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('关于')),
       body: LayoutBuilder(
         builder: (context, constraints) {
-          final layout = AppBreakpoints.classForWidth(constraints.maxWidth);
-          final horizontal = layout == LayoutClass.compact
-              ? 20.0
-              : layout == LayoutClass.medium
-              ? 24.0
-              : 32.0;
-          final maxWidth = layout == LayoutClass.expanded
-              ? 960.0
-              : layout == LayoutClass.medium
-              ? 720.0
-              : constraints.maxWidth;
+          final frame = AppFrame(
+            width: constraints.maxWidth,
+            height: constraints.maxHeight,
+          );
+          final horizontal = frame.pagePadding;
+          final maxWidth = frame.settingsMaxWidth;
           return Align(
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
@@ -103,7 +99,7 @@ class AboutSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -185,7 +181,9 @@ class AboutSection extends StatelessWidget {
         SizedBox(height: 16),
         _Heading('语音'),
         _Body(
-          '在线朗读经过本项目的语音后端，由 MiniMax 合成。合成结果适用 MiniMax 的服务条款。系统离线朗读使用设备里的「中文（香港）」语音。',
+          isHarmonyOs
+              ? '在线朗读经过本项目的语音后端，由 MiniMax 合成。合成结果适用 MiniMax 的服务条款。'
+              : '在线朗读经过本项目的语音后端，由 MiniMax 合成。合成结果适用 MiniMax 的服务条款。系统离线朗读使用设备里的「中文（香港）」语音。',
         ),
       ],
     );

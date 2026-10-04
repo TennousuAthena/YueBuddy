@@ -14,6 +14,7 @@ String _titleFor(BlankKind kind) {
     BlankKind.month => '月份',
     BlankKind.day => '日期',
     BlankKind.weekday => '星期',
+    BlankKind.origin => '你来自哪里',
     BlankKind.other => '填空',
   };
 }
@@ -25,6 +26,7 @@ String _hintFor(BlankKind kind) {
     BlankKind.month => '1–12',
     BlankKind.day => '1–31',
     BlankKind.weekday => '',
+    BlankKind.origin => '例如：成都人',
     BlankKind.other => '填入你的内容',
   };
 }
@@ -36,6 +38,7 @@ TextInputType _keyboardFor(BlankKind kind) {
     BlankKind.day => TextInputType.number,
     BlankKind.name => TextInputType.name,
     BlankKind.weekday => TextInputType.text,
+    BlankKind.origin => TextInputType.text,
     BlankKind.other => TextInputType.text,
   };
 }
@@ -45,7 +48,8 @@ String? _validate(BlankKind kind, String value) {
   final text = value.trim();
   if (text.isEmpty) return '内容不能为空';
   final number = int.tryParse(text);
-  if (kind == BlankKind.month && (number == null || number < 1 || number > 12)) {
+  if (kind == BlankKind.month &&
+      (number == null || number < 1 || number > 12)) {
     return '月份是 1–12';
   }
   if (kind == BlankKind.day && (number == null || number < 1 || number > 31)) {
@@ -111,32 +115,52 @@ class _FillSheetState extends State<_FillSheet> {
     super.dispose();
   }
 
+  List<String> get _options {
+    final fill = widget.item.fill;
+    final index = widget.blank.index;
+    if (widget.blank.kind == BlankKind.origin &&
+        (index < 0 || index >= fill.length || fill[index].options.isEmpty)) {
+      return kOriginSuggestions;
+    }
+    if (index < 0 || index >= fill.length) return const [];
+    return fill[index].options;
+  }
+
   Future<void> _save(String value) async {
     final error = _validate(widget.blank.kind, value);
     if (error != null) {
       setState(() => _error = error);
       return;
     }
-    await widget.scope.settings.setBlankValue(
-      widget.item.id,
-      widget.blank.index,
-      value,
-    );
+    if (widget.blank.kind == BlankKind.origin) {
+      await widget.scope.settings.setOrigin(value);
+    } else {
+      await widget.scope.settings.setBlankValue(
+        widget.item.id,
+        widget.blank.index,
+        value,
+      );
+    }
     if (mounted) Navigator.pop(context);
   }
 
   Future<void> _reset() async {
-    await widget.scope.settings.setBlankValue(
-      widget.item.id,
-      widget.blank.index,
-      '',
-    );
+    if (widget.blank.kind == BlankKind.origin) {
+      await widget.scope.settings.setOrigin('');
+    } else {
+      await widget.scope.settings.setBlankValue(
+        widget.item.id,
+        widget.blank.index,
+        '',
+      );
+    }
     if (mounted) Navigator.pop(context);
   }
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.paddingOf(context).bottom +
+    final bottom =
+        MediaQuery.paddingOf(context).bottom +
         MediaQuery.viewInsetsOf(context).bottom;
     return Padding(
       padding: EdgeInsets.fromLTRB(16, 0, 16, 16 + bottom),
@@ -181,16 +205,22 @@ class _FillSheetState extends State<_FillSheet> {
                 ],
               ),
               if (widget.blank.kind == BlankKind.weekday)
-                _WeekdayPicker(
-                  current: widget.blank.value,
-                  onPick: _save,
-                )
+                _WeekdayPicker(current: widget.blank.value, onPick: _save)
               else ...[
+                if (_options.isNotEmpty) ...[
+                  _OptionPicker(
+                    options: _options,
+                    current: widget.blank.value,
+                    onPick: _save,
+                  ),
+                  const SizedBox(height: 12),
+                ],
                 TextField(
                   controller: _controller,
                   autofocus: true,
                   keyboardType: _keyboardFor(widget.blank.kind),
-                  inputFormatters: widget.blank.kind == BlankKind.month ||
+                  inputFormatters:
+                      widget.blank.kind == BlankKind.month ||
                           widget.blank.kind == BlankKind.day
                       ? [FilteringTextInputFormatter.digitsOnly]
                       : null,
@@ -208,15 +238,49 @@ class _FillSheetState extends State<_FillSheet> {
               ],
               if (widget.blank.hasOverride) ...[
                 const SizedBox(height: 8),
-                TextButton(
-                  onPressed: _reset,
-                  child: const Text('恢复默认'),
-                ),
+                TextButton(onPressed: _reset, child: const Text('恢复默认')),
               ],
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class _OptionPicker extends StatelessWidget {
+  const _OptionPicker({
+    required this.options,
+    required this.current,
+    required this.onPick,
+  });
+
+  final List<String> options;
+  final String current;
+  final ValueChanged<String> onPick;
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        for (final option in options)
+          ChoiceChip(
+            label: Text(option),
+            selected: current == option,
+            onSelected: (_) => onPick(option),
+            selectedColor: AppColors.blue,
+            labelStyle: TextStyle(
+              fontWeight: FontWeight.w800,
+              color: current == option ? Colors.white : AppColors.ink,
+            ),
+            side: const BorderSide(color: AppColors.line, width: 2),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(18),
+            ),
+          ),
+      ],
     );
   }
 }

@@ -61,6 +61,13 @@ tmp/
 app.*.symbols
 app.*.map.json
 
+# HarmonyOS debug dumps and machine-local signing.
+# build-profile.json5 in git has no passwords; DevEco writes the real
+# material into build-profile.local.json5.
+.ohos-debug/
+ohos/sign/
+ohos/build-profile.local.json5
+
 # Android
 **/android/**/gradle-wrapper.jar
 **/android/.gradle

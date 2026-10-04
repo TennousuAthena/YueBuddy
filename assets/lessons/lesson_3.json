@@ -285,36 +285,9 @@
      "id": "l3-a-10",
      "type": "vocab",
      "section": "交通",
-     "cantonese": "搭升降機",
-     "jyutping": "daap3 sing1 gong1 gei1",
-     "mandarin": "乘电梯",
-     "image": "assets/illustrations/irasutoya/elevator.png",
-     "clip": {
-      "startMs": 14970,
-      "endMs": 16520,
-      "words": {
-       "t": "搭升降機",
-       "w": [
-        14980,
-        15170,
-        15260,
-        15590,
-        15720,
-        15810,
-        15900,
-        16080
-       ]
-      }
-     },
-     "note": "讲义写作「搭𨋢」，读 lip1。老师这句读成升降机。"
-    },
-    {
-     "id": "l3-a-11",
-     "type": "vocab",
-     "section": "交通",
-     "cantonese": "搭電梯",
-     "jyutping": "daap3 din6 tai1",
-     "mandarin": "乘电梯",
+     "cantonese": "搭𨋢",
+     "jyutping": "daap3 lip1",
+     "mandarin": "lift",
      "image": "assets/illustrations/irasutoya/elevator.png"
     },
     {
