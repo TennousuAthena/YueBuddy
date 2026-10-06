@@ -229,7 +229,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('先认识一下'), findsOneWidget);
-    expect(find.text('名字和籍贯会写进课程，之后也能改。'), findsOneWidget);
+    expect(find.text('填入你的名字和家乡可以获取在课程中获取粤语读法'), findsOneWidget);
     await tester.enterText(find.byType(TextField).first, '陈小明');
     await tester.tap(find.text('上海人'));
     await tester.pump();
