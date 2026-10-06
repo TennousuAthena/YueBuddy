@@ -81,23 +81,15 @@ class _MainShellState extends State<MainShell> {
                     fontWeight: FontWeight.w700,
                   ),
                   onDestinationSelected: _select,
-                  leading: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: AppColors.green,
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      alignment: Alignment.center,
-                      child: const Text(
-                        '粤',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w900,
-                        ),
+                  leading: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(16)),
+                      child: Image(
+                        image: AssetImage('assets/icon/icon_square.png'),
+                        width: 48,
+                        height: 48,
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),

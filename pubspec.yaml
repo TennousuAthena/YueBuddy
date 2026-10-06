@@ -21,6 +21,27 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  image_path: assets/icon/icon_square.png
+  android: ic_launcher
+  min_sdk_android: 21
+  adaptive_icon_background: "#58CC02"
+  adaptive_icon_foreground: assets/icon/icon_square.png
+  adaptive_icon_foreground_inset: 0
+  ios: true
+  remove_alpha_ios: true
+  background_color_ios: "#58CC02"
+  web:
+    generate: true
+    background_color: "#F7F7F7"
+    theme_color: "#58CC02"
+  windows:
+    generate: true
+    icon_size: 256
+  macos:
+    generate: true
 
 # OpenHarmony implementations live in-tree so Hvigor sees relative paths.
 # Other platforms keep the implementations shipped inside these forks.
@@ -59,6 +80,7 @@ dependency_overrides:
 flutter:
   uses-material-design: true
   assets:
+    - assets/icon/icon_square.png
     - assets/lessons/
     - assets/glossary/
     - assets/illustrations/irasutoya/
