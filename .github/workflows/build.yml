@@ -79,3 +79,145 @@ jobs:
           name: yuebuddy-web
           path: build/web
           retention-days: 14
+
+  build-macos:
+    needs: [test, worker-check]
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter config --enable-macos-desktop
+      - run: flutter pub get
+      - name: Build unsigned macOS app
+        run: |
+          perl -i -pe 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' macos/Runner.xcodeproj/project.pbxproj
+          flutter build macos --release \
+            --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+      - name: Zip Runner.app
+        run: ditto -c -k --keepParent build/macos/Build/Products/Release/Runner.app yuebuddy-macos.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yuebuddy-macos
+          path: yuebuddy-macos.zip
+          retention-days: 14
+
+  build-ios:
+    needs: [test, worker-check]
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - name: Build unsigned iOS app
+        run: >
+          flutter build ios --release --no-codesign
+          --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+      - name: Zip Runner.app
+        run: ditto -c -k --keepParent build/ios/iphoneos/Runner.app yuebuddy-ios.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yuebuddy-ios
+          path: yuebuddy-ios.zip
+          retention-days: 14
+
+  build-windows:
+    needs: [test, worker-check]
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter config --enable-windows-desktop
+      - run: flutter pub get
+      - name: Build Windows app
+        run: >
+          flutter build windows --release
+          --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+      - name: Zip Windows build
+        shell: pwsh
+        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath yuebuddy-windows.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yuebuddy-windows
+          path: yuebuddy-windows.zip
+          retention-days: 14
+
+  # HarmonyOS 26 needs flutter_ohos (not Flutter stable) and a command-line
+  # SDK whose sdk-pkg apiVersion is 26. The ohos Dart SDK and gen_snapshot
+  # overrides are published for macOS, so this job stays on macos-latest.
+  # The checkout has empty signingConfigs; --no-codesign matches that.
+  build-harmonyos:
+    needs: [test, worker-check]
+    runs-on: macos-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Ensure sha256sum for the HarmonyOS SDK action
+        run: |
+          if ! command -v sha256sum >/dev/null; then
+            brew install coreutils
+            echo "$(brew --prefix coreutils)/libexec/gnubin" >> "$GITHUB_PATH"
+          fi
+      - uses: ErBWs/setup-ohos@v2
+        with:
+          version: 26.0.0.821
+          cache: true
+      - name: Restore Flutter OHOS
+        id: flutter-ohos
+        uses: actions/cache@v4
+        with:
+          path: ~/flutter-ohos
+          key: flutter-ohos-3.47.5-ohos-1.0.0-${{ runner.os }}-${{ runner.arch }}
+      - name: Clone Flutter OHOS
+        if: steps.flutter-ohos.outputs.cache-hit != 'true'
+        run: |
+          git clone --depth 1 --branch 3.47.5-ohos-1.0.0 \
+            https://atomgit.com/oh-flutter/flutter_flutter.git \
+            "$HOME/flutter-ohos"
+      - name: Point Flutter at the HarmonyOS SDK
+        run: |
+          SDK="$HOS_SDK_HOME"
+          PARENT="$(dirname "$SDK")"
+          if [[ ! -d "$PARENT/tools/node" && -d "$PARENT/tool/node" ]]; then
+            mkdir -p "$PARENT/tools"
+            ln -sfn "$PARENT/tool/node" "$PARENT/tools/node"
+          fi
+          echo "DEVECO_SDK_HOME=$SDK" >> "$GITHUB_ENV"
+          echo "OHOS_SDK_HOME=$SDK" >> "$GITHUB_ENV"
+          echo "$HOME/flutter-ohos/bin" >> "$GITHUB_PATH"
+          python3 -c 'import os,pathlib; p=pathlib.Path(os.environ["HOS_SDK_HOME"])/"default"/"sdk-pkg.json"; print(p.read_text()[:400])'
+      - name: Build unsigned HAP
+        run: |
+          flutter config --no-analytics --enable-ohos
+          flutter precache --ohos
+          flutter pub get
+          flutter build hap --release --no-codesign \
+            --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yuebuddy-harmonyos-hap
+          path: |
+            ohos/entry/build/default/outputs/default/*.hap
+            build/ohos/hap/*.hap
+          if-no-files-found: error
+          retention-days: 14
