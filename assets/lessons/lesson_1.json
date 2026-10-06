@@ -20,7 +20,18 @@
      "section": "聲調",
      "cantonese": "芬",
      "jyutping": "fan1",
-     "mandarin": "第一声 · 高平"
+     "mandarin": "第一声 · 高平",
+     "clip": {
+      "startMs": 613,
+      "endMs": 1335,
+      "words": {
+       "t": "芬",
+       "w": [
+        653,
+        1269
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-t02",
@@ -30,13 +41,13 @@
      "jyutping": "fan2",
      "mandarin": "第二声 · 高升",
      "clip": {
-      "startMs": 1380,
-      "endMs": 2430,
+      "startMs": 1646,
+      "endMs": 2282,
       "words": {
        "t": "粉",
        "w": [
-        1720,
-        2300
+        1687,
+        2210
        ]
       }
      }
@@ -49,13 +60,13 @@
      "jyutping": "fan3",
      "mandarin": "第三声 · 中平",
      "clip": {
-      "startMs": 2629,
-      "endMs": 4739,
+      "startMs": 2697,
+      "endMs": 3413,
       "words": {
        "t": "瞓",
        "w": [
-        2629,
-        3880
+        2737,
+        3342
        ]
       }
      }
@@ -66,7 +77,18 @@
      "section": "聲調",
      "cantonese": "墳",
      "jyutping": "fan4",
-     "mandarin": "第四声 · 低降"
+     "mandarin": "第四声 · 低降",
+     "clip": {
+      "startMs": 3955,
+      "endMs": 4602,
+      "words": {
+       "t": "墳",
+       "w": [
+        3995,
+        4532
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-t05",
@@ -74,7 +96,18 @@
      "section": "聲調",
      "cantonese": "憤",
      "jyutping": "fan5",
-     "mandarin": "第五声 · 低升"
+     "mandarin": "第五声 · 低升",
+     "clip": {
+      "startMs": 5089,
+      "endMs": 5797,
+      "words": {
+       "t": "憤",
+       "w": [
+        5129,
+        5725
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-t06",
@@ -82,7 +115,18 @@
      "section": "聲調",
      "cantonese": "份",
      "jyutping": "fan6",
-     "mandarin": "第六声 · 低平"
+     "mandarin": "第六声 · 低平",
+     "clip": {
+      "startMs": 6194,
+      "endMs": 6930,
+      "words": {
+       "t": "份",
+       "w": [
+        6233,
+        6862
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-t07",
@@ -90,7 +134,18 @@
      "section": "聲調",
      "cantonese": "忽",
      "jyutping": "fat1",
-     "mandarin": "第七声 · 同第一声短促"
+     "mandarin": "第七声 · 同第一声短促",
+     "clip": {
+      "startMs": 7544,
+      "endMs": 7922,
+      "words": {
+       "t": "忽",
+       "w": [
+        7584,
+        7852
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-t08",
@@ -98,7 +153,18 @@
      "section": "聲調",
      "cantonese": "法",
      "jyutping": "faat3",
-     "mandarin": "第八声 · 同第三声短促"
+     "mandarin": "第八声 · 同第三声短促",
+     "clip": {
+      "startMs": 8499,
+      "endMs": 9090,
+      "words": {
+       "t": "法",
+       "w": [
+        8540,
+        9018
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-t09",
@@ -107,7 +173,18 @@
      "cantonese": "佛",
      "jyutping": "fat6",
      "mandarin": "第九声 · 同第六声短促",
-     "note": "实用上用六声即可，7/8/9 是入声。"
+     "note": "实用上用六声即可，7/8/9 是入声。",
+     "clip": {
+      "startMs": 9542,
+      "endMs": 9942,
+      "words": {
+       "t": "佛",
+       "w": [
+        9581,
+        9871
+       ]
+      }
+     }
     },
     {
      "id": "l1-b-n01",
@@ -1332,7 +1409,20 @@
      "type": "phrase",
      "cantonese": "早唞！",
      "jyutping": "zou2 tau2",
-     "mandarin": "晚安！"
+     "mandarin": "晚安！",
+     "clip": {
+      "startMs": 5114,
+      "endMs": 5871,
+      "words": {
+       "t": "早唞",
+       "w": [
+        5162,
+        5482,
+        5482,
+        5802
+       ]
+      }
+     }
     },
     {
      "id": "l1-d-04",
@@ -1359,7 +1449,20 @@
      "type": "phrase",
      "cantonese": "唔該！",
      "jyutping": "m4 goi1",
-     "mandarin": "谢谢！（对方帮你忙）"
+     "mandarin": "谢谢！（对方帮你忙）",
+     "clip": {
+      "startMs": 8472,
+      "endMs": 9184,
+      "words": {
+       "t": "唔該",
+       "w": [
+        8515,
+        8814,
+        8814,
+        9114
+       ]
+      }
+     }
     },
     {
      "id": "l1-d-06",
@@ -1959,7 +2062,15 @@
       {
        "kind": "origin",
        "fallback": "北京人",
-       "options": ["北京人", "上海人", "廣州人", "深圳人", "香港人", "台灣人", "福建人"]
+       "options": [
+        "北京人",
+        "上海人",
+        "廣州人",
+        "深圳人",
+        "香港人",
+        "台灣人",
+        "福建人"
+       ]
       }
      ],
      "clip": {
@@ -2202,7 +2313,20 @@
      "section": "聯絡方式",
      "cantonese": "冧把",
      "jyutping": "lam1 baa2",
-     "mandarin": "号码 Number"
+     "mandarin": "号码 Number",
+     "clip": {
+      "startMs": 27796,
+      "endMs": 28529,
+      "words": {
+       "t": "冧把",
+       "w": [
+        27839,
+        28149,
+        28149,
+        28460
+       ]
+      }
+     }
     },
     {
      "id": "l1-ct-n0",
@@ -2498,7 +2622,7 @@
      "mandarin": "联合书院",
      "clip": {
       "startMs": 41518,
-      "endMs": 44840,
+      "endMs": 43620,
       "words": {
        "t": "聯合書院",
        "w": [
@@ -2520,7 +2644,24 @@
      "section": "大學書院",
      "cantonese": "逸夫書院",
      "jyutping": "jat6 fu1 syu1 jyun2",
-     "mandarin": "逸夫书院"
+     "mandarin": "逸夫书院",
+     "clip": {
+      "startMs": 43720,
+      "endMs": 45320,
+      "words": {
+       "t": "逸夫書院",
+       "w": [
+        43760,
+        44060,
+        44060,
+        44360,
+        44360,
+        44660,
+        44660,
+        44960
+       ]
+      }
+     }
     },
     {
      "id": "l1-cp-u06",
@@ -2581,7 +2722,7 @@
      "mandarin": "敬文书院",
      "clip": {
       "startMs": 49740,
-      "endMs": 53040,
+      "endMs": 51780,
       "words": {
        "t": "敬文書院",
        "w": [
@@ -2603,7 +2744,26 @@
      "section": "大學書院",
      "cantonese": "伍宜孫書院",
      "jyutping": "ng5 ji4 syun1 syu1 jyun2",
-     "mandarin": "伍宜孙书院"
+     "mandarin": "伍宜孙书院",
+     "clip": {
+      "startMs": 51800,
+      "endMs": 53640,
+      "words": {
+       "t": "伍宜孫書院",
+       "w": [
+        51840,
+        52136,
+        52136,
+        52432,
+        52432,
+        52728,
+        52728,
+        53024,
+        53024,
+        53320
+       ]
+      }
+     }
     },
     {
      "id": "l1-cp-u10",
@@ -3430,7 +3590,18 @@
      "section": "數字",
      "cantonese": "十",
      "jyutping": "sap6",
-     "mandarin": "10"
+     "mandarin": "10",
+     "clip": {
+      "startMs": 14554,
+      "endMs": 14969,
+      "words": {
+       "t": "十",
+       "w": [
+        14599,
+        14899
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-n20",
@@ -3438,7 +3609,22 @@
      "section": "數字",
      "cantonese": "二十／廿",
      "jyutping": "ji6 sap6 / jaa6",
-     "mandarin": "20"
+     "mandarin": "20",
+     "clip": {
+      "startMs": 15853,
+      "endMs": 17770,
+      "words": {
+       "t": "二十廿",
+       "w": [
+        15896,
+        16103,
+        16103,
+        16310,
+        17218,
+        17699
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-n30",
@@ -3447,7 +3633,22 @@
      "cantonese": "三十／卅",
      "jyutping": "saam1 sap6 / saa1 aa6",
      "mandarin": "30",
-     "note": "廿、卅是口语合音。"
+     "note": "廿、卅是口语合音。",
+     "clip": {
+      "startMs": 18321,
+      "endMs": 20232,
+      "words": {
+       "t": "三十卅",
+       "w": [
+        18366,
+        18833,
+        18833,
+        19300,
+        19340,
+        20160
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r01",
@@ -3456,7 +3657,21 @@
      "cantonese": "而家",
      "jyutping": "ji4 gaa1",
      "mandarin": "现在",
-     "image": "assets/illustrations/irasutoya/clock.png"
+     "image": "assets/illustrations/irasutoya/clock.png",
+     "clip": {
+      "rec": 1,
+      "startMs": 2477,
+      "endMs": 3380,
+      "words": {
+       "t": "而家",
+       "w": [
+        2523,
+        2861,
+        2861,
+        3200
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r02",
@@ -3464,7 +3679,25 @@
      "section": "幾時",
      "cantonese": "頭先／啱啱",
      "jyutping": "tau4 sin1 / ngaam1 ngaam1",
-     "mandarin": "刚才"
+     "mandarin": "刚才",
+     "clip": {
+      "rec": 1,
+      "startMs": 3680,
+      "endMs": 6050,
+      "words": {
+       "t": "頭先啱啱",
+       "w": [
+        3920,
+        4256,
+        4256,
+        4593,
+        5191,
+        5535,
+        5535,
+        5880
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r03",
@@ -3517,7 +3750,21 @@
      "section": "幾時",
      "cantonese": "晏晝",
      "jyutping": "aan3 zau3",
-     "mandarin": "下午"
+     "mandarin": "下午",
+     "clip": {
+      "rec": 1,
+      "startMs": 9720,
+      "endMs": 10516,
+      "words": {
+       "t": "晏晝",
+       "w": [
+        9765,
+        10104,
+        10104,
+        10444
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r06",
@@ -3600,7 +3847,21 @@
      "section": "幾時",
      "cantonese": "前日",
      "jyutping": "cin4 jat6",
-     "mandarin": "前天"
+     "mandarin": "前天",
+     "clip": {
+      "rec": 1,
+      "startMs": 18482,
+      "endMs": 19184,
+      "words": {
+       "t": "前日",
+       "w": [
+        18527,
+        18820,
+        18820,
+        19114
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r10",
@@ -3609,7 +3870,21 @@
      "cantonese": "尋日",
      "jyutping": "cam4 jat6",
      "mandarin": "昨天",
-     "note": "讲义作「琴日」。"
+     "note": "讲义作「琴日」。",
+     "clip": {
+      "rec": 1,
+      "startMs": 19843,
+      "endMs": 20485,
+      "words": {
+       "t": "尋日",
+       "w": [
+        19888,
+        20152,
+        20152,
+        20416
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r11",
@@ -3620,16 +3895,16 @@
      "mandarin": "今天",
      "image": "assets/illustrations/irasutoya/day-kyou.png",
      "clip": {
-      "rec": 0,
-      "startMs": 22579,
-      "endMs": 23319,
+      "rec": 1,
+      "startMs": 21317,
+      "endMs": 21896,
       "words": {
        "t": "今日",
        "w": [
-        22880,
-        22980,
-        22980,
-        23080
+        21363,
+        21594,
+        21594,
+        21826
        ]
       }
      }
@@ -3640,7 +3915,21 @@
      "section": "幾時",
      "cantonese": "聽日",
      "jyutping": "ting1 jat6",
-     "mandarin": "明天"
+     "mandarin": "明天",
+     "clip": {
+      "rec": 1,
+      "startMs": 22669,
+      "endMs": 23253,
+      "words": {
+       "t": "聽日",
+       "w": [
+        22715,
+        22949,
+        22949,
+        23183
+       ]
+      }
+     }
     },
     {
      "id": "l1-dt-r13",
@@ -3650,16 +3939,16 @@
      "jyutping": "hau6 jat6",
      "mandarin": "后天",
      "clip": {
-      "rec": 0,
-      "startMs": 830,
-      "endMs": 1785,
+      "rec": 1,
+      "startMs": 24060,
+      "endMs": 24694,
       "words": {
        "t": "後日",
        "w": [
-        830,
-        830,
-        830,
-        1180
+        24105,
+        24364,
+        24364,
+        24623
        ]
       }
      }

@@ -288,7 +288,20 @@
      "cantonese": "搭𨋢",
      "jyutping": "daap3 lip1",
      "mandarin": "lift",
-     "image": "assets/illustrations/irasutoya/elevator.png"
+     "image": "assets/illustrations/irasutoya/elevator.png",
+     "clip": {
+      "startMs": 14996,
+      "endMs": 15574,
+      "words": {
+       "t": "搭𨋢",
+       "w": [
+        15041,
+        15272,
+        15272,
+        15504
+       ]
+      }
+     }
     },
     {
      "id": "l3-a-12",

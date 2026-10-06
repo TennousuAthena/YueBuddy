@@ -1127,14 +1127,14 @@
      "mandarin": "煎熟的蛋",
      "clip": {
       "startMs": 18719,
-      "endMs": 21540,
+      "endMs": 20120,
       "words": {
        "t": "熟蛋",
        "w": [
         18719,
         19300,
         19300,
-        20420
+        20120
        ]
       }
      }
@@ -1144,7 +1144,20 @@
      "type": "vocab",
      "cantonese": "烚蛋",
      "jyutping": "saap6 daan6",
-     "mandarin": "煮蛋"
+     "mandarin": "煮蛋",
+     "clip": {
+      "startMs": 20579,
+      "endMs": 21543,
+      "words": {
+       "t": "烚蛋",
+       "w": [
+        20621,
+        21046,
+        21046,
+        21472
+       ]
+      }
+     }
     },
     {
      "id": "l2-b-10",
@@ -1454,7 +1467,20 @@
      "section": "飲品",
      "cantonese": "茶走",
      "jyutping": "caa4 zau2",
-     "mandarin": "奶茶加炼奶"
+     "mandarin": "奶茶加炼奶",
+     "clip": {
+      "startMs": 6470,
+      "endMs": 7292,
+      "words": {
+       "t": "茶走",
+       "w": [
+        6513,
+        6867,
+        6867,
+        7222
+       ]
+      }
+     }
     },
     {
      "id": "l2-k-04",
@@ -1625,7 +1651,7 @@
      "mandarin": "柠檬可乐",
      "clip": {
       "startMs": 24330,
-      "endMs": 25731,
+      "endMs": 25480,
       "words": {
        "t": "檸樂",
        "w": [
@@ -1643,7 +1669,20 @@
      "section": "飲品",
      "cantonese": "檸賓",
      "jyutping": "ning2 ban1",
-     "mandarin": "柠檬利宾纳"
+     "mandarin": "柠檬利宾纳",
+     "clip": {
+      "startMs": 25597,
+      "endMs": 26880,
+      "words": {
+       "t": "檸賓",
+       "w": [
+        25639,
+        26224,
+        26224,
+        26809
+       ]
+      }
+     }
     },
     {
      "id": "l2-k-14",
@@ -1651,7 +1690,22 @@
      "section": "飲品",
      "cantonese": "鹹檸七",
      "jyutping": "haam4 ning4 cat1",
-     "mandarin": "咸柠檬七喜"
+     "mandarin": "咸柠檬七喜",
+     "clip": {
+      "startMs": 27736,
+      "endMs": 29270,
+      "words": {
+       "t": "鹹檸七",
+       "w": [
+        27782,
+        28255,
+        28255,
+        28729,
+        28729,
+        29203
+       ]
+      }
+     }
     },
     {
      "id": "l2-k-15",
@@ -1825,7 +1879,7 @@
      "mandarin": "菠萝油",
      "clip": {
       "startMs": 2477,
-      "endMs": 5340,
+      "endMs": 3680,
       "words": {
        "t": "菠蘿油",
        "w": [
@@ -1834,7 +1888,7 @@
         2920,
         2950,
         3000,
-        4040
+        3680
        ]
       }
      }
@@ -1892,7 +1946,26 @@
      "type": "vocab",
      "cantonese": "蛋牛治烘底",
      "jyutping": "daan6 ngau4 zi6 hong3 dai2",
-     "mandarin": "蛋牛三明治烘底"
+     "mandarin": "蛋牛三明治烘底",
+     "clip": {
+      "startMs": 4291,
+      "endMs": 5850,
+      "words": {
+       "t": "蛋牛治烘底",
+       "w": [
+        4336,
+        4600,
+        4600,
+        4865,
+        4865,
+        5130,
+        5130,
+        5395,
+        5395,
+        5660
+       ]
+      }
+     }
     },
     {
      "id": "l2-t-05",
@@ -1973,7 +2046,8 @@
    "image": "assets/illustrations/irasutoya/l2-m-05.png",
    "kind": "practice",
    "recordings": [
-    "audio/l2/lunch-dinner.m4a"
+    "audio/l2/lunch-dinner.m4a",
+    "audio/l2/afternoon-tea.m4a"
    ],
    "items": [
     {
@@ -1981,7 +2055,25 @@
      "type": "vocab",
      "cantonese": "乾炒牛河",
      "jyutping": "gon1 caau2 ngau4 ho2",
-     "mandarin": "干炒牛河"
+     "mandarin": "干炒牛河",
+     "clip": {
+      "rec": 1,
+      "startMs": 20080,
+      "endMs": 21480,
+      "words": {
+       "t": "乾炒牛河",
+       "w": [
+        20200,
+        20445,
+        20445,
+        20690,
+        20690,
+        20935,
+        20935,
+        21180
+       ]
+      }
+     }
     },
     {
      "id": "l2-m-02",
@@ -1989,21 +2081,83 @@
      "cantonese": "肉醬意粉",
      "jyutping": "juk6 zoeng3 ji3 fan2",
      "mandarin": "肉酱意粉",
-     "image": "assets/illustrations/irasutoya/l2-m-02.png"
+     "image": "assets/illustrations/irasutoya/l2-m-02.png",
+     "clip": {
+      "rec": 1,
+      "startMs": 29320,
+      "endMs": 30820,
+      "words": {
+       "t": "肉醬意粉",
+       "w": [
+        29501,
+        29777,
+        29777,
+        30053,
+        30053,
+        30329,
+        30329,
+        30606
+       ]
+      }
+     }
     },
     {
      "id": "l2-m-03",
      "type": "vocab",
      "cantonese": "乾炒豬扒公仔麵",
      "jyutping": "gon1 caau2 zyu1 paa2 gung1 zai2 min6",
-     "mandarin": "干炒猪扒公仔面"
+     "mandarin": "干炒猪扒公仔面",
+     "clip": {
+      "rec": 1,
+      "startMs": 26580,
+      "endMs": 28820,
+      "words": {
+       "t": "乾炒豬扒公仔麵",
+       "w": [
+        26764,
+        27028,
+        27028,
+        27292,
+        27292,
+        27556,
+        27556,
+        27820,
+        27820,
+        28084,
+        28084,
+        28348,
+        28348,
+        28613
+       ]
+      }
+     }
     },
     {
      "id": "l2-m-04",
      "type": "vocab",
      "cantonese": "豆腐火腩飯",
      "jyutping": "dau6 fu6 fo2 naam5 faan6",
-     "mandarin": "豆腐火腩饭"
+     "mandarin": "豆腐火腩饭",
+     "clip": {
+      "rec": 1,
+      "startMs": 21680,
+      "endMs": 23720,
+      "words": {
+       "t": "豆腐火腩飯",
+       "w": [
+        22100,
+        22381,
+        22381,
+        22663,
+        22663,
+        22945,
+        22945,
+        23227,
+        23227,
+        23509
+       ]
+      }
+     }
     },
     {
      "id": "l2-m-05",
@@ -2011,14 +2165,50 @@
      "cantonese": "揚州炒飯",
      "jyutping": "joeng4 zau1 caau2 faan6",
      "mandarin": "扬州炒饭",
-     "image": "assets/illustrations/irasutoya/l2-m-05.png"
+     "image": "assets/illustrations/irasutoya/l2-m-05.png",
+     "clip": {
+      "rec": 1,
+      "startMs": 24380,
+      "endMs": 25920,
+      "words": {
+       "t": "揚州炒飯",
+       "w": [
+        24514,
+        24826,
+        24826,
+        25138,
+        25138,
+        25450,
+        25450,
+        25762
+       ]
+      }
+     }
     },
     {
      "id": "l2-m-06",
      "type": "vocab",
      "cantonese": "焗豬扒飯",
      "jyutping": "guk6 zyu1 paa2 faan6",
-     "mandarin": "焗猪扒饭"
+     "mandarin": "焗猪扒饭",
+     "clip": {
+      "rec": 1,
+      "startMs": 31200,
+      "endMs": 32740,
+      "words": {
+       "t": "焗豬扒飯",
+       "w": [
+        31480,
+        31757,
+        31757,
+        32035,
+        32035,
+        32313,
+        32313,
+        32591
+       ]
+      }
+     }
     }
    ]
   },
@@ -3041,7 +3231,22 @@
      "section": "食字詞",
      "cantonese": "食穀種",
      "jyutping": "sik6 guk1 zung2",
-     "mandarin": "占便宜"
+     "mandarin": "占便宜",
+     "clip": {
+      "startMs": 11751,
+      "endMs": 13655,
+      "words": {
+       "t": "食穀種",
+       "w": [
+        11801,
+        12395,
+        12395,
+        12990,
+        12990,
+        13585
+       ]
+      }
+     }
     },
     {
      "id": "l2-o-13",
