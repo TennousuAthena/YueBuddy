@@ -346,8 +346,8 @@ class _ReadingStep extends StatelessWidget {
         final footerNote = isHarmonyOs || speech.isCantoneseAvailable
             ? const SizedBox.shrink()
             : const Padding(
-                padding: const EdgeInsets.only(top: 14),
-                child: const Text(
+                padding: EdgeInsets.only(top: 14),
+                child: Text(
                   '这台设备没有粤语语音，先记下粤拼。装好「中文（香港）」语音后可以再听。',
                   style: TextStyle(
                     color: AppColors.muted,

@@ -204,7 +204,7 @@ class _TtsWarningCard extends StatelessWidget {
           Icon(Icons.volume_off_rounded, color: AppColors.orange),
           SizedBox(width: 10),
           Expanded(
-            child: const Text(
+            child: Text(
               '这台设备没有粤语语音。请在系统设置中下载「中文（香港）」语音。不会用普通话代替朗读。',
               style: TextStyle(
                 fontWeight: FontWeight.w600,

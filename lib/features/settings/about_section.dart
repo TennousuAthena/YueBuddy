@@ -102,84 +102,84 @@ class AboutSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           '粤语伴 YueBuddy 0.1.0',
           style: TextStyle(fontWeight: FontWeight.w800, height: 1.45),
         ),
-        SizedBox(height: 4),
-        _Body('普通话到粤语的口袋练习册。前三课已开放。'),
-        SizedBox(height: 16),
-        _Heading('开源'),
-        _Body('应用源代码公开在 GitHub，界面、练习逻辑、课文数据和语音后端都以这个仓库为准。'),
-        SizedBox(height: 8),
-        _LinkLine(label: '开源地址', url: kYueBuddyRepositoryUrl),
-        SizedBox(height: 16),
-        _Heading('课文与录音'),
-        _Body(
+        const SizedBox(height: 4),
+        const _Body('普通话到粤语的口袋练习册。前三课已开放。'),
+        const SizedBox(height: 16),
+        const _Heading('开源'),
+        const _Body('应用源代码公开在 GitHub，界面、练习逻辑、课文数据和语音后端都以这个仓库为准。'),
+        const SizedBox(height: 8),
+        const _LinkLine(label: '开源地址', url: kYueBuddyRepositoryUrl),
+        const SizedBox(height: 16),
+        const _Heading('课文与录音'),
+        const _Body(
           '课文、词表和老师原音来自广东话兴趣班讲义与课堂录音。这些材料的著作权属于讲义和录音的权利人。本应用在练习册里展示文字并播放原音。',
         ),
-        SizedBox(height: 16),
-        _Heading('插画'),
-        _Body('名词卡和模块入口的插画来自 いらすとや，作者是 みふねたかし。画面上标有「插画：いらすとや」。'),
-        SizedBox(height: 8),
-        _LinkLine(label: 'いらすとや', url: 'https://www.irasutoya.com/'),
-        SizedBox(height: 6),
-        _LinkLine(label: '使用条款', url: 'https://www.irasutoya.com/p/terms.html'),
-        SizedBox(height: 8),
-        _Body(
+        const SizedBox(height: 16),
+        const _Heading('插画'),
+        const _Body('名词卡和模块入口的插画来自 いらすとや，作者是 みふねたかし。画面上标有「插画：いらすとや」。'),
+        const SizedBox(height: 8),
+        const _LinkLine(label: 'いらすとや', url: 'https://www.irasutoya.com/'),
+        const SizedBox(height: 6),
+        const _LinkLine(label: '使用条款', url: 'https://www.irasutoya.com/p/terms.html'),
+        const SizedBox(height: 8),
+        const _Body(
           '按该站条款，个人用途以及符合条款的商业设计可以使用这些插画。插画素材本身不得当作商品再分发或销售，也不得用于违反公序良俗的内容。商业设计用到 21 张以上时，需要联系作者另行取得许可。本练习册已经超过 21 张；若用于商业发行，须先取得 みふねたかし 的许可。',
         ),
-        SizedBox(height: 16),
-        _Heading('开源组件'),
-        _Body('本应用基于下列开源软件，版本以 pubspec.lock 为准。'),
-        SizedBox(height: 8),
-        _ComponentLine(
+        const SizedBox(height: 16),
+        const _Heading('开源组件'),
+        const _Body('本应用基于下列开源软件，版本以 pubspec.lock 为准。'),
+        const SizedBox(height: 8),
+        const _ComponentLine(
           name: 'Flutter SDK',
           license: 'BSD 3-Clause License',
           url: 'https://github.com/flutter/flutter',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'flutter_tts 4.2.5',
           license: 'MIT License，Copyright (c) 2018 Daniel Lutton',
           url: 'https://github.com/dlutton/flutter_tts',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'audioplayers 6.8.1',
           license: 'MIT License，Copyright (c) 2017 Blue Fire',
           url: 'https://github.com/bluefireteam/audioplayers',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'shared_preferences 2.5.5',
           license: 'BSD 3-Clause License，Copyright 2013 The Flutter Authors',
           url:
               'https://github.com/flutter/packages/tree/main/packages/shared_preferences/shared_preferences',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'http 1.6.0',
           license:
               'BSD 3-Clause License，Copyright 2014, the Dart project authors',
           url: 'https://github.com/dart-lang/http',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'crypto 3.0.7',
           license:
               'BSD 3-Clause License，Copyright 2015, the Dart project authors',
           url: 'https://github.com/dart-lang/core/tree/main/pkgs/crypto',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'cupertino_icons 1.0.9',
           license: 'MIT License，Copyright (c) 2016 Vladimir Kharlampidi',
           url:
               'https://github.com/flutter/packages/tree/main/third_party/packages/cupertino_icons',
         ),
-        _ComponentLine(
+        const _ComponentLine(
           name: 'url_launcher 6.3.3',
           license: 'BSD 3-Clause License，Copyright 2013 The Flutter Authors',
           url:
               'https://github.com/flutter/packages/tree/main/packages/url_launcher/url_launcher',
         ),
-        SizedBox(height: 16),
-        _Heading('语音'),
+        const SizedBox(height: 16),
+        const _Heading('语音'),
         _Body(
           isHarmonyOs
               ? '在线朗读经过本项目的语音后端，由 MiniMax 合成。合成结果适用 MiniMax 的服务条款。'
