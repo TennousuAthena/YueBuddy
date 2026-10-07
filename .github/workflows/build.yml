@@ -98,8 +98,10 @@ jobs:
           perl -i -pe 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' macos/Runner.xcodeproj/project.pbxproj
           flutter build macos --release \
             --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
-      - name: Zip Runner.app
-        run: ditto -c -k --keepParent build/macos/Build/Products/Release/Runner.app yuebuddy-macos.zip
+      - name: Zip macOS app
+        run: |
+          app_name="$(cat macos/Flutter/ephemeral/.app_filename)"
+          ditto -c -k --keepParent "build/macos/Build/Products/Release/${app_name}" yuebuddy-macos.zip
       - uses: actions/upload-artifact@v4
         with:
           name: yuebuddy-macos
@@ -144,9 +146,13 @@ jobs:
       - run: flutter config --enable-windows-desktop
       - run: flutter pub get
       - name: Build Windows app
-        run: >
-          flutter build windows --release
-          --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
+        shell: pwsh
+        run: |
+          if (-not (Get-Command nuget -ErrorAction SilentlyContinue)) {
+            Invoke-WebRequest "https://dist.nuget.org/win-x86-commandline/v6.5.0/nuget.exe" -OutFile "$env:RUNNER_TEMP\nuget.exe"
+            $env:PATH = "$env:RUNNER_TEMP;$env:PATH"
+          }
+          flutter build windows --release --dart-define=TTS_BASE_URL=https://yuebuddy-tts.qc.workers.dev
       - name: Zip Windows build
         shell: pwsh
         run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath yuebuddy-windows.zip
@@ -187,7 +193,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/flutter-ohos
-          key: flutter-ohos-3.47.5-ohos-1.0.0-${{ runner.os }}-${{ runner.arch }}
+          key: flutter-ohos-3.47.5-ohos-1.0.0-v2-${{ runner.os }}-${{ runner.arch }}
       - name: Clone Flutter OHOS
         if: steps.flutter-ohos.outputs.cache-hit != 'true'
         run: |
@@ -202,6 +208,10 @@ jobs:
             mkdir -p "$PARENT/tools"
             ln -sfn "$PARENT/tool/node" "$PARENT/tools/node"
           fi
+          # flutter_ohos resolves a dependency as git@atomgit.com, and the
+          # runner has no AtomGit host key. Force those clones over HTTPS.
+          git config --global url."https://atomgit.com/".insteadOf "git@atomgit.com:"
+          git config --global url."https://atomgit.com/".insteadOf "ssh://git@atomgit.com/"
           echo "DEVECO_SDK_HOME=$SDK" >> "$GITHUB_ENV"
           echo "OHOS_SDK_HOME=$SDK" >> "$GITHUB_ENV"
           echo "$HOME/flutter-ohos/bin" >> "$GITHUB_PATH"
