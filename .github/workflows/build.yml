@@ -210,8 +210,12 @@ jobs:
           fi
           # flutter_ohos resolves a dependency as git@atomgit.com, and the
           # runner has no AtomGit host key. Force those clones over HTTPS.
+          # The second value must be --add; a plain second write replaces the first.
           git config --global url."https://atomgit.com/".insteadOf "git@atomgit.com:"
-          git config --global url."https://atomgit.com/".insteadOf "ssh://git@atomgit.com/"
+          git config --global --add url."https://atomgit.com/".insteadOf "ssh://git@atomgit.com/"
+          mkdir -p "$HOME/.ssh"
+          ssh-keyscan -t ed25519,rsa atomgit.com >> "$HOME/.ssh/known_hosts" 2>/dev/null || true
+          echo "GIT_SSH_COMMAND=ssh -o StrictHostKeyChecking=accept-new" >> "$GITHUB_ENV"
           echo "DEVECO_SDK_HOME=$SDK" >> "$GITHUB_ENV"
           echo "OHOS_SDK_HOME=$SDK" >> "$GITHUB_ENV"
           echo "$HOME/flutter-ohos/bin" >> "$GITHUB_PATH"
