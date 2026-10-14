@@ -118,10 +118,19 @@ python3 tools/align/extract_words.py --all --apply
   "words": {"t": "hello我係陳小明", "w": [699, 699, 699, 928, ...]}}}
 ```
 
+字级时间如果和录音对不上，不要手改 `w`。`retime.py` 用能量岛
+（真正发声的区间）重切句子，再把每个字放进它自己的岛里，
+避免切在音节中间、也避免几个字叠在同一个毫秒上：
+
+```bash
+python3 tools/align/retime.py --lesson assets/lessons/lesson_4.json --module l4-sport
+python3 tools/align/retime.py --all --apply
+```
+
 - App 端用同样的 `norm` 比对（见 `karaoke.dart`），对不上就回退
   到句级高亮，不会崩；
-- 重跑 `align_module.py --apply` 时 span 没变的句子会自动保留旧
-  `words`，只有边界动了才需要重跑本脚本。
+- 句子边界和字级时间一起由 `retime.py` 写回。`extract_words.py`
+  只会在现有（可能已经切坏的）边界里插值，不能用来修这条时间轴。
 
 ## 依赖
 

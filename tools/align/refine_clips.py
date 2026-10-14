@@ -71,6 +71,36 @@ def to_ms(frame_idx):
     return int(round(frame_idx * HOP / SR * 1000))
 
 
+def overlap_cut(mask, start_ms, end_ms):
+    """Cut an overlap at the longest silence inside it.
+
+    The numeric midpoint of two refined clips often lands in the middle
+    of a syllable. A silence run is the real sentence boundary; only
+    when the overlap is continuous speech do we fall back to the middle.
+    """
+    if end_ms <= start_ms or len(mask) == 0:
+        return (start_ms + end_ms) // 2
+    lo = max(0, int(start_ms / 1000 * SR / HOP))
+    hi = min(len(mask) - 1, int(end_ms / 1000 * SR / HOP))
+    if hi <= lo:
+        return (start_ms + end_ms) // 2
+    best = None
+    i = lo
+    while i <= hi:
+        if not mask[i]:
+            j = i
+            while j <= hi and not mask[j]:
+                j += 1
+            if best is None or (j - i) > (best[1] - best[0]):
+                best = (i, j)
+            i = j
+        else:
+            i += 1
+    if best and (best[1] - best[0]) >= 3:
+        return to_ms((best[0] + best[1]) // 2)
+    return (start_ms + end_ms) // 2
+
+
 def snap_zero_crossing(audio, ms):
     i = int(ms / 1000 * SR)
     i = max(0, min(len(audio) - 1, i))
@@ -150,11 +180,10 @@ def main() -> int:
             audio = decode_mono(audio_path)
             rms = frame_rms(audio)
             noise = float(np.percentile(rms, 10)) if len(rms) else 0.0
-            decoded[rec] = (audio, rms, noise)
-        audio, rms, noise = decoded[rec]
-        peak = float(rms.max()) if len(rms) else 0.0
-        threshold = max(noise * 3.0, peak * 0.015, 5e-4)
-        mask = speech_mask(rms, threshold)
+            peak = float(rms.max()) if len(rms) else 0.0
+            threshold = max(noise * 3.0, peak * 0.015, 5e-4)
+            decoded[rec] = (audio, rms, noise, speech_mask(rms, threshold))
+        audio, rms, noise, mask = decoded[rec]
         ns, ne, status = refine_clip(audio, rms, mask, clip["startMs"], clip["endMs"])
         if status == "ok" and (ns != clip["startMs"] or ne != clip["endMs"]):
             entry["clip"] = dict(clip, startMs=ns, endMs=ne)
@@ -168,15 +197,17 @@ def main() -> int:
     by_rec = {}
     for e in with_spans:
         by_rec.setdefault(e["clip"].get("rec", 0), []).append(e)
-    for group in by_rec.values():
+    for rec, group in by_rec.items():
+        mask = decoded[rec][3] if rec in decoded else []
         order = sorted(group, key=lambda r: r["clip"]["startMs"])
         for a, b in zip(order, order[1:]):
             ca, cb = a["clip"], b["clip"]
             if (ca["startMs"], ca["endMs"]) == (cb["startMs"], cb["endMs"]):
                 continue
             if cb["startMs"] < ca["endMs"]:
-                mid = (ca["endMs"] + cb["startMs"]) // 2
-                ca["endMs"], cb["startMs"] = mid, mid
+                cut = overlap_cut(mask, cb["startMs"], ca["endMs"])
+                cut = min(max(cut, cb["startMs"]), ca["endMs"])
+                ca["endMs"], cb["startMs"] = cut, cut
 
     # Final guard: never persist an inverted or tiny span.
     for entry in data["clips"]:

@@ -12,6 +12,7 @@ for lesson in [
     "assets/lessons/lesson_1.json",
     "assets/lessons/lesson_2.json",
     "assets/lessons/lesson_3.json",
+    "assets/lessons/lesson_4.json",
 ]:
     d = json.load(open(os.path.join(REPO, lesson)))
     for m in d["modules"]:

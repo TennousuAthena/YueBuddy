@@ -241,6 +241,7 @@ def main() -> int:
         "assets/lessons/lesson_1.json",
         "assets/lessons/lesson_2.json",
         "assets/lessons/lesson_3.json",
+        "assets/lessons/lesson_4.json",
     ] if args.all else [args.lesson]
     total = 0
     for lesson_rel in lessons:

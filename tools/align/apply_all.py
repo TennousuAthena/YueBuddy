@@ -10,6 +10,7 @@ LESSONS = {
     "l1": "assets/lessons/lesson_1.json",
     "l2": "assets/lessons/lesson_2.json",
     "l3": "assets/lessons/lesson_3.json",
+    "l4": "assets/lessons/lesson_4.json",
 }
 
 applied_total = 0

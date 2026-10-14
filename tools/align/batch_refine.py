@@ -8,7 +8,7 @@ REPO = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 lessons = {}
-for name in ("lesson_1.json", "lesson_2.json", "lesson_3.json"):
+for name in ("lesson_1.json", "lesson_2.json", "lesson_3.json", "lesson_4.json"):
     key = name.removeprefix("lesson_").removesuffix(".json")
     key = f"l{key}"
     d = json.load(open(os.path.join(REPO, "assets/lessons", name)))
