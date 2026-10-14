@@ -36,6 +36,15 @@ class LessonScreen extends StatefulWidget {
     'l3-collab': Icons.assignment_rounded,
     'l3-team': Icons.handshake_rounded,
     'l3-chat': Icons.forum_rounded,
+    'l4-sport': Icons.directions_run_rounded,
+    'l4-quiet': Icons.weekend_rounded,
+    'l4-dialogue-1': Icons.forum_rounded,
+    'l4-ask': Icons.groups_rounded,
+    'l4-shop': Icons.shopping_bag_rounded,
+    'l4-where': Icons.storefront_rounded,
+    'l4-buy': Icons.checkroom_rounded,
+    'l4-dialogue-2': Icons.hiking,
+    'l4-chat': Icons.auto_stories_rounded,
   };
 
   static const _colors = <String, Color>{
@@ -63,6 +72,15 @@ class LessonScreen extends StatefulWidget {
     'l3-collab': Color(0xFFFF9600),
     'l3-team': Color(0xFFFF6B9D),
     'l3-chat': AppColors.blue,
+    'l4-sport': AppColors.orange,
+    'l4-quiet': AppColors.purple,
+    'l4-dialogue-1': AppColors.blue,
+    'l4-ask': Color(0xFF00CD9C),
+    'l4-shop': AppColors.green,
+    'l4-where': Color(0xFFFF9600),
+    'l4-buy': Color(0xFFFF6B9D),
+    'l4-dialogue-2': AppColors.green,
+    'l4-chat': AppColors.blue,
   };
 
   static IconData iconFor(String id) => _icons[id] ?? Icons.menu_book_rounded;

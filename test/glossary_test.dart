@@ -36,10 +36,9 @@ void main() {
     expect(glossary.entries.any((entry) => entry.term == '走青'), isTrue);
     expect(glossary.entries.any((entry) => entry.term == '豆腐火腩飯'), isTrue);
     expect(glossary.entries.any((entry) => entry.term == '芬'), isFalse);
-    expect(
-      glossary.entries.firstWhere((entry) => entry.term == '行街').mandarin,
-      contains('不是逛街'),
-    );
+    final stroll = glossary.entries.firstWhere((entry) => entry.term == '行街');
+    expect(stroll.mandarin, contains('逛街'));
+    expect(stroll.mandarin, contains('带走'));
     expect(
       glossary.entries.firstWhere((entry) => entry.term == '唔該').mandarin,
       contains('麻烦你'),
@@ -51,6 +50,7 @@ void main() {
       _loadLesson('lesson_1.json'),
       _loadLesson('lesson_2.json'),
       _loadLesson('lesson_3.json'),
+      _loadLesson('lesson_4.json'),
     ]);
     expect(course.every((entry) => entry.term.length <= 12), isTrue);
     expect(course.any((entry) => entry.term == '芬'), isFalse);
@@ -181,6 +181,7 @@ Glossary _mergedGlossary() {
       _loadLesson('lesson_1.json'),
       _loadLesson('lesson_2.json'),
       _loadLesson('lesson_3.json'),
+      _loadLesson('lesson_4.json'),
     ]),
   ]);
 }

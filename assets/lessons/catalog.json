@@ -25,7 +25,8 @@
       "id": "l4",
       "number": 4,
       "title": "運動休閒",
-      "date": "5/10"
+      "date": "5/10",
+      "asset": "assets/lessons/lesson_4.json"
     },
     {
       "id": "l5",

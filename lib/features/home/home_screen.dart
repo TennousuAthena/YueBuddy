@@ -162,7 +162,7 @@ class _HeroCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '前三课已开放',
+            '前四课已开放',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.w800,
@@ -171,7 +171,7 @@ class _HeroCard extends StatelessWidget {
           ),
           SizedBox(height: dense ? 4 : 6),
           Text(
-            '看词句、听老师录音、跟读复习。先从「互相認識」「民以食為天」或「溝通交流」开始。',
+            '看词句、听老师录音、跟读复习。先从「互相認識」「民以食為天」「溝通交流」或「運動休閒」开始。',
             style: TextStyle(
               color: Colors.white,
               fontSize: dense ? 14 : 15,

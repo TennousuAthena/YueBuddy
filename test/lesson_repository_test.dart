@@ -6,7 +6,7 @@ import 'package:yue_buddy/features/lessons/data/lesson_repository.dart';
 import 'package:yue_buddy/features/lessons/domain/lesson_models.dart';
 
 void main() {
-  test('catalog lists six lessons and the first three are available', () {
+  test('catalog lists six lessons and the first four are available', () {
     final json =
         jsonDecode(File('assets/lessons/catalog.json').readAsStringSync())
             as Map<String, dynamic>;
@@ -18,8 +18,10 @@ void main() {
     expect(catalog.lessons[1].title, '民以食為天');
     expect(catalog.lessons[2].isAvailable, isTrue);
     expect(catalog.lessons[2].title, '溝通交流');
+    expect(catalog.lessons[3].isAvailable, isTrue);
+    expect(catalog.lessons[3].title, '運動休閒');
     expect(
-      catalog.lessons.skip(3).every((lesson) => !lesson.isAvailable),
+      catalog.lessons.skip(4).every((lesson) => !lesson.isAvailable),
       isTrue,
     );
   });
@@ -205,6 +207,45 @@ void main() {
     });
   });
 
+  test('lesson 4 opens the sports and leisure lesson', () {
+    final json =
+        jsonDecode(File('assets/lessons/lesson_4.json').readAsStringSync())
+            as Map<String, dynamic>;
+    final lesson = Lesson.fromJson(json);
+    expect(lesson.title, '運動休閒');
+    expect(lesson.modules.map((module) => module.id).toList(), [
+      'l4-sport',
+      'l4-quiet',
+      'l4-dialogue-1',
+      'l4-ask',
+      'l4-shop',
+      'l4-where',
+      'l4-buy',
+      'l4-dialogue-2',
+      'l4-chat',
+    ]);
+    expect(
+      lesson.modules.every(
+        (module) => module.id == 'l4-ask'
+            ? module.recordings.isEmpty
+            : module.recordings.isNotEmpty &&
+                module.recordings.every(
+                  (path) => File('assets/$path').existsSync(),
+                ),
+      ),
+      isTrue,
+    );
+    final hike = lesson.modules.firstWhere(
+      (module) => module.id == 'l4-dialogue-2',
+    );
+    expect(hike.items.any((item) => item.cantonese.contains('獅子山')), isTrue);
+    expect(hike.items.any((item) => item.mandarin.contains('塞拉利昂')), isFalse);
+    expect(hike.items.map((item) => item.speaker).toSet(), {'Peter', 'Mary'});
+    final sport = lesson.modules.firstWhere((module) => module.id == 'l4-sport');
+    expect(sport.items.any((item) => item.cantonese == '打乒乓波'), isTrue);
+    expect(sport.items.any((item) => item.cantonese.contains('做gym')), isTrue);
+  });
+
   test('memory repository loads catalog and rejects locked lessons', () async {
     final catalog = CourseCatalog.fromJson(
       jsonDecode(File('assets/lessons/catalog.json').readAsStringSync())
@@ -220,6 +261,6 @@ void main() {
     );
     expect((await repo.loadCatalog()).lessons, hasLength(6));
     expect((await repo.loadLesson('l1')).title, '互相認識');
-    expect(() => repo.loadLesson('l4'), throwsStateError);
+    expect(() => repo.loadLesson('l5'), throwsStateError);
   });
 }

@@ -1,0 +1,4598 @@
+{
+ "id": "l4",
+ "number": 4,
+ "title": "運動休閒",
+ "date": "5/10",
+ "modules": [
+  {
+   "id": "l4-sport",
+   "title": "做運動",
+   "subtitle": "波、行山、健身",
+   "kind": "practice",
+   "recordings": [
+    "audio/l4/sport.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-s-01",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "做運動",
+     "jyutping": "zou6 wan6 dung6",
+     "mandarin": "做运动",
+     "clip": {
+      "startMs": 700,
+      "endMs": 1620,
+      "words": {
+       "t": "做運動",
+       "w": [
+        750,
+        920,
+        920,
+        1180,
+        1180,
+        1540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-02",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "打波",
+     "jyutping": "daa2 bo1",
+     "mandarin": "打球",
+     "clip": {
+      "startMs": 2570,
+      "endMs": 3270,
+      "words": {
+       "t": "打波",
+       "w": [
+        2620,
+        3189,
+        3189,
+        3190
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-03",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "打籃球",
+     "jyutping": "daa2 laam4 kau4",
+     "mandarin": "打篮球",
+     "clip": {
+      "startMs": 4070,
+      "endMs": 4990,
+      "words": {
+       "t": "打籃球",
+       "w": [
+        4120,
+        4398,
+        4398,
+        4909,
+        4909,
+        4910
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-04",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "打排球",
+     "jyutping": "daa2 paai4 kau4",
+     "mandarin": "打排球",
+     "clip": {
+      "startMs": 5850,
+      "endMs": 6810,
+      "words": {
+       "t": "打排球",
+       "w": [
+        5900,
+        6040,
+        6040,
+        6340,
+        6340,
+        6730
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-05",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "打羽毛球",
+     "jyutping": "daa2 jyu5 mou4 kau4",
+     "mandarin": "打羽毛球",
+     "clip": {
+      "startMs": 7790,
+      "endMs": 8810,
+      "words": {
+       "t": "打羽毛球",
+       "w": [
+        7840,
+        8000,
+        8000,
+        8200,
+        8200,
+        8420,
+        8420,
+        8730
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-06",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "打乒乓波",
+     "jyutping": "daa2 bing1 bam1 bo1",
+     "mandarin": "打乒乓球",
+     "clip": {
+      "startMs": 9750,
+      "endMs": 10810,
+      "words": {
+       "t": "打乒乓波",
+       "w": [
+        9800,
+        9960,
+        9960,
+        10213,
+        10213,
+        10467,
+        10467,
+        10730
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-07",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "踢波／踢足球",
+     "jyutping": "tek3 bo1 / tek3 zuk1 kau4",
+     "mandarin": "踢球／踢足球",
+     "clip": {
+      "startMs": 11680,
+      "endMs": 13930,
+      "words": {
+       "t": "踢波踢足球",
+       "w": [
+        11730,
+        12319,
+        12319,
+        13170,
+        13170,
+        13320,
+        13320,
+        13520,
+        13520,
+        13850
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-08",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "運動場",
+     "jyutping": "wan6 dung6 coeng4",
+     "mandarin": "运动场",
+     "clip": {
+      "startMs": 25010,
+      "endMs": 25910,
+      "words": {
+       "t": "運動場",
+       "w": [
+        25060,
+        25303,
+        25303,
+        25829,
+        25829,
+        25830
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-09",
+     "type": "vocab",
+     "section": "球類",
+     "cantonese": "球場",
+     "jyutping": "kau4 coeng4",
+     "mandarin": "球场",
+     "clip": {
+      "startMs": 26820,
+      "endMs": 27730,
+      "words": {
+       "t": "球場",
+       "w": [
+        26870,
+        27649,
+        27649,
+        27650
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-10",
+     "type": "vocab",
+     "section": "狀態",
+     "cantonese": "好動",
+     "jyutping": "hou2 dung6",
+     "mandarin": "好动，坐不住",
+     "clip": {
+      "startMs": 28440,
+      "endMs": 29220,
+      "words": {
+       "t": "好動",
+       "w": [
+        28490,
+        29139,
+        29139,
+        29140
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-11",
+     "type": "vocab",
+     "section": "狀態",
+     "cantonese": "操肌",
+     "jyutping": "cou1 gei1",
+     "mandarin": "锻炼肌肉",
+     "clip": {
+      "startMs": 29900,
+      "endMs": 30780,
+      "words": {
+       "t": "操肌",
+       "w": [
+        29950,
+        30699,
+        30699,
+        30700
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-12",
+     "type": "vocab",
+     "section": "狀態",
+     "cantonese": "出汗",
+     "jyutping": "ceot1 hon6",
+     "mandarin": "出汗",
+     "clip": {
+      "startMs": 31490,
+      "endMs": 32420,
+      "words": {
+       "t": "出汗",
+       "w": [
+        31540,
+        32339,
+        32339,
+        32340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-13",
+     "type": "vocab",
+     "section": "狀態",
+     "cantonese": "減肥",
+     "jyutping": "gaam2 fei4",
+     "mandarin": "减肥",
+     "clip": {
+      "startMs": 33020,
+      "endMs": 33860,
+      "words": {
+       "t": "減肥",
+       "w": [
+        33070,
+        33779,
+        33779,
+        33780
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-14",
+     "type": "vocab",
+     "section": "狀態",
+     "cantonese": "Keep fit",
+     "jyutping": "Keep fit",
+     "mandarin": "保持体态",
+     "note": "和减肥写在一起。",
+     "clip": {
+      "startMs": 34480,
+      "endMs": 35070,
+      "words": {
+       "t": "keepfit",
+       "w": [
+        34530,
+        34596,
+        34596,
+        34661,
+        34661,
+        34727,
+        34727,
+        34793,
+        34793,
+        34859,
+        34859,
+        34924,
+        34924,
+        34990
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-15",
+     "type": "vocab",
+     "section": "活動",
+     "cantonese": "行山",
+     "jyutping": "haang4 saan1",
+     "mandarin": "爬山",
+     "clip": {
+      "startMs": 14850,
+      "endMs": 15730,
+      "words": {
+       "t": "行山",
+       "w": [
+        14900,
+        15649,
+        15649,
+        15650
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-16",
+     "type": "vocab",
+     "section": "活動",
+     "cantonese": "跑步",
+     "jyutping": "paau2 bou6",
+     "mandarin": "跑步",
+     "clip": {
+      "startMs": 16470,
+      "endMs": 17300,
+      "words": {
+       "t": "跑步",
+       "w": [
+        16520,
+        17219,
+        17219,
+        17220
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-17",
+     "type": "vocab",
+     "section": "活動",
+     "cantonese": "跑馬拉松",
+     "jyutping": "paau2 maa5 laai1 sung4",
+     "mandarin": "跑马拉松",
+     "clip": {
+      "startMs": 18200,
+      "endMs": 19250,
+      "words": {
+       "t": "跑馬拉松",
+       "w": [
+        18250,
+        18460,
+        18460,
+        18680,
+        18680,
+        18840,
+        18840,
+        19170
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-18",
+     "type": "vocab",
+     "section": "活動",
+     "cantonese": "做gym",
+     "jyutping": "zou6 gym",
+     "mandarin": "去健身房",
+     "note": "讲义粤拼写成 jou6 jim1，读的是英文 gym。",
+     "clip": {
+      "startMs": 20150,
+      "endMs": 20890,
+      "words": {
+       "t": "做gym",
+       "w": [
+        20200,
+        20398,
+        20398,
+        20603,
+        20603,
+        20809,
+        20809,
+        20810
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-19",
+     "type": "vocab",
+     "section": "活動",
+     "cantonese": "健身",
+     "jyutping": "gin6 san1",
+     "mandarin": "健身",
+     "clip": {
+      "startMs": 21780,
+      "endMs": 22560,
+      "words": {
+       "t": "健身",
+       "w": [
+        21830,
+        22479,
+        22479,
+        22480
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-s-20",
+     "type": "vocab",
+     "section": "活動",
+     "cantonese": "瑜伽",
+     "jyutping": "jyu4 gaa1",
+     "mandarin": "瑜伽",
+     "clip": {
+      "startMs": 23380,
+      "endMs": 24160,
+      "words": {
+       "t": "瑜伽",
+       "w": [
+        23430,
+        24079,
+        24079,
+        24080
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l4-quiet",
+   "title": "靜態活動",
+   "subtitle": "睇劇、放空、行街",
+   "image": "assets/illustrations/irasutoya/library.png",
+   "kind": "practice",
+   "recordings": [
+    "audio/l4/quiet.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-q-01",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "靜態活動",
+     "jyutping": "jing6 taai3 wut6 dung6",
+     "mandarin": "静态活动",
+     "clip": {
+      "startMs": 790,
+      "endMs": 1980,
+      "words": {
+       "t": "靜態活動",
+       "w": [
+        840,
+        980,
+        980,
+        1300,
+        1300,
+        1520,
+        1520,
+        1900
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-02",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "睇書",
+     "jyutping": "tai2 syu1",
+     "mandarin": "看书",
+     "clip": {
+      "startMs": 2910,
+      "endMs": 3660,
+      "words": {
+       "t": "睇書",
+       "w": [
+        2960,
+        3579,
+        3579,
+        3580
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-03",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "聽音樂",
+     "jyutping": "teng1 jam1 ngok6",
+     "mandarin": "听音乐",
+     "clip": {
+      "startMs": 4580,
+      "endMs": 5380,
+      "words": {
+       "t": "聽音樂",
+       "w": [
+        4630,
+        4840,
+        4840,
+        5020,
+        5020,
+        5300
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-04",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "睇戲",
+     "jyutping": "tai2 hei3",
+     "mandarin": "看电影",
+     "clip": {
+      "startMs": 6370,
+      "endMs": 7200,
+      "words": {
+       "t": "睇戲",
+       "w": [
+        6420,
+        7119,
+        7119,
+        7120
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-05",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "煲劇",
+     "jyutping": "bou1 kek6",
+     "mandarin": "追剧",
+     "clip": {
+      "startMs": 8090,
+      "endMs": 8750,
+      "words": {
+       "t": "煲劇",
+       "w": [
+        8140,
+        8669,
+        8669,
+        8670
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-06",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "睇演唱會",
+     "jyutping": "tai2 jin2 coeng3 wui2",
+     "mandarin": "看演唱会",
+     "clip": {
+      "startMs": 9980,
+      "endMs": 11160,
+      "words": {
+       "t": "睇演唱會",
+       "w": [
+        10030,
+        10200,
+        10200,
+        10400,
+        10400,
+        10620,
+        10620,
+        11080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-07",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "睇舞台劇",
+     "jyutping": "tai2 mou5 toi4 kek6",
+     "mandarin": "看舞台剧",
+     "clip": {
+      "startMs": 12180,
+      "endMs": 13300,
+      "words": {
+       "t": "睇舞台劇",
+       "w": [
+        12320,
+        12440,
+        12440,
+        12660,
+        12660,
+        12920,
+        12920,
+        13220
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-08",
+     "type": "vocab",
+     "section": "娛樂",
+     "cantonese": "碌IG／Facebook",
+     "jyutping": "luk1 IG / Facebook",
+     "mandarin": "刷 Instagram／Facebook",
+     "image": "assets/illustrations/irasutoya/phone.png",
+     "clip": {
+      "startMs": 14450,
+      "endMs": 17070,
+      "words": {
+       "t": "碌igfacebook",
+       "w": [
+        14500,
+        14854,
+        14854,
+        15319,
+        15319,
+        16440,
+        16440,
+        16640,
+        16640,
+        16680,
+        16680,
+        16720,
+        16720,
+        16760,
+        16760,
+        16860,
+        16860,
+        16960,
+        16960,
+        16975,
+        16975,
+        16990
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-09",
+     "type": "vocab",
+     "section": "社區",
+     "cantonese": "做義工",
+     "jyutping": "zou6 ji6 gung1",
+     "mandarin": "做义工",
+     "clip": {
+      "startMs": 33130,
+      "endMs": 34190,
+      "words": {
+       "t": "做義工",
+       "w": [
+        33180,
+        33380,
+        33380,
+        33720,
+        33720,
+        34110
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-10",
+     "type": "vocab",
+     "section": "社區",
+     "cantonese": "返教會",
+     "jyutping": "faan1 gaau3 wui2",
+     "mandarin": "去教会",
+     "note": "讲义写作番教會。",
+     "clip": {
+      "startMs": 35300,
+      "endMs": 36360,
+      "words": {
+       "t": "返教會",
+       "w": [
+        35350,
+        35717,
+        35717,
+        36279,
+        36279,
+        36280
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-11",
+     "type": "vocab",
+     "section": "放空",
+     "cantonese": "瞓覺",
+     "jyutping": "fan3 gaau3",
+     "mandarin": "睡觉",
+     "clip": {
+      "startMs": 37490,
+      "endMs": 38430,
+      "words": {
+       "t": "瞓覺",
+       "w": [
+        37540,
+        37960,
+        37960,
+        38350
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-12",
+     "type": "vocab",
+     "section": "放空",
+     "cantonese": "療癒",
+     "jyutping": "liu4 jyu6",
+     "mandarin": "让人放松、治愈",
+     "clip": {
+      "startMs": 39420,
+      "endMs": 40350,
+      "words": {
+       "t": "療癒",
+       "w": [
+        39470,
+        40269,
+        40269,
+        40270
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-13",
+     "type": "vocab",
+     "section": "放空",
+     "cantonese": "放空",
+     "jyutping": "fong3 hung1",
+     "mandarin": "放空",
+     "clip": {
+      "startMs": 41350,
+      "endMs": 42280,
+      "words": {
+       "t": "放空",
+       "w": [
+        41400,
+        42199,
+        42199,
+        42200
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-14",
+     "type": "vocab",
+     "section": "放空",
+     "cantonese": "躺平／Hea",
+     "jyutping": "tong2 ping4 / he3",
+     "mandarin": "躺平／什么都不干",
+     "clip": {
+      "startMs": 43250,
+      "endMs": 45760,
+      "words": {
+       "t": "躺平hea",
+       "w": [
+        43300,
+        43909,
+        43909,
+        45240,
+        45240,
+        45387,
+        45387,
+        45533,
+        45533,
+        45680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-15",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "打機",
+     "jyutping": "daa2 gei1",
+     "mandarin": "打游戏",
+     "clip": {
+      "startMs": 18330,
+      "endMs": 19050,
+      "words": {
+       "t": "打機",
+       "w": [
+        18380,
+        18969,
+        18969,
+        18970
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-16",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "煮嘢食",
+     "jyutping": "zyu2 je5 sik6",
+     "mandarin": "做饭",
+     "clip": {
+      "startMs": 20070,
+      "endMs": 20840,
+      "words": {
+       "t": "煮嘢食",
+       "w": [
+        20120,
+        20240,
+        20240,
+        20759,
+        20759,
+        20760
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-17",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "買餸",
+     "jyutping": "maai5 sung3",
+     "mandarin": "买菜",
+     "clip": {
+      "startMs": 22020,
+      "endMs": 22830,
+      "words": {
+       "t": "買餸",
+       "w": [
+        22070,
+        22749,
+        22749,
+        22750
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-18",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "做家務",
+     "jyutping": "zou6 gaa1 mou6",
+     "mandarin": "做家务",
+     "clip": {
+      "startMs": 23800,
+      "endMs": 24800,
+      "words": {
+       "t": "做家務",
+       "w": [
+        23850,
+        24060,
+        24060,
+        24300,
+        24300,
+        24720
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-19",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "行街／Shopping",
+     "jyutping": "haang4 gaai1 / Shopping",
+     "mandarin": "逛街",
+     "note": "茶餐厅点餐时，行街是带走。这里是逛街。",
+     "clip": {
+      "startMs": 25860,
+      "endMs": 28190,
+      "words": {
+       "t": "行街shopping",
+       "w": [
+        25910,
+        26210,
+        26210,
+        26565,
+        26565,
+        27660,
+        27660,
+        27700,
+        27700,
+        27740,
+        27740,
+        27780,
+        27780,
+        27850,
+        27850,
+        27940,
+        27940,
+        28030,
+        28030,
+        28110
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-20",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "淘寶",
+     "jyutping": "tou4 bou2",
+     "mandarin": "淘宝",
+     "clip": {
+      "startMs": 29500,
+      "endMs": 30310,
+      "words": {
+       "t": "淘寶",
+       "w": [
+        29550,
+        30229,
+        30229,
+        30230
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-q-21",
+     "type": "vocab",
+     "section": "日常",
+     "cantonese": "拼多多",
+     "jyutping": "ping3 do1 do1",
+     "mandarin": "拼多多",
+     "clip": {
+      "startMs": 31230,
+      "endMs": 32140,
+      "words": {
+       "t": "拼多多",
+       "w": [
+        31280,
+        31460,
+        31460,
+        31680,
+        31680,
+        32060
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l4-dialogue-1",
+   "title": "對話 1 · 得閒做咩",
+   "subtitle": "做gym、煲劇、一齊跑",
+   "image": "assets/illustrations/irasutoya/chat.png",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l4/dialogue-1.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-dg1-01",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "係呢Peter，你平時得閒會做啲咩㗎？",
+     "jyutping": "hai6 ne1 Peter, nei5 ping4 si4 dak1 haan4 wui5 zou6 di1 me1 gaa3",
+     "mandarin": "对了 Peter，你平时有空会做什么？",
+     "clip": {
+      "startMs": 770,
+      "endMs": 3790,
+      "words": {
+       "t": "係呢peter你平時得閒會做啲咩㗎",
+       "w": [
+        820,
+        860,
+        860,
+        1140,
+        1140,
+        1180,
+        1180,
+        1220,
+        1220,
+        1260,
+        1260,
+        1300,
+        1300,
+        1940,
+        1940,
+        2020,
+        2020,
+        2160,
+        2160,
+        2340,
+        2340,
+        2500,
+        2500,
+        2660,
+        2660,
+        2900,
+        2900,
+        3015,
+        3015,
+        3065,
+        3065,
+        3340,
+        3340,
+        3710
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-02",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我平時鍾意做運動，特別係做gym，",
+     "jyutping": "ngo5 ping4 si4 zung1 ji3 zou6 wan6 dung6, dak6 bit6 hai6 zou6 gym",
+     "mandarin": "我平时喜欢做运动，特别是健身，",
+     "clip": {
+      "startMs": 4680,
+      "endMs": 7830,
+      "words": {
+       "t": "我平時鍾意做運動特別係做gym",
+       "w": [
+        4730,
+        4800,
+        4800,
+        4960,
+        4960,
+        5140,
+        5140,
+        5250,
+        5250,
+        5360,
+        5360,
+        5620,
+        5620,
+        5860,
+        5860,
+        6770,
+        6770,
+        6810,
+        6810,
+        6940,
+        6940,
+        7180,
+        7180,
+        7322,
+        7322,
+        7465,
+        7465,
+        7608,
+        7608,
+        7750
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-03",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "天氣好嘅話有時會去海旁跑步，一嚟可以操肌，",
+     "jyutping": "tin1 hei3 hou2 ge3 waa6 jau5 si4 wui5 heoi3 hoi2 pong4 paau2 bou6, jat1 lai4 ho2 ji5 cou1 gei1",
+     "mandarin": "天气好的话有时会去海旁跑步，一来可以锻炼肌肉，",
+     "clip": {
+      "startMs": 8500,
+      "endMs": 13280,
+      "words": {
+       "t": "天氣好嘅話有時會去海旁跑步一嚟可以操肌",
+       "w": [
+        8550,
+        8590,
+        8590,
+        8840,
+        8840,
+        9020,
+        9020,
+        9210,
+        9210,
+        9640,
+        9640,
+        9800,
+        9800,
+        9960,
+        9960,
+        10120,
+        10120,
+        10300,
+        10300,
+        10480,
+        10480,
+        10680,
+        10680,
+        10900,
+        10900,
+        11950,
+        11950,
+        12060,
+        12060,
+        12200,
+        12200,
+        12320,
+        12320,
+        12440,
+        12440,
+        12770,
+        12770,
+        13200
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-04",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "二嚟做完運動出一身汗好舒服㗎！",
+     "jyutping": "ji6 lai4 zou6 jyun4 wan6 dung6 ceot1 jat1 san1 hon6 hou2 syu1 fuk6 gaa3",
+     "mandarin": "二来运动之后出一身汗，很舒服。",
+     "clip": {
+      "startMs": 13820,
+      "endMs": 16740,
+      "words": {
+       "t": "二嚟做完運動出一身汗好舒服㗎",
+       "w": [
+        13870,
+        13980,
+        13980,
+        14120,
+        14120,
+        14320,
+        14320,
+        14500,
+        14500,
+        14720,
+        14720,
+        15000,
+        15000,
+        15220,
+        15220,
+        15380,
+        15380,
+        15540,
+        15540,
+        15840,
+        15840,
+        16060,
+        16060,
+        16220,
+        16220,
+        16380,
+        16380,
+        16660
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-05",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你呢？你鍾唔鍾意做運動㗎？",
+     "jyutping": "nei5 ne1? nei5 zung1 m4 zung1 ji3 zou6 wan6 dung6 gaa3",
+     "mandarin": "你呢？你喜欢运动吗？",
+     "clip": {
+      "startMs": 17230,
+      "endMs": 19570,
+      "words": {
+       "t": "你呢你鍾唔鍾意做運動㗎",
+       "w": [
+        17280,
+        17440,
+        17440,
+        18040,
+        18040,
+        18084,
+        18084,
+        18124,
+        18124,
+        18164,
+        18164,
+        18204,
+        18204,
+        18280,
+        18280,
+        18780,
+        18780,
+        18920,
+        18920,
+        19140,
+        19140,
+        19490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-06",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "運動我麻麻地…我放假鍾意喺屋企睇下書或者煲下劇，",
+     "jyutping": "wan6 dung6 ngo5 maa4 maa2 dei2… ngo5 fong3 gaa3 zung1 ji3 hai2 uk1 kei2 tai2 haa5 syu1 waak6 ze2 bou1 haa5 kek6",
+     "mandarin": "运动我一般般。放假我喜欢在家看书或者追剧，",
+     "clip": {
+      "startMs": 20610,
+      "endMs": 25390,
+      "words": {
+       "t": "運動我麻麻地我放假鍾意喺屋企睇下書或者煲下劇",
+       "w": [
+        20660,
+        20800,
+        20800,
+        20960,
+        20960,
+        21100,
+        21100,
+        21287,
+        21287,
+        21473,
+        21473,
+        22270,
+        22270,
+        22360,
+        22360,
+        22600,
+        22600,
+        22780,
+        22780,
+        22910,
+        22910,
+        23040,
+        23040,
+        23300,
+        23300,
+        23480,
+        23480,
+        23660,
+        23660,
+        23755,
+        23755,
+        23805,
+        23805,
+        24400,
+        24400,
+        24470,
+        24470,
+        24540,
+        24540,
+        24865,
+        24865,
+        24915,
+        24915,
+        25310
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-07",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "香港好多串流平台，好似Netflix同Disney Plus咁，好多嘢睇㗎！",
+     "jyutping": "hoeng1 gong2 hou2 do1 cyun3 lau4 ping4 toi4, hou2 ci5 Netflix tung4 Disney Plus gam2, hou2 do1 je5 tai2 gaa3",
+     "mandarin": "香港有很多串流平台，像 Netflix 和 Disney Plus，有很多可以看。",
+     "note": "讲义写作 Disney+。",
+     "clip": {
+      "startMs": 25990,
+      "endMs": 31210,
+      "words": {
+       "t": "香港好多串流平台好似netflix同disneyplus咁好多嘢睇㗎",
+       "w": [
+        26040,
+        26080,
+        26080,
+        26200,
+        26200,
+        26370,
+        26370,
+        26540,
+        26540,
+        26780,
+        26780,
+        26960,
+        26960,
+        27140,
+        27140,
+        27460,
+        27460,
+        27980,
+        27980,
+        28120,
+        28120,
+        28200,
+        28200,
+        28280,
+        28280,
+        28360,
+        28360,
+        28450,
+        28450,
+        28540,
+        28540,
+        28630,
+        28630,
+        28720,
+        28720,
+        28980,
+        28980,
+        29040,
+        29040,
+        29100,
+        29100,
+        29160,
+        29160,
+        29220,
+        29220,
+        29280,
+        29280,
+        29340,
+        29340,
+        29415,
+        29415,
+        29490,
+        29490,
+        29565,
+        29565,
+        29640,
+        29640,
+        30330,
+        30330,
+        30380,
+        30380,
+        30480,
+        30480,
+        30640,
+        30640,
+        30860,
+        30860,
+        31130
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-08",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "咁喺屋企hea下又真係幾舒服嘅！",
+     "jyutping": "gam2 hai2 uk1 kei2 he3 haa5 jau6 zan1 hai6 gei2 syu1 fuk6 ge3",
+     "mandarin": "那在家躺一躺，确实挺舒服的。",
+     "clip": {
+      "startMs": 32250,
+      "endMs": 34830,
+      "words": {
+       "t": "咁喺屋企hea下又真係幾舒服嘅",
+       "w": [
+        32300,
+        32340,
+        32340,
+        32380,
+        32380,
+        32640,
+        32640,
+        32900,
+        32900,
+        33005,
+        33005,
+        33110,
+        33110,
+        33215,
+        33215,
+        33460,
+        33460,
+        33560,
+        33560,
+        33620,
+        33620,
+        33770,
+        33770,
+        33920,
+        33920,
+        34120,
+        34120,
+        34380,
+        34380,
+        34750
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-09",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "都係㗎！不過啱啱中秋節食得太多好嘢，我呢排肥咗好多呀，",
+     "jyutping": "dou1 hai6 gaa3! bat1 gwo3 ngaam1 ngaam1 zung1 cau1 zit3 sik6 dak1 taai3 do1 hou2 je5, ngo5 ni1 paai4 fei4 zo2 hou2 do1 aa3",
+     "mandarin": "对呀。不过中秋节刚吃了太多好东西，我最近胖了不少，",
+     "clip": {
+      "startMs": 35920,
+      "endMs": 41360,
+      "words": {
+       "t": "都係㗎不過啱啱中秋節食得太多好嘢我呢排肥咗好多呀",
+       "w": [
+        35970,
+        36619,
+        36619,
+        37090,
+        37090,
+        37130,
+        37130,
+        37170,
+        37170,
+        37240,
+        37240,
+        37390,
+        37390,
+        37540,
+        37540,
+        37800,
+        37800,
+        37980,
+        37980,
+        38220,
+        38220,
+        38395,
+        38395,
+        38445,
+        38445,
+        38760,
+        38760,
+        38920,
+        38920,
+        39180,
+        39180,
+        39860,
+        39860,
+        39960,
+        39960,
+        40040,
+        40040,
+        40120,
+        40120,
+        40460,
+        40460,
+        40620,
+        40620,
+        40740,
+        40740,
+        40860,
+        40860,
+        41280
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg1-10",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "所以都想開始做下運動…不如下次跟你一齊去跑步吖！",
+     "jyutping": "so2 ji5 dou1 soeng2 hoi1 ci2 zou6 haa5 wan6 dung6… bat1 jyu4 haa6 ci3 gan1 nei5 jat1 cai4 heoi3 paau2 bou6 aa1",
+     "mandarin": "所以也想开始运动一下。下次跟你一起去跑步好吗？",
+     "clip": {
+      "startMs": 41570,
+      "endMs": 46120,
+      "words": {
+       "t": "所以都想開始做下運動不如下次跟你一齊去跑步吖",
+       "w": [
+        41620,
+        41660,
+        41660,
+        41840,
+        41840,
+        42120,
+        42120,
+        42300,
+        42300,
+        42510,
+        42510,
+        42720,
+        42720,
+        42955,
+        42955,
+        43005,
+        43005,
+        43220,
+        43220,
+        44140,
+        44140,
+        44200,
+        44200,
+        44360,
+        44360,
+        44500,
+        44500,
+        44640,
+        44640,
+        44820,
+        44820,
+        45000,
+        45000,
+        45150,
+        45150,
+        45300,
+        45300,
+        45460,
+        45460,
+        45640,
+        45640,
+        45880,
+        45880,
+        46040
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l4-ask",
+   "title": "問朋友",
+   "subtitle": "問三個新朋友",
+   "image": "assets/illustrations/irasutoya/chat.png",
+   "kind": "practice",
+   "items": [
+    {
+     "id": "l4-p-01",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "你平時得閒會做啲乜㗎？",
+     "jyutping": "nei5 ping4 si4 dak1 haan4 wui5 zou6 di1 mat1 gaa3",
+     "mandarin": "你平时有空会做什么？"
+    },
+    {
+     "id": "l4-p-02",
+     "type": "phrase",
+     "section": "問朋友",
+     "cantonese": "你覺得做啲咩最叉電呢？",
+     "jyutping": "nei5 gok3 dak1 zou6 di1 me1 zeoi3 caa1 din6 ne1",
+     "mandarin": "你觉得做什么最能给自己充电？",
+     "note": "叉电：像给电池充电一样，让自己恢复精神。"
+    }
+   ]
+  },
+  {
+   "id": "l4-shop",
+   "title": "買嘢",
+   "subtitle": "八達通、著數、送貨",
+   "kind": "practice",
+   "recordings": [
+    "audio/l4/shopping.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-m-01",
+     "type": "vocab",
+     "section": "付款",
+     "cantonese": "買嘢",
+     "jyutping": "maai5 je5",
+     "mandarin": "买东西",
+     "clip": {
+      "startMs": 510,
+      "endMs": 1240,
+      "words": {
+       "t": "買嘢",
+       "w": [
+        560,
+        1159,
+        1159,
+        1160
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-02",
+     "type": "vocab",
+     "section": "付款",
+     "cantonese": "現金",
+     "jyutping": "jin6 gam1",
+     "mandarin": "现金",
+     "clip": {
+      "startMs": 2400,
+      "endMs": 3070,
+      "words": {
+       "t": "現金",
+       "w": [
+        2450,
+        2989,
+        2989,
+        2990
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-03",
+     "type": "phrase",
+     "section": "付款",
+     "cantonese": "俾八達通吖，唔該",
+     "jyutping": "bei2 baat3 daat6 tung1 aa1, m4 goi1",
+     "mandarin": "用八达通，麻烦了",
+     "clip": {
+      "startMs": 4120,
+      "endMs": 5420,
+      "words": {
+       "t": "俾八達通吖唔該",
+       "w": [
+        4170,
+        4240,
+        4240,
+        4440,
+        4440,
+        4540,
+        4540,
+        4740,
+        4740,
+        4940,
+        4940,
+        5140,
+        5140,
+        5340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-04",
+     "type": "vocab",
+     "section": "付款",
+     "cantonese": "信用咭",
+     "jyutping": "seon3 jung6 kaat1",
+     "mandarin": "信用卡",
+     "clip": {
+      "startMs": 6540,
+      "endMs": 7340,
+      "words": {
+       "t": "信用咭",
+       "w": [
+        6590,
+        6760,
+        6760,
+        6960,
+        6960,
+        7260
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-05",
+     "type": "phrase",
+     "section": "付款",
+     "cantonese": "收唔收咭㗎？",
+     "jyutping": "sau1 m4 sau1 kaat1 gaa3",
+     "mandarin": "收不收卡？",
+     "clip": {
+      "startMs": 8350,
+      "endMs": 9560,
+      "words": {
+       "t": "收唔收咭㗎",
+       "w": [
+        8400,
+        8540,
+        8540,
+        8660,
+        8660,
+        8800,
+        8800,
+        9100,
+        9100,
+        9480
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-06",
+     "type": "phrase",
+     "section": "揀貨",
+     "cantonese": "我自己睇下先，唔該",
+     "jyutping": "ngo5 zi6 gei2 tai2 haa5 sin1, m4 goi1",
+     "mandarin": "我自己先看看，麻烦了",
+     "clip": {
+      "startMs": 10700,
+      "endMs": 12370,
+      "words": {
+       "t": "我自己睇下先唔該",
+       "w": [
+        10750,
+        10942,
+        10942,
+        11135,
+        11135,
+        11328,
+        11328,
+        11520,
+        11520,
+        11712,
+        11712,
+        11905,
+        11905,
+        12098,
+        12098,
+        12290
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-07",
+     "type": "phrase",
+     "section": "揀貨",
+     "cantonese": "如果唔啱有冇得換㗎？",
+     "jyutping": "jyu4 gwo2 m4 ngaam1 jau5 mou5 dak1 wun6 gaa3",
+     "mandarin": "如果不合适，能不能换？",
+     "clip": {
+      "startMs": 13640,
+      "endMs": 15430,
+      "words": {
+       "t": "如果唔啱有冇得換㗎",
+       "w": [
+        13690,
+        13730,
+        13730,
+        13860,
+        13860,
+        14170,
+        14170,
+        14480,
+        14480,
+        14520,
+        14520,
+        14560,
+        14560,
+        14760,
+        14760,
+        14960,
+        14960,
+        15350
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-08",
+     "type": "vocab",
+     "section": "價錢",
+     "cantonese": "特價／減價／優惠",
+     "jyutping": "dak6 gaa3 / gaam2 gaa3 / jau1 wai6",
+     "mandarin": "特价／减价／优惠",
+     "clip": {
+      "startMs": 16510,
+      "endMs": 20160,
+      "words": {
+       "t": "特價減價優惠",
+       "w": [
+        16560,
+        17960,
+        17960,
+        18132,
+        18132,
+        18649,
+        18649,
+        19440,
+        19440,
+        20079,
+        20079,
+        20080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-09",
+     "type": "phrase",
+     "section": "價錢",
+     "cantonese": "宜家有冇折呀？",
+     "jyutping": "ji4 gaa1 jau5 mou5 zit3 aa3",
+     "mandarin": "现在有没有折扣？",
+     "clip": {
+      "startMs": 21250,
+      "endMs": 22400,
+      "words": {
+       "t": "宜家有冇折呀",
+       "w": [
+        21300,
+        21350,
+        21350,
+        21520,
+        21520,
+        21650,
+        21650,
+        21780,
+        21780,
+        22020,
+        22020,
+        22320
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-10",
+     "type": "vocab",
+     "section": "價錢",
+     "cantonese": "贈品",
+     "jyutping": "zang6 ban2",
+     "mandarin": "赠品",
+     "clip": {
+      "startMs": 23560,
+      "endMs": 24340,
+      "words": {
+       "t": "贈品",
+       "w": [
+        23610,
+        24259,
+        24259,
+        24260
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-11",
+     "type": "phrase",
+     "section": "價錢",
+     "cantonese": "有冇嘢送㗎？",
+     "jyutping": "jau5 mou5 je5 sung3 gaa3",
+     "mandarin": "有没有东西送？",
+     "clip": {
+      "startMs": 25210,
+      "endMs": 26380,
+      "words": {
+       "t": "有冇嘢送㗎",
+       "w": [
+        25260,
+        25310,
+        25310,
+        25440,
+        25440,
+        25680,
+        25680,
+        25940,
+        25940,
+        26300
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-12",
+     "type": "vocab",
+     "section": "價錢",
+     "cantonese": "會員",
+     "jyutping": "wui2 jyun4",
+     "mandarin": "会员",
+     "clip": {
+      "startMs": 27380,
+      "endMs": 28160,
+      "words": {
+       "t": "會員",
+       "w": [
+        27430,
+        28079,
+        28079,
+        28080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-13",
+     "type": "vocab",
+     "section": "價錢",
+     "cantonese": "儲分",
+     "jyutping": "cou5 fan1",
+     "mandarin": "攒积分",
+     "clip": {
+      "startMs": 29060,
+      "endMs": 29900,
+      "words": {
+       "t": "儲分",
+       "w": [
+        29110,
+        29819,
+        29819,
+        29820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-14",
+     "type": "phrase",
+     "section": "價錢",
+     "cantonese": "好抵喎！",
+     "jyutping": "hou2 dai2 wo3",
+     "mandarin": "好划算。",
+     "clip": {
+      "startMs": 30840,
+      "endMs": 31780,
+      "words": {
+       "t": "好抵喎",
+       "w": [
+        30890,
+        31237,
+        31237,
+        31699,
+        31699,
+        31700
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-15",
+     "type": "phrase",
+     "section": "價錢",
+     "cantonese": "咁著數？",
+     "jyutping": "gam3 zoek6 sou3",
+     "mandarin": "这么划算？",
+     "clip": {
+      "startMs": 32370,
+      "endMs": 33330,
+      "words": {
+       "t": "咁著數",
+       "w": [
+        32420,
+        32697,
+        32697,
+        32973,
+        32973,
+        33250
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-16",
+     "type": "vocab",
+     "section": "網購",
+     "cantonese": "上網買嘢／網購",
+     "jyutping": "soeng5 mong5 maai5 je5 / mong5 kau3",
+     "mandarin": "上网买东西／网购",
+     "clip": {
+      "startMs": 34310,
+      "endMs": 37190,
+      "words": {
+       "t": "上網買嘢網購",
+       "w": [
+        34360,
+        34560,
+        34560,
+        34780,
+        34780,
+        35080,
+        35080,
+        36410,
+        36410,
+        37109,
+        37109,
+        37110
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-17",
+     "type": "vocab",
+     "section": "網購",
+     "cantonese": "送貨上門",
+     "jyutping": "sung3 fo3 soeng5 mun4",
+     "mandarin": "送货上门",
+     "clip": {
+      "startMs": 38110,
+      "endMs": 39340,
+      "words": {
+       "t": "送貨上門",
+       "w": [
+        38160,
+        38380,
+        38380,
+        38600,
+        38600,
+        38820,
+        38820,
+        39260
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-18",
+     "type": "vocab",
+     "section": "網購",
+     "cantonese": "免運費",
+     "jyutping": "min5 wan6 fai3",
+     "mandarin": "免运费",
+     "clip": {
+      "startMs": 40210,
+      "endMs": 41210,
+      "words": {
+       "t": "免運費",
+       "w": [
+        40260,
+        40651,
+        40651,
+        41129,
+        41129,
+        41130
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-19",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "喂，順豐送貨呀",
+     "jyutping": "wai2, seon6 fung1 sung3 fo3 aa3",
+     "mandarin": "喂，顺丰送货",
+     "clip": {
+      "startMs": 42970,
+      "endMs": 44550,
+      "words": {
+       "t": "喂順豐送貨呀",
+       "w": [
+        43020,
+        43420,
+        43420,
+        43590,
+        43590,
+        43760,
+        43760,
+        43940,
+        43940,
+        44160,
+        44160,
+        44470
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-20",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "宜家過緊嚟",
+     "jyutping": "ji4 gaa1 gwo3 gan2 lai4",
+     "mandarin": "现在过来了",
+     "clip": {
+      "startMs": 44700,
+      "endMs": 45770,
+      "words": {
+       "t": "宜家過緊嚟",
+       "w": [
+        44750,
+        44800,
+        44800,
+        45180,
+        45180,
+        45220,
+        45220,
+        45445,
+        45445,
+        45690
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-21",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "十分鐘後到",
+     "jyutping": "sap6 fan1 zung1 hau6 dou3",
+     "mandarin": "十分钟后到",
+     "clip": {
+      "startMs": 45940,
+      "endMs": 47110,
+      "words": {
+       "t": "十分鐘後到",
+       "w": [
+        45990,
+        46080,
+        46080,
+        46220,
+        46220,
+        46360,
+        46360,
+        46740,
+        46740,
+        47030
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-22",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "有冇人喺屋企呀？",
+     "jyutping": "jau5 mou5 jan4 hai2 uk1 kei2 aa3",
+     "mandarin": "有没有人在家？",
+     "clip": {
+      "startMs": 47360,
+      "endMs": 48680,
+      "words": {
+       "t": "有冇人喺屋企呀",
+       "w": [
+        47410,
+        47460,
+        47460,
+        47540,
+        47540,
+        47800,
+        47800,
+        47960,
+        47960,
+        48173,
+        48173,
+        48387,
+        48387,
+        48600
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-23",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "有呀，唔該！",
+     "jyutping": "jau5 aa3, m4 goi1",
+     "mandarin": "有的，麻烦了。",
+     "clip": {
+      "startMs": 49390,
+      "endMs": 50330,
+      "words": {
+       "t": "有呀唔該",
+       "w": [
+        49440,
+        49600,
+        49600,
+        49760,
+        49760,
+        49980,
+        49980,
+        50250
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-24",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "冇人喺屋企呀",
+     "jyutping": "mou5 jan4 hai2 uk1 kei2 aa3",
+     "mandarin": "没有人在家",
+     "clip": {
+      "startMs": 51190,
+      "endMs": 52400,
+      "words": {
+       "t": "冇人喺屋企呀",
+       "w": [
+        51240,
+        51280,
+        51280,
+        51560,
+        51560,
+        51680,
+        51680,
+        51893,
+        51893,
+        52107,
+        52107,
+        52320
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-25",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "麻煩你擺門口吖！",
+     "jyutping": "maa4 faan4 nei5 baai2 mun4 hau2 aa1",
+     "mandarin": "麻烦你放在门口。",
+     "clip": {
+      "startMs": 52530,
+      "endMs": 53840,
+      "words": {
+       "t": "麻煩你擺門口吖",
+       "w": [
+        52580,
+        52690,
+        52690,
+        52860,
+        52860,
+        53000,
+        53000,
+        53160,
+        53160,
+        53360,
+        53360,
+        53620,
+        53620,
+        53760
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-26",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "麻煩你擺管理處吖！",
+     "jyutping": "maa4 faan4 nei5 baai2 gun2 lei5 cyu3 aa1",
+     "mandarin": "麻烦你放在管理处。",
+     "clip": {
+      "startMs": 54370,
+      "endMs": 56350,
+      "words": {
+       "t": "麻煩你擺管理處吖",
+       "w": [
+        54420,
+        54460,
+        54460,
+        54760,
+        54760,
+        54860,
+        54860,
+        55020,
+        55020,
+        55220,
+        55220,
+        55420,
+        55420,
+        55845,
+        55845,
+        56270
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-m-27",
+     "type": "phrase",
+     "section": "送貨",
+     "cantonese": "唔該！",
+     "jyutping": "m4 goi1",
+     "mandarin": "麻烦了。"
+    }
+   ]
+  },
+  {
+   "id": "l4-where",
+   "title": "去邊度？",
+   "subtitle": "商場、超市、便利店",
+   "kind": "practice",
+   "recordings": [
+    "audio/l4/where.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-w-01",
+     "type": "phrase",
+     "section": "商場",
+     "cantonese": "去邊度？",
+     "jyutping": "heoi3 bin1 dou6",
+     "mandarin": "去哪里？",
+     "clip": {
+      "startMs": 490,
+      "endMs": 1350,
+      "words": {
+       "t": "去邊度",
+       "w": [
+        540,
+        864,
+        864,
+        1269,
+        1269,
+        1270
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-02",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "商場",
+     "jyutping": "soeng1 coeng4",
+     "mandarin": "商场",
+     "clip": {
+      "startMs": 2420,
+      "endMs": 3190,
+      "words": {
+       "t": "商場",
+       "w": [
+        2470,
+        3109,
+        3109,
+        3110
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-03",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "新城市廣場",
+     "jyutping": "san1 sing4 si5 gwong2 coeng4",
+     "mandarin": "新城市广场，在沙田",
+     "clip": {
+      "startMs": 4220,
+      "endMs": 5620,
+      "words": {
+       "t": "新城市廣場",
+       "w": [
+        4270,
+        4480,
+        4480,
+        4700,
+        4700,
+        4920,
+        4920,
+        5160,
+        5160,
+        5540
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-04",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "朗豪坊",
+     "jyutping": "long5 hou4 fong1",
+     "mandarin": "朗豪坊，在旺角",
+     "clip": {
+      "startMs": 6840,
+      "endMs": 7770,
+      "words": {
+       "t": "朗豪坊",
+       "w": [
+        6890,
+        7214,
+        7214,
+        7689,
+        7689,
+        7690
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-05",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "海港城",
+     "jyutping": "hoi2 gong2 sing4",
+     "mandarin": "海港城，在尖沙咀",
+     "clip": {
+      "startMs": 8780,
+      "endMs": 9630,
+      "words": {
+       "t": "海港城",
+       "w": [
+        8830,
+        9000,
+        9000,
+        9220,
+        9220,
+        9550
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-06",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "又一城",
+     "jyutping": "jau6 jat1 sing4",
+     "mandarin": "又一城，在九龙塘",
+     "clip": {
+      "startMs": 10900,
+      "endMs": 11650,
+      "words": {
+       "t": "又一城",
+       "w": [
+        10950,
+        11157,
+        11157,
+        11363,
+        11363,
+        11570
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-07",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "K11",
+     "jyutping": "sap6 jat1",
+     "mandarin": "K11 商场",
+     "note": "字母 K 照英文读，后面是十一。",
+     "clip": {
+      "startMs": 12780,
+      "endMs": 13470,
+      "words": {
+       "t": "k11",
+       "w": [
+        12830,
+        13100,
+        13100,
+        13190,
+        13190,
+        13390
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-08",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "葵涌廣場",
+     "jyutping": "kwai4 cung1 gwong2 coeng4",
+     "mandarin": "葵涌广场",
+     "note": "也叫葵廣。",
+     "clip": {
+      "startMs": 14690,
+      "endMs": 15870,
+      "words": {
+       "t": "葵涌廣場",
+       "w": [
+        14740,
+        14920,
+        14920,
+        15160,
+        15160,
+        15420,
+        15420,
+        15790
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-09",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "Time Square",
+     "jyutping": "Time Square",
+     "mandarin": "时代广场，在铜锣湾"
+    },
+    {
+     "id": "l4-w-10",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "IFC",
+     "jyutping": "IFC",
+     "mandarin": "国际金融中心，在中环"
+    },
+    {
+     "id": "l4-w-11",
+     "type": "vocab",
+     "section": "商場",
+     "cantonese": "Elements",
+     "jyutping": "Elements",
+     "mandarin": "圆方，在西九龙"
+    },
+    {
+     "id": "l4-w-12",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "百貨公司",
+     "jyutping": "baak3 fo3 gung1 si1",
+     "mandarin": "百货公司",
+     "clip": {
+      "startMs": 27330,
+      "endMs": 28460,
+      "words": {
+       "t": "百貨公司",
+       "w": [
+        27380,
+        27520,
+        27520,
+        27740,
+        27740,
+        27960,
+        27960,
+        28380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-13",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "先施",
+     "jyutping": "sin1 si1",
+     "mandarin": "先施百货",
+     "clip": {
+      "startMs": 29420,
+      "endMs": 30310,
+      "words": {
+       "t": "先施",
+       "w": [
+        29470,
+        30229,
+        30229,
+        30230
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-14",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "永安",
+     "jyutping": "wing5 on1",
+     "mandarin": "永安百货",
+     "clip": {
+      "startMs": 31260,
+      "endMs": 32070,
+      "words": {
+       "t": "永安",
+       "w": [
+        31310,
+        31989,
+        31989,
+        31990
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-15",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "一田",
+     "jyutping": "jat1 tin4",
+     "mandarin": "一田百货",
+     "clip": {
+      "startMs": 32810,
+      "endMs": 33430,
+      "words": {
+       "t": "一田",
+       "w": [
+        32860,
+        33349,
+        33349,
+        33350
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-16",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "AEON",
+     "jyutping": "AEON",
+     "mandarin": "永旺"
+    },
+    {
+     "id": "l4-w-17",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "SOGO",
+     "jyutping": "SOGO",
+     "mandarin": "崇光百货"
+    },
+    {
+     "id": "l4-w-18",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "實惠",
+     "jyutping": "sat6 wai6",
+     "mandarin": "实惠，家品店",
+     "clip": {
+      "startMs": 34560,
+      "endMs": 35420,
+      "words": {
+       "t": "實惠",
+       "w": [
+        34610,
+        34975,
+        34975,
+        35340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-19",
+     "type": "vocab",
+     "section": "百貨",
+     "cantonese": "IKEA",
+     "jyutping": "IKEA",
+     "mandarin": "宜家家居",
+     "note": "和「宜家」（现在）不是同一个词。"
+    },
+    {
+     "id": "l4-w-20",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "超市",
+     "jyutping": "ciu1 si5",
+     "mandarin": "超市",
+     "clip": {
+      "startMs": 17190,
+      "endMs": 18010,
+      "words": {
+       "t": "超市",
+       "w": [
+        17240,
+        17929,
+        17929,
+        17930
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-21",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "百佳",
+     "jyutping": "baak3 gaai1",
+     "mandarin": "百佳超市",
+     "clip": {
+      "startMs": 19150,
+      "endMs": 19900,
+      "words": {
+       "t": "百佳",
+       "w": [
+        19200,
+        19819,
+        19819,
+        19820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-22",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "惠康",
+     "jyutping": "wai6 hong1",
+     "mandarin": "惠康超市",
+     "clip": {
+      "startMs": 21140,
+      "endMs": 21960,
+      "words": {
+       "t": "惠康",
+       "w": [
+        21190,
+        21879,
+        21879,
+        21880
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-23",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "阿信屋",
+     "jyutping": "aa3 seon3 uk1",
+     "mandarin": "阿信屋",
+     "clip": {
+      "startMs": 23200,
+      "endMs": 23900,
+      "words": {
+       "t": "阿信屋",
+       "w": [
+        23250,
+        23427,
+        23427,
+        23653,
+        23653,
+        23820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-24",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "759",
+     "jyutping": "chat1 ng5 gau2",
+     "mandarin": "759",
+     "note": "阿信屋的另一块招牌。",
+     "clip": {
+      "startMs": 25130,
+      "endMs": 26040,
+      "words": {
+       "t": "759",
+       "w": [
+        25180,
+        25375,
+        25375,
+        25959,
+        25959,
+        25960
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-25",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "Market Place",
+     "jyutping": "Market Place",
+     "mandarin": "Market Place 超市"
+    },
+    {
+     "id": "l4-w-26",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "City Super",
+     "jyutping": "City Super",
+     "mandarin": "City Super 超市"
+    },
+    {
+     "id": "l4-w-27",
+     "type": "vocab",
+     "section": "超市",
+     "cantonese": "HKTVmall",
+     "jyutping": "HKTVmall",
+     "mandarin": "香港电视购物"
+    },
+    {
+     "id": "l4-w-28",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "藥房",
+     "jyutping": "joek6 fong4",
+     "mandarin": "药店",
+     "clip": {
+      "startMs": 36330,
+      "endMs": 37030,
+      "words": {
+       "t": "藥房",
+       "w": [
+        36380,
+        36949,
+        36949,
+        36950
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-29",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "萬寧",
+     "jyutping": "maan6 ning4",
+     "mandarin": "万宁",
+     "clip": {
+      "startMs": 38210,
+      "endMs": 38950,
+      "words": {
+       "t": "萬寧",
+       "w": [
+        38260,
+        38869,
+        38869,
+        38870
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-30",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "屈臣氏",
+     "jyutping": "wat1 san4 si6",
+     "mandarin": "屈臣氏",
+     "clip": {
+      "startMs": 39910,
+      "endMs": 40790,
+      "words": {
+       "t": "屈臣氏",
+       "w": [
+        39960,
+        40233,
+        40233,
+        40673,
+        40673,
+        40710
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-31",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "街市",
+     "jyutping": "gaai1 si5",
+     "mandarin": "街市",
+     "clip": {
+      "startMs": 42070,
+      "endMs": 42940,
+      "words": {
+       "t": "街市",
+       "w": [
+        42120,
+        42859,
+        42859,
+        42860
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-32",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "鋪頭",
+     "jyutping": "pou3 tau2",
+     "mandarin": "店铺",
+     "clip": {
+      "startMs": 43980,
+      "endMs": 44910,
+      "words": {
+       "t": "鋪頭",
+       "w": [
+        44030,
+        44430,
+        44430,
+        44830
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-33",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "士多",
+     "jyutping": "si6 do1",
+     "mandarin": "士多，小卖店",
+     "clip": {
+      "startMs": 46050,
+      "endMs": 46900,
+      "words": {
+       "t": "士多",
+       "w": [
+        46100,
+        46819,
+        46819,
+        46820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-34",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "便利店",
+     "jyutping": "bin6 lei6 dim3",
+     "mandarin": "便利店",
+     "clip": {
+      "startMs": 48090,
+      "endMs": 49030,
+      "words": {
+       "t": "便利店",
+       "w": [
+        48140,
+        48410,
+        48410,
+        48949,
+        48949,
+        48950
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-35",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "7-11",
+     "jyutping": "chat1 sap6 jat1",
+     "mandarin": "7-Eleven",
+     "note": "课堂读成「七十一」。也叫七仔、些粉。",
+     "clip": {
+      "startMs": 50230,
+      "endMs": 50920,
+      "words": {
+       "t": "711",
+       "w": [
+        50280,
+        50467,
+        50467,
+        50653,
+        50653,
+        50840
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-36",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "七仔",
+     "jyutping": "chat1 zai2",
+     "mandarin": "七仔，7-Eleven 的叫法",
+     "clip": {
+      "startMs": 52130,
+      "endMs": 52870,
+      "words": {
+       "t": "七仔",
+       "w": [
+        52180,
+        52789,
+        52789,
+        52790
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-w-37",
+     "type": "vocab",
+     "section": "附近",
+     "cantonese": "些粉",
+     "jyutping": "se1 fan2",
+     "mandarin": "些粉，把 seven 音译成粤语，指 7-Eleven",
+     "clip": {
+      "startMs": 53860,
+      "endMs": 54660,
+      "words": {
+       "t": "些粉",
+       "w": [
+        53910,
+        54579,
+        54579,
+        54580
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l4-buy",
+   "title": "買啲咩？",
+   "subtitle": "傢俬、日用品、衫",
+   "kind": "practice",
+   "recordings": [
+    "audio/l4/what-to-buy.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-b-01",
+     "type": "phrase",
+     "section": "傢俬",
+     "cantonese": "買啲咩？",
+     "jyutping": "maai5 di1 me1",
+     "mandarin": "买些什么？",
+     "clip": {
+      "startMs": 1050,
+      "endMs": 1860,
+      "words": {
+       "t": "買啲咩",
+       "w": [
+        1100,
+        1280,
+        1280,
+        1500,
+        1500,
+        1780
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-02",
+     "type": "vocab",
+     "section": "傢俬",
+     "cantonese": "傢俬",
+     "jyutping": "gaa1 si1",
+     "mandarin": "家具",
+     "clip": {
+      "startMs": 3210,
+      "endMs": 3950,
+      "words": {
+       "t": "傢俬",
+       "w": [
+        3260,
+        3565,
+        3565,
+        3870
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-03",
+     "type": "vocab",
+     "section": "傢俬",
+     "cantonese": "梳化",
+     "jyutping": "so1 faa2",
+     "mandarin": "沙发",
+     "clip": {
+      "startMs": 5290,
+      "endMs": 6200,
+      "words": {
+       "t": "梳化",
+       "w": [
+        5340,
+        6119,
+        6119,
+        6120
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-04",
+     "type": "vocab",
+     "section": "傢俬",
+     "cantonese": "飯枱",
+     "jyutping": "faan6 toi2",
+     "mandarin": "饭桌",
+     "clip": {
+      "startMs": 7510,
+      "endMs": 8430,
+      "words": {
+       "t": "飯枱",
+       "w": [
+        7560,
+        8349,
+        8349,
+        8350
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-05",
+     "type": "vocab",
+     "section": "傢俬",
+     "cantonese": "鞋櫃",
+     "jyutping": "haai4 gwai6",
+     "mandarin": "鞋柜",
+     "clip": {
+      "startMs": 9910,
+      "endMs": 10770,
+      "words": {
+       "t": "鞋櫃",
+       "w": [
+        9960,
+        10689,
+        10689,
+        10690
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-06",
+     "type": "vocab",
+     "section": "傢俬",
+     "cantonese": "衣櫃",
+     "jyutping": "ji1 gwai6",
+     "mandarin": "衣柜",
+     "clip": {
+      "startMs": 12170,
+      "endMs": 13010,
+      "words": {
+       "t": "衣櫃",
+       "w": [
+        12220,
+        12929,
+        12929,
+        12930
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-07",
+     "type": "vocab",
+     "section": "傢俬",
+     "cantonese": "櫈",
+     "jyutping": "dang3",
+     "mandarin": "凳子",
+     "clip": {
+      "startMs": 14370,
+      "endMs": 14850,
+      "words": {
+       "t": "櫈",
+       "w": [
+        14420,
+        14770
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-08",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "日用品",
+     "jyutping": "jat6 jung6 ban2",
+     "mandarin": "日用品",
+     "clip": {
+      "startMs": 29990,
+      "endMs": 30910,
+      "words": {
+       "t": "日用品",
+       "w": [
+        30040,
+        30144,
+        30144,
+        30829,
+        30829,
+        30830
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-09",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "洗頭水",
+     "jyutping": "sai2 tau4 seoi2",
+     "mandarin": "洗发水",
+     "clip": {
+      "startMs": 32380,
+      "endMs": 33420,
+      "words": {
+       "t": "洗頭水",
+       "w": [
+        32430,
+        32640,
+        32640,
+        32900,
+        32900,
+        33340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-10",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "護髮素",
+     "jyutping": "wu6 faat3 sou3",
+     "mandarin": "护发素",
+     "clip": {
+      "startMs": 35060,
+      "endMs": 36070,
+      "words": {
+       "t": "護髮素",
+       "w": [
+        35110,
+        35417,
+        35417,
+        35989,
+        35989,
+        35990
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-11",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "沐浴露",
+     "jyutping": "muk6 juk6 lou6",
+     "mandarin": "沐浴露",
+     "clip": {
+      "startMs": 37650,
+      "endMs": 38550,
+      "words": {
+       "t": "沐浴露",
+       "w": [
+        37700,
+        37957,
+        37957,
+        38213,
+        38213,
+        38470
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-12",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "梘液",
+     "jyutping": "gaan2 jik6",
+     "mandarin": "皂液、洗洁精",
+     "clip": {
+      "startMs": 39920,
+      "endMs": 40490,
+      "words": {
+       "t": "梘液",
+       "w": [
+        39970,
+        40190,
+        40190,
+        40410
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-13",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "牙膏",
+     "jyutping": "ngaa4 gou1",
+     "mandarin": "牙膏",
+     "clip": {
+      "startMs": 42050,
+      "endMs": 42820,
+      "words": {
+       "t": "牙膏",
+       "w": [
+        42100,
+        42739,
+        42739,
+        42740
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-14",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "牙刷",
+     "jyutping": "ngaa4 caat2",
+     "mandarin": "牙刷",
+     "clip": {
+      "startMs": 44160,
+      "endMs": 44910,
+      "words": {
+       "t": "牙刷",
+       "w": [
+        44210,
+        44829,
+        44829,
+        44830
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-15",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "漱口水",
+     "jyutping": "sau3 hau2 seoi2",
+     "mandarin": "漱口水",
+     "clip": {
+      "startMs": 46420,
+      "endMs": 47460,
+      "words": {
+       "t": "漱口水",
+       "w": [
+        46470,
+        46680,
+        46680,
+        46940,
+        46940,
+        47380
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-16",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "護膚品",
+     "jyutping": "wu6 fu1 ban2",
+     "mandarin": "护肤品",
+     "clip": {
+      "startMs": 48850,
+      "endMs": 49750,
+      "words": {
+       "t": "護膚品",
+       "w": [
+        48900,
+        49284,
+        49284,
+        49669,
+        49669,
+        49670
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-17",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "廁紙",
+     "jyutping": "ci3 zi2",
+     "mandarin": "厕纸",
+     "clip": {
+      "startMs": 51230,
+      "endMs": 52160,
+      "words": {
+       "t": "廁紙",
+       "w": [
+        51280,
+        52079,
+        52079,
+        52080
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-18",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "紙巾",
+     "jyutping": "zi2 gan1",
+     "mandarin": "纸巾",
+     "clip": {
+      "startMs": 53610,
+      "endMs": 54360,
+      "words": {
+       "t": "紙巾",
+       "w": [
+        53660,
+        54279,
+        54279,
+        54280
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-19",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "膠布",
+     "jyutping": "gaau1 bou3",
+     "mandarin": "创可贴、胶布",
+     "clip": {
+      "startMs": 55640,
+      "endMs": 56440,
+      "words": {
+       "t": "膠布",
+       "w": [
+        55690,
+        56359,
+        56359,
+        56360
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-20",
+     "type": "vocab",
+     "section": "日用品",
+     "cantonese": "消毒藥水",
+     "jyutping": "siu1 duk6 joek6 seoi2",
+     "mandarin": "消毒药水",
+     "clip": {
+      "startMs": 57710,
+      "endMs": 58840,
+      "words": {
+       "t": "消毒藥水",
+       "w": [
+        57760,
+        57960,
+        57960,
+        58160,
+        58160,
+        58380,
+        58380,
+        58760
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-21",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "衫",
+     "jyutping": "saam1",
+     "mandarin": "衣服",
+     "clip": {
+      "startMs": 60310,
+      "endMs": 61000,
+      "words": {
+       "t": "衫",
+       "w": [
+        60360,
+        60920
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-22",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "T恤",
+     "jyutping": "T seot1",
+     "mandarin": "T恤",
+     "clip": {
+      "startMs": 62260,
+      "endMs": 62880,
+      "words": {
+       "t": "t恤",
+       "w": [
+        62310,
+        62799,
+        62799,
+        62800
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-23",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "睡衣",
+     "jyutping": "seoi6 ji1",
+     "mandarin": "睡衣",
+     "clip": {
+      "startMs": 64520,
+      "endMs": 65400,
+      "words": {
+       "t": "睡衣",
+       "w": [
+        64570,
+        65319,
+        65319,
+        65320
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-24",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "西裝",
+     "jyutping": "sai1 zong1",
+     "mandarin": "西装",
+     "note": "英文 suit。",
+     "clip": {
+      "startMs": 66720,
+      "endMs": 67720,
+      "words": {
+       "t": "西裝",
+       "w": [
+        66770,
+        67639,
+        67639,
+        67640
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-25",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "連身裙",
+     "jyutping": "lin4 san1 kwan4",
+     "mandarin": "连衣裙",
+     "clip": {
+      "startMs": 68850,
+      "endMs": 69720,
+      "words": {
+       "t": "連身裙",
+       "w": [
+        68900,
+        69060,
+        69060,
+        69320,
+        69320,
+        69640
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-26",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "外套",
+     "jyutping": "ngoi6 tou3",
+     "mandarin": "外套",
+     "clip": {
+      "startMs": 71210,
+      "endMs": 72110,
+      "words": {
+       "t": "外套",
+       "w": [
+        71260,
+        72029,
+        72029,
+        72030
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-27",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "風褸",
+     "jyutping": "fung1 lau1",
+     "mandarin": "风褛",
+     "clip": {
+      "startMs": 73460,
+      "endMs": 74260,
+      "words": {
+       "t": "風褸",
+       "w": [
+        73510,
+        74179,
+        74179,
+        74180
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-28",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "牛仔褲",
+     "jyutping": "ngau4 zai2 fu3",
+     "mandarin": "牛仔裤",
+     "clip": {
+      "startMs": 75520,
+      "endMs": 76590,
+      "words": {
+       "t": "牛仔褲",
+       "w": [
+        75570,
+        75941,
+        75941,
+        76509,
+        76509,
+        76510
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-29",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "波鞋",
+     "jyutping": "bo1 haai4",
+     "mandarin": "运动鞋",
+     "clip": {
+      "startMs": 77940,
+      "endMs": 78680,
+      "words": {
+       "t": "波鞋",
+       "w": [
+        77990,
+        78599,
+        78599,
+        78600
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-30",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "皮鞋",
+     "jyutping": "pei4 haai4",
+     "mandarin": "皮鞋",
+     "clip": {
+      "startMs": 79960,
+      "endMs": 80760,
+      "words": {
+       "t": "皮鞋",
+       "w": [
+        80010,
+        80679,
+        80679,
+        80680
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-31",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "高踭鞋",
+     "jyutping": "gou1 zaang1 haai4",
+     "mandarin": "高跟鞋",
+     "clip": {
+      "startMs": 81910,
+      "endMs": 82870,
+      "words": {
+       "t": "高踭鞋",
+       "w": [
+        81960,
+        82237,
+        82237,
+        82513,
+        82513,
+        82790
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-32",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "拖鞋",
+     "jyutping": "to1 haai2",
+     "mandarin": "拖鞋",
+     "clip": {
+      "startMs": 83980,
+      "endMs": 84900,
+      "words": {
+       "t": "拖鞋",
+       "w": [
+        84030,
+        84819,
+        84819,
+        84820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-33",
+     "type": "vocab",
+     "section": "衫",
+     "cantonese": "襪",
+     "jyutping": "mat6",
+     "mandarin": "袜子",
+     "clip": {
+      "startMs": 86090,
+      "endMs": 86420,
+      "words": {
+       "t": "襪",
+       "w": [
+        86140,
+        86340
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-34",
+     "type": "vocab",
+     "section": "電器",
+     "cantonese": "電器",
+     "jyutping": "din6 hei3",
+     "mandarin": "电器",
+     "clip": {
+      "startMs": 16470,
+      "endMs": 17290,
+      "words": {
+       "t": "電器",
+       "w": [
+        16520,
+        17209,
+        17209,
+        17210
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-35",
+     "type": "vocab",
+     "section": "電器",
+     "cantonese": "電視",
+     "jyutping": "din6 si6",
+     "mandarin": "电视",
+     "clip": {
+      "startMs": 18660,
+      "endMs": 19540,
+      "words": {
+       "t": "電視",
+       "w": [
+        18710,
+        19459,
+        19459,
+        19460
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-36",
+     "type": "vocab",
+     "section": "電器",
+     "cantonese": "電腦",
+     "jyutping": "din6 nou5",
+     "mandarin": "电脑",
+     "clip": {
+      "startMs": 20950,
+      "endMs": 21710,
+      "words": {
+       "t": "電腦",
+       "w": [
+        21000,
+        21629,
+        21629,
+        21630
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-37",
+     "type": "vocab",
+     "section": "電器",
+     "cantonese": "微波爐",
+     "jyutping": "mei4 bo1 lou4",
+     "mandarin": "微波炉",
+     "clip": {
+      "startMs": 23080,
+      "endMs": 23850,
+      "words": {
+       "t": "微波爐",
+       "w": [
+        23130,
+        23300,
+        23300,
+        23540,
+        23540,
+        23770
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-38",
+     "type": "vocab",
+     "section": "電器",
+     "cantonese": "吸塵機",
+     "jyutping": "kap1 can4 gei1",
+     "mandarin": "吸尘器",
+     "clip": {
+      "startMs": 25380,
+      "endMs": 26270,
+      "words": {
+       "t": "吸塵機",
+       "w": [
+        25430,
+        25656,
+        25656,
+        26189,
+        26189,
+        26190
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-b-39",
+     "type": "vocab",
+     "section": "電器",
+     "cantonese": "風筒",
+     "jyutping": "fung1 tung2",
+     "mandarin": "吹风机",
+     "clip": {
+      "startMs": 27750,
+      "endMs": 28530,
+      "words": {
+       "t": "風筒",
+       "w": [
+        27800,
+        28449,
+        28449,
+        28450
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l4-dialogue-2",
+   "title": "對話 2 · 行山",
+   "subtitle": "獅子山、新城市",
+   "kind": "dialogue",
+   "recordings": [
+    "audio/l4/dialogue-2.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-dg2-01",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我下個星期六約咗班舊同學去行山呀，",
+     "jyutping": "ngo5 haa6 go3 sing1 kei4 luk6 joek3 zo2 baan1 gau6 tung4 hok6 heoi3 haang4 saan1 aa3",
+     "mandarin": "我下星期六约了班旧同学去爬山，",
+     "note": "讲义这句的粤拼写成了今個，句子是下個星期六。",
+     "clip": {
+      "startMs": 800,
+      "endMs": 3790,
+      "words": {
+       "t": "我下個星期六約咗班舊同學去行山呀",
+       "w": [
+        850,
+        920,
+        920,
+        1060,
+        1060,
+        1220,
+        1220,
+        1360,
+        1360,
+        1540,
+        1540,
+        1760,
+        1760,
+        1980,
+        1980,
+        2120,
+        2120,
+        2260,
+        2260,
+        2480,
+        2480,
+        2660,
+        2660,
+        2820,
+        2820,
+        2960,
+        2960,
+        3140,
+        3140,
+        3460,
+        3460,
+        3710
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-02",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "你有冇興趣一齊嚟呀？",
+     "jyutping": "nei5 jau5 mou5 hing3 ceoi3 jat1 cai4 lai4 aa3",
+     "mandarin": "你有没有兴趣一起来？",
+     "clip": {
+      "startMs": 4060,
+      "endMs": 5600,
+      "words": {
+       "t": "你有冇興趣一齊嚟呀",
+       "w": [
+        4110,
+        4220,
+        4220,
+        4320,
+        4320,
+        4420,
+        4420,
+        4580,
+        4580,
+        4760,
+        4760,
+        4910,
+        4910,
+        5060,
+        5060,
+        5260,
+        5260,
+        5520
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-03",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "有興趣呀！不過會唔會好難行㗎？",
+     "jyutping": "jau5 hing3 ceoi3 aa3! bat1 gwo3 wui5 m4 wui5 hou2 naan4 haang4 gaa3",
+     "mandarin": "有兴趣。不过会不会很难走？",
+     "clip": {
+      "startMs": 6530,
+      "endMs": 9470,
+      "words": {
+       "t": "有興趣呀不過會唔會好難行㗎",
+       "w": [
+        6580,
+        6700,
+        6700,
+        6820,
+        6820,
+        7060,
+        7060,
+        7760,
+        7760,
+        7810,
+        7810,
+        7880,
+        7880,
+        8140,
+        8140,
+        8260,
+        8260,
+        8420,
+        8420,
+        8600,
+        8600,
+        8760,
+        8760,
+        9020,
+        9020,
+        9390
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-04",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "我驚我搞唔掂喎！",
+     "jyutping": "ngo5 geng1 ngo5 gaau2 m4 dim6 wo3",
+     "mandarin": "我怕我应付不来。",
+     "clip": {
+      "startMs": 9760,
+      "endMs": 11140,
+      "words": {
+       "t": "我驚我搞唔掂喎",
+       "w": [
+        9810,
+        9900,
+        9900,
+        10020,
+        10020,
+        10180,
+        10180,
+        10360,
+        10360,
+        10540,
+        10540,
+        10800,
+        10800,
+        11060
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-05",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "我哋去行獅子山，好輕鬆㗎咋。",
+     "jyutping": "ngo5 dei6 heoi3 haang4 si1 zi2 saan1, hou2 hing1 sung1 gaa3 zaa3",
+     "mandarin": "我们去爬狮子山，很轻松的。",
+     "note": "讲义普通话写成了塞拉利昂。这里是狮子山。",
+     "clip": {
+      "startMs": 12260,
+      "endMs": 14930,
+      "words": {
+       "t": "我哋去行獅子山好輕鬆㗎咋",
+       "w": [
+        12310,
+        12400,
+        12400,
+        12500,
+        12500,
+        12620,
+        12620,
+        12840,
+        12840,
+        13040,
+        13040,
+        13220,
+        13220,
+        13930,
+        13930,
+        14040,
+        14040,
+        14220,
+        14220,
+        14440,
+        14440,
+        14580,
+        14580,
+        14850
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-06",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "朝早十點出發，行到下晝兩點左右！",
+     "jyutping": "ziu1 zou2 sap6 dim2 ceot1 faat3, haang4 dou3 haa6 zau3 loeng5 dim2 zo2 jau2",
+     "mandarin": "早上十点出发，走到下午两点左右。",
+     "clip": {
+      "startMs": 15460,
+      "endMs": 18860,
+      "words": {
+       "t": "朝早十點出發行到下晝兩點左右",
+       "w": [
+        15510,
+        15550,
+        15550,
+        15590,
+        15590,
+        16040,
+        16040,
+        16220,
+        16220,
+        16400,
+        16400,
+        17190,
+        17190,
+        17340,
+        17340,
+        17480,
+        17480,
+        17680,
+        17680,
+        17870,
+        17870,
+        18060,
+        18060,
+        18300,
+        18300,
+        18460,
+        18460,
+        18780
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-07",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "咁都OK喎，我都一齊嚟吖！",
+     "jyutping": "gam2 dou1 OK wo3, ngo5 dou1 jat1 cai4 lai4 aa1",
+     "mandarin": "那应该可以，我也一起来。",
+     "clip": {
+      "startMs": 19880,
+      "endMs": 22220,
+      "words": {
+       "t": "咁都ok喎我都一齊嚟吖",
+       "w": [
+        19930,
+        20040,
+        20040,
+        20260,
+        20260,
+        20400,
+        20400,
+        20540,
+        20540,
+        21310,
+        21310,
+        21400,
+        21400,
+        21500,
+        21500,
+        21640,
+        21640,
+        21780,
+        21780,
+        22000,
+        22000,
+        22140
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-08",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "但係我冇運動衫呀…",
+     "jyutping": "daan6 hai6 ngo5 mou5 wan6 dung6 saam1 aa3",
+     "mandarin": "但是我没有运动服。",
+     "clip": {
+      "startMs": 22910,
+      "endMs": 24900,
+      "words": {
+       "t": "但係我冇運動衫呀",
+       "w": [
+        23140,
+        23500,
+        23500,
+        23620,
+        23620,
+        23700,
+        23700,
+        23840,
+        23840,
+        24000,
+        24000,
+        24160,
+        24160,
+        24480,
+        24480,
+        24820
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-09",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "聽日放學一齊去新城市行下吖，",
+     "jyutping": "ting1 jat6 fong3 hok6 jat1 cai4 heoi3 san1 sing4 si5 haang4 haa5 aa1",
+     "mandarin": "明天放学一起去新城市逛一下，",
+     "clip": {
+      "startMs": 25850,
+      "endMs": 28310,
+      "words": {
+       "t": "聽日放學一齊去新城市行下吖",
+       "w": [
+        25900,
+        25960,
+        25960,
+        26120,
+        26120,
+        26300,
+        26300,
+        26580,
+        26580,
+        26740,
+        26740,
+        26900,
+        26900,
+        27040,
+        27040,
+        27220,
+        27220,
+        27400,
+        27400,
+        27640,
+        27640,
+        27840,
+        27840,
+        28205,
+        28205,
+        28230
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-10",
+     "type": "dialogue",
+     "speaker": "Peter",
+     "cantonese": "嗰度好多運動舖，實買到嘅！",
+     "jyutping": "go2 dou6 hou2 do1 wan6 dung6 pou3, sat6 maai5 dou2 ge3",
+     "mandarin": "那里有很多运动店，一定买得到。",
+     "clip": {
+      "startMs": 28570,
+      "endMs": 31010,
+      "words": {
+       "t": "嗰度好多運動舖實買到嘅",
+       "w": [
+        28620,
+        28660,
+        28660,
+        28820,
+        28820,
+        28960,
+        28960,
+        29100,
+        29100,
+        29280,
+        29280,
+        29480,
+        29480,
+        30080,
+        30080,
+        30200,
+        30200,
+        30420,
+        30420,
+        30600,
+        30600,
+        30930
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-11",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "好呀，萬一揀唔啱我先再上網睇吓，",
+     "jyutping": "hou2 aa3, maan6 jat1 gaan2 m4 ngaam1 ngo5 sin1 zoi3 soeng5 mong5 tai2 haa5",
+     "mandarin": "好，万一选得不合适，我再上网看看，",
+     "clip": {
+      "startMs": 31840,
+      "endMs": 35090,
+      "words": {
+       "t": "好呀萬一揀唔啱我先再上網睇吓",
+       "w": [
+        31890,
+        32319,
+        32319,
+        32620,
+        32620,
+        32740,
+        32740,
+        32900,
+        32900,
+        33080,
+        33080,
+        33260,
+        33260,
+        33520,
+        33520,
+        33740,
+        33740,
+        33900,
+        33900,
+        34040,
+        34040,
+        34220,
+        34220,
+        34440,
+        34440,
+        34700,
+        34700,
+        35010
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-dg2-12",
+     "type": "dialogue",
+     "speaker": "Mary",
+     "cantonese": "應該都趕得切送貨嘅！",
+     "jyutping": "jing1 goi1 dou1 gon2 dak1 cit3 sung3 fo3 ge3",
+     "mandarin": "应该还来得及送到。",
+     "clip": {
+      "startMs": 35410,
+      "endMs": 36970,
+      "words": {
+       "t": "應該都趕得切送貨嘅",
+       "w": [
+        35460,
+        35510,
+        35510,
+        35620,
+        35620,
+        35800,
+        35800,
+        35940,
+        35940,
+        36040,
+        36040,
+        36200,
+        36200,
+        36380,
+        36380,
+        36580,
+        36580,
+        36890
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "l4-chat",
+   "title": "傾下偈",
+   "subtitle": "辛苦經歷、以賽亞書",
+   "image": "assets/illustrations/irasutoya/chat.png",
+   "kind": "practice",
+   "recordings": [
+    "audio/l4/verse.m4a"
+   ],
+   "items": [
+    {
+     "id": "l4-k-01",
+     "type": "phrase",
+     "section": "傾偈",
+     "cantonese": "你一生人試過最辛苦嘅經歷係啲咩呢？",
+     "jyutping": "nei5 jat1 sang1 jan4 si3 gwo3 zeoi3 san1 fu2 ge3 ging1 lik6 hai6 di1 me1 ne1",
+     "mandarin": "你这一生试过最辛苦的经历是什么？"
+    },
+    {
+     "id": "l4-k-02",
+     "type": "phrase",
+     "section": "傾偈",
+     "cantonese": "喺艱難嘅時候你點堅持落去？",
+     "jyutping": "hai2 gaan1 naan4 ge3 si4 hau6 nei5 dim2 gin1 ci4 lok6 heoi3",
+     "mandarin": "艰难的时候你怎么坚持下去？"
+    },
+    {
+     "id": "l4-k-03",
+     "type": "phrase",
+     "section": "金句",
+     "cantonese": "疲乏的，他賜能力；軟弱的，他加力量。",
+     "jyutping": "pei4 fat6 dik1, taa1 ci3 nang4 lik6; jyun5 joek6 dik1, taa1 gaa1 lik6 loeng6",
+     "mandarin": "疲乏的，他赐能力；软弱的，他加力量。",
+     "note": "以赛亚书 40:29-31。讲义作「上主」。",
+     "clip": {
+      "startMs": 740,
+      "endMs": 5010,
+      "words": {
+       "t": "疲乏的他賜能力軟弱的他加力量",
+       "w": [
+        790,
+        1000,
+        1000,
+        1160,
+        1160,
+        1310,
+        1310,
+        1820,
+        1820,
+        2160,
+        2160,
+        2340,
+        2340,
+        3220,
+        3220,
+        3400,
+        3400,
+        3560,
+        3560,
+        4040,
+        4040,
+        4180,
+        4180,
+        4380,
+        4380,
+        4560,
+        4560,
+        4930
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-k-04",
+     "type": "phrase",
+     "section": "金句",
+     "cantonese": "就是少年人也要疲乏困倦，強壯的也必全然跌倒。",
+     "jyutping": "zau6 si6 siu3 nin4 jan4 jaa5 jiu3 pei4 fat6 kwan3 gyun6, koeng4 zong3 dik1 jaa5 bit1 cyun4 jin4 dit3 dou2",
+     "mandarin": "就是少年人也要疲乏困倦，强壮的也必全然跌倒。",
+     "clip": {
+      "startMs": 5520,
+      "endMs": 10570,
+      "words": {
+       "t": "就是少年人也要疲乏困倦強壯的也必全然跌倒",
+       "w": [
+        5570,
+        5620,
+        5620,
+        5740,
+        5740,
+        6040,
+        6040,
+        6260,
+        6260,
+        6560,
+        6560,
+        6740,
+        6740,
+        6920,
+        6920,
+        7140,
+        7140,
+        7380,
+        7380,
+        7620,
+        7620,
+        8430,
+        8430,
+        8640,
+        8640,
+        8900,
+        8900,
+        9100,
+        9100,
+        9340,
+        9340,
+        9480,
+        9480,
+        9720,
+        9720,
+        9960,
+        9960,
+        10160,
+        10160,
+        10490
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-k-05",
+     "type": "phrase",
+     "section": "金句",
+     "cantonese": "但那等候上主的，必重新得力，他們必如鷹展翅上騰；",
+     "jyutping": "daan6 naa5 dang2 hau6 soeng6 zyu2 dik1, bit1 cung4 san1 dak1 lik6, taa1 mun4 bit1 jyu4 jing1 zin2 ci3 soeng5 tang4",
+     "mandarin": "但那等候上主的，必重新得力，他们必如鹰展翅上腾；",
+     "clip": {
+      "startMs": 11100,
+      "endMs": 16440,
+      "words": {
+       "t": "但那等候上主的必重新得力他們必如鷹展翅上騰",
+       "w": [
+        11150,
+        11275,
+        11275,
+        11325,
+        11325,
+        11480,
+        11480,
+        11760,
+        11760,
+        12000,
+        12000,
+        12220,
+        12220,
+        12880,
+        12880,
+        12940,
+        12940,
+        13180,
+        13180,
+        13420,
+        13420,
+        13620,
+        13620,
+        14340,
+        14340,
+        14390,
+        14390,
+        14500,
+        14500,
+        14800,
+        14800,
+        15080,
+        15080,
+        15333,
+        15333,
+        15587,
+        15587,
+        15840,
+        15840,
+        16080,
+        16080,
+        16360
+       ]
+      }
+     }
+    },
+    {
+     "id": "l4-k-06",
+     "type": "phrase",
+     "section": "金句",
+     "cantonese": "他們奔跑卻不困倦，行走卻不疲乏。",
+     "jyutping": "taa1 mun4 ban1 paau2 koek3 bat1 kwan3 gyun6, haang4 zau2 koek3 bat1 pei4 fat6",
+     "mandarin": "他们奔跑却不困倦，行走却不疲乏。",
+     "clip": {
+      "startMs": 16920,
+      "endMs": 20550,
+      "words": {
+       "t": "他們奔跑卻不困倦行走卻不疲乏",
+       "w": [
+        16970,
+        17040,
+        17040,
+        17140,
+        17140,
+        17420,
+        17420,
+        17740,
+        17740,
+        17960,
+        17960,
+        18100,
+        18100,
+        18360,
+        18360,
+        19250,
+        19250,
+        19400,
+        19400,
+        19660,
+        19660,
+        19900,
+        19900,
+        20040,
+        20040,
+        20240,
+        20240,
+        20470
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

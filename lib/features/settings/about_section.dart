@@ -107,7 +107,7 @@ class AboutSection extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.w800, height: 1.45),
         ),
         const SizedBox(height: 4),
-        const _Body('普通话到粤语的口袋练习册。前三课已开放。'),
+        const _Body('普通话到粤语的口袋练习册。前四课已开放。'),
         const SizedBox(height: 16),
         const _Heading('开源'),
         const _Body('应用源代码公开在 GitHub，界面、练习逻辑、课文数据和语音后端都以这个仓库为准。'),
