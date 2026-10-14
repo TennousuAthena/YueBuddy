@@ -53,6 +53,7 @@ workers/tts/node_modules/
 workers/tts/dist/
 workers/tts/.wrangler/
 workers/tts/.wrangler-state/
+.wrangler/
 
 # Scratch copies of lesson audio. Canonical files live under assets/.
 tmp/
